@@ -25,7 +25,7 @@ from telethon.tl.functions.channels import JoinChannelRequest
 
 from userbot import *
 from userbot.cmdhelp import *
-from LEGENDUSERBOT.utils import *
+from LEGENDBOT.utils import *
 from userbot.Config import Config
 
 LEGEND_row = Config.BUTTONS_IN_HELP
@@ -55,7 +55,7 @@ def button(page, modules):
     buttons.append(
         [
             custom.Button.inline(
-               f"⬅️ 𝐁𝐀𝐂𝐊 {W2H_emoji}", data=f"page({(max_pages - 1) if page == 0 else (page - 1)})"
+               f"⬅️ 𝐁𝐀𝐂𝐊 {LEGEND_emoji}", data=f"page({(max_pages - 1) if page == 0 else (page - 1)})"
             ),
             custom.Button.inline(
                f"•{LEGEND_emoji} ❌ {LEGEND_emoji}•", data="close"
