@@ -25,13 +25,13 @@ from telethon.tl.functions.channels import JoinChannelRequest
 
 from userbot import *
 from userbot.cmdhelp import *
-from LEGENDBOT.utils import *
+from LEGENDUSERBOT.utils import *
 from userbot.Config import Config
 
 LEGEND_row = Config.BUTTONS_IN_HELP
 LEGEND_emoji = Config.EMOJI_IN_HELP
 # thats how a lazy guy imports
-# LEGENDBOT
+# LEGENDUSERBOT
 
 def button(page, modules):
     Row = LEGEND_row
@@ -58,10 +58,10 @@ def button(page, modules):
                f"⬅️ 𝐁𝐀𝐂𝐊 {W2H_emoji}", data=f"page({(max_pages - 1) if page == 0 else (page - 1)})"
             ),
             custom.Button.inline(
-               f"•{W2H_emoji} ❌ {W2H_emoji}•", data="close"
+               f"•{LEGEND_emoji} ❌ {LEGEND_emoji}•", data="close"
             ),
             custom.Button.inline(
-               f"{W2H_emoji} 𝐍𝐄𝐗𝐓 ➡️", data=f"page({0 if page == (max_pages - 1) else page + 1})"
+               f"{LEGEND_emoji} 𝐍𝐄𝐗𝐓 ➡️", data=f"page({0 if page == (max_pages - 1) else page + 1})"
             ),
         ]
     )
@@ -80,7 +80,7 @@ if Var.TG_BOT_USER_NAME_BF_HER is not None and tgbot is not None:
             veriler = button(0, sorted(CMD_HELP))
             result = await builder.article(
                 f"Hey! Only use .help please",
-                text=f"**Running LEGENDBOT**\n\n__Number of plugins installed__ :`{len(CMD_HELP)}`\n**page:** 1/{veriler[0]}",
+                text=f"**Running now LEGENDPOWERFULBOT**\n\n__Number of plugins installed__ :`{len(CMD_HELP)}`\n**page:** 1/{veriler[0]}",
                 buttons=veriler[1],
                 link_preview=False,
             )
@@ -94,18 +94,18 @@ if Var.TG_BOT_USER_NAME_BF_HER is not None and tgbot is not None:
             )
         else:
             result = builder.article(
-                "@W2H_Userbot",
+                "@LEGEND_MR_HACKER",
                 text="""**Hey! This is [USERBOT.](https://t.me/LEGEND_Userbot) \nYou can know more about me from the links given below 👇**""",
                 buttons=[
                     [
-                        custom.Button.url("🔥 CHANNEL 🔥", "https://t.me/LEGEND_Userbot"),
+                        custom.Button.url("🔥 CHANNEL 🔥", "https://t.me/LEGEND_MR_HACKER"),
                         custom.Button.url(
                             "⚡ GROUP ⚡", "https://t.me/LEGEND_MR_HACKER"
                         ),
                     ],
                     [
                         custom.Button.url(
-                            "✨ REPO ✨", "https://github.com/LEGEND-OS/LEGENDBOT"),
+                            "✨ REPO ✨", "https://github.com/LEGEND-OS/LEGENDUSERBOT"),
                     ],
                 ],
                 link_preview=False,
@@ -123,7 +123,7 @@ if Var.TG_BOT_USER_NAME_BF_HER is not None and tgbot is not None:
         page = int(event.data_match.group(1).decode("UTF-8"))
         veriler = button(page, CMD_HELP)
         await event.edit(
-            f"**Legenday AF** [OSSBOT](https://t.me/LEGEND_MR_HACKER) __Working...__\n\n**Number of modules installed :** `{len(CMD_HELP)}`\n**page:** {page + 1}/{veriler[0]}",
+            f"**Legendary OF**[LEGENDPOWERFULBOT](https://t.me/LEGEND_MR_HACKER) __Working...__\n\n**Number of modules installed :** `{len(CMD_HELP)}`\n**page:** {page + 1}/{veriler[0]}",
             buttons=veriler[1],
             link_preview=False,
         )
@@ -135,8 +135,8 @@ if Var.TG_BOT_USER_NAME_BF_HER is not None and tgbot is not None:
               "⚜️LEGENDBOT Menu Provider Is now Closed⚜️\n\n         **[©LEGENDBOT](t.me/LEGEND_MR_HACKER)**", 5, link_preview=FALSE
             )
         else:
-            W2H_alert = "Mil Gyi Tasalli..? Kabse mere bot me ungli kr rhe h. Khudka bna lo na agr chaiye to pta nhi kaha se aajate h disturb krne. ©LEGENDBOT"
-            await event.answer(W2H_alert, cache_time=0, alert=True)
+            LEGEND_alert = "Mil Gyi Tasalli..? Kabse mere bot me ungli kr rhe h. Khudka bna lo na agr chaiye to pta nhi kaha se aajate h disturb krne. ©LEGENDBOT"
+            await event.answer(LEGEND_alert, cache_time=0, alert=True)
           
     @tgbot.on(
         callbackquery.CallbackQuery(data=compile(b"Information\[(\d*)\]\((.*)\)"))
