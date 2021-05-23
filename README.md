@@ -90,7 +90,7 @@ notifications in Update Channel.
 
 <a href="https://t.me/LEGENDSupport"><img src="https://img.shields.io/badge/Join-Support%20Group-red.svg?style=for-the-badge&logo=Telegram"></a>
 
-[![Contact Me](https://img.shields.io/badge/Telegram-Contact%20Me-informational)](https://t.me/David99q)
+[![Contact Me](https://img.shields.io/badge/Telegram-Contact%20Me-informational)](https://t.me/Legend_Mr_Hacker)
 
 </details>
 
