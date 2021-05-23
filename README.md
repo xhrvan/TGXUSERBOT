@@ -116,8 +116,7 @@ along with this program. If not, see <https://www.gnu.org/licenses/>.
 
 </details>
 
-<details>
-  <summary> <h4>• Credits 🏅 •</h4> </summary>
+<details><summary> <h4>• Credits 🏅 •</h4> </summary>
 
 • [OSS](https://github.com/LEGEND-OS):DEV
 
