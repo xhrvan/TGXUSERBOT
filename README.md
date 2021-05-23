@@ -117,6 +117,8 @@ along with this program. If not, see <https://www.gnu.org/licenses/>.
   <summary> <h4>• Credits 🏅 •</h4> </summary>
 
 • [OSS](https://github.com/LEGEND-OS):DEV
+  
+• [LEGEND](https://github.com/Hellboy-Aaryan):PRO
 
 • [Itzgauravv](https://github.com/itzgauravv):DEV
 
