@@ -3,7 +3,7 @@ This is Plugins Of LEGENDBOT
 <h1 align="center">⚡ ˜”*°• L E G E N D U S E R B O T •°*”˜ ⚡</h1>
 
 
-(https://t.me/LEGENDSupport)
+[LEGENDBOT](https://t.me/LEGENDSupport)
 
 
 <h2 align="center">The owner would not be responsible for any kind of bans due to the bot.</h2>
