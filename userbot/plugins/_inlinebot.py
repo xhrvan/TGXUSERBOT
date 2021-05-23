@@ -55,13 +55,13 @@ def button(page, modules):
     buttons.append(
         [
             custom.Button.inline(
-               f"⬅️ 𝐁𝐀𝐂𝐊 {LEGEND_emoji}", data=f"page({(max_pages - 1) if page == 0 else (page - 1)})"
+               f"⬅️ 𝐁𝐀𝐂𝐊 {W2H_emoji}", data=f"page({(max_pages - 1) if page == 0 else (page - 1)})"
             ),
             custom.Button.inline(
-               f"•{LEGEND_emoji} ❌ {LEGEND_emoji}•", data="close"
+               f"•{W2H_emoji} ❌ {W2H_emoji}•", data="close"
             ),
             custom.Button.inline(
-               f"{LEGEND_emoji} 𝐍𝐄𝐗𝐓 ➡️", data=f"page({0 if page == (max_pages - 1) else page + 1})"
+               f"{W2H_emoji} 𝐍𝐄𝐗𝐓 ➡️", data=f"page({0 if page == (max_pages - 1) else page + 1})"
             ),
         ]
     )
@@ -94,13 +94,13 @@ if Var.TG_BOT_USER_NAME_BF_HER is not None and tgbot is not None:
             )
         else:
             result = builder.article(
-                "@LEGEND_Userbot",
-                text="""**Hey! This is [LEGENDBOT.](https://t.me/LEGEND_Userbot) \nYou can know more about me from the links given below 👇**""",
+                "@W2H_Userbot",
+                text="""**Hey! This is [USERBOT.](https://t.me/LEGEND_Userbot) \nYou can know more about me from the links given below 👇**""",
                 buttons=[
                     [
                         custom.Button.url("🔥 CHANNEL 🔥", "https://t.me/LEGEND_Userbot"),
                         custom.Button.url(
-                            "⚡ GROUP ⚡", "https://t.me/LEGENDSupport"
+                            "⚡ GROUP ⚡", "https://t.me/LEGEND_MR_HACKER"
                         ),
                     ],
                     [
@@ -123,7 +123,7 @@ if Var.TG_BOT_USER_NAME_BF_HER is not None and tgbot is not None:
         page = int(event.data_match.group(1).decode("UTF-8"))
         veriler = button(page, CMD_HELP)
         await event.edit(
-            f"**Legenday AF** [LEGENDBOT](https://t.me/LEGEND_Userbot) __Working...__\n\n**Number of modules installed :** `{len(CMD_HELP)}`\n**page:** {page + 1}/{veriler[0]}",
+            f"**Legenday AF** [OSSBOT](https://t.me/LEGEND_MR_HACKER) __Working...__\n\n**Number of modules installed :** `{len(CMD_HELP)}`\n**page:** {page + 1}/{veriler[0]}",
             buttons=veriler[1],
             link_preview=False,
         )
@@ -132,11 +132,11 @@ if Var.TG_BOT_USER_NAME_BF_HER is not None and tgbot is not None:
     async def on_plug_in_callback_query_handler(event):
         if event.query.user_id == bot.uid:
             await delete_LEGEND(event,
-              "⚜️LEGENDBOT Menu Provider Is now Closed⚜️\n\n         **[©LEGENDBOT](t.me/LEGEND_Userbot)**", 5, link_preview=False
+              "⚜️LEGENDBOT Menu Provider Is now Closed⚜️\n\n         **[©LEGENDBOT](t.me/LEGEND_MR_HACKER)**", 5, link_preview=FALSE
             )
         else:
-            LEGEND_alert = "Mil Gyi Tasalli..? Kabse mere bot me ungli kr rhe h. Khudka bna lo na agr chaiye to pta nhi kaha se aajate h disturb krne. ©LEGENDBOT"
-            await event.answer(LEGEND_alert, cache_time=0, alert=True)
+            W2H_alert = "Mil Gyi Tasalli..? Kabse mere bot me ungli kr rhe h. Khudka bna lo na agr chaiye to pta nhi kaha se aajate h disturb krne. ©LEGENDBOT"
+            await event.answer(W2H_alert, cache_time=0, alert=True)
           
     @tgbot.on(
         callbackquery.CallbackQuery(data=compile(b"Information\[(\d*)\]\((.*)\)"))
