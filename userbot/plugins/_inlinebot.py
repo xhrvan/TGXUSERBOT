@@ -145,7 +145,7 @@ if Var.TG_BOT_USER_NAME_BF_HER is not None and tgbot is not None:
         if not event.query.user_id == bot.uid:
             return await event.answer(
                 "Common Yarr.Khudka bna lo na agr chaiye to pta nhi kaha se aajate h disturb krne. ©LEGENDBOT™,If U need Nay help take help from @Legend_Mr_Hacker ",
-                cache_time=0,,
+                cache_time=0,
                 alert=True,
             )
 
