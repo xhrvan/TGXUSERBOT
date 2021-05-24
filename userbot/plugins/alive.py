@@ -22,7 +22,7 @@ aura = bot.uid
 mention = f"[{DEFAULTUSER}](tg://user?id={aura})"
 
 
-PM_IMG = "https://telegra.ph/file/d88acbd81510ccf8f4428.mp4"
+PM_IMG = "https://telegra.ph/file/7b2fefb2c78c90734444d.jpg"
 pm_caption ="**LEGENDBOT Is Online**\n\n"
 
 pm_caption += f"**┏━━━━━━━━━━━━━┓**\n"
@@ -30,8 +30,8 @@ pm_caption += f"**┣★ Master : {mention}**\n"
 pm_caption += f"**┣★ Telethon : `{version.__version__}`**\n"
 pm_caption += f"**┣★ LEGENDBOT : {LEGENDversion}**\n"
 pm_caption += f"**┣★ Sudo       : `{sudou}`**\n"
-pm_caption += f"**┣★ Channel   : [Join Here](https://t.me/LEGEND_Userbot)**\n"
-pm_caption += f"**┣★ Creater    : [LEGEND Here](https://t.me/David99q)**\n"
+pm_caption += f"**┣★ Owner   : [LEGEND here](https://t.me/Legend_Mr_Hacker)**\n"
+pm_caption += f"**┣★ Creater    : [LEGEND Here](https://t.me/Legend_Mr_Hacker)**\n"
 pm_caption += f"**┗━━━━━━━━━━━━━┛**\n"
 
 pm_caption += "    [✨REPO✨](https://github.com/LEGEND-OS/LEGENDBOT) 🔹 [📜License📜](https://github.com/LEGEND-OS/LEGENDBOT/blob/master/LICENSE)"
