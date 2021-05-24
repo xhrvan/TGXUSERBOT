@@ -52,7 +52,7 @@ async def amireallyalive(alive):
 CmdHelp("alive").add_command(
   'alive', None, 'Check weather the bot is alive or not'
 ).add_command(
-  'LEGEND', None, 'Check weather the bot is alive or not. In your custom Alive Pic and Alive Msg'
+  'legend', None, 'Check weather the bot is alive or not. In your custom Alive Pic and Alive Msg'
 ).add_info(
   'Zinda Hai Kya Bro?'
 ).add()
