@@ -80,7 +80,7 @@ if Var.TG_BOT_USER_NAME_BF_HER is not None and tgbot is not None:
             veriler = button(0, sorted(CMD_HELP))
             result = await builder.article(
                 f"Hey! Only use .help please",
-                text=f"**Legenday AF** [W2HBOT](https://t.me/W2H_Userbot) __Legedary AF LEGENDBOT__\n\n**Number of modules installed :`{len(CMD_HELP)}`\n**page:** 1/{veriler[0]}",
+                text=f"**Legenday AF** [LEGENDBOT](https://t.me/Legend_Mr_Hacker)\n\n**Number of modules installed :`{len(CMD_HELP)}`\n**page:** 1/{veriler[0]}",
                 buttons=veriler[1],
                 link_preview=False,
             )
@@ -94,13 +94,13 @@ if Var.TG_BOT_USER_NAME_BF_HER is not None and tgbot is not None:
             )
         else:
             result = builder.article(
-                "@LEGEND_Userbot",
-                text="""**Hey! This is [LEGENDBOT.](https://t.me/W2H_Userbot) \nYou can know more about me from the links given below 👇**""",
+                "@Legend_Mr_Hacker",
+                text="""**Hey! This is [LEGENDBOT.](https://t.me/Legend_Mr_Hacker) \nYou can know more about me from the links given below 👇**""",
                 buttons=[
                     [
-                        custom.Button.url("🔥 CHANNEL 🔥", "https://t.me/W2H_Userbot"),
+                        custom.Button.url("🔥 CHANNEL 🔥", "https://t.me/Legend_Mr_Hacker"),
                         custom.Button.url(
-                            "⚡ GROUP ⚡", "https://t.me/LEGENDSupport"
+                            "⚡ Owner ⚡", "https://t.me/Legend_Mr_Hacker"
                         ),
                     ],
                     [
