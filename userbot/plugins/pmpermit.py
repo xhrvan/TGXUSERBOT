@@ -20,7 +20,7 @@ PMPERMIT_PIC = os.environ.get("PMPERMIT_PIC", None)
 LEGENDPIC = (
     PMPERMIT_PIC
     if PMPERMIT_PIC
-    else "https://telegra.ph/file/cee753391111580ae8a0c.jpg"
+    else "https://telegra.ph/file/feba09f3bf2fc904e0c91.jpg"
 )
 PM_WARNS = {}
 PREV_REPLY_MESSAGE = {}
@@ -31,7 +31,7 @@ aura = (
     else "**YOU HAVE TRESPASSED TO MY MASTERS INBOX** \n THIS IS ILLEGAL AND REGARDED AS CRIME"
 )
 DEFAULTUSER = str(ALIVE_NAME) if ALIVE_NAME else "LEGEND User"
-USER_BOT_WARN_ZERO = "**Are Bahinchod spamming kr rha h mere sweet master ke inbox me, Ruk abhi block krta h bhnchooo LEGENDBOT.**\n__Now GTFO, i'm busy__"
+USER_BOT_WARN_ZERO = "**Hello Sir/Miss U Have Spammed My Master, So U Have Get blocked By LEGENDBOT.**\n__Now GTFO, i'm busy__"
 USER_BOT_NO_WARN = (
     "Hello, Ruk Ja Bhai Ruk Ja This is **LEGENDBOT Ultra Private Security Guard H hum Give ur identity before msg my master 😎⚠️**.\n"
     f"This is my master {DEFAULTUSER}'s Inbox\n"
