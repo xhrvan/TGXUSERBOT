@@ -54,10 +54,10 @@ import userbot._core
 
 print(f"""LEGENDBOT IS ON!!! LEGENDBOT VERSION :- {LEGENDversion}
 JOIN OFFICIAL CHAT GROUP AND UPDATES CHANNEL
-OFFICIAL GROUP :- @LEGENDSupport
-OFFICIAL CHANNEL :- @LEGEND_Userbot
+OWNER :- @Legend_Mr_Hacker
+CREATOR :- @Legend_Mr_Hacker
 DO .alive OR .ping CHECK IF I'M ON!
-IF YOU FACE ANY ISSUE THEN ASK AT CHAT GROUP.""")
+IF YOU FACE ANY ISSUE THEN ASK WITH @Legend_Mr_Hacker.""")
 
 if len(argv) not in (1, 3, 4):
     bot.disconnect()
