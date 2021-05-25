@@ -1,6 +1,7 @@
-# credits to @mrconfused 
+# credits to @Legend_Mr_Hacker 
 
 import asyncio
+import LEGEND_cmd
 import datetime
 import importlib
 import inspect
