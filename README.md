@@ -117,9 +117,7 @@ along with this program. If not, see <https://www.gnu.org/licenses/>.
   <summary> <h4>• Credits 🏅 •</h4> </summary>
 
 • [OSS](https://github.com/LEGEND-OS):DEV
-  
-• [LEGEND](https://github.com/Hellboy-Aaryan):PRO
-
+ 
 • [Itzgauravv](https://github.com/itzgauravv):DEV
 
 • [AuraXBot](https://github.com/AuraXNetwork/AuraXBot)
@@ -129,8 +127,6 @@ along with this program. If not, see <https://www.gnu.org/licenses/>.
 • [CatUserbot](https://github.com/sandy1709/catuserbot)
 
 • [MafiaBot](https://github.com/H1M4N5HU0P/MAFIA-BOT)
-
-• [HellBot](https://github.com/Hellboy-OP/hellbot)
 
 • [Uniborg](https://github.com/spechide/uniborg)
 
