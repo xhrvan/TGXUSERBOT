@@ -5,6 +5,7 @@ import datetime
 import importlib
 import inspect
 import logging
+import lightning_cmd
 import math
 import os
 import re
