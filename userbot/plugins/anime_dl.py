@@ -6,7 +6,7 @@ import asyncio
 from telethon.tl.functions.messages import ImportChatInviteRequest
 from telethon.errors.rpcerrorlist import UserAlreadyParticipantError
 import os
-from hellbot.cmdhelp import CmdHelp
+from LEGENDBOT.cmdhelp import CmdHelp
 
 
 @bot.on(admin_cmd(pattern="animehub ?(.*)"))
