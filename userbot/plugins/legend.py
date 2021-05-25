@@ -14,7 +14,7 @@ async def reply_id(event):
     return reply_to_id
 
 
-DEFAULTUSER = ALIVE_NAME or "W2H User"
+DEFAULTUSER = ALIVE_NAME or "LEGEND User"
 LEGEND_IMG = Config.ALIVE_PIC
 CUSTOM_ALIVE_TEXT = Config.ALIVE_MSG or "Legend's Choice LEGENDBOT"
 
@@ -54,8 +54,8 @@ def get_readable_time(seconds: int) -> str:
 uptime = get_readable_time((time.time() - StartTime))
 
 
-@bot.on(admin_cmd(outgoing=True, pattern="w2h$"))
-@bot.on(sudo_cmd(pattern="w2h$", allow_sudo=True))
+@bot.on(admin_cmd(outgoing=True, pattern="legend$"))
+@bot.on(sudo_cmd(pattern="legend$", allow_sudo=True))
 async def amireallyalive(alive):
     if alive.fwd_from:
         return
@@ -66,7 +66,7 @@ async def amireallyalive(alive):
         LEGEND_caption += f"~~~~~~~~~~~~~~~~~~~~~~~\n"
         LEGEND_caption += f"     __**BOT STATUS**__\n\n"
         LEGEND_caption += f"**★ Telethon version :** `{version.__version__}`\n"
-        LEGEND_caption += f"**★ W2HBOT :**`{W2Hversion}`\n"
+        LEGEND_caption += f"**★ LEGENDBOT :**`{W2Hversion}`\n"
         LEGEND_caption += f"**★ Uptime :** `{uptime}\n`"
         LEGEND_caption += f"**★ Master:** {mention}\n"
         await alive.client.send_file(
