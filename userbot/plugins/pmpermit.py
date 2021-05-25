@@ -20,7 +20,7 @@ PMPERMIT_PIC = os.environ.get("PMPERMIT_PIC", None)
 LEGENDPIC = (
     PMPERMIT_PIC
     if PMPERMIT_PIC
-    else "https://telegra.ph/file/feba09f3bf2fc904e0c91.jpg"
+    else "https://telegra.ph/file/7b2fefb2c78c90734444d.jpg"
 )
 PM_WARNS = {}
 PREV_REPLY_MESSAGE = {}
@@ -33,7 +33,7 @@ aura = (
 DEFAULTUSER = str(ALIVE_NAME) if ALIVE_NAME else "LEGEND User"
 USER_BOT_WARN_ZERO = "**Hello Sir/Miss U Have Spammed My Master, So U Have Get blocked By LEGENDBOT.**\n__Now GTFO, i'm busy__"
 USER_BOT_NO_WARN = (
-    "Hello, Ruk Ja Bhai Ruk Ja This is **LEGENDBOT Ultra Private Security Guard H hum Give ur identity before msg my master 😎⚠️**.\n"
+    "Hello Sir/Miss, This is **LEGENDBOT Ultra Private Security Guard H hum Give ur identity before msg my master 😎⚠️**.\n"
     f"This is my master {DEFAULTUSER}'s Inbox\n"
     f"\n**{aura}**\n\n"
     "To start a valid conversation\n🔱Register Your Request!🔱\nSend `/start` To Register Your Request\nHopefully u will get a reply🔥"
