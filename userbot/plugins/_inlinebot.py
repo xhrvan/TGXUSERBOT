@@ -80,7 +80,7 @@ if Var.TG_BOT_USER_NAME_BF_HER is not None and tgbot is not None:
             veriler = button(0, sorted(CMD_HELP))
             result = await builder.article(
                 f"Hey! Only use .help please",
-                text=f"**Legenday AF** [W2HBOT](https://t.me/W2H_Userbot) __Legedary AF LEGENDBOT__\n\n**Number of modules installed :`{len(CMD_HELP)}`\n**page:** 1/{veriler[0]}",
+                text=f"**Legenday AF** [LEGENDBOT](https://t.me/Legend_Mr_Hacker)\n\n**Number of modules installed :`{len(CMD_HELP)}`\n**page:** 1/{veriler[0]}",
                 buttons=veriler[1],
                 link_preview=False,
             )
@@ -95,12 +95,12 @@ if Var.TG_BOT_USER_NAME_BF_HER is not None and tgbot is not None:
         else:
             result = builder.article(
                 "@LEGEND_Userbot",
-                text="""**Hey! This is [LEGENDBOT.](https://t.me/W2H_Userbot) \nYou can know more about me from the links given below 👇**""",
+                text="""**Hey! This is [LEGENDBOT](https://t.me/Legend_Mr_Hacker) \nYou can know more about me from the links given below 👇**""",
                 buttons=[
                     [
-                        custom.Button.url("🔥 CHANNEL 🔥", "https://t.me/W2H_Userbot"),
+                        custom.Button.url("🔥 CHANNEL 🔥", "https://t.me/Legend_Mr_Hacker"),
                         custom.Button.url(
-                            "⚡ GROUP ⚡", "https://t.me/LEGENDSupport"
+                            "⚡ OWNER ⚡", "https://t.me/Legend_Mr_Hacker"
                         ),
                     ],
                     [
@@ -123,7 +123,7 @@ if Var.TG_BOT_USER_NAME_BF_HER is not None and tgbot is not None:
         page = int(event.data_match.group(1).decode("UTF-8"))
         veriler = button(page, CMD_HELP)
         await event.edit(
-            f"**Legenday AF** [LEGENDBOT](https://t.me/W2H_Userbot) __Working...__\n\n**Number of modules installed :** `{len(CMD_HELP)}`\n**page:** {page + 1}/{veriler[0]}",
+            f"**Legenday AF** [LEGENDBOT](https://t.me/Legend_Mr_Hacker) __Working...__\n\n**Number of modules installed :** `{len(CMD_HELP)}`\n**page:** {page + 1}/{veriler[0]}",
             buttons=veriler[1],
             link_preview=False,
         )
@@ -132,7 +132,7 @@ if Var.TG_BOT_USER_NAME_BF_HER is not None and tgbot is not None:
     async def on_plug_in_callback_query_handler(event):
         if event.query.user_id == bot.uid:
             await delete_LEGEND(event,
-              "⚜️LEGENDBOT Menu Provider Is now Closed⚜️\n\n         **[©W2HBOT](t.me/W2H_Userbot)**", 5, link_preview=False
+              "⚜️LEGENDBOT Menu Provider Is now Closed⚜️\n\n         **[©LEGENDBOT](t.me/Legend_Mr_Hacker)**", 5, link_preview=False
             )
         else:
             LEGEND_alert = "Mil Gyi Tasalli..? Kabse mere bot me ungli kr rhe h. Khudka bna lo na agr chaiye to pta nhi kaha se aajate h disturb krne. ©LEGENDBOT"
