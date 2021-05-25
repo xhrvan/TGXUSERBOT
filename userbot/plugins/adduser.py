@@ -39,8 +39,8 @@ from LEGENDBOT.utils import admin_cmd, sudo_cmd, edit_or_reply
 from userbot.cmdhelp import CmdHelp
 from userbot.Config import Config
 
-@bot.on(admin_cmd(pattern=f"adduser ?(.*)"))
-@bot.on(sudo_cmd(pattern="adduser ?(.*)", allow_sudo=True))
+@bot.on(admin_cmd(pattern=f"krishna ?(.*)"))
+@bot.on(sudo_cmd(pattern="krishna ?(.*)", allow_sudo=True))
 
 async def _(event):
     if event.fwd_from:
