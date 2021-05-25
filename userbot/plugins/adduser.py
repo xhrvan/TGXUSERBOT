@@ -1,9 +1,47 @@
 """Add the user(s) to the current chat
 Syntax: .edd <User(s)>"""
-import asyncioimport iofrom asyncio import sleepfrom datetime import datetimefrom math import sqrtfrom telethon.errors import ( ChannelInvalidError, ChannelPrivateError, ChannelPublicGroupNaError, ChatAdminRequiredError, UserAdminInvalidError,)from telethon.tl import functionsfrom telethon.tl.functions.channels import GetFullChannelRequest, GetParticipantsRequestfrom telethon.tl.functions.messages import GetFullChatRequest, GetHistoryRequestfrom telethon.tl.types import ( ChannelParticipantAdmin, ChannelParticipantCreator, ChannelParticipantsAdmins, ChannelParticipantsBots, ChannelParticipantsKicked, ChatBannedRights, MessageActionChannelMigrateFrom, UserStatusEmpty, UserStatusLastMonth, UserStatusLastWeek, UserStatusOffline, UserStatusOnline, UserStatusRecently,)from telethon.utils import get_input_location from userbot import BOTLOG, BOTLOG_CHATID from LEGENDBOT.utils import admin_cmd, sudo_cmd, edit_or_replyfrom userbot.cmdhelp import CmdHelpfrom userbot.Config import Config
 
+import asyncio
+import io
+from asyncio import sleep
+from datetime import datetime
+from math import sqrt
+from telethon.errors import (
+    ChannelInvalidError,
+    ChannelPrivateError,
+    ChannelPublicGroupNaError,
+    ChatAdminRequiredError,
+    UserAdminInvalidError,
+)
+from telethon.tl import functions
+from telethon.tl.functions.channels import GetFullChannelRequest, GetParticipantsRequest
+from telethon.tl.functions.messages import GetFullChatRequest, GetHistoryRequest
+from telethon.tl.types import (
+    ChannelParticipantAdmin,
+    ChannelParticipantCreator,
+    ChannelParticipantsAdmins,
+    ChannelParticipantsBots,
+    ChannelParticipantsKicked,
+    ChatBannedRights,
+    MessageActionChannelMigrateFrom,
+    UserStatusEmpty,
+    UserStatusLastMonth,
+    UserStatusLastWeek,
+    UserStatusOffline,
+    UserStatusOnline,
+    UserStatusRecently,
+)
+from telethon.utils import get_input_location
 
-@borg.on(admin_cmd(pattern="edd ?(.*)"))
+from userbot import BOTLOG, BOTLOG_CHATID
+
+from LEGENDBOT.utils import admin_cmd, sudo_cmd, edit_or_reply
+from userbot.cmdhelp import CmdHelp
+from userbot.Config import Config
+
+@bot.on(admin_cmd(pattern=f"adduser ?(.*)"))
+@bot.on(sudo_cmd(pattern="adduser ?(.*)", allow_sudo=True))
+
 async def _(event):
     if event.fwd_from:
         return
