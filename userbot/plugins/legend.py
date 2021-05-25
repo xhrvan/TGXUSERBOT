@@ -66,11 +66,11 @@ async def amireallyalive(alive):
         LEGEND_caption += f"~~~~~~~~~~~~~~~~~~~~~~~\n"
         LEGEND_caption += f"     __**BOT STATUS**__\n\n"
         LEGEND_caption += f"**★ Telethon version :** `{version.__version__}`\n"
-        LEGEND_caption += f"**★ LEGENDBOT :**`{W2Hversion}`\n"
+        LEGEND_caption += f"**★ LEGENDBOT :**`{LEGENDversion}`\n"
         LEGEND_caption += f"**★ Uptime :** `{uptime}\n`"
         LEGEND_caption += f"**★ Master:** {mention}\n"
         await alive.client.send_file(
-            alive.chat_id, W2H_IMG, caption=W2H_caption, reply_to=reply_to_id
+            alive.chat_id, LEGEND_IMG, caption=LEGEND_caption, reply_to=reply_to_id
         )
         await alive.delete()
     else:
