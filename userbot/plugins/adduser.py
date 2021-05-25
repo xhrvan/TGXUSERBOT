@@ -1,9 +1,6 @@
 """Add the user(s) to the current chat
 Syntax: .edd <User(s)>"""
-
-from telethon import functions
-
-from userbot.utils import admin_cmd
+import asyncioimport iofrom asyncio import sleepfrom datetime import datetimefrom math import sqrtfrom telethon.errors import ( ChannelInvalidError, ChannelPrivateError, ChannelPublicGroupNaError, ChatAdminRequiredError, UserAdminInvalidError,)from telethon.tl import functionsfrom telethon.tl.functions.channels import GetFullChannelRequest, GetParticipantsRequestfrom telethon.tl.functions.messages import GetFullChatRequest, GetHistoryRequestfrom telethon.tl.types import ( ChannelParticipantAdmin, ChannelParticipantCreator, ChannelParticipantsAdmins, ChannelParticipantsBots, ChannelParticipantsKicked, ChatBannedRights, MessageActionChannelMigrateFrom, UserStatusEmpty, UserStatusLastMonth, UserStatusLastWeek, UserStatusOffline, UserStatusOnline, UserStatusRecently,)from telethon.utils import get_input_location from userbot import BOTLOG, BOTLOG_CHATID from LEGENDBOT.utils import admin_cmd, sudo_cmd, edit_or_replyfrom userbot.cmdhelp import CmdHelpfrom userbot.Config import Config
 
 
 @borg.on(admin_cmd(pattern="edd ?(.*)"))
