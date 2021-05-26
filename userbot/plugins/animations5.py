@@ -242,31 +242,74 @@ async def _(event):
         await asyncio.sleep(animation_interval)
         await event.edit(animation_chars[i % 5])
 
+CmdHelp("animations5").add_command(
 
-from userbot import CmdHelp
-CmdHelp.update(
-    {
-     "| | ᴀɴɪᴍᴀᴛɪᴏɴ5 | |": "`.fdance`\
-     \n**USAGE**: ` Animation plugin.`\
-     \n\n| ᴀɴɪᴍᴀᴛɪᴏɴ5 |: `.theart`\
-     \n**USAGE**: ` Animation plugin.`\
-     \n\n| ᴀɴɪᴍᴀᴛɪᴏɴ5 |: `.gsg`\
-     \n**USAGE**: `Animation plugin.`\
-     \n\n| ᴀɴɪᴍᴀᴛɪᴏɴ5 |: `.hart`\
-     \n**USAGE**: ` Animation plugin.`\
-     \n\n| ᴀɴɪᴍᴀᴛɪᴏɴ5 |: `.raped`\
-     \n**USAGE**:  ` Abusive Animation`\
-     \n\nanimaton1: `.dhab`\
-     \n\n**USAGE**: `Animation`\
-     \n\n| ᴀɴɪᴍᴀᴛɪᴏɴ5 |: `.herber`\
-     \n**USAGE**: ` Animation plugin.`\
-     \n\n| ᴀɴɪᴍᴀᴛɪᴏɴ5 |: `.monky`\
-     \n**USAGE**:  ` Monkey Animation`\
-     \n\nanimaton1: `.fnl`\
-     \n\n**USAGE**: `Animation`\
-     \n\nanimaton1: `.kein`\
-     \n\n**USAGE**: `Up Down Animation`\
-     \n\n| ᴀɴɪᴍᴀᴛɪᴏɴ5 |: `.dabba`\
-     \n**USAGE**: ` Animation plugin.`"
-    }
-)
+  'ind', None, '🇮🇳🇮🇳🇮🇳'
+
+).add_command(
+
+  'stup', None, 'Use and see'
+
+).add_command(
+
+  'bomb', None, 'Use and see'
+
+).add_command(
+
+  'cal', None, 'Use and see'
+
+).add_command(
+
+  'kil', None, 'Use and see'
+
+).add_command(
+
+  'wf', None, 'Use and see'
+
+).add_command(
+
+  'dng', None, 'Use and see'
+
+).add_command(
+
+  'hyno', None, 'Use and see'
+
+).add_command(
+
+  'cady', None, 'Use and see'
+
+).add_command(
+
+  'ganasta', None, 'Use and see'
+
+).add_command(
+
+  'bioof', None, 'Big off animation'
+
+).add_command(
+
+  'chan', None, 'Use and see'
+
+).add_command(
+
+  'you', None, 'Shitty Yooooo animations. Like who wants it.. duhh'
+
+).add_command(
+
+  'evl', None, 'Wanna show your evilness?'
+
+).add_command(
+
+  'ggg', None, 'Cool Good Morning Animation'
+
+).add_command(
+
+  'gt', None, 'Cool Good Night Animation'
+
+).add_command(
+
+  'force', None, 'Fapping✊'
+
+).add()
+
+
