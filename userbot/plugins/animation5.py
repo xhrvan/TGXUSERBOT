@@ -1,12 +1,16 @@
 import asyncio
+from collections import deque
 
-from userbot import ALIVE_NAME
-from userbot.utils import LEGEND_cmd
+from telethon.tl.functions.users import GetFullUserRequest
+
+from userbot import *
+from LEGENDBOT.utils import admin_cmd, edit_or_reply, sudo_cmd
+from userbot.cmdhelp import CmdHelp
 
 DEFAULTUSER = str(ALIVE_NAME) if ALIVE_NAME else "LEGEND"
 
 
-@borg.on(LEGEND_cmd(outgoing=True, pattern="bufferedd( (.*)|$)"))
+@borg.on(admin_cmd(outgoing=True, pattern="bufferedd( (.*)|$)"))
 async def _(event):
     if event.fwd_from:
         return
@@ -18,7 +22,7 @@ async def _(event):
         await event.edit(animation_chars[i % 4])
 
 
-@borg.on(LEGEND_cmd(outgoing=True, pattern="dabba( (.*)|$)"))
+@borg.on(admin_cmd(outgoing=True, pattern="dabba( (.*)|$)"))
 async def _(event):
     if event.fwd_from:
         return
@@ -30,7 +34,7 @@ async def _(event):
         await event.edit(animation_chars[i % 4])
 
 
-@borg.on(LEGEND_cmd(outgoing=True, pattern="kein( (.*)|$)"))
+@borg.on(admin_cmd(outgoing=True, pattern="kein( (.*)|$)"))
 async def _(event):
     if event.fwd_from:
         return
@@ -42,7 +46,7 @@ async def _(event):
         await event.edit(animation_chars[i % 4])
 
 
-@borg.on(LEGEND_cmd(outgoing=True, pattern="dhab( (.*)|$)"))
+@borg.on(admin_cmd(outgoing=True, pattern="dhab( (.*)|$)"))
 async def _(event):
     if event.fwd_from:
         return
@@ -54,7 +58,7 @@ async def _(event):
         await event.edit(animation_chars[i % 4])
 
 
-@borg.on(LEGEND_cmd(outgoing=True, pattern="hart( (.*)|$)"))
+@borg.on(admin_cmd(outgoing=True, pattern="hart( (.*)|$)"))
 async def _(event):
     if event.fwd_from:
         return
@@ -66,7 +70,7 @@ async def _(event):
         await event.edit(animation_chars[i % 4])
 
 
-@borg.on(LEGEND_cmd(outgoing=True, pattern="raped( (.*)|$)"))
+@borg.on(admin_cmd(outgoing=True, pattern="raped( (.*)|$)"))
 async def _(event):
     if event.fwd_from:
         return
@@ -90,7 +94,7 @@ async def _(event):
         await event.edit(animation_chars[i % 11])
 
 
-@borg.on(LEGEND_cmd(outgoing=True, pattern="fnl( (.*)|$)"))
+@borg.on(admin_cmd(outgoing=True, pattern="fnl( (.*)|$)"))
 async def _(event):
     if event.fwd_from:
         return
@@ -102,7 +106,7 @@ async def _(event):
         await event.edit(animation_chars[i % 6])
 
 
-@borg.on(LEGEND_cmd(outgoing=True, pattern="monkey( (.*)|$)"))
+@borg.on(admin_cmd(outgoing=True, pattern="monkey( (.*)|$)"))
 async def _(event):
     if event.fwd_from:
         return
@@ -114,7 +118,7 @@ async def _(event):
         await event.edit(animation_chars[i % 6])
 
 
-@borg.on(LEGEND_cmd(outgoing=True, pattern="herber( (.*)|$)"))
+@borg.on(admin_cmd(outgoing=True, pattern="herber( (.*)|$)"))
 async def _(event):
     if event.fwd_from:
         return
@@ -137,7 +141,7 @@ async def _(event):
         await event.edit(animation_chars[i % 11])
 
 
-@borg.on(LEGEND_cmd(outgoing=True, pattern="hand( (.*)|$)"))
+@borg.on(admin_cmd(outgoing=True, pattern="hand( (.*)|$)"))
 async def _(event):
     if event.fwd_from:
         return
@@ -163,7 +167,7 @@ async def _(event):
         await event.edit(animation_chars[i % 14])
 
 
-@borg.on(LEGEND_cmd(outgoing=True, pattern="gsg( (.*)|$)"))
+@borg.on(admin_cmd(outgoing=True, pattern="gsg( (.*)|$)"))
 async def _(event):
     if event.fwd_from:
         return
@@ -188,7 +192,7 @@ async def _(event):
         await event.edit(animation_chars[i % 13])
 
 
-@borg.on(LEGEND_cmd(outgoing=True, pattern="theart( (.*)|$)"))
+@borg.on(admin_cmd(outgoing=True, pattern="theart( (.*)|$)"))
 async def _(event):
     if event.fwd_from:
         return
@@ -219,7 +223,7 @@ async def _(event):
         await event.edit(animation_chars[i % 18])
 
 
-@borg.on(LEGEND_cmd(pattern=r"fdance"))
+@borg.on(admin_cmd(pattern=r"fdance"))
 async def _(event):
     if event.fwd_from:
         return
@@ -239,8 +243,8 @@ async def _(event):
         await event.edit(animation_chars[i % 5])
 
 
-from userbot import CMD_HELP
-CMD_HELP.update(
+from userbot import cmd_help
+cmd_help.update(
     {
      "| | ᴀɴɪᴍᴀᴛɪᴏɴ5 | |": "`.fdance`\
      \n**USAGE**: ` Animation plugin.`\
