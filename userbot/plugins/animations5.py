@@ -243,8 +243,8 @@ async def _(event):
         await event.edit(animation_chars[i % 5])
 
 
-from userbot import cmd_help
-cmd_help.update(
+from userbot import CmdHelp
+CmdHelp.update(
     {
      "| | ᴀɴɪᴍᴀᴛɪᴏɴ5 | |": "`.fdance`\
      \n**USAGE**: ` Animation plugin.`\
