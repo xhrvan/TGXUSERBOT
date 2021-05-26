@@ -248,19 +248,19 @@ CmdHelp("animations5").add_command(
 
 ).add_command(
 
-  'dubba', None, 'Use and see'
+  'dabba', None, 'Use and see'
 
 ).add_command(
 
-  'bomb', None, 'Use and see'
+  'kein', None, 'Use and see'
 
 ).add_command(
 
-  'cal', None, 'Use and see'
+  'dhab', None, 'Use and see'
 
 ).add_command(
 
-  'kil', None, 'Use and see'
+  'hart', None, 'Use and see'
 
 ).add_command(
 
