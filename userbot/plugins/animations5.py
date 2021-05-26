@@ -264,52 +264,36 @@ CmdHelp("animations5").add_command(
 
 ).add_command(
 
-  'wf', None, 'Use and see'
+  'raped', None, 'Use and see'
 
 ).add_command(
 
-  'dng', None, 'Use and see'
+  'fnl', None, 'Use and see'
 
 ).add_command(
 
-  'hyno', None, 'Use and see'
+  'monkey', None, 'Use and see'
 
 ).add_command(
 
-  'cady', None, 'Use and see'
+  'herber', None, 'Use and see'
 
 ).add_command(
 
-  'ganasta', None, 'Use and see'
+  'hand', None, 'Use and see'
 
 ).add_command(
 
-  'bioof', None, 'Big off animation'
+  'gsg', None, 'Big off animation'
 
 ).add_command(
 
-  'chan', None, 'Use and see'
+  'theart', None, 'Use and see'
 
 ).add_command(
 
-  'you', None, 'Shitty Yooooo animations. Like who wants it.. duhh'
+  'fdance', None, 'Shitty Yooooo animations. Like who wants it.. duhh'
 
-).add_command(
-
-  'evl', None, 'Wanna show your evilness?'
-
-).add_command(
-
-  'ggg', None, 'Cool Good Morning Animation'
-
-).add_command(
-
-  'gt', None, 'Cool Good Night Animation'
-
-).add_command(
-
-  'force', None, 'Fapping✊'
-
-).add()
+').add()
 
 
