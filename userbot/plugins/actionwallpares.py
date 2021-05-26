@@ -46,7 +46,6 @@ async def animepp():
 
     urllib.request.urlretrieve(fy, "donottouch.jpg")
 
-@bot.on(admin_cmd(pattern="fire(|n) (.*)", outgoing=True))
 @bot.on(sudo_cmd(pattern="fire(|n) (.*)", allow_sudo=True))
 async def main(event):
 
