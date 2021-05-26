@@ -7,7 +7,8 @@ from userbot import *
 from LEGENDBOT.utils import admin_cmd, edit_or_reply, sudo_cmd
 from userbot.cmdhelp import CmdHelp
 
-DEFAULTUSER = str(ALIVE_NAME) if ALIVE_NAME else "LEGEND"
+DEFAULTUSER = str(ALIVE_NAME) if ALIVE_NAME else "LEGENDBOT"
+
 @borg.on(admin_cmd(outgoing=True, pattern="bigoof( (.*)|$)"))
 async def _(event):
     if event.fwd_from:
@@ -251,6 +252,10 @@ async def payf(e):
     )
     await e.edit(pay)
 
+
+    for i in animation_ttl:
+        await asyncio.sleep(animation_interval)
+        await event.edit(animation_chars[i % 5])
 
 CmdHelp("animations5").add_command(
 
