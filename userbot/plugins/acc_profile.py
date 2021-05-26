@@ -17,7 +17,6 @@ from LEGENDBOT.utils import admin_cmd
 from userbot.cmdhelp import CmdHelp
 
 @borg.on(admin_cmd(pattern="pbio (.*)"))  # pylint:disable=E0602
-@bot.on(sudo_cmd(pattern="compress ?(.*)", allow_sudo=True))
 async def _(event):
     if event.fwd_from:
         return
