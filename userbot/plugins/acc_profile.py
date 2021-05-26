@@ -1,4 +1,3 @@
-
 """Profile Updation Commands
 .pbio <Bio>
 .pname <Name>
@@ -25,7 +24,8 @@ async def _(event):
 
 @borg.on(admin_cmd(outgoing=True, pattern="pname( (.*)|$)"))  # pylint:disable=E0602,W0703
 async def _(event):
-    if event.fwd_froed    return
+    if event.fwd_from:
+        return
     names = event.pattern_match.group(1)
     first_name = names
     last_name = ""
@@ -80,3 +80,4 @@ CmdHelp("acc_profile").add_command(
 ).add_command(
         'ppic', '<reply to image>', 'use and see'
 ).add()
+
