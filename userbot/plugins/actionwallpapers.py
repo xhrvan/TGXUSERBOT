@@ -45,9 +45,8 @@ async def animepp():
         )
 
     urllib.request.urlretrieve(fy, "donottouch.jpg")
-
-
-@borg.on(admin_cmd(pattern="fire ?(.*)"))
+@borg.on(admin_cmd(pattern="fire(?: |$)(.*)"))
+@bot.on(sudo_cmd(pattern="fire(?: |$)(.*)", allow_sudo=True))
 async def main(event):
 
     await event.edit(
@@ -68,3 +67,4 @@ async def main(event):
 CmdHelp("actionwallpaper").add_command(
        'fire', '<reply to image>', 'use and see'
 ).add()
+
