@@ -244,11 +244,11 @@ async def _(event):
 
 CmdHelp("animations5").add_command(
 
-  'ind', None, '🇮🇳🇮🇳🇮🇳'
+  'bufferedd', None, 'use and see'
 
 ).add_command(
 
-  'stup', None, 'Use and see'
+  'dubba', None, 'Use and see'
 
 ).add_command(
 
