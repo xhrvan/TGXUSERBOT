@@ -8,21 +8,21 @@ from telethon.tl import functions
 from userbot.cmdhelp import CmdHelp
 
 
-@borg.on(admin_cmd(outgoing=True, pattern="pbio( (.*)|$)"))  # pylint:disable=E0602
+@bot.on(admin_cmd(pattern="pbio$"))
 async def _(event):
     if event.fwd_from:
         return
     bio = event.pattern_match.group(1)
     try:
-        await borg(functions.account.UpdateProfileRequest(  # pylint:disable=E0602
+        await borg(functions.account.UpdateProfileRequest( 
             about=bio
         ))
         await event.edit("Succesfully changed my profile bio")
-    except Exception as e:  # pylint:disable=C0103,W0703
+    except Exception as e:  
         await event.edit(str(e))
 
-
-@borg.on(admin_cmd(outgoing=True, pattern="pname( (.*)|$)"))  # pylint:disable=E0602,W0703
+ 
+@bot.on(admin_cmd(pattern="pname$"))
 async def _(event):
     if event.fwd_from:
         return
@@ -32,47 +32,47 @@ async def _(event):
     if  "\\n" in names:
         first_name, last_name = names.split("\\n", 1)
     try:
-        await borg(functions.account.UpdateProfileRequest(  # pylint:disable=E0602
+        await borg(functions.account.UpdateProfileRequest( 
             first_name=first_name,
             last_name=last_name
         ))
         await event.edit("My name was changed successfully")
-    except Exception as e:  # pylint:disable=C0103,W0703
+    except Exception as e:  
         await event.edit(str(e))
 
 
-@borg.on(admin_cmd(outgoing=True, pattern="ppic( (.*)|$)"))  # pylint:disable=E0602
+@bot.on(admin_cmd(pattern="ppic$"))
 async def _(event):
     if event.fwd_from:
         return
     reply_message = await event.get_reply_message()
     await event.edit("Downloading Profile Picture to my local ...")
-    if not os.path.isdir(Config.TMP_DOWNLOAD_DIRECTORY):  # pylint:disable=E0602
-        os.makedirs(Config.TMP_DOWNLOAD_DIRECTORY)  # pylint:disable=E0602
+    if not os.path.isdir(Config.TMP_DOWNLOAD_DIRECTORY):  
+        os.makedirs(Config.TMP_DOWNLOAD_DIRECTORY)  
     photo = None
     try:
-        photo = await borg.download_media(  # pylint:disable=E0602
+        photo = await borg.download_media( 
             reply_message,
-            Config.TMP_DOWNLOAD_DIRECTORY  # pylint:disable=E0602
+            Config.TMP_DOWNLOAD_DIRECTORY  
         )
-    except Exception as e:  # pylint:disable=C0103,W0703
+    except Exception as e: 
         await event.edit(str(e))
     else:
         if photo:
             await event.edit("now, Uploading to Cloud ...")
-            file = await borg.upload_file(photo)  # pylint:disable=E0602
+            file = await borg.upload_file(photo) 
             try:
-                await borg(functions.photos.UploadProfilePhotoRequest(  # pylint:disable=E0602
+                await borg(functions.photos.UploadProfilePhotoRequest( 
                     file
                 ))
-            except Exception as e:  # pylint:disable=C0103,W0703
+            except Exception as e:  
                 await event.edit(str(e))
             else:
                 await event.edit("My profile picture was succesfully changed")
     try:
         os.remove(photo)
-    except Exception as e:  # pylint:disable=C0103,W0703
-        logger.warn(str(e))  # pylint:disable=E0602
+    except Exception as e: 
+        logger.warn(str(e)) 
 CmdHelp("acc_profile").add_command(
        'pbio', '<reply to image>', 'use and see'
 ).add_command(
