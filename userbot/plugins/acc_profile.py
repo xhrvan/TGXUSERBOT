@@ -1,3 +1,4 @@
+
 """Profile Updation Commands
 .pbio <Bio>
 .pname <Name>
@@ -8,7 +9,7 @@ from telethon.tl import functions
 from userbot.cmdhelp import CmdHelp
 
 
-@borg.on(admin_cmd(pattern="pbio (.*)"))  # pylint:disable=E0602
+@borg.on(admin_cmd(outgoing=True, pattern="pbio( (.*)|$)"))  # pylint:disable=E0602
 async def _(event):
     if event.fwd_from:
         return
@@ -22,10 +23,9 @@ async def _(event):
         await event.edit(str(e))
 
 
-@borg.on(admin_cmd(pattern="pname ((.|\n)*)"))  # pylint:disable=E0602,W0703
+@borg.on(admin_cmd(outgoing=True, pattern="pname( (.*)|$)"))  # pylint:disable=E0602,W0703
 async def _(event):
-    if event.fwd_from:
-        return
+    if event.fwd_froed    return
     names = event.pattern_match.group(1)
     first_name = names
     last_name = ""
@@ -41,7 +41,7 @@ async def _(event):
         await event.edit(str(e))
 
 
-@borg.on(admin_cmd(pattern="ppic"))  # pylint:disable=E0602
+@borg.on(admin_cmd(outgoing=True, pattern="ppic( (.*)|$)"))  # pylint:disable=E0602
 async def _(event):
     if event.fwd_from:
         return
