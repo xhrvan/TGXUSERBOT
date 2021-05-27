@@ -8,7 +8,7 @@ from telethon.tl.types import Channel, Chat, User
 
 #-------------------------------------------------------------------------------
 
-DEFAULTUSER = str(ALIVE_NAME) if ALIVE_NAME else "LEGEND User"
+DEFAULTUSER = str(ALIVE_NAME) if ALIVE_NAME else "LEGEND"
 
 ludosudo = Config.SUDO_USERS
 
@@ -31,7 +31,7 @@ pm_caption += f"**┣★ Telethon : `{version.__version__}`**\n"
 pm_caption += f"**┣★ LEGENDBOT : {LEGENDversion}**\n"
 pm_caption += f"**┣★ Sudo       : `{sudou}`**\n"
 pm_caption += f"**┣★ Owner   : [LEGEND](https://t.me/Legend_Mr_Hacker)**\n"
-pm_caption += f"**┣★ Creater    : [LEGEND Here](https://t.me/Legend_Mr_Hacker)**\n"
+pm_caption += f"**┣★ Creater    : [LEGEND](https://t.me/Legend_Mr_Hacker)**\n"
 pm_caption += f"**┗━━━━━━━━━━━━━┛**\n"
 
 pm_caption += "    [✨REPO✨](https://github.com/LEGEND-OS/LEGENDBOT) 🔹 [📜License📜](https://github.com/LEGEND-OS/LEGENDBOT/blob/master/LICENSE)"
@@ -54,5 +54,5 @@ CmdHelp("alive").add_command(
 ).add_command(
   'legend', None, 'Check weather the bot is alive or not. In your custom Alive Pic and Alive Msg'
 ).add_info(
-  'Zinda Hai Kya Bro?'
+  'Are u alive?'
 ).add()
