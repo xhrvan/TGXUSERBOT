@@ -185,7 +185,7 @@ async def _(event):
         await event.edit(animation_chars[i % 13])
 
 @borg.on(admin_cmd(outgoing=True, pattern="ctext( (.*)|$)"))
-async def payf _(event):
+async def payf(event):
     paytext = event.pattern_match.group(1)
     pay = "{}\n{}\n{}\n{}\n{}\n{}\n{}\n{}\n{}\n{}\n{}\n{}".format(
         paytext * 8,
@@ -205,7 +205,7 @@ async def payf _(event):
 
 @borg.on(admin_cmd(outgoing=True, pattern="ftext( (.*)|$)"))
 
-async def payf _(event):
+async def payf(event):
     paytext = event.pattern_match.group(1)
     pay = "{}\n{}\n{}\n{}\n{}\n{}\n{}\n{}\n{}\n{}\n{}\n{}".format(
         paytext * 8,
@@ -236,7 +236,7 @@ async def _(event):
 
 @borg.on(admin_cmd(outgoing=True, pattern="f( (.*)|$)"))
 
-async def payf _(e):
+async def payf(e):
     paytext = e.pattern_match.group(1)
     pay = "{}\n{}\n{}\n{}\n{}\n{}\n{}".format(
         paytext * 5,
@@ -255,8 +255,7 @@ async def payf _(e):
         await event.edit(animation_chars[i % 5])
 
 CmdHelp("animations5").add_command(
-
-  'bigoof', None, 'use and see'
+        'bigoof', None, 'use and see'
 
 ).add_command(
 
