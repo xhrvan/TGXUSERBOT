@@ -14,7 +14,7 @@ async def reply_id(event):
     return reply_to_id
 
 
-DEFAULTUSER = ALIVE_NAME or "LEGEND User"
+DEFAULTUSER = ALIVE_NAME or "LEGEND"
 LEGEND_IMG = Config.ALIVE_PIC
 CUSTOM_ALIVE_TEXT = Config.ALIVE_MSG or "Legend's Choice LEGENDBOT"
 
