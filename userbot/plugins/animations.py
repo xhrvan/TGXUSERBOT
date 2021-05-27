@@ -1,4 +1,4 @@
-)
+
     await event.delete()
 
 
