@@ -39,8 +39,8 @@ async def _(event):
         await event.edit(animation_chars[i % 14])
 
 
-@bot.on(admin_cmd(pattern=f"bombs$", outgoing=True))
-@bot.on(sudo_cmd(pattern=f"bombs", allow_sudo=True))
+@bot.on(admin_cmd(pattern=f"bomb$", outgoing=True))
+@bot.on(sudo_cmd(pattern=f"bomb", allow_sudo=True))
 async def _(event):
     if event.fwd_from:
         return
@@ -66,8 +66,8 @@ async def _(event):
     await asyncio.sleep(2)
 
 
-@bot.on(admin_cmd(pattern=r"call$"))
-@bot.on(sudo_cmd(pattern=r"call$", allow_sudo=True))
+@bot.on(admin_cmd(pattern=r"calls$"))
+@bot.on(sudo_cmd(pattern=r"calls$", allow_sudo=True))
 async def _(event):
     if event.fwd_from:
         return
