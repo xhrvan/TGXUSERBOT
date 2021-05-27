@@ -147,7 +147,7 @@ async def _(event):
 
 
 @bot.on(admin_cmd(pattern=f"hypno$", outgoing=True))
-event = await edit_or_reply(event, "wtf")
+
 async def _(event):
     if event.fwd_from:
         return
