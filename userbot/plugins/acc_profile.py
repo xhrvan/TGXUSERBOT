@@ -16,7 +16,8 @@ from userbot import CMD_HELP
 from LEGENDBOT.utils import admin_cmd
 from userbot.cmdhelp import CmdHelp
 
-@borg.on(admin_cmd(pattern="pbio (.*)"))  # pylint:disable=E0602
+  
+@borg.on(admin_cmd(pattern="pbio"))   # pylint:disable=E0602
 async def _(event):
     if event.fwd_from:
         return
@@ -30,7 +31,8 @@ async def _(event):
         await event.edit(str(e))
 
 
-@borg.on(admin_cmd(pattern="pname ((.|\n)*)"))  # pylint:disable=E0602,W0703
+  
+@borg.on(admin_cmd(pattern="pname"))    # pylint:disable=E0602,W0703
 async def _(event):
     if event.fwd_from:
         return
@@ -88,9 +90,9 @@ CmdHelp("acc_profile").add_command(
        'pbio', None, 'Start Wallpapers on DP'
 ).add_command(
 
-  'pname', None, 'Use and see'
+        'pname', None, 'Use and see'
 
 ).add_command(
 
-  'ppic', None, 'Use and see'
+         'ppic', None, 'Use and see'
 ).add()
