@@ -33,7 +33,6 @@ async def _(event):
         await event.edit(animation_chars[i % 7])
 
 @borg.on(admin_cmd(outgoing=True, pattern="g1( (.*)|$)"))
-
 async def payf(event):
     paytext = event.pattern_match.group(1)
     pay = "{}\n{}\n{}\n{}\n{}\n{}\n{}\n{}\n{}\n{}\n{}\n{}\n{}\n{}\n{}\n{}\n{}\n{}\n{}\n{}\n{}\n{}\n{}\n{}\n{}\n{}\n{}\n{}\n{}\n{}\n{}\n{}\n{}\n{}\n{}\n{}\n{}\n{}\n{}\n{}\n{}\n{}\n{}\n{}\n{}\n{}\n{}\n{}\n{}\n{}\n{}\n{}\n{}\n{}\n{}\n{}\n{}\n{}\n{}\n{}\n{}\n{}\n{}\n{}\n{}\n{}\n{}\n{}\n{}\n{}\n{}\n{}\n{}\n{}\n{}\n{}\n{}\n{}\n{}\n{}\n{}\n{}\n{}\n{}\n{}\n{}\n{}\n{}\n{}\n{}\n{}\n{}\n{}\n{}\n{}\n{}\n{}\n{}\n{}\n{}\n{}\n{}\n{}\n{}\n{}\n{}\n{}\n{}\n{}\n{}\n{}\n{}\n{}\n{}\n{}\n{}\n{}\n{}\n{}\n{}".format(
@@ -161,7 +160,6 @@ async def payf(event):
     await event.edit(pay)
 
 @borg.on(admin_cmd(outgoing=True, pattern="uff( (.*)|$)"))
-
 async def _(event):
     if event.fwd_from:
         return
@@ -187,8 +185,7 @@ async def _(event):
         await event.edit(animation_chars[i % 13])
 
 @borg.on(admin_cmd(outgoing=True, pattern="ctext( (.*)|$)"))
-
-async def payf(event):
+async defpayf(event):
     paytext = event.pattern_match.group(1)
     pay = "{}\n{}\n{}\n{}\n{}\n{}\n{}\n{}\n{}\n{}\n{}\n{}".format(
         paytext * 8,
@@ -208,7 +205,7 @@ async def payf(event):
 
 @borg.on(admin_cmd(outgoing=True, pattern="ftext( (.*)|$)"))
 
-async def payf(event):
+async defpayf(event):
     paytext = event.pattern_match.group(1)
     pay = "{}\n{}\n{}\n{}\n{}\n{}\n{}\n{}\n{}\n{}\n{}\n{}".format(
         paytext * 8,
@@ -239,7 +236,7 @@ async def _(event):
 
 @borg.on(admin_cmd(outgoing=True, pattern="f( (.*)|$)"))
 
-async def payf(e):
+async defpayf(e):
     paytext = e.pattern_match.group(1)
     pay = "{}\n{}\n{}\n{}\n{}\n{}\n{}".format(
         paytext * 5,
