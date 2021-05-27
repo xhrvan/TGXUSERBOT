@@ -10,7 +10,7 @@ from userbot.cmdhelp import CmdHelp
 DEFAULTUSER = str(ALIVE_NAME) if ALIVE_NAME else "LEGEND"
 
 @bot.on(admin_cmd(pattern=f"stupid$"))
-@bot.on(sudo_cmd)(pattern=f"stupid", allow_sudo=true)
+
 async def _(event):
     if event.fwd_from:
         return
@@ -40,7 +40,7 @@ async def _(event):
 
 
 @bot.on(admin_cmd(pattern=f"bomb$", outgoing=True))
-@bot.on(sudo_cmd(pattern=f"bomb", allow_sudo=True))
+
 async def _(event):
     if event.fwd_from:
         return
@@ -67,7 +67,7 @@ async def _(event):
 
 
 @bot.on(admin_cmd(pattern=r"calls$"))
-@bot.on(sudo_cmd(pattern=r"calls$", allow_sudo=True))
+
 async def _(event):
     if event.fwd_from:
         return
@@ -100,7 +100,7 @@ async def _(event):
 
 
 @bot.on(admin_cmd(pattern="wtf$"))
-@bot.on(sudo_cmd(pattern="wtf$", alloww_sudo=True))
+
 async def _(event):
     if event.fwd_from:
         return
@@ -121,7 +121,7 @@ async def _(event):
 
 
 @bot.on(admin_cmd(pattern="ding$"))
-@bot.on(sudo_cmd(pattern="ding$", allow_sudo=True))
+
 async def _(event):
     animation_interval = 0.3
     animation_ttl = range(0, 30)
@@ -177,7 +177,7 @@ async def _(event):
 
 
 @bot.on(admin_cmd(pattern="gangasta$"))
-@bot.on(sudo_cmd(pattern="gangasta$", allow_sudo=True))
+
 async def _(event):
     await event.edit("EVERyBOdy")
     await asyncio.sleep(0.3)
