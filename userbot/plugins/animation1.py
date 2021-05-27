@@ -1,7 +1,7 @@
 import asyncio
 from collections import deque
 
-From telethon.tl.functions.users import GetFullUserRequest
+
 
 from userbot import *
 from LEGENDBOT.utils import admin_cmd, edit_or_reply, sudo_cmd
