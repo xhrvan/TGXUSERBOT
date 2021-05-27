@@ -1,5 +1,4 @@
 import asyncio
-from collections import GetFullUserRequest
 
 from telethon.tl.functions.users import GetFullUserRequest
 
