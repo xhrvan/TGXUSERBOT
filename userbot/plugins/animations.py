@@ -384,7 +384,7 @@ async def _(event):
     animation_interval = 0.3
     animation_ttl = range(0, 20)
     event = await edit_or_reply(event, "◨")
-    animation_chars = ["◧boxs..., "◨", "◧", "◨", "‎"]
+    animation_chars = ["◧", "◨", "◧", "◨", ""]
     for i in animation_ttl:
         await asyncio.sleep(animation_interval)
         await event.edit(animation_chars[i % 4])
