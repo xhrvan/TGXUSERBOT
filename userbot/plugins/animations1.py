@@ -25,23 +25,23 @@ async def _(event):
         await asyncio.sleep(animation_interval)
         await event.edit(animation_chars[i % 18])
 
-@bot.on(admin_cmd(pattern="^Yo$"))
-@bot.on(sudo_cmd(pattern="^Yo$", allow_sudo=True))
+@bot.on(admin_cmd(pattern=f"Yo$"))
+@bot.on(sudo_cmd(pattern=f"Yo$", allow_sudo=True))
 async def Ooo(e):
     if e.fwd_from:
         return
     t = "yo"
-    for j in range(15):
+    for j in range(0, 15):
         t = t[:-1] + "oo"
         await e.edit(t)
         
-@bot.on(admin_cmd(pattern="stupid$"))
-@bot.on(sudo_cmd(pattern="stupid$", allow_sudo=True))
+@bot.on(admin_cmd(pattern=f"stupid$"))
+@bot.on(sudo_cmd(pattern=f"stupid$", allow_sudo=True))
 async def _(event):
     if event.fwd_from:
         return
     animation_interval = 1
-    animation_ttl = range(14)
+    animation_ttl = range(0, 14)
     event = await edit_or_reply(event, "brain")
     animation_chars = [
         "YOᑌᖇ ᗷᖇᗩIᑎ ➡️ 🧠\n\n🧠         <(^_^ <)🗑",
