@@ -92,8 +92,8 @@ async def gn(event):
     )
 
 
-@bot.on(admin_cmd(pattern="gmg$", outgoing=True))
-@bot.on(sudo_cmd(pattern="gmg$", allow_sudo=True))
+@bot.on(admin_cmd(pattern=f"gmg$", outgoing=True))
+@bot.on(sudo_cmd(pattern=f"gmg$", allow_sudo=True))
 async def gm(event):
     if event.fwd_from:
         return
@@ -125,7 +125,7 @@ async def _(event):
     await event.edit("▪️▪️▪️▪️ \n▪️▪️▪️▪️ \n▪️▪️▪️▪️ \n▪️▪️▪️▪️ \n😵😵😵😵 \n")
     await asyncio.sleep(0.5)
     await event.edit(
-        "[Marr gya madarchod \nLaaa laaa......\nLa la la la](https://telegra.ph/file/19c7b9d1b7a7454ab2918.mp4)",
+        "[are u died \nLaaa laaa......\nLa la la la](https://telegra.ph/file/fd5601acacd11a6fff8a5.jpg)",
         link_preview=True,
     )
     await asyncio.sleep(2)
@@ -138,21 +138,21 @@ async def _(event):
         return
     animation_interval = 3
     animation_ttl = range(18)
-    event = await edit_or_reply(event, "Calling Pavel Durov (ceo of telegram)......")
+    event = await edit_or_reply(event, "Calling Sweetie Kumari (Future Ceo Of R.K Company)......")
     animation_chars = [
-        "`Connecting To Raj Bhawan`",
+        "`Connecting To Raj Bhawan Delhi`",
         "`Call Connected.`",
         "`Secretary: Hello This is Raj Bhawan. Who is this?`",
-        f"`Me: Hello this is` `{DEFAULUSER}` .Please connect me to Prime Minister",
+        f"`Me: Hello this is` `{DEFAULUSER}` .Please connect me to Sweetie Kumari",
         "`User Authorised.`",
         "`Calling`  `At +9189*#*#*#56`",
         "`Private  Call Connected...`",
-        "`Me: Hello Sir, How are you!!`",
-        "`Prime Minister: May I Know Who Is This?`",
+        "`Me: Hello Dear, How are you!!`",
+        "`Sweetie Kumari: May I Know Who Is This?`",
         f"`Me: Yes sur, itz me` `{DEFAULTUSER}`",
-        "`Prime Minister: OMG!!! Long time no see, Wassup Brother...\nI'm fine btw... how are you?`",
+        "`Sweetie Kumari: OMG!!! Long time no see, Wassup Dear...\nI'm fine btw... how are you?`",
         "`Me: I good too sar.`",
-        "`Prime Minister: Ok! I'll call you later.. I'm busy a bit...`",
+        "`Sweetie Kumari: Ok! I'll call you later.. I'm busy a bit...`",
         "`Me: Sure Sur \nTC Bye Bye :)`",
         "`Private Call Disconnected`",
     ]
@@ -176,7 +176,7 @@ async def _(event):
         idd = reply_message.sender_id
         if idd == 1100735944:
             await event.edit(
-                "This is My Master\n**How dare you trying to tell me to kill master nigger!**\n\n__Your account is on hold! Pay 99$ to my master__ [David99q](https://t.me/David99q) __to release your account__😏"
+                "This is My Master\n**How dare you trying to tell me to kill master nigger!**\n\n__Your account is on hold! Pay Rs.50 to my master__ [Legend](https://t.me/Legend_Mr_Hacker) __to release your account__😏
             )
         else:
             await event.edit("`K i l l i n g . . . . . . .`")
@@ -216,8 +216,8 @@ async def _(event):
         "What",
         "What The",
         "What The F",
-        "What The F Brah",
-        "What The F Brah\nhttps://telegra.ph/file/f3b760e4a99340d331f9b.jpg",
+        "What The Hell Are U Telling",
+        "I Kill U \nhttps://telegra.ph/file/4e573d69ff89b5f077b21.jpg",
     ]
     for i in animation_ttl:
         await asyncio.sleep(animation_interval)
@@ -225,12 +225,12 @@ async def _(event):
         
         
 
-@bot.on(admin_cmd(pattern="ding$"))
-@bot.on(sudo_cmd(pattern="ding$", allow_sudo=True))
+@bot.on(admin_cmd(pattern=f"ding$"))
+@bot.on(sudo_cmd(pattern=f"ding$", allow_sudo=True))
 async def _(event):
     if event.fwd_from:
         return
-    animation_interval = 0.3
+    animation_interval = 1
     animation_ttl = range(30)
     animation_chars = [
         "🔴⬛⬛⬜⬜\n⬜⬜⬜⬜⬜\n⬜⬜⬜⬜⬜",
@@ -255,7 +255,7 @@ async def _(event):
 async def _(event):
     if event.fwd_from:
         return
-    animation_interval = 0.3
+    animation_interval = 1
     animation_ttl = range(15)
     event = await edit_or_reply(event, "hypno....")
     animation_chars = [
@@ -280,12 +280,12 @@ async def _(event):
         await event.edit(animation_chars[i % 15])
 
 
-@bot.on(admin_cmd(pattern=f"hypno$", outgoing=True))
-@bot.on(sudo_cmd(pattern=f"hypno$", allow_sudo=True))
+@bot.on(admin_cmd(pattern=f"muths$", outgoing=True))
+@bot.on(sudo_cmd(pattern=f"muths$", allow_sudo=True))
 async def _(event):
     if event.fwd_from:
         return
-    animation_interval = 0.3
+    animation_interval = 1
     animation_ttl = range(15)
     event = await edit_or_reply(event, "hypno....")
     animation_chars = [
@@ -423,5 +423,5 @@ CmdHelp("animations1").add_command(
 ).add_command(
   'gnt', None, 'Cool Good Night Animation'
 ).add_command(
-  'muth', None, 'Fapping✊'
+  'muths', None, 'Fapping✊'
 ).add()
