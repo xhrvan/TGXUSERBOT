@@ -105,9 +105,9 @@ async def _(event):
 async def _(event):
     if event.fwd_from:
         return
-    animation_interval = 0.5
+    animation_interval = 1
     animation_ttl = range(0, 16)
-    event = await edit_or_reply(event, "Hooman!!")
+    event = await edit_or_reply(event, "Tarzan The Man!!")
     animation_chars = [
         "⬛⬛⬛⬛⬛⬛⬛\n⬛⬛⬛⬛⬛⬛⬛\n⬛⬛⬛⬛⬛⬛⬛\n⬛⬛⬛⬛⬛⬛⬛\n⬛⬛⬛⬛⬛⬛⬛\n⬜⬜⬜⬜⬜⬜⬜\n⬜⬜⬜⬜⬜⬜⬜\n🔲🔲🔲🔲🔲🔲🔲",
         "⬛⬛⬛⬛⬛⬛⬛\n⬛⬛⬛⬛⬛⬛⬛\n⬛⬛⬛⬛⬛⬛⬛\n⬛⬛⬛⬛⬛⬛⬛\n⬛⬛⬛⬛⬛⬛🚗\n⬜⬜⬜⬜⬜⬜⬜\n⬜⬜⬜⬜⬜⬜⬜\n🔲🔲🔲🔲🔲🔲🔲",
@@ -181,7 +181,7 @@ async def _(event):
         return
     animation_interval = 1
     animation_ttl = range(0, 30)
-    event = await edit_or_reply(event, "Giving this Men a Vimrus!!")
+    event = await edit_or_reply(event, "Giving this sir/miss Virus!!")
     animation_chars = [
         "🔴🔵🌕♓♎⛎🔴🔵🌕♓♎⛎🔴🔵🌕♓♎⛎🔴🔵🌕♓♎⛎🔴🔵🌕♓♎⛎\n🔴🔵🌕♓♎⛎🔴🔵🌕♓♎⛎🔴🔵🌕♓♎⛎🔴🔵🌕♓♎⛎🔴🔵🌕♓♎⛎\n🔴🔵🌕♓♎⛎🔴🔵🌕♓♎⛎🔴🔵🌕♓♎⛎🔴🔵🌕♓♎⛎🔴🔵🌕♓♎⛎\n🔴🔵🌕♓♎⛎🔴🔵🌕♓♎⛎🔴🔵🌕♓♎⛎🔴🔵🌕♓♎⛎🔴🔵🌕♓♎⛎\n🔴🔵🌕♓♎⛎🔴🔵🌕♓♎⛎🔴🔵🌕♓♎⛎🔴🔵🌕♓♎⛎🔴🔵🌕♓♎⛎",
         "◼️🔴🔵🌕♓♎⛎🔴🔵🌕♓♎⛎🔴🔵🌕♓♎⛎🔴🔵🌕♓♎⛎\n🔴🔵🌕♓♎⛎🔴🔵🌕♓♎⛎🔴🔵🌕♓♎⛎🔴🔵🌕♓♎⛎🔴🔵🌕♓♎⛎\n🔴🔵🌕♓♎⛎🔴🔵🌕♓♎⛎🔴🔵🌕♓♎⛎🔴🔵🌕♓♎⛎🔴🔵🌕♓♎⛎\n🔴🔵🌕♓♎⛎🔴🔵🌕♓♎⛎🔴🔵🌕♓♎⛎🔴🔵🌕♓♎⛎🔴🔵🌕♓♎⛎\n🔴🔵🌕♓♎⛎🔴🔵🌕♓♎⛎🔴🔵🌕♓♎⛎🔴🔵🌕♓♎⛎🔴🔵🌕♓♎⛎",
@@ -723,7 +723,7 @@ async def _(event):
 async def _(event):
     if event.fwd_from:
         return
-    animation_interval = 0.1
+    animation_interval = 3
     animation_ttl = range(0, 11)
     event = await edit_or_reply(event, "SQH")
     animation_chars = [
@@ -751,7 +751,7 @@ async def _(event):
         return
     animation_interval = 3
     animation_ttl = range(0, 11)
-    event = await edit_or_reply(event, "Injecting Vimrus")
+    event = await edit_or_reply(event, "Injecting Virus")
     animation_chars = [
         "`Downloading File..`",
         "`File Downloaded....`",
@@ -775,9 +775,9 @@ async def _(event):
 async def _(event):
     if event.fwd_from:
         return
-    animation_interval = 0.5
+    animation_interval = 1
     animation_ttl = range(0, 11)
-    event = await edit_or_reply(event, "mE hAb MaC Os")
+    event = await edit_or_reply(event, "Now My Phone Become Mac(Apple Laptop)")
     animation_chars = [
         "`Connecting To Hackintosh...`",
         "`Initiating Hackintosh Login.`",
@@ -801,9 +801,9 @@ async def _(event):
 async def _(event):
     if event.fwd_from:
         return
-    animation_interval = 0.5
+    animation_interval = 1
     animation_ttl = range(0, 11)
-    event = await edit_or_reply(event, "mE hAb WiNdOwS")
+    event = await edit_or_reply(event, "Now My Phone Become Windows")
     animation_chars = [
         "`Connecting To Windows 10...`",
         "`Initiating Windows 10 Login.`",
@@ -829,7 +829,7 @@ async def _(event):
         return
     animation_interval = 0.5
     animation_ttl = range(0, 11)
-    event = await edit_or_reply(event, "mE hAb LiNuX")
+    event = await edit_or_reply(event, "Now My Phone Become Linux")
     animation_chars = [
         "`Connecting To Linux...`",
         "`Initiating Linux Login.`",
