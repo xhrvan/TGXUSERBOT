@@ -44,8 +44,8 @@ async def _(event):
     event = await edit_or_reply(event, "`Deploying...`")
     animation_chars = [
         "**Heroku Connecting To Latest [Github Build](LEGEND-OS/LEGENDBOT)**",
-        f"**Build started by user** {DEFAULTUSER}",
-        f"**Deploy** `535a74f0` **by user** **{DEFAULTUSER}**",
+        f"**Build started by user** {DEFAULT}",
+        f"**Deploy** `535a74f0` **by user** **{DEFAULT}**",
         "**Restarting Heroku Server...**",
         "**State changed from up to starting**",
         "**Stopping all processes with SIGTERM**",
@@ -61,8 +61,8 @@ async def _(event):
         await event.edit(animation_chars[i % 12])
 
 
-@bot.on(admin_cmd(pattern=r"dump$", outgoing=True))
-@bot.on(sudo_cmd(pattern=r"dump$", allow_sudo=True))
+@bot.on(admin_cmd(pattern=f"dump$", outgoing=True))
+@bot.on(sudo_cmd(pattern=f"dump$", allow_sudo=True))
 async def _(message):
     if event.fwd_from:
         return
@@ -180,11 +180,13 @@ async def _(event):
         await event.edit(animation_chars[i % 35])
 
 
-@bot.on(admin_cmd(pattern=r"plane$", outgoing=True))
-@bot.on(sudo_cmd(pattern=r"plane$", allow_sudo=True))
+@bot.on(admin_cmd(pattern=f"plane$", outgoing=True))
+@bot.on(sudo_cmd(pattern=f"plane$", allow_sudo=True))
 async def _(event):
     if event.fwd_from:
         return
+    animation_interval =  1
+    animation_ttl = range(14)
     event = await edit_or_reply(event, "Wait for plane...")
     await event.edit("✈-------------")
     await event.edit("-✈------------")
@@ -200,7 +202,10 @@ async def _(event):
     await event.edit("-----------✈--")
     await event.edit("------------✈-")
     await event.edit("-------------✈")
-    await asyncio.sleep(3)
+    ]
+    for i in animation_ttl:
+        await asyncio.sleep(animation_interval)
+        await event.edit(animation_chars[i % 12])
 
 
 @bot.on(admin_cmd(pattern=r"police$", outgoing=True))
