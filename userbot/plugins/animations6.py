@@ -1,15 +1,11 @@
 import asyncio
 from collections import deque
 
-from telethon.tl.functions.users import GetFullUserRequest
-
 from userbot import *
 from LEGENDBOT.utils import admin_cmd, edit_or_reply, sudo_cmd
 from userbot.cmdhelp import CmdHelp
 
-DEFAULTUSER = str(ALIVE_NAME) if ALIVE_NAME else "LEGENDBOT"
-
-@borg.on(admin_cmd(outgoing=True, pattern="bigoof( (.*)|$)"))
+@bot.on(admin_cmd(pattern=f"bigoof$", outgoing=True))
 async def _(event):
     if event.fwd_from:
         return
@@ -32,7 +28,7 @@ async def _(event):
         await asyncio.sleep(animation_interval)
         await event.edit(animation_chars[i % 7])
 
-@borg.on(admin_cmd(outgoing=True, pattern="g1( (.*)|$)"))
+@bot.on(admin_cmd(pattern=f"g1$", outgoing=True))
 async def payf(event):
     paytext = event.pattern_match.group(1)
     pay = "{}\n{}\n{}\n{}\n{}\n{}\n{}\n{}\n{}\n{}\n{}\n{}\n{}\n{}\n{}\n{}\n{}\n{}\n{}\n{}\n{}\n{}\n{}\n{}\n{}\n{}\n{}\n{}\n{}\n{}\n{}\n{}\n{}\n{}\n{}\n{}\n{}\n{}\n{}\n{}\n{}\n{}\n{}\n{}\n{}\n{}\n{}\n{}\n{}\n{}\n{}\n{}\n{}\n{}\n{}\n{}\n{}\n{}\n{}\n{}\n{}\n{}\n{}\n{}\n{}\n{}\n{}\n{}\n{}\n{}\n{}\n{}\n{}\n{}\n{}\n{}\n{}\n{}\n{}\n{}\n{}\n{}\n{}\n{}\n{}\n{}\n{}\n{}\n{}\n{}\n{}\n{}\n{}\n{}\n{}\n{}\n{}\n{}\n{}\n{}\n{}\n{}\n{}\n{}\n{}\n{}\n{}\n{}\n{}\n{}\n{}\n{}\n{}\n{}\n{}\n{}\n{}\n{}\n{}\n{}".format(
@@ -159,7 +155,7 @@ async def payf(event):
     )
     await event.edit(pay)
 
-@borg.on(admin_cmd(outgoing=True, pattern="uff( (.*)|$)"))
+@bot.on(admin_cmd(pattern=f"uff$", outgoing=True))
 async def _(event):
     if event.fwd_from:
         return
@@ -184,7 +180,7 @@ async def _(event):
         await asyncio.sleep(animation_interval)
         await event.edit(animation_chars[i % 13])
 
-@borg.on(admin_cmd(outgoing=True, pattern="ctext( (.*)|$)"))
+@bot.on(admin_cmd(pattern=f"ctext$", outgoing=True))
 async def payf(event):
     paytext = event.pattern_match.group(1)
     pay = "{}\n{}\n{}\n{}\n{}\n{}\n{}\n{}\n{}\n{}\n{}\n{}".format(
@@ -203,8 +199,7 @@ async def payf(event):
     )
     await event.edit(pay)
 
-@borg.on(admin_cmd(outgoing=True, pattern="ftext( (.*)|$)"))
-
+@bot.on(admin_cmd(pattern=f"ftext$", outgoing=True))
 async def payf(event):
     paytext = event.pattern_match.group(1)
     pay = "{}\n{}\n{}\n{}\n{}\n{}\n{}\n{}\n{}\n{}\n{}\n{}".format(
@@ -223,8 +218,8 @@ async def payf(event):
     )
     await event.edit(pay)
 
-@borg.on(admin_cmd(outgoing=True, pattern="kf( (.*)|$)"))
 
+@bot.on(admin_cmd(pattern=f"kf$", outgoing=True))
 async def _(event):
     r = random.randint(0, 3)
     logger.debug(r)
@@ -234,8 +229,7 @@ async def _(event):
         r == 1
         await event.edit("╭━━━╮\n┃╭━━╯\n┃╰━━╮\n┃╭━━╯\n┃┃\n╰╯")
 
-@borg.on(admin_cmd(outgoing=True, pattern="f( (.*)|$)"))
-
+@bot.on(admin_cmd(pattern=f"f$", outgoing=True))
 async def payf(e):
     paytext = e.pattern_match.group(1)
     pay = "{}\n{}\n{}\n{}\n{}\n{}\n{}".format(
@@ -247,38 +241,23 @@ async def payf(e):
         paytext * 1,
         paytext * 1,
     )
-    await e.edit(pay)
 
 
-    for i in animation_ttl:
-        await asyncio.sleep(animation_interval)
-        await event.edit(animation_chars[i % 5])
 
-CmdHelp("animations5").add_command(
-        'bigoof', None, 'use and see'
-
+CmdHelp("animations6").add_command(
+  'bigoof', None, '🇮🇳🇮🇳🇮🇳'
 ).add_command(
-
   'g1', None, 'Use and see'
-
 ).add_command(
-
   'uff', None, 'Use and see'
-
 ).add_command(
-
   'ctext', None, 'Use and see'
-
 ).add_command(
-
   'ftext', None, 'Use and see'
-
 ).add_command(
-
   'kf', None, 'Use and see'
-
 ).add_command(
-
-  'f', None, 'use and see'
-
+  'f', None, 'Use and see'
+).add_command(
+  'muth', None, 'Use And See'
 ).add()
