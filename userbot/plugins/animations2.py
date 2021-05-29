@@ -188,6 +188,7 @@ async def _(event):
     animation_interval =  1
     animation_ttl = range(14)
     event = await edit_or_reply(event, "Wait for plane...")
+    animatins_chars = [
     await event.edit("✈-------------")
     await event.edit("-✈------------")
     await event.edit("--✈-----------")
