@@ -7,7 +7,7 @@ from userbot import *
 from LEGENDBOT.utils import admin_cmd, edit_or_reply, sudo_cmd
 from userbot.cmdhelp import CmdHelp
 
-DEFAULTUSER = str(ALIVE_NAME) if ALIVE_NAME else "LEGEND User"
+DEFAULTUSER = str(ALIVE_NAME) if ALIVE_NAME else "LEGEND"
 
 @bot.on(admin_cmd(pattern=f"indflag$", outgoing=True))
 @bot.on(sudo_cmd(pattern=f"indflag$", allow_sudo=True))
@@ -133,13 +133,13 @@ async def _(event):
         "`Connecting To Raj Bhawan Delhi`",
         "`Call Connected.`",
         "`Secretary: Hello This is Raj Bhawan. Who is this?`",
-        f"`Me: Hello this is` `{DEFAULT}` .Please connect me to Sweetie Kumari",
+        f"`Me: Hello this is` `{DEFAULTUSER}` .Please connect me to Sweetie Kumari",
         "`User Authorised.`",
         "`Calling`  `At +9189*#*#*#56`",
         "`Private  Call Connected...`",
         "`Me: Hello Dear, How are you!!`",
         "`Sweetie Kumari: May I Know Who Is This?`",
-        f"`Me: Yes sur, itz me` `{DEFAULT}`",
+        f"`Me: Yes sur, itz me` `{DEFAULTUSER}`",
         "`Sweetie Kumari: OMG!!! Long time no see, Wassup Dear...\nI'm fine btw... how are you?`",
         "`Me: I good too sar.`",
         "`Sweetie Kumari: Ok! I'll call you later.. I'm busy a bit...`",
