@@ -127,13 +127,13 @@ async def _(event):
     if event.fwd_from:
         return
     animation_interval = 1
-    animation_ttl = range(18)
+    animation_ttl = range(0, 15)
     event = await edit_or_reply(event, "Calling Sweetie Kumari (Future Ceo Of R.K Company)......")
     animation_chars = [
         "`Connecting To Raj Bhawan Delhi`",
         "`Call Connected.`",
         "`Secretary: Hello This is Raj Bhawan. Who is this?`",
-        f"`Me: Hello this is` `{DEFAULUSER}` .Please connect me to Sweetie Kumari",
+        f"`Me: Hello this is` `{DEFAULTUSER}` .Please connect me to Sweetie Kumari",
         "`User Authorised.`",
         "`Calling`  `At +9189*#*#*#56`",
         "`Private  Call Connected...`",
