@@ -35,7 +35,7 @@ USER_BOT_WARN_ZERO = "**Hello Sir/Miss U Have Spammed My Master, So U Have Get b
 USER_BOT_NO_WARN = (
     "Hello Sir/Miss,/nDon't Spam My Master {DEFAULTUSER} Otherwise U Will Get Block./nThis is **LEGENDBOT Ultra Private Security Guard H hum Give ur identity before msg my master 😎⚠️**.\n"
     f"This is my master {DEFAULTUSER}'s Inbox\n"
-    f"\n**{LEGEND}**\n\n"
+    f"\n**LEGEND**\n\n"
     "To start a valid conversation\n🔱Register Your Request!🔱\nSend `/start` To Register Your Request\nHopefully u will get a reply🔥"
 )
 
