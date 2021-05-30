@@ -30,12 +30,12 @@ aura = (
     if CUSTOM_PMPERMIT
     else "**YOU HAVE TRESPASSED TO MY MASTERS INBOX** \n THIS IS ILLEGAL AND REGARDED AS CRIME"
 )
-DEFAULTUSER = str(ALIVE_NAME) if ALIVE_NAME else "LEGEND User"
+DEFAULTUSER = str(ALIVE_NAME) if ALIVE_NAME else "LEGEND"
 USER_BOT_WARN_ZERO = "**Hello Sir/Miss U Have Spammed My Master, So U Have Get blocked By LEGENDBOT.**\n__Now GTFO, i'm busy__"
 USER_BOT_NO_WARN = (
-    "Hello Sir/Miss, This is **LEGENDBOT Ultra Private Security Guard H hum Give ur identity before msg my master 😎⚠️**.\n"
+    "Hello Sir/Miss,/nDon't Spam My Master {DEFAULTUSER} Otherwise U Will Get Block./nThis is **LEGENDBOT Ultra Private Security Guard H hum Give ur identity before msg my master 😎⚠️**.\n"
     f"This is my master {DEFAULTUSER}'s Inbox\n"
-    f"\n**{aura}**\n\n"
+    f"\n**{LEGEND}**\n\n"
     "To start a valid conversation\n🔱Register Your Request!🔱\nSend `/start` To Register Your Request\nHopefully u will get a reply🔥"
 )
 
