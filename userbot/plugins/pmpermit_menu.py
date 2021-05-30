@@ -11,11 +11,11 @@ from telethon import functions
 from userbot.plugins.sql_helper import pmpermit_sql as pmpermit_sql
 from userbot import ALIVE_NAME
 
-DEFAULTUSER = str(ALIVE_NAME) if ALIVE_NAME else "LEGEND User"
+DEFAULTUSER = str(ALIVE_NAME) if ALIVE_NAME else "LEGEND"
 PREV_REPLY_MESSAGE = {}
 
 
-@command(pattern=r"\/start", incoming=True)
+@command(pattern=r"/start", incoming=True)
 async def _(event):
     chat_id = event.sender_id
     event.sender_id
