@@ -14,7 +14,7 @@ DEFAULTUSER = str(ALIVE_NAME) if ALIVE_NAME else "LEGEND User"
 async def _(event):
     if event.fwd_from:
         return
-    animation_interval = 0.1
+    animation_interval = 0.5
     animation_ttl = range(0, 36)
     await edit_or_reply(event, "Hello")
     animation_chars = [
