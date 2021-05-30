@@ -31,8 +31,8 @@ async def _(event):
                 "__Let's make this smooth and let me know why you are here.__\n"
                 "**Choose one of the following reasons why you are here:**\n\n"
                 "`1`. To chat with my master\n"
-                "`2`. To Chat about your girlfriend.\n"
-                "`3`. To fix your girlfriend meeting with me\n"
+                "`2`. To Be A Friend Of My Master.\n"
+                "`3`. To Want To Know About This Bot\n"
                 "`4`. To request something\n"
             )
             ONE = (
@@ -40,7 +40,7 @@ async def _(event):
                 "**⚠️ You will be blocked and reported if you spam  ⚠️**\n\n"
                 "__Use__ `/start` __to go back to the main menu.__"
             )
-            TWO = "**So uncool, this is not your home. Go bother someone else. You have been blocked and reported until further notice.**"
+            TWO = "**So uncool, My Master Is Currently Busy./nWhen He Online He Will resopond U.**"
             FOUR = "__Okay. My master has not seen your message yet.He usually responds to people,though idk about retarted ones.__\n __He'll respond when he comes back, if he wants to.There's already a lot of pending messages😶__\n **Please do not spam unless you wish to be blocked and reported.**"
             FIVE = "`Okay. please have the basic manners as to not bother my master too much. If he wishes to help you, he will respond to you soon.`\n**Do not ask repeatdly else you will be blocked and reported.**"
             LWARN = "**This is your last warning. DO NOT send another message else you will be blocked and reported. Keep patience. My Master will respond Your Request.**\n__Use__ `/start` __to go back to the main menu.__"
