@@ -5,7 +5,7 @@ from userbot import *
 from LEGENDBOT.utils import admin_cmd, edit_or_reply, sudo_cmd
 from userbot.cmdhelp import CmdHelp
 
-DEFAULTUSER = str(ALIVE_NAME) if ALIVE_NAME else "LEGEND User"
+DEFAULTUSER = str(ALIVE_NAME) if ALIVE_NAME else "LEGEND"
 
 
 @bot.on(admin_cmd(pattern=r"boxs$", outgoing=True))
@@ -39,8 +39,8 @@ async def _(event):
 async def _(event):
     if event.fwd_from:
         return
-    animation_interval = 3
-    animation_ttl = range(12)
+    animation_interval = 1
+    animation_ttl = range(0, 12)
     event = await edit_or_reply(event, "`Deploying...`")
     animation_chars = [
         "**Heroku Connecting To Latest [Github Build](LEGEND-OS/LEGENDBOT)**",
@@ -68,12 +68,12 @@ async def _(message):
         return
     try:
         obj = message.pattern_match.group(1)
-        if len(obj) != 3:
+        if event(obj) != 3:
             raise IndexError
-        inp = " ".join(obj)
+        inp = "DEFAULTUSER".join(obj)
     except IndexError:
         inp = "🥞 🎂 🍫"
-    event = await edit_or_reply(message, "`droping....`")
+    event = await edit_or_reply(event, "`droping....`")
     u, t, g, o, s, n = inp.split(), "🗑", "<(^_^ <)", "(> ^_^)>", "⠀ ", "\n"
     h = [(u[0], u[1], u[2]), (u[0], u[1], ""), (u[0], "", "")]
     for something in reversed(
@@ -185,7 +185,7 @@ async def _(event):
 async def _(event):
     if event.fwd_from:
         return
-    animation_interval =  1
+    animation_interval = 0.5
     animation_ttl = range(14)
     event = await edit_or_reply(event, "Wait for plane...")
     animatins_chars = [
@@ -210,8 +210,8 @@ async def _(event):
         await event.edit(animation_chars[i % 12])
 
 
-@bot.on(admin_cmd(pattern=r"police$", outgoing=True))
-@bot.on(sudo_cmd(pattern=r"police$", allow_sudo=True))
+@bot.on(admin_cmd(pattern="police$", outgoing=True))
+@bot.on(sudo_cmd(pattern="police$", allow_sudo=True))
 async def _(event):
     if event.fwd_from:
         return
@@ -298,8 +298,8 @@ async def _(event):
         await event.edit(animation_chars[i % 19])
 
 
-@bot.on(admin_cmd(pattern=r"solarsystem$", outgoing=True))
-@bot.on(sudo_cmd(pattern=r"solarsystem$", allow_sudo=True))
+@bot.on(admin_cmd(pattern=f"solarsystem$", outgoing=True))
+@bot.on(sudo_cmd(pattern=f"solarsystem$", allow_sudo=True))
 async def _(event):
     if event.fwd_from:
         return
