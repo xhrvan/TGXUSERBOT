@@ -25,19 +25,17 @@ LEGENDPIC = (
 PM_WARNS = {}
 PREV_REPLY_MESSAGE = {}
 myid = bot.uid
-aura = (
+LEGEND = (
     str(CUSTOM_PMPERMIT)
     if CUSTOM_PMPERMIT
     else "**YOU HAVE TRESPASSED TO MY MASTERS INBOX** \n THIS IS ILLEGAL AND REGARDED AS CRIME"
 )
 DEFAULTUSER = str(ALIVE_NAME) if ALIVE_NAME else "LEGEND"
-USER_BOT_WARN_ZERO = "**Hello Sir/Miss U Have Spammed My Master, So U Have Get blocked By LEGENDBOT.**\n__Now GTFO, i'm busy__"
-USER_BOT_NO_WARN = (
-    "Hello Sir/Miss,/nDon't Spam My Master {DEFAULTUSER} Otherwise U Will Get Block./nThis is **LEGENDBOT Ultra Private Security Guard H hum Give ur identity before msg my master 😎⚠️**.\n"
-    f"This is my master {DEFAULTUSER}'s Inbox\n"
-    f"\n**LEGEND**\n\n"
-    "To start a valid conversation\n🔱Register Your Request!🔱\nSend `/start` To Register Your Request\nHopefully u will get a reply🔥"
-)
+USER_BOT_WARN_ZERO = "**Hello Sir/Miss, ʏᴏᴜ ᴅɪᴅ'ɴᴛ sᴇᴇ ᴡʜᴀᴛ ɪ sᴀɪᴅ ᴍʏ ᴍᴀsᴛᴇʀ ɪs ᴄᴜʀʀᴇɴᴛʟʏ ᴏғғʟɪɴᴇ ᴅᴏɴᴛ sᴘᴀᴍ.`\n**ɴᴏᴡ sʜᴜᴛ ᴜᴘ.... ᴀɴᴅ ɢᴇᴛ ʟᴏsᴛ**".*
+USER_BOT_NO_WARN =("`ʜᴇʏ, ɪ ᴀᴍ LEGEND😈.sᴏʀʀʏ ʙᴜᴛ ʏᴏᴜ ʜᴀᴠᴇ ᴀʀʀɪᴠᴇᴅ ᴀ ᴡʀᴏɴɢ ᴡᴀʏ,`"
+                   f"{DEFAULTUSER}'s `sᴏʀʀʏ, ɪ ᴅᴏɴᴛ ᴋɴᴏᴡ ʜᴏᴡ ᴘᴇᴏᴘʟᴇ ᴀʀᴇ sᴏ ғʀᴇᴇ ᴛʜᴀᴛ ᴛʜᴇʏ ɢᴇᴛ ᴛʜᴇ ᴛɪᴍᴇ ᴛᴏ ᴅᴏ ᴜsᴇʟᴇss ᴄʜᴀᴛs sᴇᴇ ᴍʏ ᴍᴀsᴛᴇʀ's ɪɴʙᴏx ɪᴛ ɪs ғɪʟʟᴇᴅ ᴡɪᴛʜ ɪᴍᴘᴏʀᴛᴀɴᴛ ᴍᴀɪʟs ɢᴏ ᴀɴᴅ ᴅᴏ ʏᴏᴜʀ ᴡᴏʀᴋ ᴅᴏɴ'ᴛ ᴅɪsᴛᴜʀʙ ᴍʏ ᴍᴀsᴛᴇʀ...\n"
+                    "ɪғ ɪᴛ ɪs ᴜʀɢᴇɴᴛ ʟᴇᴀᴠᴇ ʏᴏᴜʀ ᴄʜᴀᴛ ɪᴅ ,ᴅᴇsᴄɪᴘᴛɪᴏɴ ᴀɴᴅ ʀᴇᴀsᴏɴ...ᴀɴᴅ ɪ ʜᴏᴘᴇ ɪғ ʏᴏᴜ ᴀʀᴇ ᴀ ɢᴏᴏᴅ ᴘᴇʀsᴏɴ ʏᴏᴜ ᴡɪʟʟ ɢᴇᴛ ᴀ ʀᴇᴘʟʏ ʙᴜᴛ ɪ ᴀᴍ ɴᴏᴛ sᴜʀᴇ ᴀʙᴏᴜᴛ ᴛʜᴀᴛ`\n\n")
+                  
 
 if Var.PRIVATE_GROUP_ID is not None:
 
