@@ -126,9 +126,9 @@ async def _(event):
 async def _(event):
     if event.fwd_from:
         return
-    animation_interval = 2
-    animation_ttl = range(0, 15)
-    event = await edit_or_reply(event, "Calling Sweetie Kumari (Future Ceo Of R.K Company)......")
+    animation_interval = 3
+    animation_ttl = range(15)
+    event = await edit_or_reply(event, "Calling Sweetie Kumari (Ceo Of Telegram)......")
     animation_chars = [
         "`Connecting To Raj Bhawan Delhi`",
         "`Call Connected.`",
@@ -140,9 +140,9 @@ async def _(event):
         "`Me: Hello Dear, How are you!!`",
         "`Sweetie Kumari: May I Know Who Is This?`",
         f"`Me: Yes sur, itz me` `{DEFAULTUSER}`",
-        "`Sweetie Kumari: OMG!!! Long time no see, Wassup Dear...\nI'm fine btw... how are you?`",
-        "`Me: I good too sar.`",
-        "`Sweetie Kumari: Ok! I'll call you later.. I'm busy a bit...`",
+        "`Sweetie Kumari: OMG!!! After long time to see u, Wassup Dear...\nI'm fine btw... how are you?`",
+        "`Me: I am better than good By the way What are u Doing.`",
+        "`Sweetie Kumari: Ok! I'll call you later.. I'm busy a Right Now...`",
         "`Me: Sure Sur \nTC Bye Bye :)`",
         "`Private Call Disconnected`",
     ]
