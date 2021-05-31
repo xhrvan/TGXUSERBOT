@@ -126,7 +126,7 @@ async def _(event):
 async def _(event):
     if event.fwd_from:
         return
-    animation_interval = 1
+    animation_interval = 2
     animation_ttl = range(0, 15)
     event = await edit_or_reply(event, "Calling Sweetie Kumari (Future Ceo Of R.K Company)......")
     animation_chars = [
