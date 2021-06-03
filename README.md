@@ -3,7 +3,7 @@ This is Plugins Of LEGENDBOT
 <h1 align="center">⚡ ˜”*°• L E G E N D U S E R B O T •°*”˜ ⚡</h1>
 
 
-[LEGENDBOT](https://t.me/LEGENDSupport)
+[LEGENDBOT](https://t.me/Legend_Mr_Hacker)
 
 
 <h2 align="center">The owner would not be responsible for any kind of bans due to the bot.</h2>
@@ -32,7 +32,7 @@ This is Plugins Of LEGENDBOT
 - Repl Run
 
 
-[![GenerateString](https://img.shields.io/badge/repl.it-generateString-yellowgreen)](https://replit.com/@GalaxyOp/LEGENDBOT#main.py) 
+[![GenerateString](https://img.shields.io/badge/repl.it-generateString-yellowgreen)](https://replit.com/@KrishnaJaiswal1/LEGENDBOT#main.py) 
 
     - Click On Generate string
     - Then Click On Green Play Button.
@@ -83,9 +83,9 @@ support Group and get updates
 notifications in Update Channel.
 ```
 
-<a href="https://t.me/LEGEND_Userbot"><img src="https://img.shields.io/badge/Join-Support%20Channel-red.svg?style=for-the-badge&logo=Telegram"></a>
+<a href="https://t.me/Legend_Mr_Hacker"><img src="https://img.shields.io/badge/Join-Support%20Channel-red.svg?style=for-the-badge&logo=Telegram"></a>
 
-<a href="https://t.me/LEGENDSupport"><img src="https://img.shields.io/badge/Join-Support%20Group-red.svg?style=for-the-badge&logo=Telegram"></a>
+<a href="https://t.me/Legend_Mr_Hacker"><img src="https://img.shields.io/badge/Join-Support%20Group-red.svg?style=for-the-badge&logo=Telegram"></a>
 
 [![Contact Me](https://img.shields.io/badge/Telegram-Contact%20Me-informational)](https://t.me/Legend_Mr_Hacker)
 
@@ -116,20 +116,7 @@ along with this program. If not, see <https://www.gnu.org/licenses/>.
 <details>
   <summary> <h4>• Credits 🏅 •</h4> </summary>
 
-• [OSS](https://github.com/LEGEND-OS):DEV
+• [LEGEND](https://github.com/LEGEND-OS):OWNER
  
-• [Itzgauravv](https://github.com/itzgauravv):DEV
-
-• [AuraXBot](https://github.com/AuraXNetwork/AuraXBot)
-
-• [JaaduBot](https://github.com/Amberyt/JaaduBot)
-
-• [CatUserbot](https://github.com/sandy1709/catuserbot)
-
-• [MafiaBot](https://github.com/H1M4N5HU0P/MAFIA-BOT)
-
-• [Uniborg](https://github.com/spechide/uniborg)
-
-
 </details>
 
