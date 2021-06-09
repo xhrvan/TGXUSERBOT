@@ -61,7 +61,9 @@ async def amireallyalive(alive):
         return
     reply_to_id = await reply_id(alive)
 
-    if LEGEND_IMG:
+    if    
+        LEGEND_caption += f"**┏━━━━━━━━━━━━━┓**\n"
+        LEGEND_IMG:
         LEGEND_caption = f"**{CUSTOM_ALIVE_TEXT}**\n"
         LEGEND_caption += f"~~~~~~~~~~~~~~~~~~~~~~~\n"
         LEGEND_caption += f"     __**BOT STATUS**__\n\n"
@@ -69,6 +71,7 @@ async def amireallyalive(alive):
         LEGEND_caption += f"**★ LEGENDBOT :**`{LEGENDversion}`\n"
         LEGEND_caption += f"**★ Uptime :** `{uptime}\n`"
         LEGEND_caption += f"**★ Master:** {mention}\n"
+        LEGEND_caption += f"**┗━━━━━━━━━━━━━┛**\n"
         
         LEGEND_caption += " [✨REPO✨](https://github.com/LEGEND-OS/LEGENDBOT) 🔹 [📜License📜](https://github.com/LEGEND-OS/LEGENDBOT/blob/master/LICENSE)"
         await alive.client.send_file(
