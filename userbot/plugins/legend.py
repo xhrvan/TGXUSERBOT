@@ -62,7 +62,7 @@ async def amireallyalive(alive):
     reply_to_id = await reply_id(alive)
 
     if  LEGEND_IMG:
-        LEGEND_caption = f"**{CUSTOM_ALIVE_TEXT}**\n
+        LEGEND_caption = f"**{CUSTOM_ALIVE_TEXT}**\n"
         
         LEGEND_caption += f"~~~~~~~~~~~~~~~~~~~~~~~\n"
         LEGEND_caption += f"**┏━━━━━━━━━━━━━┓**\n"
