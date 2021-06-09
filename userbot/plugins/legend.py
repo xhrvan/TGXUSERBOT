@@ -62,14 +62,15 @@ async def amireallyalive(alive):
     reply_to_id = await reply_id(alive)
 
     if  LEGEND_IMG:
-        LEGEND_caption += f"**┏━━━━━━━━━━━━━┓**\n"
-        LEGEND_caption = f"**{CUSTOM_ALIVE_TEXT}**\n"
+        LEGEND_caption = f"**{CUSTOM_ALIVE_TEXT}**\n
+        
         LEGEND_caption += f"~~~~~~~~~~~~~~~~~~~~~~~\n"
+        LEGEND_caption += f"**┏━━━━━━━━━━━━━┓**\n"
         LEGEND_caption += f"     __**BOT STATUS**__\n\n"
         LEGEND_caption += f"**★ Telethon version :** `{version.__version__}`\n"
         LEGEND_caption += f"**★ LEGENDBOT :**`{LEGENDversion}`\n"
-        LEGEND_caption += f"**★ Uptime :** `{uptime}\n`"
-        LEGEND_caption += f"**★ Master:** {mention}\n"
+        LEGEND_caption += f"**★ Uptime :** `{uptime}`\n"
+        LEGEND_caption += f"**★ Master:** `{mention}`\n"
         LEGEND_caption += f"**┗━━━━━━━━━━━━━┛**\n"
         
         LEGEND_caption += " [✨REPO✨](https://github.com/LEGEND-OS/LEGENDBOT) 🔹 [📜License📜](https://github.com/LEGEND-OS/LEGENDBOT/blob/master/LICENSE)"
@@ -82,9 +83,11 @@ async def amireallyalive(alive):
             alive,
             f"**{CUSTOM_ALIVE_TEXT}**\n\n"
             f"~~~~~~~~~~~~~~~~~~~~~~~ \n"
+            f"**┏━━━━━━━━━━━━━┓**\n"
             f"      __**BOT STATUS**__\n\n"
             f"**★ Telethon Version :** `{version.__version__}`\n"
             f"**★ LEGENDBOT:** `{LEGENDversion}`\n"
-            f"**★ Uptime :** `{uptime}\n`"
-            f"**★ Master:** {mention}\n",
+            f"**★ Uptime :** `{uptime}`\n"
+            f"**★ Master:** {mention}`\n"
+            f"**┗━━━━━━━━━━━━━┛**\n",
         )
