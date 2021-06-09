@@ -66,7 +66,7 @@ async def amireallyalive(alive):
         
         LEGEND_caption += f"~~~~~~~~~~~~~~~~~~~~~~~\n"
         LEGEND_caption += f"**┏━━━━━━━━━━━━━┓**\n"
-        LEGEND_caption += f"     __**BOT STATUS**__\n\n"
+        LEGEND_caption += f"        __**BOT STATUS**__\n\n"
         LEGEND_caption += f"**★ Telethon version :** `{version.__version__}`\n"
         LEGEND_caption += f"**★ LEGENDBOT :**`{LEGENDversion}`\n"
         LEGEND_caption += f"**★ Uptime :** `{uptime}`\n"
@@ -85,7 +85,7 @@ async def amireallyalive(alive):
             f"**{CUSTOM_ALIVE_TEXT}**\n\n"
             f"~~~~~~~~~~~~~~~~~~~~~~~ \n"
             f"**┏━━━━━━━━━━━━━┓**\n"
-            f"      __**BOT STATUS**__\n\n"
+            f"         __**BOT STATUS**__\n"
             f"**★ Telethon Version :** `{version.__version__}`\n"
             f"**★ LEGENDBOT:** `{LEGENDversion}`\n"
             f"**★ Uptime :** `{uptime}`\n"
