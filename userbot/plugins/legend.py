@@ -71,6 +71,7 @@ async def amireallyalive(alive):
         LEGEND_caption += f"**★ LEGENDBOT :**`{LEGENDversion}`\n"
         LEGEND_caption += f"**★ Uptime :** `{uptime}`\n"
         LEGEND_caption += f"**★ Master:** `{mention}`\n"
+        
         LEGEND_caption += f"**┗━━━━━━━━━━━━━┛**\n"
         
         LEGEND_caption += " [✨REPO✨](https://github.com/LEGEND-OS/LEGENDBOT) 🔹 [📜License📜](https://github.com/LEGEND-OS/LEGENDBOT/blob/master/LICENSE)"
@@ -88,6 +89,6 @@ async def amireallyalive(alive):
             f"**★ Telethon Version :** `{version.__version__}`\n"
             f"**★ LEGENDBOT:** `{LEGENDversion}`\n"
             f"**★ Uptime :** `{uptime}`\n"
-            f"**★ Master:** {mention}`\n"
+            f"**★ Master:** `{mention}`\n"
             f"**┗━━━━━━━━━━━━━┛**\n",
         )
