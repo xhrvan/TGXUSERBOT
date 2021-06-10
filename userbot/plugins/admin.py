@@ -142,12 +142,12 @@ async def promote(promt):
     LEGENDevent = await edit_or_reply(promt, "Promoting...")
     user, rank = await get_user_from_event(promt)
     if not rank:
-        rank = "Bisi"
+        rank = "『🔱🇱 🇪 🇬 🇪 🇳 🇩 🔱』"
     if not user:
         return
     try:
         await promt.client(EditAdminRequest(promt.chat_id, user.id, new_rights, rank))
-        await LEGENDevent.edit("Promoted Successfully! Mje le bhnchoo...power ke 😂")
+        await LEGENDevent.edit("Promoted Successfully! Le bhai Ho Gya Promote Maj le ")
     except BadRequestError:
         await LEGENDevent.edit(NO_PERM)
         return
