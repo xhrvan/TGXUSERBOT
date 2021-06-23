@@ -182,18 +182,19 @@ async def demn(ult):
         x = response.text
         z = x.split("\n")[(len(x.split("\n")))-1]
         await ult.reply(input, file=response.media)
+
 CmdHelp("CryptoCurrency").add_command(
-"cp",None, "Use and See"
+ 'cp', None, 'Use and See'
 ).add_command(
-"cgas",None, "Use and See"
+ 'cgas', None, 'Use and See'
 ).add_command(
-"ccalc",None, "Use and See"
+ 'ccalc', None, 'Use and See'
 ).add_command(
-"cindex",None, "Use and See"
+ 'cindex', None, 'Use and See'
 ).add_command(
-"cdefi",None, "Use and See"
+ 'cdefi', None, 'Use and See'
 ).add_commnad(
-"ccap",None, "Use andSee"
+ 'ccap', None, 'Use and See'
 ).add_command(
-"clink",None, "Use and See"
+ 'clink', None, 'Use and See'
 ).add()
