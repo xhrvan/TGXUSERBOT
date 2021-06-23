@@ -183,7 +183,7 @@ async def demn(ult):
         z = x.split("\n")[(len(x.split("\n")))-1]
         await ult.reply(input, file=response.media)
 
-CmdHelp("CryptoCurrency").add_command(
+CmdHelp("cryptocurrency").add_command(
  'cp', None, 'Use and See'
 ).add_command(
  'cgas', None, 'Use and See'
