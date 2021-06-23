@@ -87,12 +87,9 @@ async def _(event):
         logger.warn(str(e))  # pylint:disable=E0602
 
 CmdHelp("acc_profile").add_command(
-       'pbio', None, 'Start Wallpapers on DP'
+  'pbio', None, 'Start Wallpapers on DP'
 ).add_command(
-
-        'pname', None, 'Use and see'
-
+  'pname', None, 'Use and see'
 ).add_command(
-
-         'ppic', None, 'Use and see'
+  'ppic', None, 'Use and see'
 ).add()
