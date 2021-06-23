@@ -193,6 +193,7 @@ CmdHelp("CryptoCurrency").add_command(
 ).add_command(
 "cdefi",None, "Use and See"
 ).add_commnad(
-"ccap",None, "Use andSee")
+"ccap",None, "Use andSee"
 ).add_command(
-"clink",None, "Use and See")
+"clink",None, "Use and See"
+).add()
