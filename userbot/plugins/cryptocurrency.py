@@ -42,7 +42,7 @@ async def demn(ult):
     await ult.edit("Please Wait")
     async with ult.client.conversation(chat) as conv:
         try:
-            response = conv.wait_event(events.NewMessage(incoming=True, from_users=331761115))
+            response = conv.wait_event(events.NewMessage(incoming=True, from_users=1856561912))
             await ult.client.send_message(chat, f"/p {input}")
             response = await response
         except YouBlockedUserError:
@@ -59,7 +59,7 @@ async def demn(ult):
     await ult.edit("Please Wait")
     async with ult.client.conversation(chat) as conv:
         try:
-            response = conv.wait_event(events.NewMessage(incoming=True, from_users=331761115))
+            response = conv.wait_event(events.NewMessage(incoming=True, from_users=1856561912))
             await ult.client.send_message(chat, f"/gas {input}")
             response = await response
         except YouBlockedUserError:
@@ -77,7 +77,7 @@ async def demn(ult):
     await ult.edit("Please Wait")
     async with ult.client.conversation(chat) as conv:
         try:
-            response = conv.wait_event(events.NewMessage(incoming=True, from_users=331761115))
+            response = conv.wait_event(events.NewMessage(incoming=True, from_users=1856561912))
             await ult.client.send_message(chat, f"/calc {input}")
             response = await response
         except YouBlockedUserError:
@@ -93,7 +93,7 @@ async def demn(ult):
     await ult.edit("Please Wait")
     async with ult.client.conversation(chat) as conv:
         try:
-            response = conv.wait_event(events.NewMessage(incoming=True, from_users=331761115))
+            response = conv.wait_event(events.NewMessage(incoming=True, from_users=1856561912))
             await ult.client.send_message(chat, f"/index")
             response = await response
         except YouBlockedUserError:
@@ -110,7 +110,7 @@ async def demn(ult):
     await ult.edit("Please Wait")
     async with ult.client.conversation(chat) as conv:
         try:
-            response = conv.wait_event(events.NewMessage(incoming=True, from_users=331761115))
+            response = conv.wait_event(events.NewMessage(incoming=True, from_users=1856561912))
             await ult.client.send_message(chat, f"/defi")
             response = await response
         except YouBlockedUserError:
@@ -127,7 +127,7 @@ async def demn(ult):
     await ult.edit("Please Wait")
     async with ult.client.conversation(chat) as conv:
         try:
-            response = conv.wait_event(events.NewMessage(incoming=True, from_users=331761115))
+            response = conv.wait_event(events.NewMessage(incoming=True, from_users=1856561912))
             await ult.client.send_message(chat, f"/cap {input}")
             response = await response
         except YouBlockedUserError:
@@ -145,7 +145,7 @@ async def demn(ult):
     await ult.edit("Please Wait")
     async with ult.client.conversation(chat) as conv:
         try:
-            response = conv.wait_event(events.NewMessage(incoming=True, from_users=331761115))
+            response = conv.wait_event(events.NewMessage(incoming=True, from_users=1856561912))
             await ult.client.send_message(chat, f"/link {input}")
             response = await response
         except YouBlockedUserError:
@@ -162,7 +162,7 @@ async def demn(ult):
     await ult.edit("Please Wait")
     async with ult.client.conversation(chat) as conv:
         try:
-            response = conv.wait_event(events.NewMessage(incoming=True, from_users=331761115))
+            response = conv.wait_event(events.NewMessage(incoming=True, from_users=1856561912))
             await ult.client.send_message(chat, f"/vol {input}")
             response = await response
         except YouBlockedUserError:
@@ -180,7 +180,7 @@ async def demn(ult):
     await ult.edit("Please Wait")
     async with ult.client.conversation(chat) as conv:
         try:
-            response = conv.wait_event(events.NewMessage(incoming=True, from_users=331761115))
+            response = conv.wait_event(events.NewMessage(incoming=True, from_users=1856561912))
             await ult.client.send_message(chat, f"/google {input}")
             response = await response
         except YouBlockedUserError:
@@ -193,7 +193,7 @@ async def demn(ult):
 CmdHelp("cryptocurrency").add_command(
     'cp', None, 'Gives Price Of Cryptocurrency'
 ).add_command(
-    'cgas', None, 'Use and see'
+    'cgas', None, ''
 ).add_command(
     'cclac', None, 'Use and see'
 ).add_command(
