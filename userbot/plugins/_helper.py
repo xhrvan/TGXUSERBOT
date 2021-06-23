@@ -8,7 +8,7 @@ from userbot import ALIVE_NAME, CMD_LIST, SUDO_LIST
 from LEGENDBOT.utils import admin_cmd, edit_or_reply, sudo_cmd
 
 
-@bot.on(admin_cmd(pattern="help ?(.*)", outgoing=True))
+@bot.on(admin_cmd(pattern="legend ?(.*)", outgoing=True))
 async def yardim(event):
     if event.fwd_from:
         return
@@ -33,7 +33,7 @@ async def yardim(event):
           await event.edit(input_str + " is not a valid plugin!")
 
 
-@bot.on(sudo_cmd(allow_sudo=True, pattern="help ?(.*)"))
+@bot.on(sudo_cmd(allow_sudo=True, pattern="legend ?(.*)"))
 async def info(event):
     if event.fwd_from:
         return
