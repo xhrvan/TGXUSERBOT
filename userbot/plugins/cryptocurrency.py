@@ -26,10 +26,15 @@ from telethon import events
 from telethon.errors.rpcerrorlist import YouBlockedUserError
 from telethon.tl.functions.account import UpdateNotifySettingsRequest
 from . import *
-from userbot.utils import admin_cmd
-from userbot import CMD_HELP
+
+import asyncio
+from collections import deque
+from telethon.tl.functions.users import GetFullUserRequest 
+from userbot import *
+from LEGENDBOT.utils import admin_cmd, edit_or_reply, sudo_cmd
 from userbot.cmdhelp import CmdHelp
-from userbot import bot as borg
+
+
 admin_cmd(pattern="cp(.*)$")
 async def demn(ult):
     input = ult.pattern_match.group(1)
