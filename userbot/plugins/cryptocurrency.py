@@ -191,39 +191,23 @@ async def demn(ult):
         await ult.reply(input, file=response.media)
 
 CmdHelp("cryptocurrency").add_command(
-    'c', None, '🇮🇳🇮🇳🇮🇳'
+    'cp', None, 'Gives Price Of Cryptocurrency'
 ).add_command(
-    'stupid', None, 'Use and see'
+    'cgas', None, 'Use and see'
 ).add_command(
-    'bombs', None, 'Use and see'
+    'cclac', None, 'Use and see'
 ).add_command(
-  'call', None, 'Use and see'
+  'cindex', None, 'Use and see'
 ).add_command(
-    'kill', None, 'Use and see'
+    'cdefi', None, 'Use and see'
 ).add_command(
-    'wtf', None, 'Use and see'
+    'ccap', None, 'Use and see'
 ).add_command(
-    'ding', None, 'Use and see'
+    'clink', None, 'Use and see'
 ).add_command(
-    'hypno', None, 'Use and see'
+    'cvol', None, 'Use and see'
 ).add_command(
-    'candy', None, 'Use and see'
-).add_command(
-    'gangasta', None, 'Use and see'
-).add_command(
-    'bigoof', None, 'Big off animation'
-).add_command(
-    'charging', None, 'Use and see'
-).add_command(
-    'yo', None, 'Shitty Yooooo animations. Like who wants it.. duhh'
-).add_command(
-    'evil', None, 'Wanna show your evilness?'
-).add_command(
-    'gmg', None, 'Cool Good Morning Animation'
-).add_command(
-    'gnt', None, 'Cool Good Night Animation'
-).add_command(
-    'muths', None, 'Fapping✊'
+    'cgoogle', None, 'Use and see'
 ).add()
 
 
