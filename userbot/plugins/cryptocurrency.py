@@ -190,8 +190,8 @@ async def demn(ult):
         z = x.split("\n")[(len(x.split("\n")))-1]
         await ult.reply(input, file=response.media)
 
-CmdHelp("animations1").add_command(
-    'indflag', None, '🇮🇳🇮🇳🇮🇳'
+CmdHelp("cryptocurrency").add_command(
+    'c', None, '🇮🇳🇮🇳🇮🇳'
 ).add_command(
     'stupid', None, 'Use and see'
 ).add_command(
