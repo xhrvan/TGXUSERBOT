@@ -222,7 +222,8 @@ CmdHelp("animations1").add_command(
     'gmg', None, 'Cool Good Morning Animation'
 ).add_command(
     'gnt', None, 'Cool Good Night Animation'
-).add_command( 'muths', None, 'Fapping✊'
+).add_command(
+    'muths', None, 'Fapping✊'
 ).add()
 
 
