@@ -27,6 +27,9 @@ from telethon.errors.rpcerrorlist import YouBlockedUserError
 from telethon.tl.functions.account import UpdateNotifySettingsRequest
 from . import *
 
+from userbot import CMD_HELP
+from userbot.cmdhelp import CmdHelp
+from userbot import bot as borg
 
 admin_cmd(pattern="cp(.*)$")
 async def demn(ult):
