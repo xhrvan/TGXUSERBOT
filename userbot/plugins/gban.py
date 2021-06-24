@@ -10,7 +10,8 @@ from telethon.tl.types import MessageEntityMentionName
 from telethon.utils import get_input_location
 from telethon.events import ChatAction
 
-David99q = str(ALIVE_NAME) if ALIVE_NAME else "LEGEND User"
+
+Legend_Mr_Hacker = str(ALIVE_NAME) if ALIVE_NAME else "LEGEND User"
 papa = borg.uid
 
 
