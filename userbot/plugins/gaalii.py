@@ -2,7 +2,7 @@ from userbot import bot as LEGENDgalaxy
 from userbot.utils import admin_cmd as choot
 
 x = True
-@LEGENDgalaxy.on(choot(pattern="abuse"))
+@LEGEND_Mr_Hacker.on(choot(pattern="abuse"))
 async def yashraid(event):
     while x != False:
        
