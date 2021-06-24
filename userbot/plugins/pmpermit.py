@@ -12,17 +12,34 @@ from LEGENDBOT.utils import admin_cmd
 from userbot.cmdhelp import CmdHelp
 
 
-WARN_PIC = Config.PMPERMIT_PIC or "https://telegra.ph/file/827ae749f3ab7a2b187ab.jpg"
+PM_TRUE_FALSE = Config.PM_DATA
+
+PMPERMIT_PIC = os.environ.get("PMPERMIT_PIC", None)
+LEGENDPIC = (
+    PMPERMIT_PIC
+    if PMPERMIT_PIC
+    else "https://telegra.ph/file/7b2fefb2c78c90734444d.jpg"
+)
 PM_WARNS = {}
 PREV_REPLY_MESSAGE = {}
-PM_ON_OFF = Config.PM_PERMIT
-CSTM_PMP = Config.CUSTOM_PMPERMIT or "**You Have Trespassed To My Master's PM!\nThis Is Illegal And Regarded As Crime.**"
-LEGEND_ZERO = "Go get some sleep retard. \n\n**Blocked !!**"
-LEGEND_FIRST = (
-    "**🔥 『🔱🇱 🇪 🇬 🇪 🇳 🇩 🔱』➙𖤍 Prîvã†é Sêçürïty Prø†öçõl 🔥**\n\nThis is to inform you that "
-    "{} is currently unavailable.\nThis is an automated message.\n\n"
-    "{}\n\n**Please Choose Why You Are Here!!**".format(LEGEND_mention, CSTM_PMP)
+myid = bot.uid
+LEGEND = (
+    str(CUSTOM_PMPERMIT)
+    if CUSTOM_PMPERMIT
+    else "**YOU HAVE TRESPASSED TO MY MASTERS INBOX** \n THIS IS ILLEGAL AND REGARDED AS CRIME"
 )
+DEFAULTUSER = str(ALIVE_NAME) if ALIVE_NAME else "LEGEND"
+USER_BOT_WARN_ZERO = "**Hello Sir/Miss, ʏᴏᴜ ᴅɪᴅ'ɴᴛ sᴇᴇ ᴡʜᴀᴛ ɪ sᴀɪᴅ ᴍʏ ᴍᴀsᴛᴇʀ ɪs ᴄᴜʀʀᴇɴᴛʟʏ ᴏғғʟɪɴᴇ ᴅᴏɴᴛ sᴘᴀᴍ.`\n**ɴᴏᴡ sʜᴜᴛ ᴜᴘ.... ᴀɴᴅ ɢᴇᴛ ʟᴏsᴛ**"
+USER_BOT_NO_WARN =(
+    "__Hello Sir/Miss,Im Here To Protect.Dont Under Estimate Me 😂😂.__This is **LEGENDBOT Ultra Private Security Guard H hum Give ur identity before msg my master 😎⚠️**.\n"
+    f"This is my master {DEFAULTUSER}'s Inbox\n"
+    f"\n**{LEGEND}**\n\n"
+    f"{DEFAULTUSER}'s `sᴏʀʀʏ, ɪ ᴅᴏɴᴛ ᴋɴᴏᴡ ʜᴏᴡ ᴘᴇᴏᴘʟᴇ ᴀʀᴇ sᴏ ғʀᴇᴇ ᴛʜᴀᴛ ᴛʜᴇʏ ɢᴇᴛ ᴛʜᴇ ᴛɪᴍᴇ ᴛᴏ ᴅᴏ ᴜsᴇʟᴇss ᴄʜᴀᴛs sᴇᴇ ᴍʏ ᴍᴀsᴛᴇʀ's ɪɴʙᴏx ɪᴛ ɪs ғɪʟʟᴇᴅ ᴡɪᴛʜ ɪᴍᴘᴏʀᴛᴀɴᴛ ᴍᴀɪʟs ɢᴏ ᴀɴᴅ ᴅᴏ ʏᴏᴜʀ ᴡᴏʀᴋ ᴅᴏɴ'ᴛ ᴅɪsᴛᴜʀʙ ᴍʏ ᴍᴀsᴛᴇʀ...\n"
+                    "ɪғ ɪᴛ ɪs ᴜʀɢᴇɴᴛ ʟᴇᴀᴠᴇ ʏᴏᴜʀ ᴄʜᴀᴛ ɪᴅ ,ᴅᴇsᴄɪᴘᴛɪᴏɴ ᴀɴᴅ ʀᴇᴀsᴏɴ...ᴀɴᴅ ɪ ʜᴏᴘᴇ ɪғ ʏᴏᴜ ᴀʀᴇ ᴀ ɢᴏᴏᴅ ᴘᴇʀsᴏɴ ʏᴏᴜ ᴡɪʟʟ ɢᴇᴛ ᴀ ʀᴇᴘʟʏ ʙᴜᴛ ɪ ᴀᴍ ɴᴏᴛ sᴜʀᴇ ᴀʙᴏᴜᴛ ᴛʜᴀᴛ`\n\n"
+    "To start a valid conversation\n🔱Register Your Request!🔱\nSend `/start` To Register Your Request\nHopefully u will get a reply🔥"
+)
+
+if Var.PRIVATE_GROUP_ID is not None:
 
 @bot.on(admin_cmd(pattern="block$"))
 async def approve_p_m(event):
