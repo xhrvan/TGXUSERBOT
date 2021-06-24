@@ -5,8 +5,11 @@ import os
 from telethon import events, functions
 from telethon.tl.functions.users import GetFullUserRequest
 
-from . import *
-from LEGENDBOT.sql import pmpermit_sql as pm_sql
+from userbot.plugins.sql_helper import pmpermit_sql as pmpermit_sql
+from userbot import ALIVE_NAME, CUSTOM_PMPERMIT, LEGEND_ID
+from userbot.Config import Config
+from LEGENDBOT.utils import admin_cmd
+from userbot.cmdhelp import CmdHelp
 
 
 WARN_PIC = Config.PMPERMIT_PIC or "https://telegra.ph/file/827ae749f3ab7a2b187ab.jpg"
