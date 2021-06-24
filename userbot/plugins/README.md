@@ -22,5 +22,5 @@ async def hello_world(event):
 
 CmdHelp("hello").add_command(
   "hello", None, "Hello World Edit."
-).add
+).add()
 ```
