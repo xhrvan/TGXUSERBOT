@@ -65,10 +65,6 @@ async def amireallyalive(yes):
     """ For .alive command, check if the bot is running.  """
     await borg.send_file(alive.chat_id, PM_IMG,caption=pm_caption)
     await alive.delete()
-    CmdHelp("OP").add_command(
-  "op", None, "BEST alive command"
-).add_info(
-  "Good Night 🌃"
-).add_warning(
-  "✅ Harmless Module."
+    CmdHelp("op").add_command(
+      'op',None , 'BEST alive command'
 ).add()
