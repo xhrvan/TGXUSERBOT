@@ -71,7 +71,7 @@ if ENV:
         NO_P_M_SPAM = bool(os.environ.get("NO_P_M_SPAM", True))
         # define "spam" in PMs
         NO_SONGS = bool(os.environ.get("NO_SONGS", False))
-        MAX_FLOOD_IN_P_M_s = int(os.environ.get("MAX_FLOOD_IN_P_M_s", 3))
+        MAX_FLOOD_IN_P_M_s = int(os.environ.get("MAX_FLOOD_IN_P_M_s", 5))
         #pm log
         PM_LOG_GRP_ID = os.environ.get("PM_LOG_GRP_ID", None)
         # set to True if you want to log PMs to your PM_LOGGR_BOT_API_ID
@@ -101,10 +101,10 @@ if ENV:
         #open load
         OPEN_LOAD_LOGIN = os.environ.get("OPEN_LOAD_LOGIN", None)
         OPEN_LOAD_KEY = os.environ.get("OPEN_LOAD_KEY", None)
-        # number of colums of buttons to be displayed in .help command
+        # number of colums of buttons to be displayed in .legend command
         NO_OF_COLOUMS_DISPLAYED_IN_H_ME_CMD = int(os.environ.get("NO_OF_COLOUMS_DISPLAYED_IN_H_ME_CMD", 3))
-        # emoji to be displayed  in help .help
-        EMOJI_IN_HELP = os.environ.get("EMOJI_IN_HELP", "🔱")
+        # emoji to be displayed  in help .legend
+        EMOJI_IN_HELP = os.environ.get("EMOJI_IN_HELP", "🔱 ")
         # specify command handler that should be used for the plugins
         # this should be a valid "regex" pattern
         COMMAND_HAND_LER = os.environ.get("COMMAND_HAND_LER", r"\.")
