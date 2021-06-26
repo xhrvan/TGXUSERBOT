@@ -94,7 +94,7 @@ if Var.TG_BOT_USER_NAME_BF_HER is not None and tgbot is not None:
             )
         else:
             result = builder.article(
-                "TAP HERE",
+                "@LEGEND_Userbot",
                 text="""**Hey! This is [LEGENDBOT.](https://t.me/Legend_Mr_Hacker) \nYou can know more about me from the links given below 👇**""",
                 buttons=[
                     [
