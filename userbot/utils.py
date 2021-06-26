@@ -125,7 +125,9 @@ def load_module(shortname):
         pass
     elif shortname.endswith("_"):
         import userbot.utils
-
+        import sys
+        import importlib
+        from pathlib import Path
         path = Path(f"userbot/plugins/{shortname}.py")
         name = "userbot.plugins.{}".format(shortname)
         spec = importlib.util.spec_from_file_location(name, path)
@@ -134,7 +136,9 @@ def load_module(shortname):
         LOGS.info("Successfully imported " + shortname)
     else:
         import userbot.utils
-
+        import sys
+        import importlib
+        from pathlib import Path
         path = Path(f"userbot/plugins/{shortname}.py")
         name = "userbot.plugins.{}".format(shortname)
         spec = importlib.util.spec_from_file_location(name, path)
@@ -461,9 +465,8 @@ def errors_handler(func):
     return wrapper
 
 
-async def progress(
-    current, total, event, start, type_of_ps, file_name=None, is_cancelled=None
-):
+async def progress(current, total, event, start, type_of_ps, file_name=None, is_cancelled=None):
+async def progress(current, total, event, start, type_of_ps, file_name=None):
     """Generic progress_callback for uploads and downloads."""
     now = time.time()
     diff = now - start
