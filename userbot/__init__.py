@@ -1,10 +1,10 @@
   
-from .cmds import *
-from .decorators import *
-from .errors import *
-from .extras import *
-from .funcs import *
-from .plug import *
+from userbot.cmds import *
+from userbot.decorators import *
+from userbot.errors import *
+from userbot.extras import *
+from userbot.funcs import *
+from userbot.plug import *
 
 
 import os
