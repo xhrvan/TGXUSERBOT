@@ -38,5 +38,5 @@ async def _(event):
                     await event.reply(str(e))
             await event.edit("ADDED the user to the chat successfully.")
 CmdHelp("add").add_command(
-  "edd", None, "Add To Member To Ur Group."
+  "edds", None, "Add To Member To Ur Group."
 ).add()
