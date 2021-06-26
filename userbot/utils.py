@@ -465,8 +465,9 @@ def errors_handler(func):
     return wrapper
 
 
-async def progress(current, total, event, start, type_of_ps, file_name=None, is_cancelled=None):
-async def progress(current, total, event, start, type_of_ps, file_name=None):
+async def progress(
+    current, total, event, start, type_of_ps, file_name=None, is_cancelled=None
+):
     """Generic progress_callback for uploads and downloads."""
     now = time.time()
     diff = now - start
