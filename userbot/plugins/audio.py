@@ -145,5 +145,5 @@ async def _(event):
         await event.edit(str(e))
 
 CmdHelp("audio").add_command(
-  "audios", None, "audios <language code> ex.audio en / .audios hi  -convert text to Audios example .audios en|msg (note:- this | mark is important.)"
-).add()
+  "audios", None, 'audios <language code> ex.audio en / .audios hi  -convert text to Audios example .audios en|msg (note:- this | mark is important.)'
+    ).add()
