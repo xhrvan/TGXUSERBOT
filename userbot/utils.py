@@ -692,7 +692,7 @@ def command(**args):
 
 
 #Assistant
-def start_assistant(shortname):
+def start_assistance(shortname):
     if shortname.startswith("__"):
         pass
     elif shortname.endswith("_"):
