@@ -254,7 +254,6 @@ async def payf(e):
 @bot.on(admin_cmd(pattern=f"animate$", outgoing=True))
 @bot.on(sudo_cmd(pattern=f"animate$", allow_sudo=True))
 async def _(event):
-async def _(event):  
     if event.fwd_from:
         return
     animation_interval = 1
