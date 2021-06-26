@@ -16,13 +16,13 @@ from telethon import events
 from telethon.tl.functions.channels import GetParticipantRequest
 from telethon.tl.types import ChannelParticipantAdmin, ChannelParticipantCreator
 
-from hellbot import *
-from hellbot.helpers import *
-from hellbot.config import Config
-from hellbot.sql import sudo_sql as s_ql
+from userbot import *
+from userbot.helpers import *
+from userbot.config import Config
+from userbot.sql import sudo_sql as s_ql
 
 # admin cmd or normal user cmd
-def hell_cmd(pattern=None, command=None, **args):
+def admin_cmd(pattern=None, command=None, **args):
     args["func"] = lambda e: e.via_bot_id is None
     stack = inspect.stack()
     previous_stack_frame = stack[1]
@@ -62,7 +62,7 @@ def hell_cmd(pattern=None, command=None, **args):
 
     args["outgoing"] = True
     # decides that other users can use it or not
-    # hellbot outgoing
+    # legendbot outgoing
     if allow_sudo:
         args["from_users"] = list(Config.SUDO_USERS)
         # Mutually exclusive with outgoing (can only set one of either).
@@ -81,7 +81,7 @@ def hell_cmd(pattern=None, command=None, **args):
         args["chats"] = black_list_chats
 
     # blacklisted chats.
-    # hellbot will not respond in these chats.
+    # legendbot will not respond in these chats.
     if "allow_edited_updates" in args and args["allow_edited_updates"]:
         del args["allow_edited_updates"]
 
@@ -149,7 +149,7 @@ def sudo_cmd(pattern=None, command=None, **args):
     if "allow_edited_updates" in args and args["allow_edited_updates"]:
         del args["allow_edited_updates"]
     # outgoing check
-    # hellbot
+    # legendbot
     return events.NewMessage(**args)
 
 
