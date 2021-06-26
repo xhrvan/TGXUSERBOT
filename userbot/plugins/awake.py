@@ -8,6 +8,7 @@ from telethon import events
 from telethon.tl.types import ChannelParticipantsAdmins
 from userbot import ALIVE_NAME, CMD_HELP
 from LEGENDBOT.utils import admin_cmd, edit_or_reply, sudo_cmd
+from userbot.cmdhelp import CmdHelp
 from telethon import version
 from math import ceil
 import json
@@ -37,6 +38,7 @@ if ALIVE_MESSAGE is None:
             
 #@command(outgoing=True, pattern="^.awake$")
 @bot.on(admin_cmd(pattern=r"awake"))
+@borg.on(admin_cmd(pattern=r"awake"))
 async def amireallyalive(awake):
     """ For .awake command, check if the bot is running.  """
     await awake.delete() 
