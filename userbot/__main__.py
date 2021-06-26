@@ -67,7 +67,7 @@ import telethon.utils
 from telethon import TelegramClient
 
 from userbot import bot
-from userbot.utils import load_module, start_assistant
+from userbot.util import load_module, start_assistant
 from var import Var
 
 LOAD_USERBOT = os.environ.get("LOAD_USERBOT", True)
