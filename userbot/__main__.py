@@ -59,10 +59,6 @@ CREATOR :- @Legend_Mr_Hacker
 DO .alive OR .ping OR .legend CHECK IF I'M ON!
 IF YOU FACE ANY ISSUE THEN ASK WITH @Legend_Mr_Hacker.""")
 
-if len(argv) not in (1, 3, 4):
-    bot.disconnect()
-else:
-    bot.run_until_disconnected()
 import os
 from pathlib import Path
 from sys import argv
@@ -131,7 +127,7 @@ if LOAD_ASSISTANT == True:
 else:
     print("Assitant is Not Loading As U Have Disabled")
 
-print("DARK COBRA userbot AND YOUR ASSISTANT is Active Enjoy Join @DarkCobra_Support For Updates.")
+print("DARK COBRA userbot AND YOUR ASSISTANT is Active Enjoy CONADFDFASDFAD For Updates.")
 
 if len(argv) not in (1, 3, 4):
     bot.disconnect()
