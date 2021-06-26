@@ -113,7 +113,7 @@ if Var.TG_BOT_USER_NAME_BF_HER is not None and tgbot is not None:
                         custom.Button.url(
                             "DEPLOY", "https://dashboard.heroku.com/new?button-url=https%3A%2F%2Fgithub.com%2FLEGEND-OS%2FLEGENDBOT&template=https%3A%2F%2Fgithub.com%2FLEGEND-OS%2FLEGENDBOT"
                     ], 
-                ],
+                ]
                 link_preview=False,
             )
         await event.answer([result] if result else None)
