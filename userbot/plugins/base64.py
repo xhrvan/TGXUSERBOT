@@ -10,7 +10,6 @@ from userbot.cmdhelp import CmdHelp
 
 @bot.on(admin_cmd(pattern="hash (.*)", outgoing=True))
 @bot.on(sudo_cmd(pattern="hash (.*)", allow_sudo=True))
-@errors_handler
 async def gethash(hash_q):
     if hash_q.fwd_from:
         return
@@ -87,8 +86,4 @@ CmdHelp("base64").add_command(
   "b64 en", "<query>", "Finds the base64 encoding of the given string"
 ).add_command(
   "b64 de", "<query>", "Finds the base64 decoding of the given string"
-).add_info(
-  "Base 64 Encode & Decode!"
-).add_warning(
-  "✅ Harmless Module."
 ).add()
