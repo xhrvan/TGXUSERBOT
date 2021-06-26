@@ -251,12 +251,15 @@ async def payf(e):
     )
     await event.edit(pay)
     
-@borg.on(admin_cmd(pattern="animate (.*)"))
-async def _(event): name = event.pattern_match.group(1) 
+@bot.on(admin_cmd(pattern=f"animate$", outgoing=True))
+@bot.on(sudo_cmd(pattern=f"animate$", allow_sudo=True))
+async def _(event):
+async def _(event):  
     if event.fwd_from:
         return
     animation_interval = 1
-    animation_ttl = range(1)
+    animation_ttl = range(11)
+    await edit_or_reply(event, "animate")
     animation_chars = [
         f"⚫️⚪️⚫️⚪️⚫️⚪️⚫️⚪️⚫️⚪️⚫️\n⚪️⚫️⚪️⚫️⚪️⚫️⚪️⚫️⚪️⚫️⚪️\n⚫️⚪️⚫️..**{name}**..⚫️⚪️⚫️\n⚪️⚫️⚪️⚫️⚪️⚫️⚪️⚫️⚪️⚫️⚪️\n⚫️⚪️⚫️⚪️⚫️⚪️⚫️⚪️⚫️⚪️⚫️\n",
         f"⚪️⚫️⚪️⚫️⚪️⚫️⚪️⚫️⚪️⚫️⚪️\n⚫️⚪️⚫️⚪️⚫️⚪️⚫️⚪️⚫️⚪️⚫️\n⚪️⚫️⚪️..**{name}**..⚪️⚫️⚪️\n⚫️⚪️⚫️⚪️⚫️⚪️⚫️⚪️⚫️⚪️⚫️\n⚪️⚫️⚪️⚫️⚪️⚫️⚪️⚫️⚪️⚫️⚪️\n",
