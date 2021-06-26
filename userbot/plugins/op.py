@@ -6,6 +6,7 @@ import asyncio
 import random
 from telethon import events
 from LEGENDBOT.utils import admin_cmd
+from userbot.cmdhelp import CmdHelp
 from userbot import ALIVE_NAME
 from telethon.tl.types import ChannelParticipantsAdmins
 # 🤔🤔🤔🤔🤔🤔🤔🤔🤔🤔🤔🤔🤔🤔🤔🤔🤔🤔🤔🤔🤔🤔🤔🤔🤔🤔🤔🤔🤔
@@ -66,5 +67,5 @@ async def amireallyalive(yes):
     await borg.send_file(alive.chat_id, PM_IMG,caption=pm_caption)
     await alive.delete()
     CmdHelp("op").add_command(
-      'op',None , 'BEST alive command'
+      'op', None , 'BEST alive command'
 ).add()
