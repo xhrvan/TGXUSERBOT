@@ -40,7 +40,7 @@ async def start(event):
     replied_user = await event.client(GetFullUserRequest(event.sender_id))
     firstname = replied_user.user.first_name
     vent = event.chat_id
-    starttext = f"Hello, {firstname} ! Nice To Meet You, Well I Am {bot_id}, An Powerfull Assistant Bot. \n\nMy [➤ Master](tg://user?id={bot.uid}) \nYou Can Talk/Contact My Master Using This Bot. \n\nIf You Want Your Own Assistant You Can Deploy From Button Below. \n\nPowered By [Darkultra](https://t.me/Dark_ultra_support)"
+    starttext = f"Hello, {firstname} ! Nice To Meet You, Well I Am {bot_id}, An Powerfull Assistant Bot. \n\nMy [➤ Master](tg://user?id={bot.uid}) \nYou Can Talk/Contact My Master Using This Bot. \n\nIf You Want Your Own Assistant You Can Deploy From Button Below. \n\nPowered By [LEGENDBOT](https://t.me/Legend_Mr_Hacker)"
     if event.sender_id == bot.uid:
         await tgbot.send_message(
             vent,
@@ -65,8 +65,8 @@ async def start(event):
             message=starttext,
             link_preview=False,
             buttons=[
-                [custom.Button.inline("Deploy your Darkultra 🐍", data="deploy")],
-                [Button.url("Help Me ❓", "https://t.me/Dark_ultra_support_group")],
+                [custom.Button.inline("Deploy your LEGENDBOT 🐍", data="deploy")],
+                [Button.url("Help Me ❓", "https://t.me/Legend_Mr_Hacker")],
             ],
         )
 
@@ -82,8 +82,8 @@ async def help(event):
             event.chat_id,
             message="You Can Deploy darkultra In Heroku By Following Steps Bellow, You Can See Some Quick Guides On Support Channel Or On Your Own Assistant Bot. \nThank You For Contacting Me.",
             buttons=[
-                [Button.url("Deploy Tutorial 📺", "http://www.youtube.com/watch?v=-MbQO6kmP8o")],
-                [Button.url("Need Help ❓", "https://t.me/Dark_cobra_support_group")],
+                [Button.url("Deploy Tutorial 📺", "http://www.youtube.com")],
+                [Button.url("Need Help ❓", "https://t.me/Legend_Mr_Hacker")],
             ],
         )
 
