@@ -5,7 +5,7 @@ COMMAND_HAND_LER = os.environ.get("COMMAND_HAND_LER", r".")
 
 #################################################################################################################
 
-class CmdHelp, CMD_HELP:
+class CmdHelp:
     """
     The class I wrote to better generate command aids.
     """
