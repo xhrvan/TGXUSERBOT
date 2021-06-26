@@ -7,16 +7,18 @@ from telethon.tl.types import InputMessagesFilterPhotos, InputMessagesFilterDocu
 
 from . import *
 
+from LEGENDBOT.utils import admin_cmd, edit_or_reply, sudo_cmd, LEGENDevent
+from userbot.cmdhelp import CmdHelp
 
 PICS_STR = []
 
 @bot.on(admin_cmd(pattern=r"logo ?(.*)"))
 @bot.on(sudo_cmd(pattern=r"logo ?(.*)", allow_sudo=True))
-async def lg1(hellevent):
-    event = await eor(hellevent, "`Processing.....`")
-    fnt = await get_font_file(hellevent.client, "@HELL_FRONTS")
-    if hellevent.reply_to_msg_id:
-        rply = await hellevent.get_reply_message()
+async def lg1(legendevent):
+    event = await eor(LEGENDevent, "`Processing.....`")
+    fnt = await get_font_file(LEGENDevent.client, "@HELL_FRONTS")
+    if LEGENDevent.reply_to_msg_id:
+        rply = await LEGENDevent.get_reply_message()
         logo_ = await rply.download_media()
     else:
         async for i in bot.iter_messages("@HELLBOT_LOGOS", filter=InputMessagesFilterPhotos):
@@ -59,7 +61,7 @@ async def lg1(hellevent):
     await bot.send_file(
         hellevent.chat_id,
         file_name,
-        caption=f"**Made By :** {hell_mention}",
+        caption=f"**Made By :** {legend_mention}",
     )
     await event.delete()
     try:
@@ -83,8 +85,4 @@ async def get_font_file(client, channel_id):
 
 CmdHelp("logos").add_command(
   "logo", "<reply to pic + text> or <text>", "Makes a logo with the given text. If replied to a picture makes logo on that else gets random BG."
-).add_info(
-  "Logo Maker.\n**🙋🏻‍♂️ Note :**  Currently only supports custom pics. Fonts are choosen randomly."
-).add_warning(
-  "✅ Harmless Module."
 ).add()
