@@ -53,7 +53,7 @@ async def actresspp():
 
     urllib.request.urlretrieve(fy,"donottouch.jpg")
 
-@bot.on(admin_cmd(pattern="actressdp ?(.*)"))
+@bot.on(admin_cmd(pattern="actressdps ?(.*)"))
 
 async def main(event):
 
@@ -103,7 +103,7 @@ COLLECTION_STRING = [
 
 ]
 
-async def avengerspp():
+async def avengersdps():
 
     os.system("rm -rf donot.jpg")
 
@@ -127,7 +127,7 @@ async def avengerspp():
 
     urllib.request.urlretrieve(fy,"donottouch.jpg")
 
-@bot.on(admin_cmd(pattern="avengersdp ?(.*)"))
+@bot.on(admin_cmd(pattern="avengersdps ?(.*)"))
 
 async def main(event):
 
@@ -190,7 +190,7 @@ async def hackpp():
 
     urllib.request.urlretrieve(fy,"donottouch.jpg")
 
-@bot.on(admin_cmd(pattern="hacker ?(.*)"))
+@bot.on(admin_cmd(pattern="hackers ?(.*)"))
 
 async def main(event):
 
@@ -280,7 +280,7 @@ COLLECTION_STRING = [
   
 ]
 
-async def marvelpp():
+async def marveldps():
 
     os.system("rm -rf donot.jpg")
 
@@ -304,7 +304,7 @@ async def marvelpp():
 
     urllib.request.urlretrieve(fy,"donottouch.jpg")
 
-@bot.on(admin_cmd(pattern="marveldp ?(.*)"))
+@bot.on(admin_cmd(pattern="marveldps ?(.*)"))
 
 async def main(event):
 
@@ -336,7 +336,7 @@ COLLECTION_STRING = [
   "Alien-vs-Predator-Wallpaper"
 ]
 
-async def ppp():
+async def predatordps():
     os.system("rm -rf donot.jpg")
     rnd = random.randint(0, len(COLLECTION_STRING) - 1)
     pack = COLLECTION_STRING[rnd]
@@ -349,7 +349,7 @@ async def ppp():
         urllib.request.urlretrieve("https://github.com/rebel6969/mym/raw/master/Rebel-robot-Regular.ttf","f.ttf")
     urllib.request.urlretrieve(fy,"donottouch.jpg")
     
-@bot.on(admin_cmd(pattern="predatordp ?(.*)"))
+@bot.on(admin_cmd(pattern="predatordps ?(.*)"))
 async def main(event):
     await event.edit("**Starting predator Profile Pic.**") #Owner @NihiNivi
     while True:
@@ -387,7 +387,7 @@ COLLECTION_STRINGS = [
   "cool-space-wallpapers-hd",
 ]
 
-async def spacepp():
+async def spacedps():
 
     os.system("rm -rf donot.jpg")
 
@@ -411,7 +411,7 @@ async def spacepp():
 
     urllib.request.urlretrieve(fy,"friday.jpg")
 
-@bot.on(admin_cmd(pattern="spacedp ?(.*)"))
+@bot.on(admin_cmd(pattern="spacedps ?(.*)"))
 
 async def main(event):
 
@@ -459,7 +459,7 @@ TELEGRAPH_MEDIA_LINKS = ["https://telegra.ph/file/2eab4f64ead6fbf41bf87.jpg",
                          "https://telegra.ph/file/a196b6c07f0a659daf058.jpg",
                          "https://telegra.ph/file/69f19acd13b1eaf3fc120.jpg"
                         ]
-@bot.on(admin_cmd(pattern="survivorpfp ?(.*)"))
+@bot.on(admin_cmd(pattern="survivorpfps ?(.*)"))
 async def autopic(event):
     while True:
         piclink = random.randint(0, len(TELEGRAPH_MEDIA_LINKS) - 1)
@@ -524,7 +524,7 @@ COLLECTION_STRINGZ = [
 
 ]
 
-async def actionpp():
+async def actiondps():
 
     os.system("rm -rf donot.jpg")
 
@@ -548,7 +548,7 @@ async def actionpp():
 
     urllib.request.urlretrieve(fy,"donottouch.jpg")
 
-@bot.on(admin_cmd(pattern="actiondp ?(.*)"))
+@bot.on(admin_cmd(pattern="actiondps ?(.*)"))
 
 async def main(event):
 
@@ -599,7 +599,7 @@ COLLECTION_STRING = [
 
 ]
 
-async def animepp():
+async def animedps():
 
     os.system("rm -rf donot.jpg")
 
@@ -623,7 +623,7 @@ async def animepp():
 
     urllib.request.urlretrieve(fy,"donottouch.jpg")
 
-@bot.on(admin_cmd(pattern="animedp ?(.*)"))
+@bot.on(admin_cmd(pattern="animedps ?(.*)"))
 
 async def main(event):
 
@@ -659,7 +659,7 @@ COLLECTION_STRING = [
   "darth-vader-wallpaper"
 ]
 
-async def gamepp():
+async def gamerpfps():
     os.system("rm -rf donot.jpg")
     rnd = random.randint(0, len(COLLECTION_STRING) - 1)
     pack = COLLECTION_STRING[rnd]
@@ -671,7 +671,7 @@ async def gamepp():
     if not os.path.exists("f.ttf"):
         urllib.request.urlretrieve("https://github.com/rebel6969/mym/raw/master/Rebel-robot-Regular.ttf","f.ttf")
     urllib.request.urlretrieve(fy,"donottouch.jpg")
-@bot.on(admin_cmd(pattern="gamerpfp ?(.*)"))
+@bot.on(admin_cmd(pattern="gamerpfps ?(.*)"))
 async def main(event):
     await event.edit("**Starting Gamer Profile Pic.**") #Owner @NihiNivi
     while True:
@@ -704,25 +704,25 @@ CMD_HELP.update(
         }
 )
 CmdHelp("auto_pic").add_command(
-  'auto_pic', None, 'Change ur profile pic automatically'
+  'auto_pics', None, 'Change ur profile pic automatically'
 ).add_command(
-  'avengersdp', None, 'Change ur profile pic automatically'
+  'avengersdps', None, 'Change ur profile pic automatically'
 ).add_command(
-  '.actressdp', None, 'Change ur profile pic automatically'
+  'actressdps', None, 'Change ur profile pic automatically'
 ).add_command(
-  'hacker', None, 'Change ur profile pic automatically'
+  'hackers', None, 'Change ur profile pic automatically'
 ).add_command(
-  'marveldp', None, 'Change ur profile pic automatically'
+  'marveldps', None, 'Change ur profile pic automatically'
 ).add_command(
-  'predatordp', None, 'Change ur profile pic automatically'
+  'predatordps', None, 'Change ur profile pic automatically'
 ).add_command(
   'spacedp', None, 'Change ur profile pic automatically'
 ).add_command(
-   'psurvivorpf', None, 'Change ur profile pic automatically'
+   'psurvivorpfs', None, 'Change ur profile pic automatically'
 ).add_command(
-  '.actiondp', None, 'Change ur profile pic automatically'
+  '.actiondps', None, 'Change ur profile pic automatically'
 ).add_command(
-  'animedp', None, 'Change ur profile pic automatically'
+  'animedps', None, 'Change ur profile pic automatically'
 ).add_command(
-  'gamerpfp', None, 'Change ur profile pic automatically'
+  'gamerpfps', None, 'Change ur profile pic automatically'
 ).add()
