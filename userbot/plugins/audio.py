@@ -21,7 +21,8 @@ from LEGENDBOT.utils import admin_cmd, edit_or_reply, sudo_cmd
 
 
 
-@bot.on(admin_cmd(pattern="audio (.*)"))
+@bot.on(admin_cmd(pattern="audios (.*)"))
+@borg.on(admin_cmd(pattern="audios"))
 
 async def _(event):
 
@@ -144,5 +145,5 @@ async def _(event):
         await event.edit(str(e))
 
 CmdHelp("audio").add_command(
-    'audio', None, '.audio <language code> ex.audio en / .audio hi  -convert text to Audio example .audio en|msg (note:- this | mark is important.)'
+  "audio", None, "audio <language code> ex.audio en / .audio hi  -convert text to Audio example .audio en|msg (note:- this | mark is important.)"
 ).add()
