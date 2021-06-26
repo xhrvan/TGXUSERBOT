@@ -27,6 +27,14 @@ async def _(event):
     for i in animation_ttl:
         await asyncio.sleep(animation_interval)
         await event.edit(animation_chars[i % 7])
+        
+@bot.on(admin_cmd(pattern="birthday$", outgoing=True))
+@bot.on(sudo_cmd(pattern="birthday$", allow_sudo=True))
+async def gn(event):
+    if event.fwd_from:
+        return
+    await edit_or_reply(event, "╔╗╔╦══╦═╦═╦╗╔╗\n║╚╝║══║═║═║╚╝║\n║╔╗║╔╗║╔╣╔╩╗╔╝\n╚╝╚╩╝╚╩╝╚╝• B-day •"
+    )
 
 @bot.on(admin_cmd(pattern=f"g1$", outgoing=True))
 async def payf(event):
@@ -260,4 +268,6 @@ CmdHelp("animations6").add_command(
   'f', None, 'Use and see'
 ).add_command(
   'muth', None, 'Use And See'
+).add_command(
+  'birthday', None, 'Use And See'
 ).add()
