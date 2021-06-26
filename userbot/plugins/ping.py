@@ -68,9 +68,8 @@ async def _(event):
     end = datetime.now()
     ms = (end - start).microseconds / 1000
     await event.edit(
-        f"__**🔱𖤍 Pong! 𖤍🔱__**\n\n   ⚘ {ms}\n   ⚘ __**My**__ __**Master**__ [{DEFAULTUSER}](tg://user?id={LEGEND})"
+        f"__**🔱 Pong! 🔱__**\n\n ⚘ {ms}\n ⚘ __**My**__ __**Master**__ [{DEFAULTUSER}](tg://user?id={aura})" 
     )
-
 
 CmdHelp("ping").add_command(
   "ping", None, "Shows you the ping speed of server"
