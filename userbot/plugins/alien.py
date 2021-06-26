@@ -1,4 +1,4 @@
-import cv2
+
 import numpy as np
 import math
 from vcam import vcam,meshGen
@@ -28,7 +28,6 @@ async def fun_mirror(event):
     output = cv2.remap(img,map_x,map_y,interpolation=cv2.INTER_LINEAR,borderMode=0)
     output = cv2.flip(output,1)
     out1 = cv2.resize(output,(700,350))
-    cv2.imwrite(file_name,out1)
     await borg.send_file(event.chat_id, file_name)
     for files in (hehe, lol):
         if files and os.path.exists(files):
