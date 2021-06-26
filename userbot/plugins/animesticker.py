@@ -3,8 +3,9 @@
 import random
 import re
 
-from userbot.cmdhelp import CmdHelp, bot
+from userbot.cmdhelp import CmdHelp
 from userbot.events import register
+from LEGENDBOT.utils import admin_cmd, edit_or_reply, sudo_cmd
 
 EMOJI_PATTERN = re.compile(
     "["
@@ -29,6 +30,8 @@ def deEmojify(inputString: str) -> str:
 
 
 @register(outgoing=True, pattern="^.waifu(?: |$)(.*)")
+@bot.on(admin_cmd(pattern="waifu$"))
+@bot.on(sudo_cmd(pattern="waifu$", allow_sudo=True))
 async def waifu(animu):
     # """Creates random anime sticker!"""
 
@@ -50,6 +53,9 @@ async def waifu(animu):
         hide_via=True,
     )
     await animu.delete()
+    
 CmdHelp("animesticker").add_command(
-  'waifu', None, 'Use and See'
+    'waifu', None, 'Use and See'
+).add_command(
+    'op', None, 'Use and See'
 ).add()
