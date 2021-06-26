@@ -40,7 +40,7 @@ else:
     else:
         bot.start()
 
-
+import glob
 if LOAD_USERBOT == True:
     path = "userbot/plugins/*.py"
     files = glob.glob(path)
