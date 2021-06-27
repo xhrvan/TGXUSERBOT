@@ -27,7 +27,7 @@ from userbot import *
 from userbot.cmdhelp import *
 from LEGENDBOT.utils import *
 from userbot.Config import Config
-from userbot.Config import ALIVE_NAME
+from userbot import ALIVE_NAME
 LEGEND_row = Config.BUTTONS_IN_HELP
 LEGEND_emoji = Config.EMOJI_IN_HELP
 # thats how a lazy guy imports
