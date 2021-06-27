@@ -11,6 +11,9 @@ from telethon import events
 from telethon.errors.rpcerrorlist import YouBlockedUserError
 from userbot import CMD_HELP
 
+#------------------------------------------------------------------------------- 
+DEFAULTUSER = str(ALIVE_NAME) if ALIVE_NAME else "LEGEND"
+
 mention = f"[{DEFAULTUSER}](tg://user?id={aura})"
 PICS_STR = []
 
