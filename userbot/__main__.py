@@ -19,21 +19,14 @@ LOAD_ASSISTANT = os.environ.get("LOAD_ASSISTANT", True)
 
 # let's get the bot ready
 async def add_bot(bot_token):
-    try:
-        await bot.start(bot_token)
-        bot.me = await bot.get_me()
-        bot.uid = telethon.utils.get_peer_id(bot.me)
-    except Exception as e:
-        LOGS.error(f"LEGENDBOT_SESSION - {str(e)}")
-        sys.exit()
-        
-        
+    await bot.start(bot_token)
+    bot.me = await bot.get_me()
+    bot.uid = telethon.utils.get_peer_id(bot.me)
 if len(argv) not in (1, 3, 4):
     bot.disconnect()
 else:
     bot.tgbot = None
-    try:
-       if Var.TG_BOT_USER_NAME_BF_HER is not None:
+     if Var.TG_BOT_USER_NAME_BF_HER is not None:
         print("Initiating Inline Bot")
         # ForTheGreatrerGood of beautification
         bot.tgbot = TelegramClient(
@@ -48,7 +41,8 @@ else:
         bot.loop.run_until_complete(add_bot(Var.TG_BOT_USER_NAME_BF_HER))
         print("Startup Completed")
         LOGS.info("🔥 LEGENDBOT Startup Completed 🔥") 
-            bot.start()
+        bot.start()
+        
 import glob
 if LOAD_USERBOT == True:
     path = "userbot/plugins/*.py"
@@ -61,8 +55,9 @@ if LOAD_USERBOT == True:
                 load_module(shortname.replace(".py", ""))
             except Exception as er:
                 print(er)
-     else:
-        print("Userbot is Not Loading As U Have Disabled")
+           
+  else:
+    print("Userbot is Not Loading As U Have Disabled")
        
 if LOAD_ASSISTANT == True:
     path = "userbot/plugins/assistant/*.py"
@@ -104,7 +99,7 @@ CREATOR :- @Legend_Mr_Hacker
 DO .op OR .ping OR .legend CHECK IF I'M ON!
 IF YOU FACE ANY ISSUE THEN ASK WITH @Legend_Mr_Hacker.""")
 
-if len(sys.argv) not in (1, 3, 4):
+if len(argv) not in (1, 3, 4):
     bot.disconnect()
 else:
     bot.tgbot = None
