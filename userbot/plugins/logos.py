@@ -18,7 +18,7 @@ PICS_STR = []
 async def lg1(LEGENDevent):
     event = await edit_or_reply(LEGENDevent, "`Processing.....`")
     fnt = await get_font_file(event.client, "@HELL_FRONTS")
-    if hellevent.reply_to_msg_id:
+    if LEGENDevent.reply_to_msg_id:
         rply = await LEGENDevent.get_reply_message()
         logo_ = await rply.download_media()
     else:
@@ -26,7 +26,7 @@ async def lg1(LEGENDevent):
     	    PICS_STR.append(i)
         pic = random.choice(PICS_STR)
         logo_ = await pic.download_media()
-    text = hellevent.pattern_match.group(1)
+    text = LEGENDevent.pattern_match.group(1)
     if len(text) <= 8:
         font_size_ = 150
         strik = 10
