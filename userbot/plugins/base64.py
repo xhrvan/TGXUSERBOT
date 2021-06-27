@@ -56,7 +56,7 @@ async def gethash(hash_q):
         await event.delete()
 
 
-@bot.on(hell_cmd(pattern="b64 (en|de) (.*)", outgoing=True))
+@bot.on(admin_cmd(pattern="b64 (en|de) (.*)", outgoing=True))
 @bot.on(sudo_cmd(pattern="b64 (en|de) (.*)", allow_sudo=True))
 @errors_handler
 async def endecrypt(query):
