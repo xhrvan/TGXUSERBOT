@@ -10,7 +10,7 @@ from userbot import *
 
 PICS_STR = []
 
-@bot.on(hell_cmd(pattern=r"logo ?(.*)"))
+@bot.on(admin_cmd(pattern=r"logo ?(.*)"))
 @bot.on(sudo_cmd(pattern=r"logo ?(.*)", allow_sudo=True))
 async def lg1(hellevent):
     event = await eor(event, "`Processing.....`")
@@ -59,7 +59,7 @@ async def lg1(hellevent):
     await bot.send_file(
         hellevent.chat_id,
         file_name,
-        caption=f"**Made By :** {hell_mention}",
+        caption=f"**Made By :** {LEGEND_mention}",
     )
     await event.delete()
     try:
