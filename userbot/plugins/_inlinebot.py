@@ -79,8 +79,8 @@ if Var.TG_BOT_USER_NAME_BF_HER is not None and tgbot is not None:
             rev_text = query[::-1]
             veriler = button(0, sorted(CMD_HELP))
             result = await builder.article(
-                f"Hey! Only use .legend please",
-                text=f"**『🔱🇱 🇪 🇬 🇪 🇳 🇩 🔱』**\n\n__Number of plugins installed__ :`{len(CMD_HELP)}`\n __Commands__ : `{len(apn)}`\n**page:** 1/{veriler[0]}",
+                f"Hey! Only use .help please", 
+                text=f"**Running LEGENDBOT**\n\n__Number of plugins installed__ :`{len(CMD_HELP)}`\n**page:** 1/{veriler[0]}",
                 buttons=veriler[1],
                 link_preview=False,
             )
