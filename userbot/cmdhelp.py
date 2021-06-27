@@ -1,17 +1,21 @@
 from userbot import CMD_HELP, CMD_HELP_BOT
 import os
 
-HANDLER = os.environ.get("HANDLER", r".")
+COMMAND_HAND_LER = os.environ.get("COMMAND_HAND_LER", r".")
 
+#################################################################################################################
 
-# Made this class for help menu
 class CmdHelp:
+    """
+    The class I wrote to better generate command aids.
+    """
+
     FILE = ""
     ORIGINAL_FILE = ""
     FILE_AUTHOR = ""
     IS_OFFICIAL = True
     COMMANDS = {}
-    PREFIX = HANDLER
+    PREFIX = COMMAND_HAND_LER
     WARNING = ""
     INFO = ""
 
@@ -58,28 +62,33 @@ class CmdHelp:
         Brings results.
         """
 
-        result = f"**📗 File :**  `{self.FILE}`\n"
-        if self.INFO == "":
-            if not self.WARNING == "":
-                result += f"**⚠️ Warning :**  {self.WARNING}\n\n"
+        result = f"**📗 File :** `{self.FILE}`\n"
+        if self.WARNING == "" and self.INFO == "":
+            result += f"**⬇️ Official:** {'✅' if self.IS_OFFICIAL else '❌'}\n\n"
         else:
-            if not self.WARNING == "":
-                result += f"**⚠️ Warning :**  {self.WARNING}\n"
-            result += f"**ℹ️ Info :**  {self.INFO}\n\n"
+            result += f"**⬇️ Official:** {'✅' if self.IS_OFFICIAL else '❌'}\n"
+
+            if self.INFO == "":
+                if not self.WARNING == "":
+                    result += f"**⚠️ Warning :** {self.WARNING}\n\n"
+            else:
+                if not self.WARNING == "":
+                    result += f"**⚠️ Warning :** {self.WARNING}\n"
+                result += f"**ℹ️ Info:** {self.INFO}\n\n"
 
         for command in self.COMMANDS:
             command = self.COMMANDS[command]
             if command["params"] == None:
-                result += f"**🛠 Command :**  `{HANDLER[:1]}{command['command']}`\n"
+                result += f"**🛠 Command :** `{COMMAND_HAND_LER[:1]}{command['command']}`\n"
             else:
-                result += f"**🛠 Command :**  `{HANDLER[:1]}{command['command']} {command['params']}`\n"
+                result += f"**🛠 Command :** `{COMMAND_HAND_LER[:1]}{command['command']} {command['params']}`\n"
 
             if command["example"] == None:
-                result += f"**💬 Details :**  `{command['usage']}`\n\n"
+                result += f"**💬 Details :** `{command['usage']}`\n\n"
             else:
-                result += f"**💬 Details :**  `{command['usage']}`\n"
+                result += f"**💬 Details :** `{command['usage']}`\n"
                 result += (
-                    f"**⌨️ For Example :**  `{HANDLER[:1]}{command['example']}`\n\n"
+                    f"**⌨️ For Example :** `{COMMAND_HAND_LER[:1]}{command['example']}`\n\n"
                 )
         return result
 
@@ -89,6 +98,7 @@ class CmdHelp:
         """
         CMD_HELP_BOT[self.FILE] = {
             "info": {
+                "official": self.IS_OFFICIAL,
                 "warning": self.WARNING,
                 "info": self.INFO,
             },
@@ -104,5 +114,3 @@ class CmdHelp:
             return "or"
         elif text == "USERNAMES":
             return "<user name (s)>"
-
-# LEGENDBOT
