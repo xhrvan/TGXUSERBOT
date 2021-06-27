@@ -16,7 +16,7 @@ PICS_STR = []
 @bot.on(admin_cmd(pattern=r"logo ?(.*)"))
 @bot.on(sudo_cmd(pattern=r"logo ?(.*)", allow_sudo=True))
 async def lg1(hellevent):
-    LEGENDevent = await eor(event, "`Processing.....`")
+    LEGENDevent = await edit_or_reply(event, "`Processing.....`")
     fnt = await get_font_file(event.client, "@HELL_FRONTS")
     if hellevent.reply_to_msg_id:
         rply = await hellevent.get_reply_message()
