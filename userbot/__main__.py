@@ -10,7 +10,7 @@ from userbot.utils import load_module, start_assistance
 from userbot import LOAD_PLUG, LOGS, LEGENDversion
 from pathlib import Path
 import asyncio
-import telethon.
+import telethon.utils
 from telethon.tl.functions.channels import InviteToChannelRequest, JoinChannelRequest
 os.system("pip install -U telethon")
 
