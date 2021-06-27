@@ -681,28 +681,6 @@ async def main(event):
         os.system("rm -rf donottouch.jpg")
         await asyncio.sleep(400)
 
-CMD_HELP.update(
-    {
-        "": ""
-        "\nUsage: \n\n"
-        "\nUsage: \n\n"
-        "."
-        "\nUsage: Change ur profile pic automatically\n\n"
-        ""
-        "\nUsage: Change ur profile pic automatically\n\n"
-        "."
-        "\nUsage: Change ur profile pic automatically\n\n"
-        "."
-        "\nUsage: Change ur profile pic automatically\n\n"
-        "\nUsage: Change ur profile pic automatically\n\n"
-        ""
-        "\nUsage: Change ur profile pic automatically\n\n"
-        "."
-        "\nUsage: Change ur profile pic automatically\n\n"
-        "."
-        "\nUsage: Change ur profile pic automatically\n\n"
-        }
-)
 CmdHelp("auto_pic").add_command(
   'auto_pics', None, 'Change ur profile pic automatically'
 ).add_command(
