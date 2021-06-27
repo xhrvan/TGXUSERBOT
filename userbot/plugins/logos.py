@@ -7,13 +7,16 @@ from telethon.tl.types import InputMessagesFilterPhotos, InputMessagesFilterDocu
 
 from userbot import *
 from LEGENDBOT.utils import admin_cmd, sudo_cmd, edit_or_reply
+from telethon import events
+from telethon.errors.rpcerrorlist import YouBlockedUserError
+from userbot import CMD_HELP
 
 PICS_STR = []
 
 @bot.on(admin_cmd(pattern=r"logo ?(.*)"))
 @bot.on(sudo_cmd(pattern=r"logo ?(.*)", allow_sudo=True))
 async def lg1(hellevent):
-    event = await eor(event, "`Processing.....`")
+    LEGENDevent = await eor(event, "`Processing.....`")
     fnt = await get_font_file(event.client, "@HELL_FRONTS")
     if hellevent.reply_to_msg_id:
         rply = await hellevent.get_reply_message()
