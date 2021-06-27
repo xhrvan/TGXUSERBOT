@@ -28,12 +28,8 @@ else:
     bot.tgbot = None
     try:
         if Var.TG_BOT_USER_NAME_BF_HER is not None:
-        print("Initiating Inline Bot")
-        # ForTheGreatrerGood of beautification
-        bot.tgbot = TelegramClient(
-            "TG_BOT_TOKEN",
-            api_id=Var.APP_ID,
-            api_hash=Var.API_HASH
+            LOGS.info("Checking Telegram Bot Username...")
+            bot.tgbot = TelegramClient(
         ).start(bot_token=Var.TG_BOT_TOKEN_BF_HER)
         LOGS.info("Checking Completed. Proceeding to next step...")
         LOGS.info("🔰 Starting LEGENDBOT 🔰")
@@ -42,7 +38,11 @@ else:
         bot.loop.run_until_complete(add_bot(Var.TG_BOT_USER_NAME_BF_HER))
         print("Startup Completed")
         LOGS.info("🔥 LEGENDBOT Startup Completed 🔥") 
-        bot.start()
+        else:
+            bot.start()
+    except Exception as e:
+        LOGS.error(f"BOT_TOKEN - {str(e)}")
+        sys.exit()
         
 import glob
 if LOAD_USERBOT == True:
