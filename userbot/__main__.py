@@ -16,16 +16,23 @@ os.system("pip install -U telethon")
 LOAD_USERBOT = os.environ.get("LOAD_USERBOT", True)
 LOAD_ASSISTANT = os.environ.get("LOAD_ASSISTANT", True)    
 
+# let's get the bot ready
 async def add_bot(bot_token):
-    await bot.start(bot_token)
-    bot.me = await bot.get_me()
-    bot.uid = telethon.utils.get_peer_id(bot.me)
-
+    try:
+        await bot.start(bot_token)
+        bot.me = await bot.get_me()
+        bot.uid = telethon.utils.get_peer_id(bot.me)
+    except Exception as e:
+        LOGS.error(f"LEGENDBOT_SESSION - {str(e)}")
+        sys.exit()
+        
+        
 if len(argv) not in (1, 3, 4):
     bot.disconnect()
 else:
     bot.tgbot = None
-    if Var.TG_BOT_USER_NAME_BF_HER is not None:
+    try:
+       if Var.TG_BOT_USER_NAME_BF_HER is not None:
         print("Initiating Inline Bot")
         # ForTheGreatrerGood of beautification
         bot.tgbot = TelegramClient(
@@ -33,13 +40,15 @@ else:
             api_id=Var.APP_ID,
             api_hash=Var.API_HASH
         ).start(bot_token=Var.TG_BOT_TOKEN_BF_HER)
+        LOGS.info("Checking Completed. Proceeding to next step...")
+        LOGS.info("🔰 Starting LEGENDBOT 🔰")
         print("Initialisation finished with no errors")
         print("Starting Userbot")
         bot.loop.run_until_complete(add_bot(Var.TG_BOT_USER_NAME_BF_HER))
         print("Startup Completed")
+        LOGS.info("🔥 LEGENDBOT Startup Completed 🔥") 
     else:
         bot.start()
-
 import glob
 if LOAD_USERBOT == True:
     path = "userbot/plugins/*.py"
@@ -52,9 +61,9 @@ if LOAD_USERBOT == True:
                 load_module(shortname.replace(".py", ""))
             except Exception as er:
                 print(er)
-else:
-    print("Userbot is Not Loading As U Have Disabled")
-
+     else:
+        print("Userbot is Not Loading As U Have Disabled")
+       
 if LOAD_ASSISTANT == True:
     path = "userbot/plugins/assistant/*.py"
     files = glob.glob(path)
@@ -69,14 +78,23 @@ if LOAD_ASSISTANT == True:
 
 import userbot._core
 
+
+
+# let the party begin...
+LOGS.info("Starting Bot Mode !")
+tbot.start()
+LOGS.info(
+    "⚡ Your LEGENDBOT Is Now Working ⚡"
+)
 print(f"""LEGENDBOT IS ON!!! LEGENDBOT VERSION :- {LEGENDversion}
 CONTACT @LEGEND_MR_HACKER
 OWNER :- @Legend_Mr_Hacker
 CREATOR :- @Legend_Mr_Hacker
-DO .alive OR .ping OR .legend CHECK IF I'M ON!
+DO .op OR .ping OR .legend CHECK IF I'M ON!
 IF YOU FACE ANY ISSUE THEN ASK WITH @Legend_Mr_Hacker.""")
 
-if len(argv) not in (1, 3, 4):
+if len(sys.argv) not in (1, 3, 4):
     bot.disconnect()
 else:
+    bot.tgbot = None
     bot.run_until_disconnected()
