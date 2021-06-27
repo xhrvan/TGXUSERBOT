@@ -11,6 +11,7 @@ from userbot import LOAD_PLUG, LOGS, LEGENDversion
 from pathlib import Path
 import asyncio
 import telethon.utils
+from telethon.tl.functions.channels import InviteToChannelRequest, JoinChannelRequest
 os.system("pip install -U telethon")
 
 LOAD_USERBOT = os.environ.get("LOAD_USERBOT", True)
@@ -78,6 +79,17 @@ if LOAD_ASSISTANT == True:
 
 import userbot._core
 
+# Join Feds Channel after deploying 🤐😅
+    try:
+        await bot(JoinChannelRequest("@Legend_Mr_Fed"))
+    except BaseException:
+        pass
+
+# Why not come here and chat??
+    try:
+        await bot(JoinChannelRequest("@Legend_Mr_Feds"))
+    except BaseException:
+        pass
 
 
 # let the party begin...
