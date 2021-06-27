@@ -7,7 +7,7 @@ from telethon.tl.types import InputMessagesFilterPhotos, InputMessagesFilterDocu
 
 from . import *
 
-from LEGENDBOT.utils import admin_cmd, edit_or_reply, sudo_cmd, LEGENDevent
+from LEGENDBOT.utils import admin_cmd, edit_or_reply, sudo_cmd
 from userbot.cmdhelp import CmdHelp
 
 PICS_STR = []
