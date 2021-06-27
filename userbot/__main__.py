@@ -48,7 +48,11 @@ else:
         bot.loop.run_until_complete(add_bot(Var.TG_BOT_USER_NAME_BF_HER))
         print("Startup Completed")
         LOGS.info("🔥 LEGENDBOT Startup Completed 🔥") 
-        bot.start()
+        else:
+            bot.start()
+    except Exception as e:
+        LOGS.error(f"TG_BOT_TOKEN - {str(e)}")
+        sys.exit()
 import glob
 if LOAD_USERBOT == True:
     path = "userbot/plugins/*.py"
