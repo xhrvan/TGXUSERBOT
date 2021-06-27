@@ -6,7 +6,7 @@ from PIL import Image, ImageDraw, ImageFont
 from telethon.tl.types import InputMessagesFilterPhotos, InputMessagesFilterDocument
 
 from userbot import *
-
+from LEGENDBOT.utils import admin_cmd, sudo_cmd, edit_or_reply
 
 PICS_STR = []
 
