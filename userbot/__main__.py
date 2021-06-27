@@ -14,6 +14,11 @@ import telethon.utils
 os.system("pip install -U telethon")
 
 
+hl = Config.SUDO_COMMAND_HAND_LER
+LEGEND_PIC = Config.ALIVE_PIC or "https://telegra.ph/file/ea9e11f7c9db21c1b8d5e.mp4"
+
+
+
 LOAD_USERBOT = os.environ.get("LOAD_USERBOT", True)
 LOAD_ASSISTANT = os.environ.get("LOAD_ASSISTANT", True)    
 
