@@ -38,20 +38,22 @@ else:
         print("Starting Userbot")
         bot.loop.run_until_complete(add_bot(Var.TG_BOT_USER_NAME_BF_HER))
         print("Startup Completed")
-    else:
-        bot.start()
+        else:
+            bot.start()
 import glob
-path = 'userbot/plugins/*.py'
-files = glob.glob(path)
-for name in files:
-    with open(name) as f:
-        path1 = Path(f.name)
-        shortname = path1.stem
-        load_module(shortname.replace(".py", "")
-           
+if LOAD_USERBOT == True:
+    path = "userbot/plugins/*.py"
+    files = glob.glob(path)
+    for name in files:
+        with open(name) as f:
+            path1 = Path(f.name)
+            shortname = path1.stem
+            try:
+                load_module(shortname.replace(".py", ""))
+            except Exception as er:
+                print(er)
 else:
     print("Userbot is Not Loading As U Have Disabled")
-       
 if LOAD_ASSISTANT == True:
     path = "userbot/plugins/assistant/*.py"
     files = glob.glob(path)
