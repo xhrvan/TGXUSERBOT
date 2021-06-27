@@ -48,7 +48,6 @@ else:
         bot.loop.run_until_complete(add_bot(Var.TG_BOT_USER_NAME_BF_HER))
         print("Startup Completed")
         LOGS.info("🔥 LEGENDBOT Startup Completed 🔥") 
-    else:
         bot.start()
 import glob
 if LOAD_USERBOT == True:
