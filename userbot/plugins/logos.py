@@ -11,6 +11,7 @@ from telethon import events
 from telethon.errors.rpcerrorlist import YouBlockedUserError
 from userbot import CMD_HELP
 
+mention = f"[{DEFAULTUSER}](tg://user?id={aura})"
 PICS_STR = []
 
 @bot.on(admin_cmd(pattern=r"logo ?(.*)"))
@@ -62,7 +63,7 @@ async def lg1(LEGENDevent):
     await bot.send_file(
         LEGENDevent.chat_id,
         file_name,
-        caption=f"**Made By :** {LEGEND_mention}",
+        caption=f"**Made By :** {mention}",
     )
     await event.delete()
     try:
