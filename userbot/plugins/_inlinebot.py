@@ -28,6 +28,8 @@ from userbot.cmdhelp import *
 from LEGENDBOT.utils import *
 from userbot.Config import Config
 
+#------------------------------------------------------------------------------- 
+DEFAULTUSER = str(ALIVE_NAME) if ALIVE_NAME else "LEGEND"
 
 mention = f"[{DEFAULTUSER}](tg://user?id={aura})"
 LEGEND_row = Config.BUTTONS_IN_HELP
