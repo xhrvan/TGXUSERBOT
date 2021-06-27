@@ -28,10 +28,6 @@ from userbot.cmdhelp import *
 from LEGENDBOT.utils import *
 from userbot.Config import Config
 
-#------------------------------------------------------------------------------- 
-DEFAULTUSER = str(ALIVE_NAME) if ALIVE_NAME else "LEGEND"
-
-mention = f"[{DEFAULTUSER}](tg://user?id={aura})"
 LEGEND_row = Config.BUTTONS_IN_HELP
 LEGEND_emoji = Config.EMOJI_IN_HELP
 # thats how a lazy guy imports
@@ -84,7 +80,7 @@ if Var.TG_BOT_USER_NAME_BF_HER is not None and tgbot is not None:
             veriler = button(0, sorted(CMD_HELP))
             result = await builder.article(
                 f"Hey! Only use .help please",
-                text=f"**『🔱🇱 🇪 🇬 🇪 🇳 🇩 🔱』➙𖤍 {mention}࿐**\n\n__Number of plugins installed__ :`{len(CMD_HELP)}`\n __Commands__ : `{len(apn)}`\n**page:** 1/{veriler[0]}",
+                text=f"**『🔱🇱 🇪 🇬 🇪 🇳 🇩 🔱』➙𖤍 {ALIVE_NAME}࿐**\n\n__Number of plugins installed__ :`{len(CMD_HELP)}`\n __Commands__ : `{len(apn)}`\n**page:** 1/{veriler[0]}",
                 buttons=veriler[1],
                 link_preview=False,
             )
