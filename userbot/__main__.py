@@ -15,47 +15,41 @@ from telethon.tl.functions.channels import InviteToChannelRequest, JoinChannelRe
 os.system("pip install -U telethon")
 
 LOAD_USERBOT = os.environ.get("LOAD_USERBOT", True)
-LOAD_ASSISTANT = os.environ.get("LOAD_ASSISTANT", True)    
+LOAD_ASSISTANT = os.environ.get("LOAD_ASSISTANT", True) 
 
-# let's get the bot ready
-async def add_bot(bot_token):
     await bot.start(bot_token)
     bot.me = await bot.get_me()
     bot.uid = telethon.utils.get_peer_id(bot.me)
+
 if len(argv) not in (1, 3, 4):
     bot.disconnect()
 else:
     bot.tgbot = None
-    try:
-        if Var.TG_BOT_USER_NAME_BF_HER is not None:
+    if Var.TG_BOT_USER_NAME_BF_HER is not None:
+         print("Initiating Inline Bot")
+        # ForTheGreatrerGood of beautification
+        bot.tgbot = TelegramClient(
+            "TG_BOT_TOKEN",
+            api_id=Var.APP_ID,
+            api_hash=Var.API_HASH
+        ).start(bot_token=Var.TG_BOT_TOKEN_BF_HER)
             LOGS.info("Checking Telegram Bot Username...")
             bot.tgbot = TelegramClient(
         ).start(bot_token=Var.TG_BOT_TOKEN_BF_HER)
-        LOGS.info("Checking Completed. Proceeding to next step...")
-        LOGS.info("🔰 Starting LEGENDBOT 🔰")
         print("Initialisation finished with no errors")
-        print("Starting Userbot")
-        bot.loop.run_until_complete(add_bot(Var.TG_BOT_USER_NAME_BF_HER))
-        print("Startup Completed")
-        LOGS.info("🔥 LEGENDBOT Startup Completed 🔥")
-    except Exception as e:
-        LOGS.error(f"TG_BOT_TOKEN_BF_HER - {str(e)}")
-        sys.exit()
-        
+    else:
+        bot.start()
+
 import glob
-if LOAD_USERBOT == True:
-    path = "userbot/plugins/*.py"
-    files = glob.glob(path)
-    for name in files:
-        with open(name) as f:
-            path1 = Path(f.name)
-            shortname = path1.stem
-            try:
-                load_module(shortname.replace(".py", ""))
-            except Exception as er:
-                print(er)
+path = 'userbot/plugins/*.py'
+files = glob.glob(path)
+for name in files:
+    with open(name) as f:
+        path1 = Path(f.name)
+        shortname = path1.stem
+        load_module(shortname.replace(".py", "")
            
-  else:
+else:
     print("Userbot is Not Loading As U Have Disabled")
        
 if LOAD_ASSISTANT == True:
@@ -86,11 +80,6 @@ import userbot._core
 
 
 # let the party begin...
-LOGS.info("Starting Bot Mode !")
-tbot.start()
-LOGS.info(
-    "⚡ Your LEGENDBOT Is Now Working ⚡"
-)
 print(f"""LEGENDBOT IS ON!!! LEGENDBOT VERSION :- {LEGENDversion}
 CONTACT @LEGEND_MR_HACKER
 OWNER :- @Legend_Mr_Hacker
@@ -101,5 +90,4 @@ IF YOU FACE ANY ISSUE THEN ASK WITH @Legend_Mr_Hacker.""")
 if len(argv) not in (1, 3, 4):
     bot.disconnect()
 else:
-    bot.tgbot = None
     bot.run_until_disconnected()
