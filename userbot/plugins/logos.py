@@ -60,7 +60,7 @@ async def lg1(LEGENDevent):
     file_name = "HellBot.png"
     img.save(file_name, "png")
     await bot.send_file(
-        hellevent.chat_id,
+        LEGENDevent.chat_id,
         file_name,
         caption=f"**Made By :** {LEGEND_mention}",
     )
