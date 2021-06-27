@@ -38,7 +38,6 @@ else:
         bot.loop.run_until_complete(add_bot(Var.TG_BOT_USER_NAME_BF_HER))
         print("Startup Completed")
         LOGS.info("🔥 LEGENDBOT Startup Completed 🔥")
-           bot.start()
     except Exception as e:
         LOGS.error(f"TG_BOT_TOKEN_BF_HER - {str(e)}")
         sys.exit()
