@@ -18,7 +18,6 @@ import urllib
 import requests
 from telethon.tl import functions
 
-from userbot import CMD_HELP
 from LEGENDBOT.utils import admin_cmd
 from userbot.cmdhelp import CmdHelp
 
