@@ -7,7 +7,7 @@ from telethon.tl import functions
 from datetime import datetime
 
 from PIL import Image, ImageDraw, ImageFont
-from userbot.cmdhelp import CmdHelp, CMD_LIST
+from userbot.cmdhelp import CmdHelp
 
 from LEGENDBOT.utils import admin_cmd, edit_or_reply, sudo_cmd
 
