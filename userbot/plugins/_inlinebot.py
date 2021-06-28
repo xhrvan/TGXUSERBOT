@@ -131,6 +131,10 @@ if Var.TG_BOT_USER_NAME_BF_HER is not None and tgbot is not None:
             )
         page = int(event.data_match.group(1).decode("UTF-8"))
         veriler = button(page, CMD_HELP)
+        apn = []
+        for x in CMD_LIST.values():
+            for y in x:
+                apn.append(y)
         await event.edit(
             f"🛡️**[{ALIVE_NAME}](https://t.me/Legend_Mr_Hacker)** **Working...**\n\n**📁No. of modules installed :** `{len(CMD_HELP)}`\n🗂**Commands:** `{len(apn)}` \n📙**page:** {page + 1}/{veriler[0]}",
             buttons=veriler[1],
