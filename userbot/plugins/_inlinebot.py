@@ -89,7 +89,7 @@ if Var.TG_BOT_USER_NAME_BF_HER is not None and tgbot is not None:
                     apn.append(y)
             result = await builder.article(
                 f"Hey! Only use .help please", 
-                text=f"𖤍**[{ALIVE_NAME}](https://t.me/Legend_Mr_Hacker)**࿐\n\n🔥**__No. of plugins installed__** :`{len(CMD_HELP)}` \n⌘**__Commands__** : `{len(apn)}`\n🗒️**page:** 1/{veriler[0]}",
+                text=f"🛡️**[{ALIVE_NAME}](https://t.me/Legend_Mr_Hacker)**࿐\n\n📁**No. of plugins installed:** `{len(CMD_HELP)}` \n🗂**Commands:** `{len(apn)}`\n📙**page:** 1/{veriler[0]}",
                 buttons=veriler[1],
                 link_preview=False,
             )
@@ -132,7 +132,8 @@ if Var.TG_BOT_USER_NAME_BF_HER is not None and tgbot is not None:
         page = int(event.data_match.group(1).decode("UTF-8"))
         veriler = button(page, CMD_HELP)
         await event.edit(
-            f"**Legenday AF** [LEGENDBOT](https://t.me/Legend_Mr_Hacker) **Working...**\n\n**Number of modules installed :** `{len(CMD_HELP)}`\n**page:** {page + 1}/{veriler[0]}",
+            
+            f"🛡️**[{ALIVE_NAME}](https://t.me/Legend_Mr_Hacker)** **Working...**\n\n**📁No. of modules installed :** `{len(CMD_HELP)}`\n🗂**Commands:** `{len(apn)}` \n📙**page:** {page + 1}/{veriler[0]}",
             buttons=veriler[1],
             link_preview=False,
         )
