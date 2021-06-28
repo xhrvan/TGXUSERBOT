@@ -18,12 +18,12 @@ PICS_STR = []
 @bot.on(sudo_cmd(pattern=r"logo ?(.*)", allow_sudo=True))
 async def lg1(LEGENDevent):
     event = await edit_or_reply(LEGENDevent, "`Processing.....`")
-    fnt = await get_font_file(event.client, "@HELL_FRONTS")
+    fnt = await get_font_file(event.client, "@LEGEND_FRONTS")
     if LEGENDevent.reply_to_msg_id:
         rply = await LEGENDevent.get_reply_message()
         logo_ = await rply.download_media()
     else:
-        async for i in bot.iter_messages("@HELLBOT_LOGOS", filter=InputMessagesFilterPhotos):
+        async for i in bot.iter_messages("@LEGEND_MR_LOGOS", filter=InputMessagesFilterPhotos):
     	    PICS_STR.append(i)
         pic = random.choice(PICS_STR)
         logo_ = await pic.download_media()
