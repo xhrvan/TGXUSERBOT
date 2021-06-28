@@ -89,7 +89,7 @@ if Var.TG_BOT_USER_NAME_BF_HER is not None and tgbot is not None:
                     apn.append(y)
             result = await builder.article(
                 f"Hey! Only use .help please", 
-                text=f"**『🔱🇱 🇪 🇬 🇪 🇳 🇩 🔱』{ALIVE_NAME}**\n\n__Number of plugins installed__ :`{len(CMD_HELP)}` \n__Commands__ : `{len(apn)}`\n**page:** 1/{veriler[0]}",
+                text=f"𖤍**[{ALIVE_NAME}](https://t.me/Legend_Mr_Hacker)**࿐\n\n🔥**__No. of plugins installed__** :`{len(CMD_HELP)}` \n⌘**__Commands__** : `{len(apn)}`\n🗒️**page:** 1/{veriler[0]}",
                 buttons=veriler[1],
                 link_preview=False,
             )
@@ -104,7 +104,7 @@ if Var.TG_BOT_USER_NAME_BF_HER is not None and tgbot is not None:
         else:
             result = builder.article(
                 "@LEGEND_Userbot",
-                text="""**Hey! This is [LEGENDBOT.](https://t.me/LEGEND_Userbot) \nYou can know more about me from the links given below 👇**""",
+                text="""**Hey! This is [LEGENDBOT.](https://t.me/Legend_Mr_Hacker) \nYou can know more about me from the links given below 👇**""",
                 buttons=[
                     [
                         custom.Button.url("🔥 CREATOR 🔥", "https://t.me/Legend_Mr_Hacker"),
