@@ -1,7 +1,7 @@
 """Get information about an user on GitHub
 Syntax: .github USERNAME"""
 import requests
-
+from github import Github
 from userbot.utils import admin_cmd, sudo_cmd, edit_or_reply
 from userbot.cmdhelp import CmdHelp
 from userbot import *
