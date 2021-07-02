@@ -66,12 +66,12 @@ async def amireallyalive(alive):
         
         LEGEND_caption += f"~~~~~~~~~~~~~~~~~~~~~~~\n"
         LEGEND_caption += f"**┏━━━━━━━━━━━━━┓**\n"
-        LEGEND_caption += f"        __**BOT STATUS**__\n"
-        LEGEND_caption += f"**★ Telethon version :** `{version.__version__}`\n"
-        LEGEND_caption += f"**★ LEGENDBOT :**`{LEGENDversion}`\n"
-        LEGEND_caption += f"**★ Uptime :** `{uptime}`\n"
-        LEGEND_caption += f"**★ Master:** {mention}\n"
-        
+        LEGEND_caption += f"        __**𖤍BOT STATUS𖤍**__\n"
+        LEGEND_caption += f"**🇮🇳 Telethon version :** `{version.__version__}`\n"
+        LEGEND_caption += f"**🇮🇳 LEGENDBOT :**`{LEGENDversion}`\n"
+        LEGEND_caption += f"**🇮🇳 Uptime :** `{uptime}`\n"
+        LEGEND_caption += f"**🔱 Master:** {mention}\n"
+        LEGEND_caption += f"**🔱 OWNER :** [LEGEND](t.me/Legend_Mr_Hacker)\n"
         LEGEND_caption += f"**┗━━━━━━━━━━━━━┛**\n"
         
         LEGEND_caption += " [✨REPO✨](https://github.com/LEGEND-OS/LEGENDBOT) 🔹 [📜License📜](https://github.com/LEGEND-OS/LEGENDBOT/blob/master/LICENSE)"
@@ -85,10 +85,11 @@ async def amireallyalive(alive):
             f"**{CUSTOM_ALIVE_TEXT}**\n\n"
             f"~~~~~~~~~~~~~~~~~~~~~~~ \n"
             f"**┏━━━━━━━━━━━━━┓**\n"
-            f"         __**BOT STATUS**__\n"
-            f"**★ Telethon Version :** `{version.__version__}`\n"
-            f"**★ LEGENDBOT:** `{LEGENDversion}`\n"
-            f"**★ Uptime :** `{uptime}`\n"
-            f"**★ Master:** {mention}\n"
+            f"         __**𖤍BOT STATUS𖤍**__\n"
+            f"**🇮🇳 Telethon Version :** `{version.__version__}`\n"
+            f"**🇮🇳 LEGENDBOT:** `{LEGENDversion}`\n"
+            f"**🇮🇳 Uptime :** `{uptime}`\n"
+            f"**🔱 Master:** {mention}\n"
+            f"**🔱 OWNER :** [LEGEND](t.me/Legend_Mr_Hacker)\n"
             f"**┗━━━━━━━━━━━━━┛**\n",
         )
