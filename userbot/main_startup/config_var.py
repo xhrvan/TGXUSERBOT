@@ -1,8 +1,6 @@
 #
 # All rights reserved.
 
-import os
-
 import heroku3
 from userbot import load_dotenv
 from userbot.utils import strtobool
@@ -31,7 +29,12 @@ def fetch_heroku_git_url(api_key, app_name):
     return heroku_app.git_url.replace("https://", "https://api:" + api_key + "@")
 
 
-class Config(object):
+import os
+from telethon.tl.types import ChatBannedRights
+ENV = bool(os.environ.get("ENV", False))
+if ENV:
+    import os
+    class Config(object):
     API_ID = int(os.environ.get("API_ID", 1))
     API_HASH = os.environ.get("API_HASH", None)
     BOT_TOKEN = os.environ.get("BOT_TOKEN", None)
