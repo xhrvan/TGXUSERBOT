@@ -1,12 +1,5 @@
 from LEGENDBOT.utils import admin_cmd, sudo_cmd, edit_or_reply
 from LEGENDBOT import CmdHelp
-import logging
-from userbot.broadcast_db import (
-    add_broadcast_chat,
-    get_all_broadcast_chats,
-    is_broadcast_chat_in_db,
-    rmbroadcast_chat,
-)
 from userbot.Config import *
 @bot.on(admin_cmd(pattern="badd ?(.*)"))
 @bot.on(sudo_cmd(pattern="badd ?(.*)", allow_sudo=True))
