@@ -41,9 +41,13 @@ DEFAULTUSER = str(ALIVE_NAME) if ALIVE_NAME else "Set ALIVE_NAME in config vars 
 @bot.on(admin_cmd(pattern=r"awake"))
 @borg.on(admin_cmd(pattern=r"awake"))
 async def amireallyalive(awake):
+   if awake.fwd_from:
+      return
+   await awake.get_chat()
+   await alive.delete()
     """ For .awake command, check if the bot is running.  """
-    await awake.delete() 
-    await bot.send_file(awake.chat_id, ALIVE_PIC,caption=ALIVE_MESSAGE)
+    await borg.send_file(alive.chat_id, PM_IMG, caption=pm_caption) 
+   await alive.delete()
     
     
 CmdHelp("awake").add_command(
