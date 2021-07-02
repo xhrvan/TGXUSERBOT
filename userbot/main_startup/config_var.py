@@ -33,8 +33,6 @@ import os
 from telethon.tl.types import ChatBannedRights
 ENV = bool(os.environ.get("ENV", False))
 if ENV:
-    import os
-    class Config(object):
     API_HASH = os.environ.get("API_HASH", None)
     BOT_TOKEN = os.environ.get("BOT_TOKEN", None)
     REM_BG_API_KEY = os.environ.get("REM_BG_API_KEY", None)
