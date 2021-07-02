@@ -35,7 +35,6 @@ ENV = bool(os.environ.get("ENV", False))
 if ENV:
     import os
     class Config(object):
-    API_ID = int(os.environ.get("API_ID", 1))
     API_HASH = os.environ.get("API_HASH", None)
     BOT_TOKEN = os.environ.get("BOT_TOKEN", None)
     REM_BG_API_KEY = os.environ.get("REM_BG_API_KEY", None)
