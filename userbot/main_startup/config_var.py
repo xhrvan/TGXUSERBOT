@@ -4,8 +4,8 @@
 import os
 
 import heroku3
-from dotenv import load_dotenv
-from distutils.util import strtobool
+from userbot import load_dotenv
+from userbot.utils import strtobool
 
 if os.path.exists("local.env"):
     load_dotenv("local.env")
