@@ -116,7 +116,7 @@ async def get_final_id(query, client):
 CmdHelp("broadcast").add_command(
      "badd", 'Add Group/Channel For Broadcast!. Give input as all to add all', "Use and See"
   ).add_command(
-    "broadcast", 'Broadcast Message In All Groups/Channels which are added in dB', 'Use and see
+    "broadcast", 'Broadcast Message In All Groups/Channels which are added in dB', 'Use and see'
   ).add_command(
      "brm", 'Remove Group/Channel From Broadcast dB!. Give input as all to Remove all', 'Use and See'
   ).add()
