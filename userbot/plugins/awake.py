@@ -27,7 +27,8 @@ if ALIVE_PIC is None:
 
 DEFAULTUSER = str(ALIVE_NAME) if ALIVE_NAME else "Set ALIVE_NAME in config vars in Heroku"
 
-   pm_caption += f"**🔱LEGENDBOT IS Awake🔱**\n"
+   pm_caption +="**🔱LEGENDBOT IS Awake🔱**\n"
+   
    pm_caption += f"**My Bot Status**\n\n\n"
    pm_caption += f"Telethon: TELETHON-1.19.0 \n\n"
    pm_caption += f"Python: PYTHON-3.8.5 \n\n"
