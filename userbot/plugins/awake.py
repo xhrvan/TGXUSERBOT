@@ -12,7 +12,7 @@ from userbot.cmdhelp import CmdHelp
 from telethon import version, events
 from math import ceil
 from telethon.events import NewMessage
-from telethin.tl.custom import dialog
+from telethin.tl.custom import Dialog
 from telethon.tl.types import channel, chat, user
 import json
 import random
