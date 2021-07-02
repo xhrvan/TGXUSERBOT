@@ -7,10 +7,13 @@ import asyncio
 from telethon import events
 from telethon.tl.types import ChannelParticipantsAdmins
 from userbot import ALIVE_NAME, CMD_HELP
-from LEGENDBOT.utils import admin_cmd, edit_or_reply, sudo_cmd
+from LEGENDBOT.utils import *
 from userbot.cmdhelp import CmdHelp
-from telethon import version
+from telethon import version, events
 from math import ceil
+from telethon.events import NewMessage
+from telethin.tl.custom import dialog
+from telethon.tl.types import channel, chat, user
 import json
 import random
 import re
@@ -24,14 +27,13 @@ if ALIVE_PIC is None:
 
 DEFAULTUSER = str(ALIVE_NAME) if ALIVE_NAME else "Set ALIVE_NAME in config vars in Heroku"
 
-ALIVE_MESSAGE = Config.ALIVE_MSG
-   pm_caption += f"**🔱LEGENDBOT IS Awake🔱 \n\n\n**"
-   pm_caption += f"`My Bot Status \n\n\n`"
-   pm_caption += f"`Telethon: TELETHON-1.19.0 \n\n`"
-   pm_caption += f"`Python: PYTHON-3.8.5 \n\n`"
-   pm_caption += f"`I'll Be With You Master Till My Dyno Ends!!☠ \n\n`"
-   pm_caption += f"`OWNER` : @Legend_Mr_Hacker \n\n"
-   pm_caption += f"`MY BOSS🤗`: {DEFAULTUSER} \n\n "
+   pm_caption += f"**🔱LEGENDBOT IS Awake🔱**\n"
+   pm_caption += f"**My Bot Status**\n\n\n"
+   pm_caption += f"Telethon: TELETHON-1.19.0 \n\n"
+   pm_caption += f"Python: PYTHON-3.8.5 \n\n"
+   pm_caption += f"I'll Be With You Master Till My Dyno Ends!!☠ \n\n"
+   pm_caption += f"OWNER` : @Legend_Mr_Hacker\n\n"
+   pm_caption += f"MY BOSS😊: {DEFAULTUSER}\n\n"
                 
             
 #@command(outgoing=True, pattern="^.awake$")
