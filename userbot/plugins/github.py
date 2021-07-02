@@ -7,7 +7,6 @@ from userbot.cmdhelp import CmdHelp
 from userbot import *
 @bot.on(admin_cmd(pattern="github (.*)", outgoing=True))
 @bot.on(sudo_cmd(pattern="github (.*)", allow_sudo=True))
-async def _(event):
 async def gitsearch(event):
     xx = await eor(event, get_string("com_2"))
     try:
@@ -45,7 +44,7 @@ async def gitsearch(event):
 **Following** - {ufollowing}
 """
     await xx.delete()
-    await ultroid_bot.send_file(
+    await legend_bot.send_file(
         event.chat_id,
         upic,
         caption=fullusr,
