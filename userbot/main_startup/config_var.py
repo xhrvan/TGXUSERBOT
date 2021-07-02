@@ -2,8 +2,7 @@
 # All rights reserved.
 
 import heroku3
-from userbot import load_dotenv
-from userbot.utils import strtobool
+from . import *
 
 if os.path.exists("local.env"):
     load_dotenv("local.env")
