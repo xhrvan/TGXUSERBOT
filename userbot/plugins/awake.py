@@ -5,14 +5,13 @@
 import os
 import asyncio
 from telethon import events
-from telethon.tl.types import ChannelParticipantsAdmins
 from userbot import ALIVE_NAME, CMD_HELP
 from LEGENDBOT.utils import *
 from userbot.cmdhelp import CmdHelp
 from telethon import version, events
 from math import ceil
 from telethon.events import NewMessage
-from telethin.tl.custom import Dialog
+from telethon.tl.custom import Dialog
 from telethon.tl.types import channel, chat, user
 import json
 import random
