@@ -1,5 +1,5 @@
 # credits to userge
-# ported to LEGENDBOT by @David99q
+# ported to LEGENDBOT by @Legend_Mr_Hacker
 # will be adding more soon
 
 import asyncio
