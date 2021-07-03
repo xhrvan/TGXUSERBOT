@@ -1,5 +1,6 @@
 from LEGENDBOT.utils import admin_cmd, sudo_cmd, edit_or_reply
 from LEGENDBOT import CmdHelp
+from LEGENDBOT import *
 from userbot.Config import *
 @bot.on(admin_cmd(pattern="badd ?(.*)"))
 @bot.on(sudo_cmd(pattern="badd ?(.*)", allow_sudo=True))
