@@ -18,7 +18,7 @@ from LEGENDBOT.utils import admin_cmd, edit_or_reply, sudo_cmd
 from userbot.cmdhelp import CmdHelp
 
 
-@bot.on(admin_cmd(pattern=r"callowner"))
+@bot.on(admin_cmd(pattern=r"callgf"))
 
 async def _(event):
 
@@ -63,6 +63,6 @@ async def _(event):
         await asyncio.sleep(animation_interval)
 
         await event.edit(animation_chars[i % 18])
-CmdHelp("callowner").add_commnand(
-    'callowner', None, 'From Using This U will get username of LegendGirlFriend'
+CmdHelp("callgf").add_command(
+    'callgf', None, 'From Using This U will get username of LegendGirlFriend'
 ).add()
