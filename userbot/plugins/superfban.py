@@ -16,7 +16,7 @@ from . import ALIVE_NAME
 
 naam = str(ALIVE_NAME)
 
-bots = "@MissRose_bot"
+bots = "@Legend_Mr_Bot"
 
 BOTLOG_CHATID = Config.PRIVATE_GROUP_BOT_API_ID
 
@@ -25,8 +25,8 @@ if G_BAN_LOGGER_GROUP:
     G_BAN_LOGGER_GROUP = int(G_BAN_LOGGER_GROUP)
 
 
-@bot.on(admin_cmd("fstat ?(.*)"))
-@bot.on(sudo_cmd("fstat ?(.*)", allow_sudo=True))
+@bot.on(admin_cmd("superfstat ?(.*)"))
+@bot.on(sudo_cmd("superfstat ?(.*)", allow_sudo=True))
 async def _(event):
     if event.fwd_from:
         return
@@ -73,8 +73,8 @@ async def _(event):
                 await event.edit("**Error:** `unblock` @MissRose_Bot `and try again!")
 
 
-@bot.on(admin_cmd("roseinfo ?(.*)"))
-@bot.on(sudo_cmd("roseinfo ?(.*)", allow_sudo=True))
+@bot.on(admin_cmd("legendinfo ?(.*)"))
+@bot.on(sudo_cmd("legendinfo ?(.*)", allow_sudo=True))
 async def _(event):
     if event.fwd_from:
         return
@@ -111,8 +111,8 @@ async def _(event):
                 await event.edit("**Error:** `unblock` @MissRose_Bot `and try again!")
 
 
-@bot.on(admin_cmd("fedinfo ?(.*)"))
-@bot.on(sudo_cmd("fedinfo ?(.*)", allow_sudo=True))
+@bot.on(admin_cmd("superfedinfo ?(.*)"))
+@bot.on(sudo_cmd("superfedinfo ?(.*)", allow_sudo=True))
 async def _(event):
     if event.fwd_from:
         return
@@ -141,8 +141,8 @@ async def _(event):
                 await event.edit("**Error:** `unblock` @MissRose_Bot `and try again!")
 
 
-@bot.on(admin_cmd("myfeds ?(.*)"))
-@bot.on(sudo_cmd("myfeds ?(.*)", allow_sudo=True))
+@bot.on(admin_cmd("supermyfeds ?(.*)"))
+@bot.on(sudo_cmd("supermyfeds ?(.*)", allow_sudo=True))
 async def _(event):
     if event.fwd_from:
         return
@@ -163,8 +163,8 @@ async def _(event):
             await event.edit("**Error:** `unblock` @MissRose_Bot `and try again!")
 
 
-@bot.on(admin_cmd(pattern=r"plist ?(.*)", outgoing=True))
-@bot.on(sudo_cmd(pattern=r"plist ?(.*)", allow_sudo=True))
+@bot.on(admin_cmd(pattern=r"superplist ?(.*)", outgoing=True))
+@bot.on(sudo_cmd(pattern=r"superplist ?(.*)", allow_sudo=True))
 async def get_users(show):
     await show.delete()
     if not show.text[0].isalpha() and show.text[0] not in ("/"):
@@ -203,8 +203,8 @@ async def get_users(show):
         )
 
 
-@bot.on(admin_cmd(pattern=r"blist ?(.*)", outgoing=True))
-@bot.on(sudo_cmd(pattern=r"blist ?(.*)", allow_sudo=True))
+@bot.on(admin_cmd(pattern=r"superblist ?(.*)", outgoing=True))
+@bot.on(sudo_cmd(pattern=r"superblist ?(.*)", allow_sudo=True))
 async def get_users(show):
     await show.delete()
     if not show.text[0].isalpha() and show.text[0] not in ("/"):
@@ -243,8 +243,8 @@ async def get_users(show):
         )
 
 
-@bot.on(admin_cmd(pattern="bgban ?(.*)"))
-@bot.on(sudo_cmd(pattern="bgban ?(.*)", allow_sudo=True))
+@bot.on(admin_cmd(pattern="superbgban ?(.*)"))
+@bot.on(sudo_cmd(pattern="superbgban ?(.*)", allow_sudo=True))
 async def _(event):
     if G_BAN_LOGGER_GROUP is None:
         await event.edit("ENV VAR is not set. This module will not work.")
@@ -265,8 +265,8 @@ async def _(event):
     await event.delete()
 
 
-@bot.on(admin_cmd(pattern="bungban ?(.*)"))
-@bot.on(sudo_cmd(pattern="bungban ?(.*)", allow_sudo=True))
+@bot.on(admin_cmd(pattern="superbungban ?(.*)"))
+@bot.on(sudo_cmd(pattern="superbungban ?(.*)", allow_sudo=True))
 async def _(event):
     if G_BAN_LOGGER_GROUP is None:
         await event.edit("ENV VAR is not set. This module will not work.")
@@ -517,5 +517,4 @@ CmdHelp("SuperFban").add_command(
   'myfeds', None, 'gives the list of your admin feds'
 ).add_command(
   'fstat', '<User-id> or reply to a user', 'gives federation stats of the selected user'
-).add()    
-
+).add()
