@@ -42,7 +42,6 @@ async def _(event):
     channels = get_all_channels()
     error_count = 0
     sent_count = 0
-sent_count = 0
     await mssg.edit("Fbanning....")
     if event.reply_to_msg_id:
         previous_message = await event.get_reply_message()
