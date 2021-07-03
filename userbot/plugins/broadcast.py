@@ -2,7 +2,7 @@ from LEGENDBOT.utils import admin_cmd, sudo_cmd, edit_or_reply
 from LEGENDBOT import CmdHelp
 from LEGENDBOT import *
 from userbot.Config import *
-from userbot import broadcast_sql
+from userbot.utils import admin_cmd, sudo_cmd, edit_or_reply
 @bot.on(admin_cmd(pattern="badd ?(.*)"))
 @bot.on(sudo_cmd(pattern="badd ?(.*)", allow_sudo=True))
 async def badd(client, message):
