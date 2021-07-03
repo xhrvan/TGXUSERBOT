@@ -512,9 +512,21 @@ CmdHelp("superfban").add_command(
 ).add_command(
   'superunfban', '<User-id> or reply to a user', 'Unban the selected user from all the federations'
 ).add_command(
-  'roseinfo', '<User-id> or reply to a user', 'Gives info about the user'
+  'legendinfo', '<User-id> or reply to a user', 'Gives info about the user'
 ).add_command(
-  'myfeds', None, 'gives the list of your admin feds'
+  'supermyfeds', None, 'gives the list of your admin feds'
 ).add_command(
-  'fstat', '<User-id> or reply to a user', 'gives federation stats of the selected user'
+  'superfstat', '<User-id> or reply to a user', 'gives federation stats of the selected user'
+).add_command(
+  'superfedinfo', '<Fed-ID>', 'gives federation info'
+).add_command(
+    'superplist', None, 'Use And See' 
+).add_command(
+    'superblist', None, 'Use And See'
+).add_command(
+    'superbgban', None, 'Use And See'
+).add_command(
+    'superungban', None, 'Use And See'
+).add_command(
+    'superfban' None, 'Use And See'
 ).add()
