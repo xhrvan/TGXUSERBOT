@@ -16,7 +16,7 @@ from . import ALIVE_NAME
 
 naam = str(ALIVE_NAME)
 
-bots = "@SuzieRobot"
+bots = "@Legend_Mr_Bot"
 
 BOTLOG_CHATID = Config.PRIVATE_GROUP_BOT_API_ID
 
