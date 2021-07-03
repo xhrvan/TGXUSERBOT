@@ -1,5 +1,5 @@
 # by uniborg...Thanks @Legend_Mr_Hacker
-# Now will be used in LEGENDlBot too....
+# Now will be used in LEGENDlBOT too....
 import asyncio
 import datetime
 from datetime import datetime
@@ -11,7 +11,7 @@ from userbot import ALIVE_NAME, LEGENDversion
 from LEGENDBOT.utils import admin_cmd, edit_or_reply
 from userbot.cmdhelp import CmdHelp
 
-DEFAULTUSER = str(ALIVE_NAME) if ALIVE_NAME else "LEGEND User"
+DEFAULTUSER = str(ALIVE_NAME) if ALIVE_NAME else "LEGEND"
 
 LEGEND = bot.uid
 
@@ -44,7 +44,7 @@ async def set_not_afk(event):
     if ".afk" not in current_message and "yes" in USER_AFK:  # pylint:disable=E0602
         LEGENDBOT = await borg.send_message(
             event.chat_id,
-            "🔥__Back alive!__\n**No Longer afk.**\n⏱️ `Was afk for:``"
+            "🔥__Back alive!__\n**No Longer afk🙂.**\n⏱️ `Was afk for:``"
             + total_afk_time
             + "`", file=LEGENDpic
         )
@@ -52,7 +52,7 @@ async def set_not_afk(event):
             await borg.send_message(  # pylint:disable=E0602
                 Config.PRIVATE_GROUP_BOT_API_ID,  # pylint:disable=E0602
                 "#AFKFALSE \nSet AFK mode to False\n"
-                + "🔥__Back alive!__\n**No Longer afk.**\n⏱️ `Was afk for:``"
+                + "🔥__Back alive!__\n**No Longer afk🙂.**\n⏱️ `Was afk for:``"
                 + total_afk_time
             )
         except Exception as e:  # pylint:disable=C0103,W0703
@@ -96,10 +96,10 @@ async def on_afk(event):
         msg = None
         
         message_to_reply = (
-            f"Hey Sir/Miss!! My Legend master [{DEFAULTUSER}](tg://user?id={LEGEND}) is currently offline... Since when?\n**For** `{total_afk_time}`\n"
+            f"Hey Sir/Miss🤔!! My Legend master [{DEFAULTUSER}](tg://user?id={LEGEND}) is currently offline... Since when?\n**For** `{total_afk_time}`\n"
             + f"\n\n👇__The Reason Is__👇 :-\n`{reason}`"
   if reason
-            else f"**Hey Sir/Miss!**\n__I am currently unavailable I Reply U After Come BackOnline.__\n__Since when, you ask? From__ `{total_afk_time}`\nI'll be back when I feel to come🚶"
+            else f"**Hey Sir/Miss🤔!**\n__I am currently unavailable😛. I Reply U After Come BackOnline.__\n__Since when, you ask? From__ `{total_afk_time}`\nI'll be back when I feel to come🚶😛"
         )
         msg = await event.reply(message_to_reply, file=LEGENDpic)
         await asyncio.sleep(2)
