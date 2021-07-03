@@ -507,7 +507,7 @@ async def _(event):
     await event.edit(f"SuperUnFBan Completed. Affected {len(fedList)} feds.")
 
 
-CmdHelp("superban").add_command(
+CmdHelp("superfban").add_command(
   'superfban', '<user-id> or reply to a user' , 'Ban the selected user in all the federations'
 ).add_command(
   'superunfban', '<User-id> or reply to a user', 'Unban the selected user from all the federations'
