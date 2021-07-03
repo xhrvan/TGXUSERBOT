@@ -111,12 +111,6 @@ async def carbon_api(e):
    # Removing carbon.png after uploading
    await e.delete() # Deleting msg
 
-CMD_HELP.update(
-    {
-        "carbonRBG": 
-    ".karb <reply to text> "
-    "\nCreate a cool random colorful carbon image for that text 😂😂(not work in media)"
-    })
 CmdHelp("carbonRGB").add_command(
-      'karbs', None, 'Use and See'
+      'karbs', '.karb <reply to text>', 'Create a cool random colorful carbon image for that text 😂😂(not work in media)'
 ).add()
