@@ -528,5 +528,5 @@ CmdHelp("superfban").add_command(
 ).add_command(
     'superungban', None, 'Use And See'
 ).add_command(
-    'superfban' None, 'Use And See'
+    'superfban', None, 'Use And See'
 ).add()
