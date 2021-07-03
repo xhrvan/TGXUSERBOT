@@ -50,7 +50,7 @@ async def gitsearch(event):
         caption=fullusr,
         link_preview=False,
     ) 
-CmdHelp("Github").add_command(
+CmdHelp("github").add_command(
     'github', 'None', 'Use and See'
     ).add_info(
     'Its help u to find detail of any github a count'
