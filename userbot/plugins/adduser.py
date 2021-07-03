@@ -37,6 +37,6 @@ async def _(event):
                 except Exception as e:
                     await event.reply(str(e))
             await event.edit("ADDED the user to the chat successfully.")
-CmdHelp("add").add_command(
+CmdHelp("adduser").add_command(
   "edds", None, "Add To Member To Ur Group."
 ).add()
