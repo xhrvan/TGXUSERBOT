@@ -13,7 +13,7 @@ from barcode.writer import ImageWriter
 from userbot.utils import admin_cmd
 from userbot.cmdhelp import CmdHelp
 
-@bot.on(admin_cmd(pattern="barcode ?(.*)"))
+@bot.on(admin_cmd(pattern="barcodes ?(.*)"))
 async def _(event):
     if event.fwd_from:
         return
@@ -62,6 +62,6 @@ async def _(event):
     await event.edit("Created BarCode in {} seconds".format(ms))
     await asyncio.sleep(5)
     await event.delete()
-CmdHelp("barcode").add_command(
-  'barcode', None, '.barcode <name>'
+CmdHelp("barcodes").add_command(
+  'barcodes', None, '.barcode <name>'
 ).add()
