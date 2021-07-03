@@ -63,5 +63,5 @@ async def _(event):
     await asyncio.sleep(5)
     await event.delete()
 CmdHelp("barcode").add_command(
-  'barcode', "None", '.barcode <name>'
+  'barcode', None, '.barcode <name>'
 ).add()
