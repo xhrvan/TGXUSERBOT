@@ -89,7 +89,7 @@ async def info(event):
     else:
         string = "<b>Please specify which plugin do you want help for !!\
             \nNumber of plugins : </b><code>{count}</code>\
-            \n<b>Usage:</b> <code>.help plugin name</code>\n\n"
+            \n<b>Usage:</b> <code>.legend plugin name</code>\n\n"
         LEGENDcount = 0
         for i in sorted(SUDO_LIST):
             string += "≈ " + f"<code>{str(i)}</code>"
