@@ -4,7 +4,7 @@ import os
 import wget
 from youtubesearchpython import SearchVideos
 
-from userbot.Config import Var
+from userbot.Config import Config
 from userbot.utils import admin_cmd, edit_or_reply, sudo_cmd
 from userbot.cmdhelp import CmdHelp
 
