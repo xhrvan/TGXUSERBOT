@@ -1,12 +1,11 @@
 """WikiMedia.ORG
 Syntax: .wikimedia Query"""
 import requests
-from LEGENDBOT.utils import admin_cmd, sudo_cmd, edit_or_reply
+
+from userbot.util import admin_cmd
 from userbot.cmdhelp import CmdHelp
 
-
-@bot.on(admin_cmd(pattern="wikimedia (.*)"))
-@bot.on(sudo_cmd(pattern="wikimedia (.*)", allow_sudo=True))
+@borg.on(admin_cmd(pattern="wikimedia (.*)"))
 async def _(event):
     if event.fwd_from:
         return
@@ -43,7 +42,6 @@ async def _(event):
             pageid, title, timestamp, user, descriptionurl, mime, mediatype
         )
     await event.edit("**Search**: {} \n\n **Results**: {}".format(input_str, result))
-
 CmdHelp("wikimedia").add_command(
-  "wikimedia", "<query>", "Searchs the query from WikiMedia"
-).add()
+    'wikimedia', None, 'Search anything on Wikipedia'
+)

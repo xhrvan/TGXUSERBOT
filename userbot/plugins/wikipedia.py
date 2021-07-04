@@ -3,17 +3,16 @@
 # file, You can obtain one at http://mozilla.org/MPL/2.0/.
 """WikiPedia.ORG
 Syntax: .wikipedia Query"""
-
 import wikipedia
-from LEGENDBOT.utils import admin_cmd, sudo_cmd, edit_or_reply
+
+from userbot.utils import admin_cmd
 from userbot.cmdhelp import CmdHelp
 
-@bot.on(admin_cmd(pattern="wikipedia (.*)"))
-@bot.on(sudo_cmd(pattern="wikipedia (.*)", allow_sudo=True))
+@borg.on(admin_cmd(pattern="wikipedia (.*)"))
 async def _(event):
     if event.fwd_from:
         return
-    await edit_or_reply(event, "Processing ...")
+    await event.edit("Processing ...")
     input_str = event.pattern_match.group(1)
     result = ""
     results = wikipedia.search(input_str)
@@ -21,9 +20,9 @@ async def _(event):
         page = wikipedia.page(s)
         url = page.url
         result += f"> [{s}]({url}) \n"
-    await edit_or_reply(event, "WikiPedia **Search**: {} \n\n **Result**: \n\n{}".format(input_str, result)
+    await event.edit(
+        "WikiPedia **Search**: {} \n\n **Result**: \n\n{}".format(input_str, result)
     )
-    
 CmdHelp("wikipedia").add_command(
-  "wikipedia", "<query>", "Searches for the query from Wikipedia"
-).add()
+    'wikipedia', None, 'Search anything on Wikipedia'
+)
