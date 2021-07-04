@@ -1,5 +1,6 @@
 aiofiles
 asyncurban
+apiclient
 aiohttp
 aria2p
 async_generator
