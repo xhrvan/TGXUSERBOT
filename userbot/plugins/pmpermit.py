@@ -39,22 +39,7 @@ USER_BOT_NO_WARN =(
     f"\n**{LEGEND}**\n\n"
     f"ɪғ ɪᴛ ɪs ᴜʀɢᴇɴᴛ ʟᴇᴀᴠᴇ ʏᴏᴜʀ ᴄʜᴀᴛ ɪᴅ ,ᴅᴇsᴄɪᴘᴛɪᴏɴ ᴀɴᴅ ʀᴇᴀsᴏɴ...ᴀɴᴅ ɪ ʜᴏᴘᴇ ɪғ ʏᴏᴜ ᴀʀᴇ ᴀ ɢᴏᴏᴅ ᴘᴇʀsᴏɴ ʏᴏᴜ ᴡɪʟʟ ɢᴇᴛ ᴀ ʀᴇᴘʟʏ ʙᴜᴛ ɪ ᴀᴍ ɴᴏᴛ sᴜʀᴇ ᴀʙᴏᴜᴛ ᴛʜᴀᴛ`\n\n"
     "To start a valid conversation\n🔱Register Your Request!🔱\nSend `/start` To Register Your Request\nHopefully u will get a reply🔥"
-)
-            
-    if Var.PRIVATE_GROUP_ID is not None:
-        
-        @tgbot.on(callbackquery.CallbackQuery(data=compile(b"chat")))
-    async def on_pm_click(event):
-        event.query.user_id
-        if event.query.user_id == bot.uid:
-            reply_pop_up_alert = "This is for other users!"
-            await event.answer(reply_pop_up_alert, cache_time=0, alert=True)
-        else:
-            await event.edit(
-                f"Ahh!! You here to do chit-chat!!\n\nPlease wait cache{DEFAULTUSER} to come. Till then keep patience and don't spam."
-            )
-            target = await event.client(GetFullUserRequest(event.query.user_id))
-            ok = event.query.user_id
+) 
        
 if Var.PRIVATE_GROUP_ID is not None:
 
