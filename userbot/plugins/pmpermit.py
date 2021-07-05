@@ -34,11 +34,11 @@ DEFAULTUSER = str(ALIVE_NAME) if ALIVE_NAME else "LEGEND"
 USER_BOT_WARN_ZERO = "**Hello Sir/Miss, ʏᴏᴜ ᴅɪᴅ'ɴᴛ sᴇᴇ ᴡʜᴀᴛ ɪ sᴀɪᴅ ᴍʏ ᴍᴀsᴛᴇʀ ɪs ᴄᴜʀʀᴇɴᴛʟʏ ᴏғғʟɪɴᴇ ᴅᴏɴᴛ sᴘᴀᴍ.`\n**ɴᴏᴡ sʜᴜᴛ ᴜᴘ.... ᴀɴᴅ ɢᴇᴛ ʟᴏsᴛ**"
 USER_BOT_WARN_ZERO = "**Hello Sir/Miss, ʏᴏᴜ ᴅɪᴅ'ɴᴛ sᴇᴇ ᴡʜᴀᴛ ɪ sᴀɪᴅ ᴍʏ ᴍᴀsᴛᴇʀ ɪs ᴄᴜʀʀᴇɴᴛʟʏ ᴏғғʟɪɴᴇ ᴅᴏɴᴛ sᴘᴀᴍ.`\n**ɴᴏᴡ sʜᴜᴛ ᴜᴘ.... ᴀɴᴅ ɢᴇᴛ ʟᴏsᴛ**"
 USER_BOT_NO_WARN =(
-    "__Hello Sir/Miss,I haven't approved you yet to personal message me😎⚠️**.\n"
-    f"This is my master {DEFAULTUSER}'s Inbox\n"
+    "__**Hello Sir/Miss,I haven't approved you yet to personal message me😎⚠️**__.\n"
+    f"This is My Owner {DEFAULTUSER}'s\n"
     f"\n**{LEGEND}**\n\n"
     f"Don't spam my inbox. say reason and wait until my response.\n\n"
-    "To start a valid conversation\n🔱Register Your Request!🔱\nSend `/start` To Register Your Request\nHopefully u will get a reply🔥"
+    "**To start a valid conversation\n🔱Register Your Request!🔱\nSend `/start` To Register Your Request\nHopefully u will get a reply🔥**"
 ) 
 
     
@@ -102,7 +102,7 @@ if Var.PRIVATE_GROUP_ID is not None:
                     await asyncio.sleep(3)
                     await rko.delete()
 
-    @borg.on(admin_cmd(pattern="block ?(.*)"))
+    @borg.on(admin_cmd(pattern="block|.blk ?(.*)"))
     async def approve_p_m(event):
         if event.fwd_from:
             return
@@ -146,7 +146,7 @@ if Var.PRIVATE_GROUP_ID is not None:
                 await asyncio.sleep(3)
                 await event.delete()
 
-    @borg.on(admin_cmd(pattern="disallow ?(.*)"))
+    @borg.on(admin_cmd(pattern="disallow|.da ?(.*)"))
     async def approve_p_m(event):
         if event.fwd_from:
             return
@@ -184,7 +184,7 @@ if Var.PRIVATE_GROUP_ID is not None:
                 await event.delete()    
                 
 
-    @borg.on(admin_cmd(pattern="listallowed"))
+    @borg.on(admin_cmd(pattern="listallowed|la"))
     async def approve_p_m(event):
         if event.fwd_from:
             return
@@ -316,7 +316,7 @@ CmdHelp("pmpermit").add_command(
 ).add_command(
   "disallow|.da", "<pm use only>", "It disallows the user to PM. If user crosses the PM limit after disallow he/she will get blocked automatically"
 ).add_command(
-  "block", "<pm use only>", "You know what it does.... Blocks the user"
+  "block|.blk", "<pm use only>", "You know what it does.... Blocks the user"
 ).add_command(
   "listallowed|.la", None, "Gives you the list of allowed PM's list"
 ).add_command(
