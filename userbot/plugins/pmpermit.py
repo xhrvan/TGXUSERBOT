@@ -5,7 +5,7 @@ import io
 import os
 import time
 
-from telethon import events, functions
+from telethon import events, functions, Button, custom
 from telethon.tl.functions.users import GetFullUserRequest
 
 from userbot.plugins.sql_helper import pmpermit_sql as pmpermit_sql
@@ -13,7 +13,7 @@ from userbot import ALIVE_NAME, CUSTOM_PMPERMIT, LEGEND_ID
 from userbot.Config import Config
 from LEGENDBOT.utils import admin_cmd
 from userbot.cmdhelp import CmdHelp
-
+LEGEND_row = Config.BUTTONS_IN_HELP
 PM_TRUE_FALSE = Config.PM_DATA
 
 PMPERMIT_PIC = os.environ.get("PMPERMIT_PIC", None)
@@ -22,6 +22,12 @@ LEGENDPIC = (
     if PMPERMIT_PIC
     else "https://telegra.ph/file/7b2fefb2c78c90734444d.jpg"
 )
+mybot = Config.BOT_USERNAME
+if mybot.startswith("@"):
+    botname = mybot
+    else:
+        botname = f"@{mybot}"
+LOG_GP = Config.LOGGER_ID
 PM_WARNS = {}
 PREV_REPLY_MESSAGE = {}
 myid = bot.uid
@@ -32,7 +38,6 @@ LEGEND = (
 )
 DEFAULTUSER = str(ALIVE_NAME) if ALIVE_NAME else "LEGEND"
 USER_BOT_WARN_ZERO = "**Hello Sir/Miss, ʏᴏᴜ ᴅɪᴅ'ɴᴛ sᴇᴇ ᴡʜᴀᴛ ɪ sᴀɪᴅ ᴍʏ ᴍᴀsᴛᴇʀ ɪs ᴄᴜʀʀᴇɴᴛʟʏ ᴏғғʟɪɴᴇ ᴅᴏɴᴛ sᴘᴀᴍ.`\n**ɴᴏᴡ sʜᴜᴛ ᴜᴘ.... ᴀɴᴅ ɢᴇᴛ ʟᴏsᴛ**"
-USER_BOT_WARN_ZERO = "**Hello Sir/Miss, ʏᴏᴜ ᴅɪᴅ'ɴᴛ sᴇᴇ ᴡʜᴀᴛ ɪ sᴀɪᴅ ᴍʏ ᴍᴀsᴛᴇʀ ɪs ᴄᴜʀʀᴇɴᴛʟʏ ᴏғғʟɪɴᴇ ᴅᴏɴᴛ sᴘᴀᴍ.`\n**ɴᴏᴡ sʜᴜᴛ ᴜᴘ.... ᴀɴᴅ ɢᴇᴛ ʟᴏsᴛ**"
 USER_BOT_NO_WARN =(
     "__**Hello Sir/Miss,I haven't approved you yet to personal message me😎⚠️**__.\n"
     f"This is My Owner {DEFAULTUSER}'s\n"
@@ -40,11 +45,97 @@ USER_BOT_NO_WARN =(
     f"Don't spam my inbox. say reason and wait until my response.\n\n"
     "**To start a valid conversation\n🔱Register Your Request!🔱\nSend `/start` To Register Your Request\nHopefully u will get a reply🔥**"
 ) 
+def button(page, modules):
+    Row = LEGEND_row 
+    Column = 3
+    
+elif event.query.user_id == bot.uid and query == "pm_warn":
+    LEGEN_D = USER_BOT_NO_WARN.format(DEFAULTUSER, LEGEND)
+    result = builder.photo( 
+        file=LEGENDPIC,
+        text=LEGEN_D,
+        buttons=[ [ custom.Button.inline("📝 Request 📝", data="req"),
+                   custom.Button.inline("💬 Chat 💬", data="chat"),
+                  ],
+                 [custom.Button.inline("🚫 Spam 🚫", data="heheboi")],
+                 [custom.Button.inline("Curious ❓", data="pmclick")],
+                ],
+    ) 
+    
+    
+    
+    
+     @tgbot.on(callbackquery.CallbackQuery(data=compile(b"pmclick")))
+    async def on_pm_click(event):
+        if event.query.user_id == bot.uid:
+            reply_pop_up_alert = "This is for Other Users..."
+            await event.answer(reply_pop_up_alert, cache_time=0, alert=True)
+        else:
+            await event.edit(
+                f"🔰 This is LEGENDBOT PM Security for {DEFAULTUSER} to keep away unwanted retards from spamming PM..."
+            )
 
+    @tgbot.on(callbackquery.CallbackQuery(data=compile(b"req")))
+    async def on_pm_click(event):
+        if event.query.user_id == bot.uid:
+            reply_pop_up_alert = "This is for other users!"
+            await event.answer(reply_pop_up_alert, cache_time=0, alert=True)
+        else:
+            await event.edit(
+                f"✅ **Request Registered** \n\n{DAFAULTUSER} will now decide to look for your request or not.\n😐 Till then wait patiently and don't spam!!"
+            )
+            target = await event.client(GetFullUserRequest(event.query.user_id))
+            first_name = html.escape(target.user.first_name)
+            ok = event.query.user_id
+            if first_name is not None:
+                first_name = first_name.replace("\u2060", "")
+            tosend = f"**👀 Hey {DEFAULTUSER} !!** \n\n⚜️ You Got A Request From [{first_name}](tg://user?id={ok}) In PM!!"
+            await bot.send_message(LOG_GP, tosend)
+
+
+    @tgbot.on(callbackquery.CallbackQuery(data=compile(b"chat")))
+    async def on_pm_click(event):
+        event.query.user_id
+        if event.query.user_id == bot.uid:
+            reply_pop_up_alert = "This is for other users!"
+            await event.answer(reply_pop_up_alert, cache_time=0, alert=True)
+        else:
+            await event.edit(
+                f"Ahh!! You here to do chit-chat!!\n\nPlease wait for {DEFAULTUSER} to come. Till then keep patience and don't spam."
+            )
+            target = await event.client(GetFullUserRequest(event.query.user_id))
+            ok = event.query.user_id
+            first_name = html.escape(target.user.first_name)
+            if first_name is not None:
+                first_name = first_name.replace("\u2060", "")
+            tosend = f"**👀 Hey {DFAULTUSER} !!** \n\n⚜️ You Got A PM from  [{first_name}](tg://user?id={ok})  for random chats!!"
+            await bot.send_message(LOG_GP, tosend)
+
+
+    @tgbot.on(callbackquery.CallbackQuery(data=compile(b"heheboi")))
+    async def on_pm_click(event):
+        if event.query.user_id == bot.uid:
+            reply_pop_up_alert = "This is for other users!"
+            await event.answer(reply_pop_up_alert, cache_time=0, alert=True)
+        else:
+            await event.edit(
+                f"🥴 **Nikal lawde\nPehli fursat me nikal**"
+            )
+            await bot(functions.contacts.BlockRequest(event.query.user_id))
+            target = await event.client(GetFullUserRequest(event.query.user_id))
+            ok = event.query.user_id
+            first_name = html.escape(target.user.first_name)
+            if first_name is not None:
+                first_name = first_name.replace("\u2060", "")
+            first_name = html.escape(target.user.first_name)
+            await bot.send_message(
+                LOG_GP,
+                f"**Blocked**  [{first_name}](tg://user?id={ok}) \n\nReason:- Spam",
+            )
     
 if Var.PRIVATE_GROUP_ID is not None:
 
-    @borg.on(admin_cmd(pattern="allow|.a ?(.*)"))
+    @borg.on(admin_cmd(pattern="allow|.a|approve ?(.*)"))
     async def approve_p_m(event):
         if event.fwd_from:
             return
