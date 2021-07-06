@@ -4,7 +4,6 @@ import asyncio
 import io
 import os
 import time
-from telethon import 
 from telethon import events, functions, Button, custom
 from telethon.tl.functions.users import GetFullUserRequest
 
