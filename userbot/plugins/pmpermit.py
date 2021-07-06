@@ -4,7 +4,7 @@ import asyncio
 import io
 import os
 import time
-
+from telethon import 
 from telethon import events, functions, Button, custom
 from telethon.tl.functions.users import GetFullUserRequest
 
@@ -65,7 +65,7 @@ def button(page, modules):
     
     
     
-     @tgbot.on(callbackquery.CallbackQuery(data=compile(b"pmclick")))
+     @tgbot.on(callbackquery.CallbackQuery(data=re.compile(b"pmclick")))
     async def on_pm_click(event):
         if event.query.user_id == bot.uid:
             reply_pop_up_alert = "This is for Other Users..."
@@ -75,7 +75,7 @@ def button(page, modules):
                 f"🔰 This is LEGENDBOT PM Security for {DEFAULTUSER} to keep away unwanted retards from spamming PM..."
             )
 
-    @tgbot.on(callbackquery.CallbackQuery(data=compile(b"req")))
+    @tgbot.on(callbackquery.CallbackQuery(data=re.compile(b"req")))
     async def on_pm_click(event):
         if event.query.user_id == bot.uid:
             reply_pop_up_alert = "This is for other users!"
@@ -93,7 +93,7 @@ def button(page, modules):
             await bot.send_message(LOG_GP, tosend)
 
 
-    @tgbot.on(callbackquery.CallbackQuery(data=compile(b"chat")))
+    @tgbot.on(callbackquery.CallbackQuery(data=re.compile(b"chat")))
     async def on_pm_click(event):
         event.query.user_id
         if event.query.user_id == bot.uid:
@@ -112,7 +112,7 @@ def button(page, modules):
             await bot.send_message(LOG_GP, tosend)
 
 
-    @tgbot.on(callbackquery.CallbackQuery(data=compile(b"heheboi")))
+    @tgbot.on(callbackquery.CallbackQuery(data=re.compile(b"heheboi")))
     async def on_pm_click(event):
         if event.query.user_id == bot.uid:
             reply_pop_up_alert = "This is for other users!"
