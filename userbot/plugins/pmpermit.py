@@ -25,8 +25,8 @@ LEGENDPIC = (
 mybot = Config.BOT_USERNAME
 if mybot.startswith("@"):
     botname = mybot
-    else:
-        botname = f"@{mybot}"
+else:
+    botname = f"@{mybot}"
 LOG_GP = Config.LOGGER_ID
 PM_WARNS = {}
 PREV_REPLY_MESSAGE = {}
