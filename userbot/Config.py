@@ -154,6 +154,8 @@ if ENV:
         BOT_MODE = os.environ.get("BOT_MODE", "ON")
         BOT_TRIGGER = os.environ.get("BOT_TRIGGER", "^/")
         BOTMODE_LOG = int(os.environ.get("BOTMODE_LOG", False))
+        BOT_TOKEN = os.environ.get("BOT_TOKEN", None) 
+        BOT_USERNAME = os.environ.get("BOT_USERNAME", None)
         FORCE_SUB = os.environ.get("FORCE_SUB", None)
         FORCE_CHANNEL_UN = os.environ.get("FORCE_CHANNEL_UN", None)
         FORCE_CHANNEL_ID = int(os.environ.get("FORCE_CHANNEL_ID", False))
