@@ -21,7 +21,6 @@ LEGENDPIC = (
     if PMPERMIT_PIC
     else "https://telegra.ph/file/7b2fefb2c78c90734444d.jpg"
 )
-LOG_GP = var.PRIVATE_GROUP_ID
 PM_WARNS = {}
 PREV_REPLY_MESSAGE = {}
 myid = bot.uid
