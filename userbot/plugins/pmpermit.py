@@ -27,7 +27,7 @@ if mybot.startswith("@"):
     botname = mybot
 else:
     botname = f"@{mybot}"
-LOG_GP = Config.LOGGER_ID
+LOG_GP = var.PRIVATE_GROUP_ID
 PM_WARNS = {}
 PREV_REPLY_MESSAGE = {}
 myid = bot.uid
@@ -383,6 +383,9 @@ if Var.PRIVATE_GROUP_ID is not None:
         r = await borg.send_file(
             event.chat_id, LEGENDPIC, caption=USER_BOT_NO_WARN, force_document=False
         )
+        botusername =Config.BOT_USERNAME
+        tap = await bot.inline_query(botusername, "pm_warn")
+        hel_ = await tap[0].click(event.chat_id)
         PM_WARNS[chat_id] += 1
         if chat_id in PREV_REPLY_MESSAGE:
             await PREV_REPLY_MESSAGE[chat_id].delete()
