@@ -53,88 +53,18 @@ def button(page, modules):
     result = builder.photo( 
         file=LEGENDPIC,
         text=LEGEN_D,
-        buttons=[ [ custom.Button.inline("📝 Request 📝", data="🔰 This is LEGENDBOT PM Security for {DEFAULTUSER} to keep away unwanted retards from spamming PM..."),
-                   custom.Button.inline("💬 Chat 💬", data="chat"),
+        buttons=[ [ custom.Button.inline("📝 Request 📝", data="✅ **Request Registered**.My Owber will now decide to look for your request or not😐. Till then wait patiently and don't spam!!"),
+                   custom.Button.inline("💬 Chat 💬", data="Ahh!! You here to do chit-chat!!Please wait for My Onwer to come. Till then keep patience and don't spam."),
                   ],
-                 [custom.Button.inline("🚫 Spam 🚫", data="heheboi")],
-                 [custom.Button.inline("Curious ❓", data="pmclick")],
+                 [custom.Button.inline("🚫 Spam 🚫", data="Blocked!!!")],
+                 [custom.Button.inline("Curious ❓", data="🔰 This is LEGENDBOT PM Security for {DEFAULTUSER} to keep away unwanted retards from spamming PM...")],
                 ],
     ) 
     
     
-    
-    
-     @tgbot.on(events.callbackquery.CallbackQuery(data=re.compile(b"pmclick")))
-    async def on_pm_click(event):
-        if event.query.user_id == bot.uid:
-            reply_pop_up_alert = "This is for Other Users..."
-            await event.answer(reply_pop_up_alert, cache_time=0, alert=True)
-        else:
-            await event.edit(
-                f"🔰 This is LEGENDBOT PM Security for {DEFAULTUSER} to keep away unwanted retards from spamming PM..."
-            )
-
-    @tgbot.on(events.callbackquery.CallbackQuery(data=re.compile(b"req")))
-    async def on_pm_click(event):
-        if event.query.user_id == bot.uid:
-            reply_pop_up_alert = "This is for other users!"
-            await event.answer(reply_pop_up_alert, cache_time=0, alert=True)
-        else:
-            await event.edit(
-                f"✅ **Request Registered** \n\n{DAFAULTUSER} will now decide to look for your request or not.\n😐 Till then wait patiently and don't spam!!"
-            )
-            target = await event.client(GetFullUserRequest(event.query.user_id))
-            first_name = html.escape(target.user.first_name)
-            ok = event.query.user_id
-            if first_name is not None:
-                first_name = first_name.replace("\u2060", "")
-            tosend = f"**👀 Hey {DEFAULTUSER} !!** \n\n⚜️ You Got A Request From [{first_name}](tg://user?id={ok}) In PM!!"
-            await bot.send_message(LOG_GP, tosend)
-
-
-    @tgbot.on(events.callbackquery.CallbackQuery(data=re.compile(b"chat")))
-    async def on_pm_click(event):
-        event.query.user_id
-        if event.query.user_id == bot.uid:
-            reply_pop_up_alert = "This is for other users!"
-            await event.answer(reply_pop_up_alert, cache_time=0, alert=True)
-        else:
-            await event.edit(
-                f"Ahh!! You here to do chit-chat!!\n\nPlease wait for {DEFAULTUSER} to come. Till then keep patience and don't spam."
-            )
-            target = await event.client(GetFullUserRequest(event.query.user_id))
-            ok = event.query.user_id
-            first_name = html.escape(target.user.first_name)
-            if first_name is not None:
-                first_name = first_name.replace("\u2060", "")
-            tosend = f"**👀 Hey {DFAULTUSER} !!** \n\n⚜️ You Got A PM from  [{first_name}](tg://user?id={ok})  for random chats!!"
-            await bot.send_message(LOG_GP, tosend)
-
-
-    @tgbot.on(events.callbackquery.CallbackQuery(data=re.compile(b"heheboi")))
-    async def on_pm_click(event):
-        if event.query.user_id == bot.uid:
-            reply_pop_up_alert = "This is for other users!"
-            await event.answer(reply_pop_up_alert, cache_time=0, alert=True)
-        else:
-            await event.edit(
-                f"🥴 **Nikal lawde\nPehli fursat me nikal**"
-            )
-            await bot(functions.contacts.BlockRequest(event.query.user_id))
-            target = await event.client(GetFullUserRequest(event.query.user_id))
-            ok = event.query.user_id
-            first_name = html.escape(target.user.first_name)
-            if first_name is not None:
-                first_name = first_name.replace("\u2060", "")
-            first_name = html.escape(target.user.first_name)
-            await bot.send_message(
-                LOG_GP,
-                f"**Blocked**  [{first_name}](tg://user?id={ok}) \n\nReason:- Spam",
-            )
-    
 if Var.PRIVATE_GROUP_ID is not None:
 
-    @borg.on(admin_cmd(pattern="allow|.a|approve ?(.*)"))
+    @borg.on(admin_cmd(pattern="allow|.a|.approve ?(.*)"))
     async def approve_p_m(event):
         if event.fwd_from:
             return
@@ -382,9 +312,6 @@ if Var.PRIVATE_GROUP_ID is not None:
         r = await borg.send_file(
             event.chat_id, LEGENDPIC, caption=USER_BOT_NO_WARN, force_document=False
         )
-        botusername =Config.BOT_USERNAME
-        tap = await bot.inline_query(botusername, "pm_warn")
-        hel_ = await tap[0].click(event.chat_id)
         PM_WARNS[chat_id] += 1
         if chat_id in PREV_REPLY_MESSAGE:
             await PREV_REPLY_MESSAGE[chat_id].delete()
