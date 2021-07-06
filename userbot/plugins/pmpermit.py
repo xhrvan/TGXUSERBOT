@@ -49,7 +49,7 @@ def button(page, modules):
     Row = LEGEND_row 
     Column = 3
     
-elif event.query.user_id == bot.uid and query == "pm_warn":
+    
     LEGEN_D = USER_BOT_NO_WARN.format(DEFAULTUSER, LEGEND)
     result = builder.photo( 
         file=LEGENDPIC,
