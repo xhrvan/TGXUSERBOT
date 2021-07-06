@@ -53,7 +53,7 @@ def button(page, modules):
     result = builder.photo( 
         file=LEGENDPIC,
         text=LEGEN_D,
-        buttons=[ [ custom.Button.inline("📝 Request 📝", data="req"),
+        buttons=[ [ custom.Button.inline("📝 Request 📝", data="🔰 This is LEGENDBOT PM Security for {DEFAULTUSER} to keep away unwanted retards from spamming PM..."),
                    custom.Button.inline("💬 Chat 💬", data="chat"),
                   ],
                  [custom.Button.inline("🚫 Spam 🚫", data="heheboi")],
