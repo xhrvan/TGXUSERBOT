@@ -46,7 +46,7 @@ def button(page, modules):
     LEGEN_D = USER_BOT_NO_WARN.format(DEFAULTUSER, LEGEND)
     result = builder.photo( 
         file=LEGENDPIC,
-        text=LEGEN_D,
+        text=USER_BOT_NO_WARN,
         buttons=[ [ custom.Button.inline("📝 Request 📝", data="✅ **Request Registered**.My Owber will now decide to look for your request or not😐. Till then wait patiently and don't spam!!"),
                    custom.Button.inline("💬 Chat 💬", data="Ahh!! You here to do chit-chat!!Please wait for My Onwer to come. Till then keep patience and don't spam."),
                   ],
