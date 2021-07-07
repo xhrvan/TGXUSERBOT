@@ -35,7 +35,7 @@ USER_BOT_NO_WARN =(
     "__**Hello Sir/Miss,I haven't approved you yet to personal message me😎⚠️**__.\n"
     f"This is My Owner {DEFAULTUSER}'s\n"
     f"\n**{LEGEND}**\n\n"
-    f"Don't spam my inbox. say reason and wait until my response.\n\n"
+    f"__Don't spam my inbox. say reason and wait until my response.__\n\n"
     "**To start a valid conversation\n🔱Register Your Request!🔱\nSend `/start` To Register Your Request\nHopefully u will get a reply🔥**"
 ) 
 def button(page, modules):
