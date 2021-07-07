@@ -13,8 +13,8 @@ from userbot import (
     BOTLOG_CHATID,
     bot,
 )
-from userbot.utils import errors_handler, CmdHelp
-
+from userbot.utils import errors_handler
+from userbot.cmdhelp import CmdHelp
 
 @borg.on(ChatAction)
 @errors_handler
