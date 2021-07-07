@@ -10,7 +10,7 @@ telegraph = Telegraph()
 mee = telegraph.create_account(short_name="yohohehe")
 
 
-@borg.on(admin_cmd(pattern="recognize ?(.*)"))
+@borg.on(admin_cmd(pattern="recognized ?(.*)"))
 async def _(event):
     if event.fwd_from:
         return
@@ -107,7 +107,7 @@ async def _(event):
     if not reply_message.text:
         await event.edit("**Reply to a message.**")
         return
-    chat = "@sangmatainfo_bot"
+    chat = "@SangMataInfo_bot"
     reply_message.sender
     await event.edit("**Getting user's name history..**")
     async with event.client.conversation(chat) as conv:
@@ -159,7 +159,7 @@ CmdHelp("bots").add_command(
 ).add_command(
 'purl', None, 'Get a direct Downmpad Link'
 ).add_command(
-'sgm', None, 'Reply To any User get Detail Of her/Hime'
+'sgm|history', None, 'Reply To any User get Detail Of her/Hime'
 ).add_command(
 'recognize', None, 'Send Detail about it'
 ).add_command(
