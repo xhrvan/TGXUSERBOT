@@ -20,5 +20,5 @@ async def payf(event):
     )
     await event.edit(pay)
 CmdHelp("whatsupp").add_command(
-    'ftype', None, 'Use and See'
+    'ftype', 'Use and See','Eg:-.ftype legend'
 ).add()
