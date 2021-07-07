@@ -1,7 +1,7 @@
 from userbot.utils import admin_cmd
 from userbot.cmdhelp import CmdHelp
 
-@borg.on(admin_cmd(pattern="f ?(.*)"))
+@borg.on(admin_cmd(pattern="ftype ?(.*)"))
 async def payf(event):
     paytext = event.pattern_match.group(1)
     pay = "{}\n{}\n{}\n{}\n{}\n{}\n{}\n{}\n{}\n{}\n{}\n{}".format(
@@ -20,5 +20,5 @@ async def payf(event):
     )
     await event.edit(pay)
 CmdHelp("whatsupp").add_command(
-    '.f', None, 'Use and See'
+    'ftype', None, 'Use and See'
 ).add()
