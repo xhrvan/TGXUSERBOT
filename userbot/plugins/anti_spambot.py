@@ -11,10 +11,9 @@ from userbot import (
     ANTI_SPAMBOT_SHOUT,
     BOTLOG,
     BOTLOG_CHATID,
-    CMD_HELP,
     bot,
 )
-from userbot.utils import errors_handler
+from userbot.utils import errors_handler, CmdHelp
 
 
 @borg.on(ChatAction)
@@ -191,13 +190,6 @@ async def ANTI_SPAMBOT(welcm):
         pass
 
 
-CMD_HELP.update(
-    {
-        "anti_spambot": "If enabled in config.env or env var,\
-        \nthis module will ban(or inform the admins of the group about) the\
-        \nspammer(s) if they match the userbot's anti-spam algorithm."
-    }
-)
 CmdHelp("anti_spambot").add_command(
 'anti_spambot', None, 'If enabled in config.env or env var this module will ban(or inform the admins of the group about) the spammer(s) if they match the userbot's anti-spam algorithm.'
 ).add()
