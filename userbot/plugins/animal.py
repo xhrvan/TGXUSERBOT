@@ -99,4 +99,14 @@ async def pig(pig):
     
 CmdHelp("animal").add_command(
 'pig', None, 'pig face'
-).add_c
+).add_command(
+'homer', None, 'Homer Face'
+).add_command(
+'elephant', None, 'Elephant Face'
+).add_command(
+'fox', None, 'Fox Face•'
+).add_command(
+'dog', None, 'Dog Face'
+).add_command(
+'spong', None, 'Spong Face'
+).add()
