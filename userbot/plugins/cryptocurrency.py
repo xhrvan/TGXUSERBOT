@@ -1,6 +1,4 @@
 
-Made By @Legend_Mr_Hacker
-"""
 
 from telethon import events
 from telethon.errors.rpcerrorlist import YouBlockedUserError
