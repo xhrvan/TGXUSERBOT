@@ -7,10 +7,11 @@ from userbot.utils import admin_cmd, sudo_cmd, edit_or_reply
 NUMBER = ["0", "1"]
 
 OS = [
-    "I AM LEGEND {ALIVE_NAME}",
+    "I AM 『🔱🇱 🇪 🇬 🇪 🇳 🇩 🔱』➙𖤍 𝕄ℝ.ℍ𝔸ℂ𝕂𝔼ℝ࿐",
     "PLS DONT DISTURB HIM LEGEND IS BUSY NOW WHEN HE COME BACK HE REPLY U",
     "DON'T BREAK THE HEART OF THE HACKER BCOZ U DON'T KNOW WHAT WILL HAPPN TN",
     "IF U NEED ANY HELP U CAN TYPE WHEN HE COME BACK HE WILL REPLY U",
+    "I KNOW U ARE WAITING FOR ME I WILL BE BACK SOON",
 ]
 
 que = {}
@@ -49,10 +50,10 @@ async def _(event):
         qeue = que.get(e)
         appendable = [e]
         qeue.append(appendable)
-        await event.edit(f"LEGEND{ALIVE_NAME}")
+        await event.edit(f"『🔱 LEGEND ™🔱』")
     else:
         user = event.pattern_match.group(1)
-        event = await edit_or_reply(event, "LEGEND START RAID")
+        event = await edit_or_reply(event, "LEGEND IS STARTING GAME")
         a = await event.client.get_entity(user)
         e = a.id
         c = a.first_name
@@ -76,13 +77,13 @@ async def _(event):
         e = b.id
         c = b.first_name
         username = f"[{c}](tg://user?id={e})"
-        event = await edit_or_reply(event, "I KNOW U ARE WAITING FOR ME I AM BACK....")
+        event = await edit_or_reply(event, "GAME OVER")
         queue = que.get(e)
         queue.pop(0)
         await event.edit(f"LEGEND")
     else:
         user = event.pattern_match.group(1)
-        event = await edit_or_reply(event, "Reply Raid De-activating....")
+        event = await edit_or_reply(event, "GAME OVER")
         a = await event.client.get_entity(user)
         e = a.id
         c = a.first_name
@@ -93,7 +94,7 @@ async def _(event):
         
         
 CmdHelp("lhere").add_command(
-    'lstart', None, 'Reply to him or her to start legend personal file'
+    'lstarts', None, 'Reply to him or her to start legend personal file'
 ).add_command(
-    'lstop', None, 'Reply To her Ya him To stop legend personal file'
+    'lstops', None, 'Reply To her Ya him To stop legend personal file'
 ).add()
