@@ -22,8 +22,7 @@ def user_list(l, n):
 
 
 @bot.on(admin_cmd(pattern="stopvc$",
-    admins_only=True,
-    groups_only=True,
+    outgoing=True,
 ))
 async def _(e):
     try:
@@ -54,7 +53,7 @@ async def _(e):
 
 @bot.on(admin_cmd(
     pattern="vcinvite$",
-    groups_only=True,
+    outgoing=True,
 ))
 async def _(e):
     ok = await eor(e, "`Inviting Members to Voice Chat...`")
@@ -75,8 +74,7 @@ async def _(e):
 
 @bot.on(admin_cmd(
     pattern="startvc$",
-    admins_only=True,
-    groups_only=True,
+    outgoing=True,
 ))
 async def _(e):
     try:
