@@ -170,11 +170,11 @@ async def _(e):
 CmdHelp("vcplayer").add_command(
     'vcaccess', None, 'Reply to user and access vc'
 ).add_command(
-    'rmvaccess' None, 'Reply to useer to denied to access vc'
+    'rmvaccess', None, 'Reply to useer to denied to access vc'
 ).add_command(
     'stopvc', None, 'To stop Vc'
 ).add_command(
-    'startvc' None, 'To start Vc'
+    'startvc', None, 'To start Vc'
 ).add_command(
     'listvcaccess', None, 'List of vc access'
 ).add_command(
