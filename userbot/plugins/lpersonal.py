@@ -3,10 +3,10 @@ import random
 from userbot.cmdhelp import CmdHelp
 from . import *
 
-from userbot.utils import admin_cmd, sudo_cmd
+from userbot.utils import admin_cmd, sudo_cmd, eidt_or_reply
 NUMBER = ["0", "1"]
 
-MEDHU = [
+OS = [
     "I AM LEGEND {ALIVE_NAME}",
     "PLS DONT DISTURB HIM LEGEND IS BUSY NOW WHEN HE COME BACK HE REPLY U",
     "DON'T BREAK THE HEART OF THE HACKER BCOZ U DON'T KNOW WHAT WILL HAPPN TN",
@@ -28,12 +28,12 @@ async def _(event):
     async with event.client.action(event.chat_id, "typing"):
         await event.client.send_message(
             entity=event.chat_id,
-            message="""{}""".format(random.choice(MEDHU)),
+            message="""{}""".format(random.choice(OS)),
             reply_to=event.message.id,
         )
 
-@bot.on(admin_cmd(pattern="lstart (?: |$)(.*)"))
-@bot.on(sudo_cmd(pattern="lstart (?: |$)(.*)", allow_sudo=True))
+@bot.on(admin_cmd(pattern="lstarts(?: |$)(.*)"))
+@bot.on(sudo_cmd(pattern="lstarts(?: |$)(.*)", allow_sudo=True))
 async def _(event):
     global que
     if event.fwd_from:
@@ -64,8 +64,8 @@ async def _(event):
         await event.edit(f"LEGEND {ALIVE_NAME}")
 
 
-@bot.on(admin_cmd(pattern="lstop (?: |$)(.*)"))
-@bot.on(sudo_cmd(pattern="lstop (?: |$)(.*)", allow_sudo=True))
+@bot.on(admin_cmd(pattern="lstops(?: |$)(.*)"))
+@bot.on(sudo_cmd(pattern="lstops(?: |$)(.*)", allow_sudo=True))
 async def _(event):
     global que
     if event.fwd_from:
@@ -90,8 +90,10 @@ async def _(event):
         queue = que.get(e)
         queue.pop(0)
         await event.edit(f"LEGEND STOPED RAID {ALIVE_NAME}")
+        
+        
 CmdHelp("lhere").add_command(
-     'lstart', None, 'Reply to him or her to start legend personal file'
+    'lstart', None, 'Reply to him or her to start legend personal file'
 ).add_command(
-     'lstop', None, 'Reply To her Ya him To stop legend personal file'
+    'lstop', None, 'Reply To her Ya him To stop legend personal file'
 ).add()
