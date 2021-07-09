@@ -7,7 +7,7 @@ from userbot.utils import admin_cmd, sudo_cmd
 NUMBER = ["0", "1"]
 
 MEDHU = [
-    "➪ 𝐈 𝐀𝐌 𝐀 『🔱🇱 🇪 🇬 🇪 🇳 🇩 🔱』➙𖤍 𝕄ℝ.ℍ𝔸ℂ𝕂𝔼ℝ࿐ 🔥",
+    "I AM LEGEND {ALIVE_NAME}",
     "PLS DONT DISTURB HIM LEGEND IS BUSY NOW WHEN HE COME BACK HE REPLY U",
     "DON'T BREAK THE HEART OF THE HACKER BCOZ U DON'T KNOW WHAT WILL HAPPN TN",
     "IF U NEED ANY HELP U CAN TYPE WHEN HE COME BACK HE WILL REPLY U",
