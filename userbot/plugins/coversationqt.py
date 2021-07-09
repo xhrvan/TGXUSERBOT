@@ -320,6 +320,6 @@ async def _(event):
 
 
 
-CmdHelp("coversationqt").add_commamd(
+CmdHelp("coversationqt").add_command(
 'conversationqt', None, 'its start asking question'
 ).add()
