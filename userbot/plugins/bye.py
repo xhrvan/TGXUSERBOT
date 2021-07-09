@@ -1,5 +1,5 @@
 import asyncio
-from userbot.utlis import admin_cmd
+from userbot.utils import admin_cmd
 from userbot.cmdhelp import CmdHelp
 
 @bot.on(admin_cmd(pattern="byeall"))
