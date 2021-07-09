@@ -25,7 +25,7 @@ async def _(event):
     if not queue:
         return
     async with event.client.action(event.chat_id, "typing"):
-        await asyncio.sleep(0.3)
+        await asyncio.sleep(0.5)
     async with event.client.action(event.chat_id, "typing"):
         await event.client.send_message(
             entity=event.chat_id,
@@ -50,10 +50,10 @@ async def _(event):
         qeue = que.get(e)
         appendable = [e]
         qeue.append(appendable)
-        await event.edit(f"『🔱 LEGEND ™🔱』")
+        await event.edit(f"『🔱 LEGEND ™🔱』IS STARTING GAME")
     else:
         user = event.pattern_match.group(1)
-        event = await edit_or_reply(event, "LEGEND IS STARTING GAME")
+        event = await edit_or_reply(event, "LEGEND")
         a = await event.client.get_entity(user)
         e = a.id
         c = a.first_name
@@ -80,7 +80,7 @@ async def _(event):
         event = await edit_or_reply(event, "GAME OVER")
         queue = que.get(e)
         queue.pop(0)
-        await event.edit(f"LEGEND")
+        await event.edit(f"GAME HAS STOPED")
     else:
         user = event.pattern_match.group(1)
         event = await edit_or_reply(event, "GAME OVER")
@@ -93,7 +93,7 @@ async def _(event):
         await event.edit(f"LEGEND STOPED RAID {ALIVE_NAME}")
         
         
-CmdHelp("lhere").add_command(
+CmdHelp("lpersonal").add_command(
     'lstarts', None, 'Reply to him or her to start legend personal file'
 ).add_command(
     'lstops', None, 'Reply To her Ya him To stop legend personal file'
