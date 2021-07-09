@@ -1,9 +1,5 @@
 from userbot.cmdhelp import CmdHelp
 
-CmdHelp("coversationqt").add_commamd(
-'conversationqt', None, 'its start asking question'
-).add()
-
 
 import asyncio
 import random
@@ -321,3 +317,9 @@ async def _(event):
         await event.edit(
             '`"What’s something you misunderstood as a child and only realized much later was wrong?"`'
         )
+
+
+
+CmdHelp("coversationqt").add_commamd(
+'conversationqt', None, 'its start asking question'
+).add()
