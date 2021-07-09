@@ -102,7 +102,7 @@ async def _(e):
 
 
 @bot.on(admin_cmd(
-    pattern="rmvcaccess ?(.*)",
+    pattern="rmvaccess ?(.*)",
 ))
 async def _(e):
     xx = await eor(e, "`Disapproving to access Voice Chat features...`")
