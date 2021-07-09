@@ -3,7 +3,7 @@ import random
 from userbot.cmdhelp import CmdHelp
 from . import *
 
-from userbot.utils import admin_cmd, sudo_cmd, eidt_or_reply
+from userbot.utils import admin_cmd, sudo_cmd, edit_or_reply
 NUMBER = ["0", "1"]
 
 OS = [
