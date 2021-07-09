@@ -1,24 +1,4 @@
-"""
-✘ Commands Available
-• `{i}cp <cryptocurrency>`
-    Gives Price Of Cryptocurrency.
-• `{i}cgas`
-    Gives Gas Of Eth Cryptocurrency.
-• `{i}ccalc <cryptocurrency>`
-    Calculates Cryptocurrency.
-    Eg: .calc eth 200
-• `{i}cindex`
-    Gives Index Of Cryptocurrency.
-• `{i}cdefi`
-    Gives Defi Of Cryptocurrency.
-• `{i}ccap <cryptocurrency>`
-    Gives MartketCap.
-• `{i}clink <cryptocurrency>`
-    Gives Official SocialMedia Links/Links Of Cryptocurrency.
-• `{i}cvol <cryptocurrency>`
-    Gives Vol Of Cryptocurrency.
-• `{i}cgoogle <cryptocurrency>`
-    Gives GoogleTrend Of Cryptocurrency.
+
 Made By @Legend_Mr_Hacker
 """
 
@@ -30,12 +10,11 @@ from . import *
 import asyncio
 from collections import deque
 from telethon.tl.functions.users import GetFullUserRequest 
-from userbot import *
-from LEGENDBOT.utils import admin_cmd, edit_or_reply, sudo_cmd
+from userbot.utils import admin_cmd, edit_or_reply, sudo_cmd
 from userbot.cmdhelp import CmdHelp
 
 
-admin_cmd(pattern="cp(.*)$4")
+admin_cmd(pattern="cp(.*)$")
 async def demn(ult):
     input = ult.pattern_match.group(1)
     chat = "@Cryptowhalebot"
