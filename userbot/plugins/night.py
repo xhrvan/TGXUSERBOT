@@ -19,7 +19,7 @@ night_time = None
 last_night_message = {}
 
 DEFAULTUSER = (
-    str(ALIVE_NAME) if ALIVE_NAME else "LEGEND User"
+    str(ALIVE_NAME) if ALIVE_NAME else "LEGEND"
 )
 
 
@@ -40,7 +40,7 @@ async def set_not_night(event):
                 event.chat_id,
                 "Please set `PLUGIN_CHANNEL` "
                 + "for the proper functioning of night functionality "
-                + "report in [LEGENDBOT](t.me/LEGENDSupport)\n\n `{}`".format(str(e)),
+                + "report in [LEGENDBOT](t.me/Legend_Mr_Hacker)\n\n `{}`".format(str(e)),
                 reply_to=event.message.id,
                 silent=True,
             )
@@ -68,9 +68,9 @@ async def _(event):
             night_time = datetime.datetime.now()  # pylint:disable=E0602
         USER_night = f"yes: {reason}"  # pylint:disable=E0602
         if reason:
-            await event.edit(f"My Boss Is Going To sleep  Dnd 🛏💤😴 ")
+            await event.edit(f"My OWNER Is Going To sleep  Dnd 🛏💤😴 ")
         else:
-            await event.edit(f"My Boss is Going To Sleep")
+            await event.edit(f"My OWNER is Going To Sleep")
         await asyncio.sleep(5)
         await event.delete()
         try:
@@ -132,7 +132,7 @@ async def on_night(event):
             f"My Master Has Been Gone For {night_since}\nWhere He Is: **On Bed Sleeping** "
             + f"\n\n__ I'll back in a few Light years__\n**"
             if reason
-            else f"**Important Notice**\n\n{DEFAULTUSER} Is Sleeping DND And Also Good [night To You...](https://telegra.ph/file/3e6d2fb965f293e3680ff.jpg) "
+            else f"**Important Notice**\n\n{DEFAULTUSER} Is Sleeping DND And Also Good [night To You...](https://telegra.ph/file/949056fe28ce6ed0d0b62.jpg) "
         )
         msg = await event.reply(message_to_reply)
         await asyncio.sleep(5)
