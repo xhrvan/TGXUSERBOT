@@ -8,7 +8,7 @@ from telethon.tl.functions.phone import GetGroupCallRequest as getvc
 from telethon.tl.functions.phone import InviteToGroupCallRequest as invitetovc
 
 from . import *
-
+from userbot.cmdhelp import CmdHelp
 from userbot.utils import admin_cmd, sudo_cmd, eor
 async def get_call(event):
     mm = await event.client(getchat(event.chat_id))
@@ -167,3 +167,16 @@ async def _(e):
         )
     except Exception as ex:
         return await eod(xx, f"`{str(ex)}`", time=5)
+CmdHelp("vcplayer").add_command(
+    'vcaccess', None, 'Reply to user and access vc'
+).add_command(
+    'rmvaccess' None, 'Reply to useer to denied to access vc'
+).add_command(
+    'stopvc', None, 'To stop Vc'
+).add_command(
+    'startvc' None, 'To start Vc'
+).add_command(
+    'listvcaccess', None, 'List of vc access'
+).add_command(
+    'vcinvite', None, 'Invite in vc'
+).add()
