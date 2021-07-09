@@ -32,6 +32,6 @@ async def yaadash(ult):
 
 
 
-CmdHelp("yaadash').add_command(
+CmdHelp("yaadash").add_command(
 'yaadash', None, 'Use and see'
 ).add()
