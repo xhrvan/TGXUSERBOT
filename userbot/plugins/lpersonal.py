@@ -7,10 +7,10 @@ from userbot.utils import admin_cmd, sudo_cmd, edit_or_reply
 NUMBER = ["0", "1"]
 
 OS = [
-    "I AM 『🔱🇱 🇪 🇬 🇪 🇳 🇩 🔱』➙𖤍 𝕄ℝ.ℍ𝔸ℂ𝕂𝔼ℝ࿐",
+    "IF U NEED ANY HELP U CAN TYPE WHEN HE COME BACK HE WILL REPLY U",
     "PLS DONT DISTURB HIM LEGEND IS BUSY NOW WHEN HE COME BACK HE REPLY U",
     "DON'T BREAK THE HEART OF THE HACKER BCOZ U DON'T KNOW WHAT WILL HAPPN TN",
-    "IF U NEED ANY HELP U CAN TYPE WHEN HE COME BACK HE WILL REPLY U",
+    "I AM 『🔱🇱 🇪 🇬 🇪 🇳 🇩 🔱』➙𖤍 𝕄ℝ.ℍ𝔸ℂ𝕂𝔼ℝ࿐",
     "I KNOW U ARE WAITING FOR ME I WILL BE BACK SOON",
 ]
 
