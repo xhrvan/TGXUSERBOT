@@ -61,7 +61,7 @@ async def _(event):
         qeue = que.get(e)
         appendable = [e]
         qeue.append(appendable)
-        await eedit_or_reply, " LEGEND {ALIVE_NAME}")
+        await event.edit(f"LEGEND {ALIVE_NAME}")
 
 
 @bot.on(admin_cmd(pattern="lstop (?: |$)(.*)"))
