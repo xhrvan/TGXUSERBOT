@@ -12,7 +12,7 @@ from pathlib import Path
 import asyncio
 import telethon.utils
 os.system("pip install -U telethon")
-
+os.system("pip install -U pyUltroid")
 
 hl = Config.SUDO_COMMAND_HAND_LER
 LEGEND_PIC = Config.ALIVE_PIC or "https://telegra.ph/file/ea9e11f7c9db21c1b8d5e.mp4"
