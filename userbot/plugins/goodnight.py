@@ -28,7 +28,7 @@ async def _(event):
                        *   .      🛰     .        ✨      *
 """
 CmdHelp("goodnight").add_command( 
-	'g', None, 'Use and See'
+	'gn', None, 'Use and See'
 ).add()
 
 
