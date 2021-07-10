@@ -50,4 +50,4 @@ CmdHelp("dagd").add_command(
   'unshort', None, 'Use and See'
 ).add_command(
   'dns', None, 'Use and See'
-.add()
+).add()
