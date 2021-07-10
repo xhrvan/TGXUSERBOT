@@ -4,7 +4,7 @@ from os import remove
 from telegraph import upload_file as uplu
 from . import *
 
-@ultroid_cmd(pattern="ptrigger$")
+@bot.on(admin_cmd(pattern="ptrigger$")
 async def ptrigger(event):
     if not event.is_reply:
         return await event.edit('**Reply to a Message!**')
