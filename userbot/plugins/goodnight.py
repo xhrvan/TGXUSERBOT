@@ -27,8 +27,8 @@ async def _(event):
 🌟   .  *       .         
                        *   .      🛰     .        ✨      *
 """
-CmdHelp("botstatus").add_command( 
-	'bot', None, 'Use and See'
+CmdHelp("morning").add_command( 
+	'g', None, 'Use and See'
 ).add()
 
 
