@@ -1,7 +1,7 @@
 import asyncio
 from userbot.utils import admin_cmd
 from userbot.cmdhelp import CmdHelp
-
+from . import *
 @bot.on(admin_cmd(pattern="byeall"))
 async def bye(ult):
 	await ult.edit("Guys I Gotta Go!")
