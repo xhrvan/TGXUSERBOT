@@ -4,7 +4,7 @@ from . import *
 xd = ["Your message has been read and Ignored successfully ┐(´∀｀)┌","Umm My Ears Were Shut 🙉"]
 
 @bot.on(admin_cmd(pattern="ignore$"))
-async def oof(ult):
+async def _(ult):
   rd = random.choice(xd)
   await eor(ult, rd)
  
