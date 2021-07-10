@@ -4,7 +4,7 @@ import addons.emojifontss as emojify
 from . import *
 
 @bot.on(admin_cmd(pattern="etxt(?: |$)(.*)")
-async def itachi(event):
+async def _(event):
     args = event.pattern_match.group(1)
     if not args:
         get = await event.get_reply_message()
@@ -26,7 +26,7 @@ async def itachi(event):
 
 
 @bot.on(admin_cmd(pattern="ctxt(?: |$)(.*)"))
-async def naruhina(event):
+async def _(event):
     snku = event.pattern_match.group(1)
     get = await event.get_reply_message()
     args = get.text
