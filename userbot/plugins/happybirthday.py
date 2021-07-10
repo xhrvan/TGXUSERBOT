@@ -1,9 +1,9 @@
 import asyncio
 from . import *
 @bot.on(admin_cmd(pattern="happybirthday"))
-async def birthday(ult):
+async def _(event):
 	await asyncio.sleep(1)
-	await ult.edit("""
+	await event.edit("""
 ▃▃▃▃▃▃▃▃▃▃▃
 ┊ ┊ ┊ ┊ ┊ ┊
 ┊ ┊ ┊ ┊ ˚✩ ⋆｡˚ ✩
