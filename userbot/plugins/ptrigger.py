@@ -21,7 +21,8 @@ async def ptrigger(event):
     remove(foto)
     remove("triggered.gif")
 
-
- CmdHelp("ptrigger").add_command(
- 'ptrigger', None, 'Use and See'
- ).add()
+    
+    
+CmdHelp("ptrigger").add_command(
+    'ptrigger', None, 'Use and See'
+).add()
