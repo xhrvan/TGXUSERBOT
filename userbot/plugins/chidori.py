@@ -1,5 +1,6 @@
 import asyncio
 from . import *
+from userbot.cmdhelp import CmdHelp
 @bot.on(admin_cmd(pattern="chidori"))
 async def naruto(ult):
 	await ult.edit("Hello")
