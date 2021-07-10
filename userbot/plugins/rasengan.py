@@ -1,5 +1,6 @@
 import asyncio
 from . import *
+from userbot.cmdhelp import CmdHelp
 
 @bot.on(admin_cmd(pattern="rasengan"))
 async def naruto(ult):
@@ -14,6 +15,6 @@ async def naruto(ult):
  await ult.edit("You: ( ✖╭╮✖ )")
  
  
-  CmdHelp("rasengan").add_command(
- 'rasengan', None, 'Use and See'
- ).add()
+CmdHelp("rasengan").add_command(
+   'rasengan', None, 'Use and See'
+).add()
