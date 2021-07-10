@@ -3,10 +3,10 @@ from userbot.utils import admin_cmd
 from userbot.cmdhelp import CmdHelp
 from . import *
 @bot.on(admin_cmd(pattern="byeall"))
-async def bye(ult):
-	await ult.edit("Guys I Gotta Go!")
+async def _(event):
+	await event.edit("Guys I Gotta Go!")
 	await asyncio.sleep(1)
-	await ult.edit("""
+	await event.edit("""
 	
 ┏━━┳┓╋╋┏┳━━━┓
 ┃┏┓┃┗┓┏┛┃┏━━┛
@@ -16,5 +16,5 @@ async def bye(ult):
 ┗━━━┛┗┛╋┗━━━┛
 """)
 CmdHelp("bye").add_command(
-'byeall', None, 'Say Bye to U all in anmation'
+	'byeall', None, 'Say Bye to U all in anmation'
 ).add()
