@@ -113,3 +113,5 @@ CMD_HELP.update(
 )
 
 CmdHelp("ssvideo").add_command(
+    'ssvideo', None, 'Use and See'
+).add()
