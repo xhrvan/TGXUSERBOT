@@ -6,5 +6,5 @@ async def clap(ult):
   await asyncio.sleep(1)
   await ult.edit("👐👏👐👏👐👏👐")
 CmdHelp("clapp").add_command(
-'clapp', None, 'Use and See'
+  'clapp', None, 'Use and See'
 ).add()
