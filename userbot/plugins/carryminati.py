@@ -64,5 +64,5 @@ async def _(event):
     if x==25:
         await event.edit("Written and Created By: @MYSTERIOUS_PLUGINS ! thank you🙏🏻❤")
 CmdHelp("carryminati").add_command(
-'carry', None, 'CarryMinati'
+    'carry', None, 'CarryMinati'
 ).add()
