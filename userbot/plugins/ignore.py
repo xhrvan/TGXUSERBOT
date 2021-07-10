@@ -10,7 +10,7 @@ async def _(ult):
  
  
 @bot.on(admin_cmd(pattern="cantignore$") 
-async def oof(ult):
+async def _(ult):
   await eor(ult, "In Mind: **Im Trying To Ignore But I Cant (ｰ ｰ;)**")
   
   
