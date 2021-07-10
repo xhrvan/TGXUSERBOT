@@ -98,20 +98,6 @@ async def ssvideo(event):
 
     os.system("rm -rf *.png *.mp4")
 
-CMD_HELP.update(
-
-    {
-
-        "ssvideo": ".ssvideo <grid>\
-
-        \nUsage: Capture video frames by <grid> x <grid>.\
-
-        \n*max grid is 10."
-
-    }
-
-)
-
 CmdHelp("ssvideo").add_command(
     'ssvideo', None, 'Use and See'
 ).add()
