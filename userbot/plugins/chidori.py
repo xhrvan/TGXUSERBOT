@@ -13,5 +13,5 @@ async def naruto(ult):
 	await asyncio.sleep(1)
 	await ult.edit("You:(✖﹏✖)")
 CmdHelp("chidori").add_command(
-'chidori', None, 'Use and See'
+	'chidori', None, 'Use and See'
 ).add()
