@@ -26,6 +26,7 @@ PM_IMG = "https://telegra.ph/file/baf1bde222c614d6040e9.jpg"
 pm_caption ="**LEGENDBOT Is Online**\n\n"
 
 pm_caption += f"**┏━━━━━━━━━━━━━┓**\n"
+pm_captiom += f" __**𖤍BOT STATUS𖤍**__\n"
 pm_caption += f"**┣🇮🇳 Master : {mention}**\n"
 pm_caption += f"**┣🇮🇳 Telethon : `{version.__version__}`**\n"
 pm_caption += f"**┣🇮🇳 LEGENDBOT : {LEGENDversion}**\n"
@@ -37,8 +38,8 @@ pm_caption += f"**┗━━━━━━━━━━━━━┛**\n"
 pm_caption += "    [✨REPO✨](https://github.com/LEGEND-OS/LEGENDBOT) 🔹 [📜License📜](https://github.com/LEGEND-OS/LEGENDBOT/blob/master/LICENSE)"
 
 
-@bot.on(admin_cmd(outgoing=True, pattern="alive$"))
-@bot.on(sudo_cmd(pattern="alive$", allow_sudo=True))
+@bot.on(admin_cmd(outgoing=True, pattern="bot$"))
+@bot.on(sudo_cmd(pattern="bot$", allow_sudo=True))
 async def amireallyalive(alive):
     if alive.fwd_from:
         return
