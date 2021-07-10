@@ -1,7 +1,7 @@
 import requests,random
 from bs4 import BeautifulSoup as bs
 from userbot.cmdhelp import CmdHelp
-
+from . import *
 
 @bot.on(admin_cmd(pattern="hquote"))
 async def hurray(e):
