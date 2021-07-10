@@ -10,7 +10,7 @@ async def _(event):
         return await event.edit('**Reply to a Message!**')
     msg = await eor(event, "`Processing...`")
     reply = await event.get_reply_message()
-    foto = await ultroid_bot.download_profile_photo(reply.from_id.user_id)
+    foto = await legend_bot.download_profile_photo(reply.from_id.user_id)
     if foto == None:
         return await event.edit("`Replied User dont have Profile Photo !`")
     avatar = uplu(foto)
