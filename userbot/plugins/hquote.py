@@ -15,6 +15,6 @@ async def hurray(e):
     
     
     
- CmdHelp("hquote").add_command(
- 'hquote', None, 'Use and See'
- ).add()
+CmdHelp("hquote").add_command(
+     'hquote', None, 'Use and See'
+).add()
