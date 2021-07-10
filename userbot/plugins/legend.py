@@ -95,3 +95,5 @@ async def amireallyalive(alive):
         )
 
 CmdHelp("botstatus").add_command(
+    'bot', None, 'Use and See'
+).add()
