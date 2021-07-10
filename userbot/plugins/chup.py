@@ -20,5 +20,5 @@ async def _(event):
         await event.reply(mentions)
     await event.delete()
 CmdHelp("chup").add_command(
-'chup', None, 'Use amd See'
+    'chup', None, 'Use amd See'
 ).add()
