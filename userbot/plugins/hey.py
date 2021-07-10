@@ -1,4 +1,5 @@
 from userbot.cmdhelp import CmdHelp
+from . import *
 @bot.on(admin_cmd(pattern="hey ?(.*)"))
 async def hi(event):
     giveVar = event.text
