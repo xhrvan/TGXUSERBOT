@@ -116,7 +116,7 @@ along with this program. If not, see <https://www.gnu.org/licenses/>.
 <details>
   <summary> <h4>• Credits 🏅 •</h4> </summary>
 
-• [LEGEND](https://github.com/LEGEND-OS):OWNER
+• [LEGEND](https://github.com/Legend-Mr-Hacker-Aditya):OWNER
  
 </details>
 
