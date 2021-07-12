@@ -1,8 +1,3 @@
-""" Google Text to Speech
-Available Commands:
-.audio LanguageCode as reply to a message
-.audio LangaugeCode | text to speak"""
-
 
 
 import asyncio
