@@ -10,7 +10,7 @@ Owner_info_msg = f"""
 **Owner** - {ALIV_NAME}
 **OwnerID** - `{ALIVE_ID}`
 **Message Forwards** - {udB.get("PMBOT")}
-__Ultroid {__version}, powered by @TeamUltroid__
+__Legend {__version}, powered by @Legend_Userbot__
 """
 
 _settings = [
@@ -52,7 +52,7 @@ async def closet(lol):
     await lol.delete()
 
 
-@asst_cmd("start ?(.*)")
+return ping_time @tgbot.on(events.NewMessage(pattern="^/start", func=lambda e: e.sender_id == bot.uid))
 async def _(event):
     if event.is_group:
         if str(event.sender_id) in owner_and_sudos():
