@@ -1,10 +1,8 @@
-""" Sing a song... 
-    Command .rattitude
 
-    By @veryhelpful"""
 import userbot.cmdhelp import CmdHelp
 CmdHelp("englishflirt").add_command(
-)
+    'rflirt', None, 'Use and See'
+).add()
 import asyncio
 import random
 
