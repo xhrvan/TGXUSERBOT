@@ -31,5 +31,5 @@ async def _(event):
         \n\n**Details : **__{result.text.splitlines()[2]}__"
     await snku.edit(namem)
 CmdHelp("findsong").add_command(
-'findsong', None, 'Its help u to find song'
+'findsong', None, '1st send song voice then reply to it and send .findsong'
 ).add()
