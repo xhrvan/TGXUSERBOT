@@ -140,7 +140,7 @@ CmdHelp("extra").add_command(
 ).add_command(
   'fap', None, 'Faking Orgasm'
 ).add_command(
-  'heart', None, 'Try it u will grt emotion back,
+  'heart', None, 'Try it u will grt emotion back'
 ).add_command(
   'readme', None, 'Readme.'
 ).add_command(
