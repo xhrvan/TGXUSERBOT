@@ -32,7 +32,7 @@ pm_caption += f"**┣🇮🇳 Telethon : `{version.__version__}`**\n"
 pm_caption += f"**┣🇮🇳 LEGENDBOT : {LEGENDversion}**\n"
 pm_caption += f"**┣🇮🇳 Sudo       : `{sudou}`**\n"
 pm_caption += f"**┣🇮🇳 Owner   : [LEGEND](https://t.me/Legend_Mr_Hacker)**\n"
-pm_caption += f"**┣🇮🇳 Group    : [LEGENDGROUP](https://t.me/@Legend_Userbot)**\n"
+pm_caption += f"**┣🇮🇳 Group    : [LEGENDGROUP](https://t.me/Legend_Userbot)**\n"
 pm_caption += f"**┗━━━━━━━━━━━━━┛**\n"
 
 pm_caption += "    [✨REPO✨](https://github.com/LEGEND-OS/LEGENDBOT) 🔹 [📜License📜](https://github.com/LEGEND-OS/LEGENDBOT/blob/master/LICENSE)"
