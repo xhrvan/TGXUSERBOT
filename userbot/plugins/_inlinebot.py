@@ -52,21 +52,21 @@ def button(page, modules):
     for pairs in pairs[page]:
         buttons.append(
             [
-                custom.Button.inline(f"{LEGEND_emoji} " + pair, data=f"Information[{page}]({pair})")
+                custom.Button.inline(f"{LEGEND_emoji} " + pair + f" {LEGEND_emoji}", data=f"Information[{page}]({pair})")
                 for pair in pairs
             ]
         )
-
+        
     buttons.append(
         [
             custom.Button.inline(
-               f"⬅️ 𝐁𝐀𝐂𝐊 {LEGEND_emoji}", data=f"page({(max_pages - 1) if page == 0 else (page - 1)})"
+               f"↩️𝐁𝐀𝐂𝐊 🌟", data=f"page({(max_pages - 1) if page == 0 else (page - 1)})"
             ),
             custom.Button.inline(
-               f"•{LEGEND_emoji} ❌ {LEGEND_emoji}•", data="close"
+               f"🌟 ❌ 🌟", data="close"
             ),
             custom.Button.inline(
-               f"{LEGEND_emoji} 𝐍𝐄𝐗𝐓 ➡️", data=f"page({0 if page == (max_pages - 1) else page + 1})"
+               f"🌟 𝐍𝐄𝐗𝐓↪️", data=f"page({0 if page == (max_pages - 1) else page + 1})"
             ),
         ]
     )
@@ -145,10 +145,10 @@ if Var.TG_BOT_USER_NAME_BF_HER is not None and tgbot is not None:
     async def on_plug_in_callback_query_handler(event):
         if event.query.user_id == bot.uid:
             await delete_LEGEND(event,
-              "⚜️LEGENDBOT Menu Provider Is now Closed⚜️\n\n         **[©LEGENDBOT](t.me/Legend_Mr_Hacker)**", 5, link_preview=False
+              "⚜️LEGENDBOT Menu Provider Is now Closed✔️\n\n         **[©LEGENDBOT](t.me/Legend_Mr_Hacker)**", 5, link_preview=False
             )
         else:
-            LEGEND_alert = "Mil Gyi Tasalli..? Kabse mere bot me ungli kr rhe h. Khudka bna lo na agr chaiye to pta nhi kaha se aajate h disturb krne. ©LEGENDBOT"
+            LEGEND_alert = "Oh Common Yarr u think u cand Click on it😁😁😁. Deploy ur Own Bot ©LEGENDBOT"
             await event.answer(_alert, cache_time=0, alert=True)
           
     @tgbot.on(
@@ -190,7 +190,7 @@ if Var.TG_BOT_USER_NAME_BF_HER is not None and tgbot is not None:
     async def commands(event):
         if not event.query.user_id == bot.uid:
             return await event.answer(
-                "Mil Gyi Tasalli..? Kabse mere bot me ungli kr rhe h. Khudka bna lo na agr chaiye to pta nhi kaha se aajate h disturb krne. ©LEGENDBOT ",
+                "Abhi Tak Nhi Samjha Khudka bana lo na toh Use Karna h toh kya ungli kar rhe ho. ©LEGENDBOT ",
                 cache_time=0,
                 alert=True,
             )
