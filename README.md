@@ -53,7 +53,7 @@ This is Plugins Of LEGENDBOT
     - Any Other VPS.
     - No support for Termux Yet.
 
-[![Deploy To Heroku](https://www.herokucdn.com/deploy/button.svg)](https://heroku.com/deploy?template=https://github.com/LEGEND-OS/LEGENDUSERBOT/)
+[![Deploy To Heroku](https://www.herokucdn.com/deploy/button.svg)](https://heroku.com/deploy?template=https://github.com/Legend-Mr-Hacker-Aditya/LEGENDUSERBOT/)
 
 
 ## Mandatory Vars
