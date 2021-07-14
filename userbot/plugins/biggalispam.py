@@ -275,5 +275,5 @@ async def d3vilraid(event):
 
          
  CmdHelp("biggalispam").add_command(
-'biggalispam', None, 'Try with Ur Enemy'
+    'biggalispam', None, 'Try with Ur Enemy'
 ).add()
