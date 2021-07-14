@@ -55,3 +55,4 @@ CmdHelp("broadcast").add_command(
    'gcast', None, 'Publish message to all channel and group'
 ).add_command(
   'gcust', None, 'Same as Gcast'
+).add()
