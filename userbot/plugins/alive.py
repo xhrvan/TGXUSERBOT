@@ -26,7 +26,7 @@ PM_IMG = "https://telegra.ph/file/baf1bde222c614d6040e9.jpg"
 pm_caption ="**LEGENDBOT Is Online**\n\n"
 
 pm_caption += f"**┏━━━━━━━━━━━━━┓**\n"
-pm_caption += f" __**𖤍OP𖤍**__\n"
+pm_caption += f"      __**𖤍OP𖤍**__\n"
 pm_caption += f"**┣🇮🇳 Master : {mention}**\n"
 pm_caption += f"**┣🇮🇳 Telethon : `{version.__version__}`**\n"
 pm_caption += f"**┣🇮🇳 LEGENDBOT : {LEGENDversion}**\n"
