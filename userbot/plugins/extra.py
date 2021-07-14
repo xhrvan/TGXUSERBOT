@@ -127,13 +127,13 @@ async def _(event):
             "**😈YOU KNOW THAT I'M A GOOD PERSON. BUT DON'T GIVE ME REASON TO SHOW MY EVIL SIDE😈**"
         )
 
-CmdHelp("extra").add_command(
+CmdHelp("extra").add_command
  'leave', None, 'Leave a chat'
 ).add_command(
   '__', None , 'You Try It'
 ).add_command(
   'cry', None, 'Cry'
-).add_commanf(
+).add_command(
   'fp', None, 'Sends palm face page'
 ).add_command(
   'evil', None, 'Show Evil Side'
