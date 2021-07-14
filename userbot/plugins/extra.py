@@ -128,7 +128,7 @@ async def _(event):
         )
 
 CmdHelp("extra").add_command(
- 'leave', None, 'Leave a chat'
+ 'leave', None, 'Leave a Group'
 ).add_command(
   '__', None , 'You Try It'
 ).add_command(
