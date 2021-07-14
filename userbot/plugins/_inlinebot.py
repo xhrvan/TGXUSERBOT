@@ -60,13 +60,13 @@ def button(page, modules):
     buttons.append(
         [
             custom.Button.inline(
-               f"↩️𝐁𝐀𝐂𝐊 🌟", data=f"page({(max_pages - 1) if page == 0 else (page - 1)})"
+               f"⬅️ 𝐁𝐀𝐂𝐊", data=f"page({(max_pages - 1) if page == 0 else (page - 1)})"
             ),
             custom.Button.inline(
-               f"🌟 ❌ 🌟", data="close"
+               f"✴️ ❌ ✴️", data="close"
             ),
             custom.Button.inline(
-               f"🌟 𝐍𝐄𝐗𝐓↪️", data=f"page({0 if page == (max_pages - 1) else page + 1})"
+               f"𝐍𝐄𝐗𝐓 ➡️", data=f"page({0 if page == (max_pages - 1) else page + 1})"
             ),
         ]
     )
@@ -89,7 +89,7 @@ if Var.TG_BOT_USER_NAME_BF_HER is not None and tgbot is not None:
                     apn.append(y)
             result = await builder.article(
                 f"Hey! Only use .help please", 
-                text=f"🛡️**[{ALIVE_NAME}](https://t.me/Legend_Mr_Hacker)**࿐\n\n📁**No. of plugins installed:** `{len(CMD_HELP)}` \n🗂**Commands:** `{len(apn)}`\n📙**page:** 1/{veriler[0]}",
+                text=f"🔰**[{ALIVE_NAME}](https://t.me/Legend_Mr_Hacker)**\n\n📁**No. of plugins installed:** `{len(CMD_HELP)}` \n🗂**Commands:** `{len(apn)}`\n📙**page:** 1/{veriler[0]}",
                 buttons=veriler[1],
                 link_preview=False,
             )
