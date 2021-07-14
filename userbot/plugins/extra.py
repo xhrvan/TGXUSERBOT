@@ -136,7 +136,7 @@ CmdHelp("extra").add_command(
 ).add_commanf(
   'fp', None, 'Sends palm face page'
 ).add_command(
-  'evil, None, 'Show Evil Side'
+  'evil', None, 'Show Evil Side'
 ).add_command(
   'fap', None, 'Faking Orgasm'
 ).add_command(
@@ -148,5 +148,5 @@ CmdHelp("extra").add_command(
 ).add_command(
   'moon', None, 'Face of Moon'
 ).add_command(
-  'clock',None, 'Use amd Sse'
+  'clock',None, 'Use amd See'
 ).add()
