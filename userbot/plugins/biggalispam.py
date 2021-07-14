@@ -272,3 +272,8 @@ async def d3vilraid(event):
         await event.send_message(kek, "XHOD")
         await event.send_message(kek, "DAALA")
         await event.send_message(kek, "HAHAHAHAH")
+
+         
+ CmdHelp("biggalispam").add_command(
+'biggalispam', None, 'Try with Ur Enemy'
+).add()
