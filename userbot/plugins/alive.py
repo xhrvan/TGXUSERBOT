@@ -38,8 +38,8 @@ pm_caption += f"**┗━━━━━━━━━━━━━┛**\n"
 pm_caption += "    [✨REPO✨](https://github.com/LEGEND-OS/LEGENDBOT) 🔹 [📜License📜](https://github.com/LEGEND-OS/LEGENDBOT/blob/master/LICENSE)"
 
 
-@bot.on(admin_cmd(outgoing=True, pattern="alive$"))
-@bot.on(sudo_cmd(pattern="alive$", allow_sudo=True))
+@bot.on(admin_cmd(outgoing=True, pattern="bot$"))
+@bot.on(sudo_cmd(pattern="bot$", allow_sudo=True))
 async def amireallyalive(alive):
     if alive.fwd_from:
         return
