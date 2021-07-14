@@ -215,6 +215,6 @@ async def _(event):
     if x == 33:
 
         await event.edit("Not in a mood to sing. Sorry!")
-CmdHelp("engsongs").add_cmmand(
+CmdHelp("engsongs").add_command(
   'engsongs', None, 'Sing a song'
 ).add()
