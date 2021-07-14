@@ -37,7 +37,7 @@ async def Ooo(e):
         await e.edit(t)
 
 
-@bot.on(admin_cmd("Oof$"))
+@bot.on(admin_cmd("oof$"))
 # @register(outgoing=True, pattern="^Oof$")
 async def Oof(e):
     t = "Oof"
@@ -144,7 +144,7 @@ CmdHelp("extra").add_command(
 ).add_command(
   'readme', None, 'Readme.'
 ).add_command(
-  'oof', None, 'Use and See,
+  'oof', None, 'Use and See',
 ).add_command(
   'moon', None, 'Face of Moon'
 ).add_command(
