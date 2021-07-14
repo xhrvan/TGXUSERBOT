@@ -147,7 +147,7 @@ Cmd_Help("extra").add_command(
 ).add_command(
   '__', None , 'You Try It'
 ).add_command(
-  'cry, None, 'Cry'
+  'cry', None, 'Cry'
 ).add_commanf(
   'fp', None, 'Sends palm face page'
 ).add_command(
