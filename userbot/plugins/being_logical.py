@@ -574,8 +574,4 @@ async def _(event):
         )
 
 
-from userbot.cmdhelp import CmdHelp 
-
- CmdHelp("logical").add_command(
-     'belo', None, 'say something interesting'
- ).add()
+from userbot.cmdhelp import CmdHelp
