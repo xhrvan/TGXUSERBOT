@@ -22,7 +22,7 @@ pm_caption += "💫💫**my assistant**💫💫 >>》 15.0.0\n"
 pm_caption += "😇😇**LEGEND HERE**😇😇   >>》 [OWNER](https://t.me/Legend_Mr_Hacker)\n"
 pm_caption += f"🔰🔰**ᴍᴀsᴛᴇʀ**🔰🔰  >>》 {DEFAULTUSER}\n"
 pm_caption += "❣❣ **ᴄʀᴇᴀᴛᴏʀ**❣❣ >>》 [CREATOR](https://t.me/Legend_Mr_Hacker)\n\n"
-pm_caption += "🎊🎊 **LEGEND**🎊🎊  >>》 [FEDS](https://t.me/LegendUserbot)\n\n"
+pm_caption += "🎊🎊 **LEGEND**🎊🎊  >>》 [GROUP](https://t.me/Legend_Userbot)\n\n"
 pm_caption += "[....▄███▄███▄\n....█████████\n.......▀██❣🌹💫😇💫🌹❣███▀\n...............▀█▀\n](https://t.me/Legend_Mr_Hacker)\n\n"
 @borg.on(admin_cmd(pattern=r"aboutbot"))
 
