@@ -1,6 +1,5 @@
-"""command: .kk"""
-"""FUCK OFF"""
-from userbot.cmdhelp import Cmhelp
+
+from userbot.cmdhelp import CmdHelp
 
 CmdHelp("fuck").add_command(
    'kk', None, 'Fuck OFF'
