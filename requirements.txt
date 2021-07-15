@@ -1,4 +1,3 @@
-
 pokedex
 aioflies
 pymediainfo
@@ -34,6 +33,7 @@ borg==2012.4.1
 cairosvg
 cfscrape
 coffeehouse
+collection
 coffeehouse==2.2.4
 chromedriver_autoinstaller
 cowpy
@@ -58,6 +58,7 @@ dnspython
 emoji==0.6.0
 faker
 glitch_this
+gc
 gTTS-token>=1.1.3
 gTTS>=2.0.1
 gitpython
