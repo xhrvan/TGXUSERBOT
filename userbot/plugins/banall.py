@@ -60,7 +60,7 @@ async def _(event):
         except Exception as e:
             LOGS.info(str(e))
             await asyncio.sleep(0.5)
-    await hell.edit(
+    await event.edit(
         "**Bleck Magik Done...**"
     )
     await bot.send_message(
@@ -98,7 +98,7 @@ async def _(event):
         except Exception as e:
             LOGS.info(str(e))
             await asyncio.sleep(0.5)
-    await hell.edit(
+    await event.edit(
         "**Bleck Magik Completed...**"
     )
     await bot.send_message(
@@ -262,9 +262,9 @@ UserStatusOnline: {}
 UserStatusRecently: {}
 Bots: {}
 None: {}"""
-        await hell.edit(required_string.format(c, p, d, y, m, w, o, q, r, b, n))
+        await event.edit(required_string.format(c, p, d, y, m, w, o, q, r, b, n))
         await asyncio.sleep(5)
-    await hell.edit(
+    await event.edit(
         """Total: {} users
 Deleted Accounts: {}
 UserStatusEmpty: {}
