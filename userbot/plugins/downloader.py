@@ -1,9 +1,9 @@
 
 from . import *
 CmdHelp("downloader").add_command(
-    'yta', None, 'download in mp3 format'
+    'ytas', None, 'download in mp3 format'
 ).add_command(
-    'ytv', None, 'download in mp4 format'
+    'ytvs', None, 'download in mp4 format'
 ).add()
 import os
 import time
