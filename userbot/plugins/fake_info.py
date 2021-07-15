@@ -10,6 +10,7 @@ CmdHelp("fakeinfo.").add_command(
 
 
 
+from . import *
 
 @borg.on(admin_cmd(pattern=r"fakegen"))
 async def hi(event):
