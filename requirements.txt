@@ -75,7 +75,9 @@ justwatch
 langdetect
 lxml
 lottie
+math
 nekos.py
+numpy
 oauth2client
 patool
 psycopg2
@@ -109,6 +111,7 @@ telethon==1.19.0
 html-telegraph-poster
 urbandict>=0.5
 validators
+vcam
 wikipedia>=1.4.0
 tswift
 youtube-dl>=2021.02.04.1
