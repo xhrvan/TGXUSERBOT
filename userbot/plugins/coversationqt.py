@@ -321,5 +321,5 @@ async def _(event):
 
 
 CmdHelp("coversationqt").add_command(
-'conversationqt', None, 'its start asking question'
+'qt', None, 'its start asking question'
 ).add()
