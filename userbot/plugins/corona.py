@@ -35,15 +35,9 @@ def get_country_data(country, world):
 
     return {"Status": "No information yet about this country!"}
 
-CmdHelp.update(
-    {
-        "coronas": ".corona (country name)"
-
-
-    }
-)
 
 from userbot.cmdhelp import CmdHelp
+
 CmdHelp("coronas").add_command(
    'coronas', None, '.corona <country name>'
 ).add()
