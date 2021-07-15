@@ -7,7 +7,7 @@ from userbot.cmdhelp import CmdHelp
 
 CmdHelp("design").add_command(
    'join', None, 'use and see'
-)add_command(
+).add_command(
    'pay', None, 'use and see'
 ).add()
 
