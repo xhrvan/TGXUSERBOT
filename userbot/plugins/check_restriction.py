@@ -2,7 +2,7 @@
 from userbot.cmdhelp import CmdHelp
 
 
-CmdHelp(check").add_command(
+CmdHelp("check").add_command(
    'cr', None, 'Check Fake Limitiation'
 ).add() 
 from telethon.tl.types import Channel, Chat, User
