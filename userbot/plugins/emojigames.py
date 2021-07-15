@@ -12,7 +12,7 @@ CmdHelp("earth").add_command(
    'fb', None, 'animation'
 ).add_command(
    'dice', None, 'animation'
-)add_command(
+).add_command(
    'bb', None, 'animation'
 ).add()
 
