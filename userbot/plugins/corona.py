@@ -2,9 +2,8 @@ from covid import Covid
 
 from userbot.utils import admin_cmd
 
-from userbot import CmdHelp
 
-@borg.on(admin_cmd(pattern="corona (.*)"))
+@borg.on(admin_cmd(pattern="coronas (.*)"))
 
 async def _(event):
 
@@ -38,10 +37,13 @@ def get_country_data(country, world):
 
 CmdHelp.update(
     {
-        "corona": ".corona (country name)"
+        "coronas": ".corona (country name)"
 
 
     }
 )
 
-
+from userbot.cmdhelp import CmdHelp
+CmdHelp("coronas").add_command(
+   'coronas', None, '.corona <country name>'
+).add()
