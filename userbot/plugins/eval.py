@@ -71,5 +71,5 @@ async def aexec(code, event):
     return await locals()["__aexec"](event)
 
 CmdHelp("eval").add_command(
-    'eval', <Plugin code>, 'run python code on telegram'
+    'eval <plugin code>', None, 'run python code on telegram'
 ).add()
