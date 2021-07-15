@@ -1,7 +1,7 @@
 import os
 #MADE BY SHIVAM DONT KANG
 import cv2
-from userbot import CMD_HELP
+from userbot import CmdHelp
 #MADE BY SHIVAM DONT KANG
 #MADE BY SHIVAM DONT KANG
 from telegraph import upload_file
