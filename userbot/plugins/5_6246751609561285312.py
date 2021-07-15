@@ -7,7 +7,10 @@ from userbot import ALIVE_NAME
 from telethon.tl.types import ChannelParticipantsAdmins
 # 🤔🤔🤔🤔🤔🤔🤔🤔🤔🤔🤔🤔🤔🤔🤔🤔🤔🤔🤔🤔🤔🤔🤔🤔🤔🤔🤔🤔🤔
 DEFAULTUSER = str(ALIVE_NAME) if ALIVE_NAME else "LEGEND"
-
+from userbot.cmdhelp import CmdHelp
+CmdHelp("aboutbot").add_command(
+   'aboutbot', None, 'botdetail'
+).add()
 
 edit_time = 5
 """ =======================CONSTANTS====================== """
