@@ -68,13 +68,13 @@ async def bye(event):
     )
 
 CmdHelp("emotes").add_command(
-   'hhi', <emoji>, 'Try it yourself' 
+   'hhi <emoji>', None, 'Try it yourself' 
 ).add_command(
-   'gws', <emoji>, 'Try it yourself'
+   'gws <emoji>', None, 'Try it yourself'
 ).add_command(
-   'hlo', <emoji>, 'Try it yourself'
+   'hlo <emoji>', None, 'Try it yourself'
 ).add_command(
-   'hii', <emoji>, 'Try it yourself'
+   'hii <emoji>', None, 'Try it yourself'
 ).add_command(
-   'bye', <emoji>, 'Try it yourself'
+   'bye <emoji>', None, 'Try it yourself'
 ).add()
