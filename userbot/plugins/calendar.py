@@ -6,7 +6,7 @@ from datetime import datetime
 import requests
 import json
 from uniborg.util import admin_cmd
-from userbot import CMD_HELP
+from userbot import CmdHelp
 
 
 @borg.on(admin_cmd(pattern="calendar (.*)"))
