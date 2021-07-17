@@ -3,6 +3,7 @@ from sys import argv
 import sys
 from telethon.errors.rpcerrorlist import PhoneNumberInvalidError
 import os
+from . import *
 from telethon import TelegramClient
 from var import Var
 from userbot.Config import Config
