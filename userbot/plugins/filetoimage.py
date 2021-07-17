@@ -6,14 +6,14 @@ from telethon import types
 from telethon.errors import PhotoInvalidDimensionsError
 from telethon.tl.functions.messages import SendMediaRequest
 
-from userbot importn *
+from userbot import *
 
 from userbot.cmdhelp import CmdHelp
 CmdHelp("ftoimg").add_command(
     "ftoimg", None, "Here file must be in image file"
 ).add()
 
-@borg.on(utils.admin_cmd(pattern=r"ftoimage"))
+@borg.on(utils.admin_cmd(pattern=r"ftoimg"))
 async def on_file_to_photo(event):
     await event.edit("processing.....")
     await asyncio.sleep(2)
