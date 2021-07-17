@@ -4,7 +4,7 @@ import random
 
 from telethon import events
 
-from userbot.cmdhelp imprt CmdHelp
+from userbot.cmdhelp import CmdHelp
 CmdHelp("snow").add_command(
     "snow", None, "Use And See"
 ).add()
