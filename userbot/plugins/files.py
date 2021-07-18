@@ -559,24 +559,6 @@ def get_lst_of_files(input_directory, output_lst):
 
 
 
-CmdHelp.update({
-    "archive":
-    ".zip reply to a file/media\
-    \nUSEAGE: it will zip that file/media\
-    \n\n.rar reply to a file/media\
-    \nUSEAGE: it 
-    z\n\n. reply to a file/media\
-    \nUSEAGE: \
-    \n\n.tar reply to a file/media\
-    \nUSEAGE: \
-    \n\n.e\
-    \nUSEAGE: \
-    \n\n.\
-    \nUSEAGE:\
-    \n\n\
-    \nUSEAGE:\
-"
-}) 
 from userbot.cmdhelp import CmdHelp 
 CmdHelp("archieve").add_command(
     'zip', None, 'Reply to a file/media it will zip that file/media'
