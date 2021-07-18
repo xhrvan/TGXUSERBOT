@@ -13,7 +13,7 @@ from telethon.tl.types import (
     MessageMediaPhoto,
 )
 
-from userbot import CMD_HELP
+from userbot import CmdHelp
 from userbot.Config import Var
 from userbot.utils import *
 
@@ -33,7 +33,7 @@ KANGING_STR = [
 lightning = Var.CUSTOM_STICKER_PACK_NAME
 
 
-@bot.on(lightning_cmd(outgoing=True, pattern="kang"))
+@bot.on(admin_cmd(outgoing=True, pattern="kang"))
 @bot.on(sudo_cmd(pattern="kang", allow_sudo=True))
 async def kang(args):
     """ For .kang command, kangs stickers or creates new ones. """
@@ -288,7 +288,7 @@ async def resize_photo(photo):
     return image
 
 
-@bot.on(lightning_cmd(outgoing=True, pattern="stkrinfo"))
+@bot.on(admin_cmd(outgoing=True, pattern="stkrinfo"))
 @bot.on(sudo_cmd(pattern="stkrinfo", allow_sudo=True))
 async def get_pack_info(event):
     if not event.is_reply:
@@ -355,5 +355,7 @@ CmdHelp("kang").add_command(
   'kang [emoji('s)]', None, 'Works just like .kang but uses the emoji('s) you picked.'
 ).add_command(
   'kang [number]', None, 'Kang's the sticker/image to the specified pack and uses the emoji('s) you picked'
-).add()                                           
+).add_command(
+   'stkrinfo', None, 'Gets info about sticker pack'
+).add()
   
