@@ -8,7 +8,7 @@ from userbot.utils import admin_cmd
 
 
 
-from userbot.cmdhelp imprt CmdHelp
+from userbot.cmdhelp import CmdHelp
 CmdHelp("fwd").add_command(
     "fwd", None, "reply to any message"
 ).add()
