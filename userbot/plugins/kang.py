@@ -13,10 +13,9 @@ from telethon.tl.types import (
     MessageMediaPhoto,
 )
 
-from userbot import CmdHelp
-from userbot.Config import Var
+from userbot.cmdhelp import CmdHelp
 from userbot.utils import *
-
+from . import *
 KANGING_STR = [
     "Using Witchery to kang this sticker...",
     "Plagiarising hehe...",
@@ -335,20 +334,6 @@ async def get_pack_info(event):
 
     await eor(event, OUTPUT)
 
-
-CMD_HELP.update(
-    {
-        "stickers": ".kang\
-\nUsage: Reply .kang to a sticker or an image to kang it to your userbot pack.\
-\n\n.\
-\nUsage: \
-\n\n.\
-\nUsage: Kang's the sticker/image to the specified pack but uses 😎 as emoji.\
-\n\n.kang [emoji('s)] [number]\
-\nUsage: .\
-\n\n.stkrinfo\
-\nUsage: Gets info about the sticker pack."
-    }
 CmdHelp("kang").add_command(
   'kang', None, 'reply .kang to a sticker or an image to kang it to your userbot pack'
 ).add_command(
