@@ -7,7 +7,7 @@ from . import *
 from userbot.utils import admin_cmd, sudo_cmd, edit_or_reply
 NUMBER = ["0", "1"]
 
-OS = [
+OSP = [
     "IF U NEED ANY HELP U CAN TYPE WHEN HE COME BACK HE WILL REPLY U",
     "PLS DONT DISTURB HIM LEGEND IS BUSY NOW WHEN HE COME BACK HE REPLY U",
     "DON'T BREAK THE HEART OF THE HACKER BCOZ U DON'T KNOW WHAT WILL HAPPN TN",
@@ -30,7 +30,7 @@ async def _(event):
     async with event.client.action(event.chat_id, "typing"):
         await event.client.send_message(
             entity=event.chat_id,
-            message="""{}""".format(random.choice(OS)),
+            message="""{}""".format(random.choice(OSP)),
             reply_to=event.message.id,
         )
 
