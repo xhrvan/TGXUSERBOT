@@ -1,10 +1,6 @@
-# Credit: @r4v4n4
-"""Emoji
 
-Available Commands:
 
-.fleave"""
-from userbot.cmdhelp imprt CmdHelp
+from userbot.cmdhelp import CmdHelp
 CmdHelp("fleave").add_command(
     "fleave", None, "Its animation use and See"
 ).add()
