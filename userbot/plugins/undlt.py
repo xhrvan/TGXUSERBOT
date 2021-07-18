@@ -21,5 +21,5 @@ from . import *
 
 
 CmdHelp("undlt").add_command(
-  'undlt', None, 'You need administrative permissions in order to do this command'
+  'undlt', None, 'You need administrative permissions in order to do this command u can see last 5 message'
 ).add()
