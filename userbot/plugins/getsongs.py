@@ -1,13 +1,12 @@
 # This useless plugin is made By @hellboi_atul..
 # Downloads songs from Spotify
 # Keep credits if gonna kang...do not remove/edit this line..
-# Else gay..
 
 import glob
 import subprocess
 
 from userbot.utils import admin_cmd
-from userbot.cmdhelp imprt CmdHelp
+from userbot.cmdhelp import CmdHelp
 CmdHelp("getsongs").add_command(
     "getsong <songname>", None, "Geting ur music"
 ).add()
