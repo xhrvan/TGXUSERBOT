@@ -124,7 +124,7 @@ CmdHelp.update(
             \n\n\n Guide:Video guide of arl token: [here](https://www.youtube.com/watch?v=O6PRT47_yds&feature=youtu.be) or Read [This](https://notabug.org/RemixDevs/DeezloaderRemix/wiki/Login+via+userToken)."
     }
 )
-from userbot.cmdhelp imprt CmdHelp
+from userbot.cmdhelp import CmdHelp
 CmdHelp("gaana").add_command(
     "spd", None, "for searching songs from spotify"
 ).add_command(
