@@ -1,4 +1,4 @@
- Rperasonal.file
+ 
 import asyncio
 import random
 from userbot.cmdhelp import CmdHelp
@@ -94,7 +94,7 @@ async def _(event):
         await event.edit(f"LEGEND ꧁༒☬ⓇⒾⓈⒽⒶⓋ☬༒꧂ STOPED RAID {ALIVE_NAME}")
         
         
-CmdHelp("Rpersonal").add_command(
+CmdHelp("rpersonal").add_command(
     'Rstarts', None, 'Reply to him or her to start legend ꧁༒☬ⓇⒾⓈⒽⒶⓋ☬༒꧂ personal file'
 ).add_command(
     'Rstops', None, 'Reply To her Ya him To stop legend ꧁༒☬ⓇⒾⓈⒽⒶⓋ☬༒꧂ personal file'
