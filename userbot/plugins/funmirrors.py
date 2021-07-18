@@ -8,7 +8,7 @@ from LEGENDBOT.utils import admin_cmd, edit_or_reply, sudo_cmd
 
 
 
-from userbot.cmdhelp imprt CmdHelp
+from userbot.cmdhelp import CmdHelp
 CmdHelp("funmirrors").add_command(
     "fmirror1", None, "Use and see"
 ).add_command(
