@@ -29,7 +29,7 @@ KANGING_STR = [
     "Mr.Steal Your Sticker is stealing this sticker... ",
 ]
 
-lightning = Config.CUSTOM_STICKER_PACK_NAME
+legend = Config.CUSTOM_STICKER_PACK_NAME
 
 
 @bot.on(admin_cmd(outgoing=True, pattern="kang"))
@@ -97,11 +97,11 @@ async def kang(args):
                 # pack
                 emoji = splat[1]
 
-        packname = f"HB_{user.username}_lightning_{pack}"
+        packname = f"HB_{user.username}_legend_{pack}"
         packnick = (
-            f"{lightning} Vol.{pack}"
-            if lightning
-            else f"@{user.username}'s lightning Vol.{pack}"
+            f"{legend} Vol.{pack}"
+            if legend
+            else f"@{user.username}'s legend Vol.{pack}"
         )
         cmd = "/newpack"
         file = io.BytesIO()
@@ -135,9 +135,9 @@ async def kang(args):
                     pack += 1
                     packname = f"HB_{user.username}_by_{user.username}_{pack}"
                     packnick = (
-                        f"{lightning} Vol.{pack}"
-                        if lightning
-                        else f"@{user.username}'s lightning Vol.{pack}"
+                        f"{legend} Vol.{pack}"
+                        if legend
+                        else f"@{user.username}'s legend Vol.{pack}"
                     )
                     await args.edit(
                         "`Switching to Pack "
