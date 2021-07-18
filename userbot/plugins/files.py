@@ -564,16 +564,32 @@ CmdHelp.update({
     ".zip reply to a file/media\
     \nUSEAGE: it will zip that file/media\
     \n\n.rar reply to a file/media\
-    \nUSEAGE: it will rar that file/media\
+    \nUSEAGE: it 
     z\n\n. reply to a file/media\
-    \nUSEAGE: it will make into .7z that hat file/media\
+    \nUSEAGE: \
     \n\n.tar reply to a file/media\
-    \nUSEAGE: it will tar that file/media\
-    \n\n.unzip reply to a .zip file\
-    \nUSEAGE: it will unzip that .zip file\
-    \n\n.unrar reply to a .rar file\
-    \nUSEAGE: it will unrar that .rar file\
-    \n\n.untar reply to a .tar\
-    \nUSEAGE: it will untar that .tar file\
+    \nUSEAGE: \
+    \n\n.e\
+    \nUSEAGE: \
+    \n\n.\
+    \nUSEAGE:\
+    \n\n\
+    \nUSEAGE:\
 "
 }) 
+from userbot.cmdhelp import CmdHelp 
+CmdHelp("archieve").add_command(
+    'zip', None, 'Reply to a file/media it will zip that file/media'
+).add_command( 
+    'rar reply to a file/media', None, 'it will rar that file/media'
+).add_command(
+    '7z', None, 'it will make into .7z that hat file/media'
+).add_command(
+    'tar', None, ' it will tar that file/media'
+).add_command(
+    'unzip reply to a .zip fil', None, ' it will unzip that .zip file'
+).add_command( 
+    'unrar reply to a .rar file', None, ' it will unrar that .rar file'
+).add_command(
+    '.untar reply to a .tar', None, ' it will untar that .tar file see'
+).add()
