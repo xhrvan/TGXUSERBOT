@@ -26,7 +26,7 @@ async def _(event):
     else:
         await eod(
             event,
-            f"`{hl}trt LanguageCode - message`  or  `{hl}trt LanguageCode as reply to a message.`\n\nTry `{hl}trc` to get all language codes",
+            f"`trt LanguageCode - message`  or  `trt LanguageCode as reply to a message.`\n\nTry `trc` to get all language codes",
             7,
         )
         return
@@ -46,10 +46,10 @@ async def _(event):
 
 @bot.on(admin_cmd(pattern=r"trc", outgoing=True))
 @bot.on(sudo_cmd(pattern=r"trc", allow_sudo=True))
-async def _(hell):
-    if hell.fwd_from:
+async def _(event):
+    if event.fwd_from:
         return
-    await edit_or_reply(hell, "**All The Language Codes Can Be Found** \n ⚡ [Here](https://telegra.ph/SfMæisér--𐌷𐌴ࠋࠋ𐌱𐍈𐌸-𐌾𐌰𐍀𐌾-06-04) ⚡", link_preview=False)
+    await edit_or_reply( "**All The Language Codes Can Be Found** \n ⚡ [Here](https://telegra.ph/SfMæisér--𐌷𐌴ࠋࠋ𐌱𐍈𐌸-𐌾𐌰𐍀𐌾-06-04) ⚡", link_preview=False)
 
 
 @bot.on(admin_cmd(pattern="voice (.*)"))
