@@ -5,7 +5,7 @@ import asyncio
 
 from telethon import events
 
-from userbot.cmdhelp imprt CmdHelp
+from userbot.cmdhelp import CmdHelp
 CmdHelp("fixreply").add_command(
     "reply", None, "Reply To anyone"
 ).add()
