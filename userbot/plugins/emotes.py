@@ -30,7 +30,7 @@ async def gws(event):
     await event.edit(
         f"{a}{a}{a}{a}{a}{a}{a} \n{a} {m} {a}\n{a}{a}{a}{a}{a}{a}{a}"
     )
-@borg.on(admin_cmd(pattern=r"hii ?(.*)"))
+@borg.on(admin_cmd(pattern=r"his ?(.*)"))
 async def hii(event):
     giveVar = event.text
     a = giveVar[5:6]
@@ -42,7 +42,7 @@ async def hii(event):
     await event.edit(
         f"{b}{a}{b}{b}{a}{b}{a}{b}\n{b}{a}{b}{b}{a}{b}{b}{b}\n{b}{a}{a}{a}{a}{b}{a}{b}\n{b}{a}{b}{b}{a}{b}{a}{b}\n{b}{a}{b}{b}{a}{b}{a}{b}"
     )
-@borg.on(admin_cmd(pattern=r"hlo ?(.*)"))
+@borg.on(admin_cmd(pattern=r"hlos ?(.*)"))
 async def hlo(event):
     giveVar = event.text
     a = giveVar[5:6]
@@ -54,7 +54,7 @@ async def hlo(event):
     await event.edit(
         f"{b}{a}{b}{b}{a}{b}{a}{b}{b}{b}{b}{a}{a}{a}{a}{b}\n{b}{a}{b}{b}{a}{b}{a}{b}{b}{b}{b}{a}{b}{b}{a}{b}\n{b}{a}{a}{a}{a}{b}{a}{b}{b}{b}{b}{a}{b}{b}{a}{b}\n{b}{a}{b}{b}{a}{b}{a}{b}{b}{b}{b}{a}{b}{b}{a}{b}\n{b}{a}{b}{b}{a}{b}{a}{a}{a}{a}{b}{a}{a}{a}{a}{b}"
     )
-@borg.on(admin_cmd(pattern=r"bye ?(.*)"))
+@borg.on(admin_cmd(pattern=r"byes ?(.*)"))
 async def bye(event):
     giveVar = event.text
     a = giveVar[5:6]
@@ -74,7 +74,7 @@ CmdHelp("emotes").add_command(
 ).add_command(
    'hlo <emoji>', None, 'Try it yourself'
 ).add_command(
-   'hii <emoji>', None, 'Try it yourself'
+   'his <emoji>', None, 'Try it yourself'
 ).add_command(
-   'bye <emoji>', None, 'Try it yourself'
+   'byes <emoji>', None, 'Try it yourself'
 ).add()
