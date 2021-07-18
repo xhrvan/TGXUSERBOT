@@ -72,7 +72,7 @@ CmdHelp("emotes").add_command(
 ).add_command(
    'gws <emoji>', None, 'Try it yourself'
 ).add_command(
-   'hlo <emoji>', None, 'Try it yourself'
+   'hlos <emoji>', None, 'Try it yourself'
 ).add_command(
    'his <emoji>', None, 'Try it yourself'
 ).add_command(
