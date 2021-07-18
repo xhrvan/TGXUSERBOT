@@ -206,4 +206,4 @@ async def download_video(v_url):
 from . import *
 CmdHelp("vsong").add_command(
   'vsong', None, 'search song'
-  'think', None, 'Use and see'
+).add()
