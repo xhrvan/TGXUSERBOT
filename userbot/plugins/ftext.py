@@ -1,5 +1,5 @@
 from userbot.utils import admin_cmd
-from userbot.cmdhelp imprt CmdHelp
+from userbot.cmdhelp import CmdHelp
 CmdHelp("ftext").add_command(
     "ftext", None, "Ftext Word"
 ).add()
