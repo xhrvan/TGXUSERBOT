@@ -1,9 +1,8 @@
-""" Get the Bots in any chat*
-Syntax: .get_bot"""
+
 from telethon.tl.types import ChannelParticipantAdmin, ChannelParticipantsBots
 
 from userbot.utils import admin_cmd
-from userbot.cmdhelp imprt CmdHelp
+from userbot.cmdhelp import CmdHelp
 CmdHelp("get_bot").add_command(
     "get_bot", None, "Get info about a File Extension"
 ).add()
