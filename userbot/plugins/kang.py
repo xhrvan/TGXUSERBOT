@@ -335,12 +335,12 @@ async def get_pack_info(event):
     await eor(event, OUTPUT)
 
 CmdHelp("kang").add_command(
-  'kang', None, 'reply .kang to a sticker or an image to kang it to your userbot pack'
+    'kang', None, 'reply .kang to a sticker or an image to kang it to your userbot pack'
 ).add_command(
-  'kang [emoji('s)]', None, 'Works just like .kang but uses the emoji('s) you picked.'
+    'kang emojis', None, 'Works just like .kang but uses the emojis you picked.'
 ).add_command(
-  'kang [number]', None, 'Kang's the sticker/image to the specified pack and uses the emoji('s) you picked'
+    'kang number', None, 'Kangs the sticker/image to the specified pack and uses the emojis you picked'
 ).add_command(
-   'stkrinfo', None, 'Gets info about sticker pack'
+      'stkrinfo', None, 'Gets info about sticker pack'
 ).add()
   
