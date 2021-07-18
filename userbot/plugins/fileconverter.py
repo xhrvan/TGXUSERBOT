@@ -4,7 +4,7 @@
 # All Credits - @ItzSjDude  #Added Paste System by @danish_00
 # @ItzSjDude
 # @ItzSjDude
-#  Added Paste System by @danish_00
+
 
 import os, requests, re
 import asyncio
@@ -12,8 +12,8 @@ import time
 from datetime import datetime
 
 from LEGENDBOT.utils import admin_cmd, edit_or_reply, sudo_cmd, sudo_cmd , edit_or_reply
-from userbot.cmdhelp import CmdHelp, bot
-
+from userbot.cmdhelp import CmdHelp
+from . import *
 @bot.on(admin_cmd(pattern=r"open", outgoing=True))
 async def _(event):
     b = await event.client.download_media(await event.get_reply_message())
