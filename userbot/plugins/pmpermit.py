@@ -24,6 +24,7 @@ LEGENDPIC = (
 PM_WARNS = {}
 PREV_REPLY_MESSAGE = {}
 myid = bot.uid
+CUSTOM_PMPERMIT = os.environ.get("CUSTOM_PMPERMIT", None)
 LEGEND = (
     str(CUSTOM_PMPERMIT)
     if CUSTOM_PMPERMIT
@@ -31,7 +32,7 @@ LEGEND = (
 )
 DEFAULTUSER = str(ALIVE_NAME) if ALIVE_NAME else "LEGEND"
 USER_BOT_WARN_ZERO = "**Hello Sir/Miss, ʏᴏᴜ ᴅɪᴅ'ɴᴛ sᴇᴇ ᴡʜᴀᴛ ɪ sᴀɪᴅ ᴍʏ ᴍᴀsᴛᴇʀ ɪs ᴄᴜʀʀᴇɴᴛʟʏ ᴏғғʟɪɴᴇ ᴅᴏɴᴛ sᴘᴀᴍ.`\n**ɴᴏᴡ sʜᴜᴛ ᴜᴘ.... ᴀɴᴅ ɢᴇᴛ ʟᴏsᴛ**"
-if LEGEND is None:
+if CUSTOM_PMPERMIT is None:
 USER_BOT_NO_WARN =(
     "__**Hello Sir/Miss,I haven't approved you yet to personal message me😎⚠️**__.\n"
     f"This is My Owner {DEFAULTUSER}'s\n"
@@ -40,7 +41,7 @@ USER_BOT_NO_WARN =(
     "**To start a valid conversation\n🔱Register Your Request!🔱\nSend `/start` To Register Your Request\nHopefully u will get a reply🔥**"
 ) 
 else:
-    USER_BOT_NO_WARN = LEGEND
+    USER_BOT_NO_WARN = CUSTOM_PMPERMIT
     
 @tgbot.on(events.InlineQuery)
 async def inline_handler(event):
