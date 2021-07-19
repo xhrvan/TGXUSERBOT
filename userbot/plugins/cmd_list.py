@@ -1,10 +1,9 @@
 import asyncio
 import io
-PIPE 
+from asyncio.subprocess import PIPE
 from LEGENDBOT.utils import admin_cmd, edit_or_reply, sudo_cmd
-from userbot import ALIVE_NAME
 frlm . import *
-DEFAULTUSER = str(ALIVE_NAME) if ALIVE_NAME else "LEGEND User"
+DEFAULTUSER = str(ALIVE_NAME) if ALIVE_NAME else "LEGEND"
 LEGEND_logo = "./LEGEND/LEGENDBOT_logo.jpg"
 
 @bot.on(admin_cmd(pattern=r"cmds"))
