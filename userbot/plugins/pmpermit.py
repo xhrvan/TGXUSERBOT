@@ -44,8 +44,9 @@ async def _(event):
     builder = event.builder
     result = None
     query = event.text
-    if event.query.user_id == bot.uid and query.startswith("**Hello Sir"):
-        result = builder.photo(
+    if event.query.user_id == bot.uid and query.startswith("Hello Sir"):
+        result = builder.article(
+            "Hello Sir",
             file=LEGENDPIC,
             text=USER_BOT_NO_WARN,
             buttons=[
