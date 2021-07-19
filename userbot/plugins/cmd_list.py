@@ -1,15 +1,14 @@
 import asyncio
 import io
-
+PIPE 
 from LEGENDBOT.utils import admin_cmd, edit_or_reply, sudo_cmd
-from userbot import bot as LEGENDBOT
 from userbot import ALIVE_NAME
-
+frlm . import *
 DEFAULTUSER = str(ALIVE_NAME) if ALIVE_NAME else "LEGEND User"
 LEGEND_logo = "./LEGEND/LEGENDBOT_logo.jpg"
 
-@LEGENDBOT.on(admin_cmd(pattern=r"cmds"))
-@LEGENDBOT.on(sudo_cmd(pattern=r"cmds", allow_sudo=True))
+@bot.on(admin_cmd(pattern=r"cmds"))
+@bot.on(sudo_cmd(pattern=r"cmds", allow_sudo=True))
 async def install(event):
     if event.fwd_from:
         return
