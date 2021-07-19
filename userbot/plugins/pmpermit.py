@@ -36,10 +36,9 @@ USER_BOT_NO_WARN = (
     f"This is My Owner {DEFAULTUSER}'s\n"
     f"\n**{LEGEND}**\n\n"
     f"__Don't spam my inbox. say reason and wait until my response.__\n\n"
-    f"**To start a valid conversation\n🔱Register Your Request!🔱\nSend `/start` To Register Your Request\nHopefully u will get a reply🔥**"
+    "**To start a valid conversation\n🔱Register Your Request!🔱\nSend `/start` To Register Your Request\nHopefully u will get a reply🔥**"
 ) 
-    
-    
+        
 if Var.PRIVATE_GROUP_ID is not None:
     
     @borg.on(admin_cmd(pattern="allow|.a|.approve ?(.*)"))
