@@ -87,7 +87,7 @@ async def startmute(event):
         except Exception as e:
             await edit_or_reply(event, "Error occured!\nError is " + str(e))
         else:
-            await edit_or_reply(event, "Chup Reh Lawde.\n**｀-´)⊃━☆ﾟ.*･｡ﾟ **")
+            await edit_or_reply(event, "Chup Hi Raho\n**｀-´)⊃━☆ﾟ.*･｡ﾟ **")
 
 
 @bot.on(admin_cmd(pattern="unmute ?(\d+)?", outgoing=True))
@@ -158,10 +158,20 @@ async def endmute(event):
         except Exception as e:
             await edit_or_reply(event, "Error occured!\nError is " + str(e))
         else:
-            await edit_or_reply(event, "Haa Abb Boll lavde\n乁( ◔ ౪◔)「    ┑(￣Д ￣)┍")
+            await edit_or_reply(event, "Haa Abb Boll be\n乁( ◔ ౪◔)「    ┑(￣Д ￣)┍")
 
 
 @command(incoming=True)
 async def watcher(event):
     if is_muted(event.sender_id, event.chat_id):
         await event.delete()
+        
+        
+        
+        
+ from . import *
+CmdHelp("mute").add_command(
+    'mute <Reply to User>', None, 'if u are admin u can mite that person'
+).add_command(
+    'unmute <Reply to User>', None, 'If u are admin then u can unmute otherwise leave group and again join'
+).add()
