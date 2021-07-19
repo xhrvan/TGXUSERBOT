@@ -39,7 +39,7 @@ if CUSTOM_PMPERMIT is None:
     f"__Don't spam my inbox. say reason and wait until my response.__\n\n"
     "**To start a valid conversation\n🔱Register Your Request!🔱\nSend `/start` To Register Your Request\nHopefully u will get a reply🔥**"
 )
-    else:
+    elif:
         USER_BOT_NO_WARN = CUSTOM_PMPERMIT
         
 @tgbot.on(events.InlineQuery)
