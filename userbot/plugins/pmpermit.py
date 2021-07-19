@@ -78,7 +78,7 @@ async def _(event):
 async def _(event):
     if event.query.user_id == bot.uid:
         fck_bit = f"Oh! C'mon Master {DEFAULTUSER} Im Try To Get Rid Of This Nigga Pls Dont Touch"
-        await event.answer(fck_bit, cache_time=0, alert=True)
+        await event.answer(fck_bit, cache_time=0)
         return
     await event.get_chat()
     legend_id = event.query.user_id
@@ -96,7 +96,7 @@ async def _(event):
 async def _(event):
     if event.query.user_id == bot.uid:
         fck_bit = f"Oh! C'mon Master {DEFAULTUSER} Im Try To Get Rid Of This Nigga Pls Dont Touch"
-        await event.answer(fck_bit, cache_time=0, alert=True)
+        await event.answer(fck_bit, cache_time=0)
         return
     await event.get_chat()
     legend_id = event.query.user_id
@@ -117,7 +117,7 @@ async def _(event):
 async def _(event):
     if event.query.user_id == bot.uid:
         fck_bit = f"Oh! C'mon Master {DEFAULTUSER} Im Try To Get Rid Of This Nigga Pls Dont Touch"
-        await event.answer(fck_bit, cache_time=0, alert=True)
+        await event.answer(fck_bit, cache_time=0)
         return
     await event.get_chat()
     legend_id = event.query.user_id
