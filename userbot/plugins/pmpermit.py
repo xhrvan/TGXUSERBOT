@@ -105,13 +105,6 @@ async def legend_is_better(event):
         buttons=[Button.url("Contact Him", f"tg://user?id={legend_id}")],
     )
 
-    
-    
-         LIGHT_LOGS,
-        message=f"Hello, Master  [Nibba](tg://user?id={legend_id}). Wants To Request Something.",
-        buttons=[Button.url("Contact Him", f"tg://user?id={legend_id}")],
-    )
-
 @tgbot.on(events.callbackquery.CallbackQuery(data=re.compile(b"hmm")))
 async def yes_ucan(event):
     if event.query.user_id == bot.uid:
