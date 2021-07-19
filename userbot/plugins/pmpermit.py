@@ -9,11 +9,12 @@ from telethon.tl.functions.users import GetFullUserRequest
 from userbot.plugins.sql_helper import pmpermit_sql as pmpermit_sql
 from userbot import ALIVE_NAME, CUSTOM_PMPERMIT, LEGEND_ID
 from userbot.Config import Config
+from . import *
 from LEGENDBOT.utils import admin_cmd
 from userbot.cmdhelp import CmdHelp
 LEGEND_row = Config.BUTTONS_IN_HELP
 PM_TRUE_FALSE = Config.PM_DATA
-
+LIGHT_LOGS = Config.PM_LOGGR_BOT_API_ID 
 LEGENDPIC = (
     PMPERMIT_PIC
     if PMPERMIT_PIC
@@ -37,8 +38,106 @@ if CUSTOM_PMPERMIT is None:
     f"\n**{LEGEND}**\n\n"
     f"__Don't spam my inbox. say reason and wait until my response.__\n\n"
     "**To start a valid conversation\n🔱Register Your Request!🔱\nSend `/start` To Register Your Request\nHopefully u will get a reply🔥**"
-) 
+)
+    else:
+        USER_BOT_NO_WARN = CUSTOM_PMPERMIT
         
+@tgbot.on(events.InlineQuery)
+async def _(event):
+    builder = event.builder
+    result = None
+    query = event.text
+    if event.query.user_id == bot.uid and query.startswith("**Hello Sir"):
+        result = builder.photo(
+            file=LEGEND_PIC,
+            text=USER_BOT_NO_WARN,
+            buttons=[
+                [custom.Button.inline("Wanna Spam Something?😉", data="legend_is_here_cant_spam")],
+                [
+                    custom.Button.inline(
+                        "My Friend❤️❤️",
+                        data="he_sucks",
+                    )
+                ],
+                [custom.Button.inline("Requesting🙏", data="fck_ask")],
+                [
+                    custom.Button.inline(
+                        "Lemme In :)", 
+                        data="lol_u_think_so",
+                        
+                    )
+                        
+                ],
+
+            ],
+            )
+        await event.answer([result] if result else None)
+    else:
+        return
+    
+    
+  @tgbot.on(events.callbackquery.CallbackQuery(data=re.compile(b"lightning_is_here_cant_spam")))
+async def _(event):
+    if event.query.user_id == bot.uid:
+        fck_bit = f"Oh! C'mon Master {DEFAULTUSER} Im Try To Get Rid Of This Nigga Pls Dont Touch"
+        await event.answer(fck_bit, cache_time=0, alert=True)
+        return
+    await event.get_chat()
+    legend_id = event.query.user_id
+    text1 = f"LOL **You Think So You Can**😂😂\n\n**[Idiot](tg://user?id={legend_id}) Bye I'm going to block you.**😂😂"
+    await event.edit("Off Course Go To Hell Dude")
+    await bot.send_message(event.query.user_id, text1)
+    await bot(functions.contacts.BlockRequest(event.query.user_id))
+    await event.edit("😛")
+    await bot.send_message(
+        LIGHT_LOGS,
+        f"Hey Master Sorry Disturb You, [Noob](tg://user?id={legend_id}) Trying To Spam 😂\n\n**So Blocked**.",
+    )
+
+@tgbot.on(events.callbackquery.CallbackQuery(data=re.compile(b"lol_u_think_so")))
+async def _(event):
+    if event.query.user_id == bot.uid:
+        fck_bit = f"Oh! C'mon Master {DEFAULTUSER} Im Try To Get Rid Of This Nigga Pls Dont Touch"
+        await event.answer(fck_bit, cache_time=0, alert=True)
+        return
+    await event.get_chat()
+    legend_id = event.query.user_id
+    text1 = f"LOL You Think So You Can😂😂\nGo and wait😂😂"
+    await event.edit("Off Course Go To Hell Dude😛")
+    await bot.send_message(event.query.user_id, text1)
+    await bot(functions.contacts.BlockRequest(event.query.user_id))
+    await bot.send_message(
+        LIGHT_LOGS,
+        f"Hey Master Sorry Disturb You, [Noob](tg://user?id={lightning_id}) Tryin To Enter With Out approval😂 \n.",
+    )
+
+
+
+
+
+@tgbot.on(events.callbackquery.CallbackQuery(data=re.compile(b"he_sucks")))
+async def _(event):
+    if event.query.user_id == bot.uid:
+        fck_bit = f"Oh! C'mon Master {DEFAULTUSER} Im Try To Get Rid Of This Nigga Pls Dont Touch"
+        await event.answer(fck_bit, cache_time=0, alert=True)
+        return
+    await event.get_chat()
+    legend_id = event.query.user_id
+    await event.edit("Oh You Wanna Talk With My Master\n\nPls Wait Dear \n\n**Btw** **You Can Wait For My Master**")
+    await asyncio.sleep(2)
+    await event.edit(
+        "Name Which Type Of Friend?", buttons= [
+        [Button.inline("School", data="school")],
+        [Button.inline("Tg Causal Friend", data="tg_okay")],
+        ], 
+    )
+    light_text = "`Warning`- ❗️⚠️Don't send any message now wait kindly!!!❗️⚠️"
+    await bot.send_message(event.query.user_id, light_text)
+      
+    
+    
+    
+    
 if Var.PRIVATE_GROUP_ID is not None:
     
     @borg.on(admin_cmd(pattern="allow|.a|.approve ?(.*)"))
