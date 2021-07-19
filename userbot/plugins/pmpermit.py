@@ -47,29 +47,19 @@ async def inline_handler(event):
     builder = event.builder
     result = None
     query = event.text
-    if event.query.user_id == bot.uid and query.startswith("**Black") or query.startswith("Black"):
-        rev_text = query[::-1]
-        buttons = legend_menu_for_help(0, CMD_LIST, "helpme")
-        result = builder.article(
-            f"Help Menu",
-            text="\n{}\n`Plugins`: {}".format(query, len(CMD_LIST)),
-            buttons=buttons,
-            link_preview=False,
-        )
-        await event.answer([result])
-    elif event.query.user_id == bot.uid and query == "**Cool":
+    if event.query.user_id == bot.uid and query == "**Cool":
         result = builder.article(
             title="Cool",
             text=f"**How If Face Problem \n{DEFAULTUSER}** \nChoose Your Problem For Help ",
             buttons=[
                 [custom.Button.inline("Help", data="what?")],
-                [Button.url("Commands Not Working🥺", "https://t.me/lightning_support_group")],
+                [Button.url("Commands Not Working🥺", "https://t.me/Legend_Userbot")],
                 [Button.url("Help Article 🤓", "https://app.gitbook.com/@poxsisofficial/s/help/")],
                 [
                     Button.url(
                 
                     "Want To Learn CMDS😅",
-                    "https://t.me/lightning_support_group" ,
+                    "https://t.me/Legend_Userbor" ,
                     )
                 ], 
             ],
