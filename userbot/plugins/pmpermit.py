@@ -6,7 +6,6 @@ import os
 import time
 from telethon import events, functions, Button, custom
 from telethon.tl.functions.users import GetFullUserRequest
-LEGEND_LOGS = Config.PM_LOGGR_BOT_API_ID
 from userbot.plugins.sql_helper import pmpermit_sql as pmpermit_sql
 from userbot import ALIVE_NAME, CUSTOM_PMPERMIT, LEGEND_ID
 from userbot.Config import Config
@@ -42,7 +41,7 @@ USER_BOT_NO_WARN = (
     
     
 if Var.PRIVATE_GROUP_ID is not None:
-
+    
     @borg.on(admin_cmd(pattern="allow|.a|.approve ?(.*)"))
     async def approve_p_m(event):
         if event.fwd_from:
