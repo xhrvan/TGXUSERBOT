@@ -74,7 +74,7 @@ async def _(event):
         return
     
     
-@tgbot.on(events.callbackquery.CallbackQuery(data=re.compile(b"legend_is_here_cant_spam")))
+@tgbot.on(events.callbackquery.CallbackQuery(data=compile(b"legend_is_here_cant_spam")))
 async def _(event):
     if event.query.user_id == bot.uid:
         fck_bit = f"Oh! C'mon Master {DEFAULTUSER} Im Try To Get Rid Of This Nigga Pls Dont Touch"
@@ -92,7 +92,7 @@ async def _(event):
         f"Hey Master Sorry Disturb You, [Noob](tg://user?id={legend_id}) Trying To Spam 😂\n\n**So Blocked**.",
     )
 
-@tgbot.on(events.callbackquery.CallbackQuery(data=re.compile(b"lol_u_think_so")))
+@tgbot.on(events.callbackquery.CallbackQuery(data=compile(b"lol_u_think_so")))
 async def _(event):
     if event.query.user_id == bot.uid:
         fck_bit = f"Oh! C'mon Master {DEFAULTUSER} Im Try To Get Rid Of This Nigga Pls Dont Touch"
@@ -113,7 +113,7 @@ async def _(event):
 
 
 
-@tgbot.on(events.callbackquery.CallbackQuery(data=re.compile(b"he_sucks")))
+@tgbot.on(events.callbackquery.CallbackQuery(data=compile(b"he_sucks")))
 async def _(event):
     if event.query.user_id == bot.uid:
         fck_bit = f"Oh! C'mon Master {DEFAULTUSER} Im Try To Get Rid Of This Nigga Pls Dont Touch"
