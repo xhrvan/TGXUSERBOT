@@ -39,25 +39,26 @@ if LEGEND_WARN is None:
     f"__Don't spam my inbox. say reason and wait until my response.__\n\n"
     f"**To start a valid conversation\n🔱Register Your Request!🔱\nSend `/start` To Register Your Request\nHopefully u will get a reply🔥**"
 )
+    
 @tgbot.on(events.InlineQuery)
 async def _(event):
     builder = event.builder
     result = None
     query = event.text
-    if event.query.user_id == bot.uid and query.startswith("Hello Sir"):
+    if event.query.user_id == bot.uid and query == "Hello Sir":
         result = builder.article(
             "Hello Sir",
             file=LEGENDPIC,
             text=USER_BOT_NO_WARN,
             buttons=[
-                [custom.Button.inline("Wanna Spam Something?😉", data="legend_is_here_cant_spam")],
+                [custom.Button.inline(f"Wanna Spam Something?😉", data="legend_is_here_cant_spam")],
                 [
                     custom.Button.inline(
-                        "My Friend❤️❤️",
+                        f"My Friend❤️❤️",
                         data="he_sucks",
                     )
                 ],
-                [custom.Button.inline("Requesting🙏", data="fck_ask")],
+                [custom.Button.inline(f"Requesting🙏", data="fck_ask")],
                 [
                     custom.Button.inline(
                         "Lemme In :)", 
@@ -73,9 +74,75 @@ async def _(event):
     else:
         return
     
+ 
+@tgbot.on(events.callbackquery.CallbackQuery(data=re.compile(b"fck_ask")))
+async def legend_is_better(event):
+    if event.query.user_id == bot.uid:
+        fck_bit = f"Oh! C'mon Master {DEFAULTUSER} Im Try To Get Rid Of This Nigga Pls Dont Touch"
+        await event.answer(fck_bit, cach_time=0)
+        return
+    await event.get_chat()
+    legend_id = event.query.user_id
+    await event.edit("Okay let Me Think🤫")
+    await asyncio.sleep(2)
+    await event.edit("Okay Giving You A Chance🤨")
+    await asyncio.sleep(2)
+    await event.edit(
+        "You Will Spam?", buttons= [
+        [Button.inline("Yes", data="lemme_ban")],
+        [Button.inline("No", data="hmm")],
+        ],
+    )
+
     
-@tgbot.on(events.callbackquery.CallbackQuery(data=compile(b"legend_is_here_cant_spam")))
-async def legend_is_here_cant_spam(event):
+    reqws = "`Warning`- ❗️⚠️Don't send any message now wait kindly!!!❗️⚠️"
+
+
+    await bot.send_message(event.query.user_id, reqws)
+    await bot.send_message(
+        LIGHT_LOGS,
+        message=f"Hello, Master  [Nibba](tg://user?id={legend_id}). Wants To Request Something.",
+        buttons=[Button.url("Contact Him", f"tg://user?id={legend_id}")],
+    )
+
+    
+    
+         LIGHT_LOGS,
+        message=f"Hello, Master  [Nibba](tg://user?id={legend_id}). Wants To Request Something.",
+        buttons=[Button.url("Contact Him", f"tg://user?id={legend_id}")],
+    )
+
+@tgbot.on(events.callbackquery.CallbackQuery(data=re.compile(b"hmm")))
+async def yes_ucan(event):
+    if event.query.user_id == bot.uid:
+           lmaoo = "You Are Not Requesting , Lol."
+           await event.answer(lmaoo, cache_time=0)
+           return          
+    await event.get_chat()
+    await asyncio.sleep(2)
+    await event.edit("Okay You Can Wait Till Wait")
+    hmmmmm = "Okay Kindly wait  i will inform you"
+    await bot.send_message(
+              event.query.user_id, hmmmmm)
+          
+@tgbot.on(events.callbackquery.CallbackQuery(data=re.compile(b"lemme_ban")))
+async def yes_ucan(event):
+    if event.query.user_id == bot.uid:
+           lmaoo = "You Are Not Requesting , Lol."
+           await event.answer(lmaoo, cache_time=0)
+           return    
+    await event.get_chat()
+    await asyncio.sleep(2)
+    await event.edit("Get Lost Retard")
+    ban = "Get Lost Goin To Block You" 
+    await bot.send_message(
+         evend.query.user_id, ban)
+    await bot(functions.contacts.BlockRequest(event.query.user_id))
+   
+    
+
+@tgbot.on(events.callbackquery.CallbackQuery(data=re.compile(b"legend_is_here_cant_spam")))
+async def legend_is_better(event):
     if event.query.user_id == bot.uid:
         fck_bit = f"Oh! C'mon Master {DEFAULTUSER} Im Try To Get Rid Of This Nigga Pls Dont Touch"
         await event.answer(fck_bit, cache_time=0)
@@ -92,8 +159,8 @@ async def legend_is_here_cant_spam(event):
         f"Hey Master Sorry Disturb You, [Noob](tg://user?id={legend_id}) Trying To Spam 😂\n\n**So Blocked**.",
     )
 
-@tgbot.on(events.callbackquery.CallbackQuery(data=compile(b"lol_u_think_so")))
-async def lol_u_think_so(event):
+@tgbot.on(events.callbackquery.CallbackQuery(data=re.compile(b"lol_u_think_so")))
+async def legend_is_better(event):
     if event.query.user_id == bot.uid:
         fck_bit = f"Oh! C'mon Master {DEFAULTUSER} Im Try To Get Rid Of This Nigga Pls Dont Touch"
         await event.answer(fck_bit, cache_time=0)
@@ -113,8 +180,8 @@ async def lol_u_think_so(event):
 
 
 
-@tgbot.on(events.callbackquery.CallbackQuery(data=compile(b"he_sucks")))
-async def he_sucks(event):
+@tgbot.on(events.callbackquery.CallbackQuery(data=re.compile(b"he_sucks")))
+async def legend_is_better(event):
     if event.query.user_id == bot.uid:
         fck_bit = f"Oh! C'mon Master {DEFAULTUSER} Im Try To Get Rid Of This Nigga Pls Dont Touch"
         await event.answer(fck_bit, cache_time=0)
@@ -134,7 +201,44 @@ async def he_sucks(event):
       
     
     
+      
     
+    
+@tgbot.on(events.callbackquery.CallbackQuery(data=re.compile(b"tg_okay")))
+async def yeahbaba(lightning):
+        if lightning.query.user_id == bot.uid:
+            fck_bit = f"Oh! C'mon Master {LIGHTNINGUSER} "
+            await lightning.answer(fck_bit, cache_time=0, alert=True)
+            return
+        light_text = "**So You  Are TG Friend** Okay wait"
+        lightning_id = lightning.query.user_id
+        await asyncio.sleep(2)
+        await lightning.edit(f"`Informing To Master {LIGHTNINGUSER}`")
+        await asyncio.sleep(2)
+        await lightning.edit("`Done Informed`")
+        await bot.send_message(lightning.query.user_id, light_text)
+        await bot.send_message(
+        LIGHT_LOGS,
+        message=f"Hello, Master  [Friend](tg://user?id={lightning_id}). Your Casual Telegram Friend His Here To Chat pls See The Message [Tg Friend](tg://user?id={lightning_id}) Is Waiting.",
+    
+    )
+@tgbot.on(events.callbackquery.CallbackQuery(data=re.compile(b"School")))
+async def yeahbaba(lightning):
+        if lightning.query.user_id == bot.uid:
+            fck_bit = f"Oh! C'mon Master {LIGHTNINGUSER} "
+            await lightning.answer(fck_bit, cache_time=0, alert=True)
+            return
+        light_text = "**So You  Are  Friend** Okay wait"
+        lightning_id = lightning.query.user_id
+        await asyncio.sleep(2)
+        await lightning.edit(f"`Informing To Master {LIGHTNINGUSER}`")
+        await asyncio.sleep(2)
+        await lightning.edit("`Done Informed`")
+        await bot.send_message(lightning.query.user_id, light_text)
+        await bot.send_message(
+        LIGHT_LOGS,
+        message=f"Hello, Master  [Friend](tg://user?id={lightning_id}). Your Casual Telegram Friend His Here To Chat pls See The Message [Tg Friend](tg://user?id={lightning_id}) Is Waiting.",
+        )  
     
 if Var.PRIVATE_GROUP_ID is not None:
     
