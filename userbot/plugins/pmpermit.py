@@ -66,8 +66,6 @@ async def _(event):
                 ),
              ]
            )
-        await event.answer([result] if result else None)
-    
  
 @tgbot.on(events.callbackquery.CallbackQuery(data=re.compile(b"fck_ask")))
 async def legend_is_better(event):
