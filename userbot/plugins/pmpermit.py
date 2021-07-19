@@ -50,26 +50,22 @@ async def _(event):
             "Hello Sir",
             file=LEGENDPIC,
             text=USER_BOT_NO_WARN,
-            buttons=[
-                [custom.Button.inline(f"Wanna Spam Something?😉", data="legend_is_here_cant_spam")],
+            buttons.append(
                 [
-                    custom.Button.inline(
-                        f"My Friend❤️❤️",
-                        data="he_sucks",
-                    )
-                ],
-                [custom.Button.inline(f"Requesting🙏", data="fck_ask")],
-                [
-                    custom.Button.inline(
-                        "Lemme In :)", 
-                        data="lol_u_think_so",
-                        
-                    )
-                        
-                ],
-
-            ],
-            )
+                custom.Button.inline(
+                    f"Wanna Spam Something?😉", data="legend_is_here_cant_spam"
+                ),
+                custom.Button.inline(
+                    f"My Friend❤️❤️", data="he_sucks"
+                ),
+                custom.Button.inline(
+                    f"Requesting🙏", data="fck_ask"
+                ),   
+                custom.Button.inline(
+                    f"Lemme In :", data="lol_u_think_so"
+                ),
+             ]
+           )
         await event.answer([result] if result else None)
     else:
         return
