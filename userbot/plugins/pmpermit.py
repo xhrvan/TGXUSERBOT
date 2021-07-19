@@ -6,7 +6,7 @@ import os
 import time
 from telethon import events, functions, Button, custom
 from telethon.tl.functions.users import GetFullUserRequest
-
+LEGEND_LOGS = Config.PM_LOGGR_BOT_API_ID
 from userbot.plugins.sql_helper import pmpermit_sql as pmpermit_sql
 from userbot import ALIVE_NAME, CUSTOM_PMPERMIT, LEGEND_ID
 from userbot.Config import Config
@@ -14,7 +14,7 @@ from LEGENDBOT.utils import admin_cmd
 from userbot.cmdhelp import CmdHelp
 LEGEND_row = Config.BUTTONS_IN_HELP
 PM_TRUE_FALSE = Config.PM_DATA
-
+from . import *
 PMPERMIT_PIC = os.environ.get("PMPERMIT_PIC", None)
 LEGENDPIC = (
     PMPERMIT_PIC
@@ -31,6 +31,7 @@ LEGEND = (
 )
 DEFAULTUSER = str(ALIVE_NAME) if ALIVE_NAME else "LEGEND"
 USER_BOT_WARN_ZERO = "**Hello Sir/Miss, ʏᴏᴜ ᴅɪᴅ'ɴᴛ sᴇᴇ ᴡʜᴀᴛ ɪ sᴀɪᴅ ᴍʏ ᴍᴀsᴛᴇʀ ɪs ᴄᴜʀʀᴇɴᴛʟʏ ᴏғғʟɪɴᴇ ᴅᴏɴᴛ sᴘᴀᴍ.`\n**ɴᴏᴡ sʜᴜᴛ ᴜᴘ.... ᴀɴᴅ ɢᴇᴛ ʟᴏsᴛ**"
+if LEGEND is None:
 USER_BOT_NO_WARN =(
     "__**Hello Sir/Miss,I haven't approved you yet to personal message me😎⚠️**__.\n"
     f"This is My Owner {DEFAULTUSER}'s\n"
@@ -38,22 +39,128 @@ USER_BOT_NO_WARN =(
     f"__Don't spam my inbox. say reason and wait until my response.__\n\n"
     "**To start a valid conversation\n🔱Register Your Request!🔱\nSend `/start` To Register Your Request\nHopefully u will get a reply🔥**"
 ) 
-def button(page, modules):
-    Row = LEGEND_row 
-    Column = 3
+else:
+    USER_BOT_NO_WARN = LEGEND
     
-    
-    LEGEN_D = USER_BOT_NO_WARN.format(DEFAULTUSER, LEGEND)
-    result = builder.photo( 
-        file=LEGENDPIC,
-        text=USER_BOT_NO_WARN,
-        buttons=[ [ custom.Button.inline("📝 Request 📝", data="✅ **Request Registered**.My Owber will now decide to look for your request or not😐. Till then wait patiently and don't spam!!"),
-                   custom.Button.inline("💬 Chat 💬", data="Ahh!! You here to do chit-chat!!Please wait for My Onwer to come. Till then keep patience and don't spam."),
-                  ],
-                 [custom.Button.inline("🚫 Spam 🚫", data="Blocked!!!")],
-                 [custom.Button.inline("Curious ❓", data="🔰 This is LEGENDBOT PM Security for {DEFAULTUSER} to keep away unwanted retards from spamming PM...")],
+@tgbot.on(events.InlineQuery)
+async def inline_handler(event):
+    builder = event.builder
+    result = None
+    query = event.text
+    if event.query.user_id == bot.uid and query.startswith("**Black") or query.startswith("Black"):
+        rev_text = query[::-1]
+        buttons = legend_menu_for_help(0, CMD_LIST, "helpme")
+        result = builder.article(
+            f"Help Menu",
+            text="\n{}\n`Plugins`: {}".format(query, len(CMD_LIST)),
+            buttons=buttons,
+            link_preview=False,
+        )
+        await event.answer([result])
+    elif event.query.user_id == bot.uid and query == "**Cool":
+        result = builder.article(
+            title="Cool",
+            text=f"**How If Face Problem \n{DEFAULTUSER}** \nChoose Your Problem For Help ",
+            buttons=[
+                [custom.Button.inline("Help", data="what?")],
+                [Button.url("Commands Not Working🥺", "https://t.me/lightning_support_group")],
+                [Button.url("Help Article 🤓", "https://app.gitbook.com/@poxsisofficial/s/help/")],
+                [
+                    Button.url(
+                
+                    "Want To Learn CMDS😅",
+                    "https://t.me/lightning_support_group" ,
+                    )
+                ], 
+            ],
+        )
+        await event.answer([result])
+    elif event.query.user_id == bot.uid and query.startswith("**Hello Sir"):
+        result = builder.photo(
+            file=LEGENDPIC,
+            text=USER_BOT_NO_WARN,
+            buttons=[
+                [custom.Button.inline("Wanna Spam Something?😉", data="legend_is_here_cant_spam")],
+                [
+                    custom.Button.inline(
+                        "My Friend❤️❤️",
+                        data="he_sucks",
+                    )
                 ],
-    ) 
+                [custom.Button.inline("Requesting🙏", data="fck_ask")],
+                [
+                    custom.Button.inline(
+                        "Lemme In :)", 
+                        data="lol_u_think_so",
+                        
+                    )
+                        
+                ],
+
+            ],
+            )
+        await lightning.answer([result] if result else None)
+    else:
+        return  
+    
+
+@tgbot.on(events.callbackquery.CallbackQuery(data=re.compile(b"legend_is_here_cant_spam")))
+async def _(event):
+    if event.query.user_id == bot.uid:
+        fck_bit = f"Oh! C'mon Master {DEFAULTUSER} Im Try To Get Rid Of This Nigga Pls Dont Touch"
+        await event.answer(fck_bit, cache_time=0, alert=True)
+        return
+    await event.get_chat()
+    USERID = event.query.user.id
+    text1 = f"LOL **You Think So You Can**😂😂\n\n**[Idiot](tg://user?id={USERID}) Bye I'm going to block you.**😂😂"
+    await event.edit("Off Course Go To Hell Dude")
+    await bot.send_message(bot.uid, text1)
+    await bot(functions.contacts.BlockRequest(bot.uid))
+    await event.edit("😛")
+    await bot.send_message(
+        LEGEND_LOGS,
+        f"Hey Master Sorry Disturb You, [Noob](tg://user?id={USERID}) Trying To Spam 😂\n\n**So Blocked**.",
+    )
+
+@tgbot.on(events.callbackquery.CallbackQuery(data=re.compile(b"lol_u_think_so")))
+async def _(event):
+    if event.query.user_id == bot.uid:
+        fck_bit = f"Oh! C'mon Master {DEFAULTUSER} Im Try To Get Rid Of This Nigga Pls Dont Touch"
+        await event.answer(fck_bit, cache_time=0, alert=True)
+        return
+    await event.get_chat()
+    USERID = event.query.user_id
+    text1 = f"LOL You Think So You Can😂😂\nGo and wait😂😂"
+    await event.edit("Off Course Go To Hell Dude😛")
+    await bot.send_message(event.query.user_id, text1)
+    await bot(functions.contacts.BlockRequest(event.query.user_id))
+    await bot.send_message(
+        LEGEND_LOGS,
+        f"Hey Master Sorry Disturb You, [Noob](tg://user?id={USERID}) Tryin To Enter With Out approval😂 \n.",
+    )
+
+
+
+
+
+@tgbot.on(events.callbackquery.CallbackQuery(data=re.compile(b"he_sucks")))
+async def _(event):
+    if event.query.user_id == bot.uid:
+        fck_bit = f"Oh! C'mon Master {DEFAULTUSER} Im Try To Get Rid Of This Nigga Pls Dont Touch"
+        await event.answer(fck_bit, cache_time=0, alert=True)
+        return
+    await event.get_chat()
+    USERID = event.query.user_id
+    await event.edit("Oh You Wanna Talk With My Master\n\nPls Wait Dear \n\n**Btw** **You Can Wait For My Master**")
+    await asyncio.sleep(2)
+    await event.edit(
+        "Name Which Type Of Friend?", buttons= [
+        [Button.inline("School", data="school")],
+        [Button.inline("Tg Causal Friend", data="tg_okay")],
+        ], 
+    )
+    event_text = "`Warning`- ❗️⚠️Don't send any message now wait kindly!!!❗️⚠️"
+    await bot.send_message(event.query.user_id, event_text)
     
     
 if Var.PRIVATE_GROUP_ID is not None:
