@@ -67,8 +67,6 @@ async def _(event):
              ]
            )
         await event.answer([result] if result else None)
-    else:
-        return
     
  
 @tgbot.on(events.callbackquery.CallbackQuery(data=re.compile(b"fck_ask")))
