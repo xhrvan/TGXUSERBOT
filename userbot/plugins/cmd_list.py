@@ -2,7 +2,7 @@ import asyncio
 import io
 from asyncio.subprocess import PIPE
 from LEGENDBOT.utils import admin_cmd, edit_or_reply, sudo_cmd
-frlm . import *
+from . import *
 DEFAULTUSER = str(ALIVE_NAME) if ALIVE_NAME else "LEGEND"
 LEGEND_logo = "./LEGEND/LEGENDBOT_logo.jpg"
 
