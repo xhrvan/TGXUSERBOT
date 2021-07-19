@@ -39,9 +39,6 @@ if LEGEND_WARN is None:
     f"__Don't spam my inbox. say reason and wait until my response.__\n\n"
     f"**To start a valid conversation\n🔱Register Your Request!🔱\nSend `/start` To Register Your Request\nHopefully u will get a reply🔥**"
 )
-    else:
-        USER_BOT_NO_WARN = LEGEND_WARN
-        
 @tgbot.on(events.InlineQuery)
 async def _(event):
     builder = event.builder
