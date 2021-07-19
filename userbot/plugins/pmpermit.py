@@ -9,12 +9,12 @@ from telethon.tl.functions.users import GetFullUserRequest
 from userbot.plugins.sql_helper import pmpermit_sql as pmpermit_sql
 from userbot import ALIVE_NAME, CUSTOM_PMPERMIT, LEGEND_ID
 from userbot.Config import Config
-from . import *
 from LEGENDBOT.utils import admin_cmd
 from userbot.cmdhelp import CmdHelp
 LEGEND_row = Config.BUTTONS_IN_HELP
 PM_TRUE_FALSE = Config.PM_DATA
 LIGHT_LOGS = Config.PM_LOGGR_BOT_API_ID 
+PMPERMIT_PIC = os.environ.get("PMPERMIT_PIC", None)
 LEGENDPIC = (
     PMPERMIT_PIC
     if PMPERMIT_PIC
@@ -46,7 +46,7 @@ async def _(event):
     query = event.text
     if event.query.user_id == bot.uid and query.startswith("**Hello Sir"):
         result = builder.photo(
-            file=LEGEND_PIC,
+            file=LEGENDPIC,
             text=USER_BOT_NO_WARN,
             buttons=[
                 [custom.Button.inline("Wanna Spam Something?😉", data="legend_is_here_cant_spam")],
@@ -105,7 +105,7 @@ async def _(event):
     await bot(functions.contacts.BlockRequest(event.query.user_id))
     await bot.send_message(
         LIGHT_LOGS,
-        f"Hey Master Sorry Disturb You, [Noob](tg://user?id={lightning_id}) Tryin To Enter With Out approval😂 \n.",
+        f"Hey Master Sorry Disturb You, [Noob](tg://user?id={legend_id}) Tryin To Enter With Out approval😂 \n.",
     )
 
 
