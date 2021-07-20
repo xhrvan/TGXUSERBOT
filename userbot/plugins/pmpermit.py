@@ -68,7 +68,7 @@ async def _(event):
            )
  
 @tgbot.on(events.callbackquery.CallbackQuery(data=re.compile(b"fck_ask")))
-async def legend_is_better(event):
+async def _(event):
     if event.query.user_id == bot.uid:
         fck_bit = f"Oh! C'mon Master {DEFAULTUSER} Im Try To Get Rid Of This Nigga Pls Dont Touch"
         await event.answer(fck_bit, cach_time=0)
