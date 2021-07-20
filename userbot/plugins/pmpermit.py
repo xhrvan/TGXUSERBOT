@@ -4,6 +4,8 @@ import asyncio
 import io
 import os
 import time
+from telethon.events import InlineQuery, callbackqueryf
+rom telethon.sync import custom
 from telethon import events, functions, Button, custom
 from telethon.tl.functions.users import GetFullUserRequest
 from userbot.plugins.sql_helper import pmpermit_sql as pmpermit_sql
@@ -41,7 +43,7 @@ if LEGEND_WARN is None:
 )
     
 @tgbot.on(events.InlineQuery)
-async def legend_query(event):
+async def inline_handler(event):
     builder = event.builder
     result = None
     query = event.text
