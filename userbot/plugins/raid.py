@@ -1,6 +1,6 @@
 import asyncio
 import random
-from userbot inport *
+from userbot import *
 from . import *
 NUMBER = ["0", "1"] 
 
