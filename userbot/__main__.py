@@ -70,8 +70,6 @@ if LOAD_ASSISTANT == True:
             except Exception as er:
                 print(er)
 
-import userbot._core
-
 print(f"""『🔱🇱 🇪 🇬 🇪 🇳 🇩 B O T 🔱』➙𖤍࿐ IS ON!!! LEGEND VERSION :- {LEGENDversion}
 TYPE :- " .gpromote @Legend_Mr_Hacker " OR .legend OR .ping CHECK IF I'M ON!
 ╔════❰LEGENDBOT❱═❍⊱❁۪۪
