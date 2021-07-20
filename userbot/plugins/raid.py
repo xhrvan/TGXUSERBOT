@@ -386,6 +386,10 @@ async def _(event):
         queue = que.get(e)
         queue.pop(0)
         await event.edit(f"STOPPING RAID BY {ALIVE_NAME}")
+        
+        
+from userbot.cmdhelp import CmdHelp     
+        
 CmdHelp("raid").add_command(
 'replyraid', None, 'Reply to him or her to start raid'
 ).add_command(
