@@ -1,22 +1,21 @@
 import asyncio
 import os
+import io
 from datetime import datetime
 from pathlib import Path
-from telethon import events
-from telethon import functions, types
+from telethon import events, functions, types
 from telethon.tl.types import InputMessagesFilterDocument
 from LEGENDBOT.utils import *
 from userbot import *
-from userbot import bot as LEGENDBOT
-
+from . import *
 DELETE_TIMEOUT = 5
 DEFAULTUSER = str(ALIVE_NAME) if ALIVE_NAME else "LEGEND User"
 LEGEND_logo = "./LEGEND/LEGENDBOT_logo.jpg"
 aura = LEGENDBOT.uid
 LEGEND = f"[{DEFAULTUSER}](tg://user?id={aura})"
 
-@LEGENDBOT.on(admin_cmd(pattern=r"send (?P<shortname>\w+)", outgoing=True))
-@LEGENDBOT.on(sudo_cmd(pattern=r"send (?P<shortname>\w+)", allow_sudo=True))
+@bot.on(admin_cmd(pattern=r"send (?P<shortname>\w+)", outgoing=True))
+@bot.on(sudo_cmd(pattern=r"send (?P<shortname>\w+)", allow_sudo=True))
 async def send(event):
     if event.fwd_from:
         return
@@ -39,8 +38,8 @@ async def send(event):
     else:
         await edit_or_reply(event, "File not found..... Kek")
 
-@LEGENDBOT.on(admin_cmd(pattern="install$", outgoing=True))
-@LEGENDBOT.on(sudo_cmd(pattern="install$", allow_sudo=True))
+@bot.on(admin_cmd(pattern="install$", outgoing=True))
+@bot.on(sudo_cmd(pattern="install$", allow_sudo=True))
 async def install(event):
     if event.fwd_from:
         return
@@ -80,8 +79,8 @@ async def install(event):
             await event.edit(f"**Failed to Install** \n`Error`\n{str(e)}")
             return os.remove(downloaded_file_name)
     
-@LEGENDBOT.on(admin_cmd(pattern=r"uninstall (?P<shortname>\w+)", outgoing=True))
-@LEGENDBOT.on(sudo_cmd(pattern=r"uninstall (?P<shortname>\w+)", allow_sudo=True))
+@bot.on(admin_cmd(pattern=r"uninstall (?P<shortname>\w+)", outgoing=True))
+@bot.on(sudo_cmd(pattern=r"uninstall (?P<shortname>\w+)", allow_sudo=True))
 async def uninstall(aura):
     if aura.fwd_from:
         return
@@ -94,8 +93,8 @@ async def uninstall(aura):
     except OSError as e:
         await aura.edit("Error: %s : %s" % (dir_path, e.strerror))
 
-@LEGENDBOT.on(admin_cmd(pattern=r"unload (?P<shortname>\w+)$"))
-@LEGENDBOT.on(sudo_cmd(pattern=r"upload (?P<shortname>\w+)$", allow_sudo=True))
+@bot.on(admin_cmd(pattern=r"unload (?P<shortname>\w+)$"))
+@bot.on(sudo_cmd(pattern=r"upload (?P<shortname>\w+)$", allow_sudo=True))
 async def unload(event):
     if event.fwd_from:
         return
@@ -111,8 +110,8 @@ async def unload(event):
         )
 
 
-@LEGENDBOT.on(admin_cmd(pattern=r"load (?P<shortname>\w+)$"))
-@LEGENDBOT.on(sudo_cmd(pattern=r"load (?P<shortname>\w+)$", allow_sudo=True))
+@bot.on(admin_cmd(pattern=r"load (?P<shortname>\w+)$"))
+@bot.on(sudo_cmd(pattern=r"load (?P<shortname>\w+)$", allow_sudo=True))
 async def load(event):
     if event.fwd_from:
         return
