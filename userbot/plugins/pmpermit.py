@@ -70,18 +70,18 @@ async def inline_handler(legend):
            )
  
 @tgbot.on(events.callbackquery.CallbackQuery(data=re.compile(b"fck_ask")))
-async def legend_query(event):
-    if event.query.user_id == bot.uid:
+async def legend_query(legend):
+    if legend.query.user_id == bot.uid:
         fck_bit = f"Oh! C'mon Master {DEFAULTUSER} Im Try To Get Rid Of This Nigga Pls Dont Touch"
         await event.answer(fck_bit, cach_time=0)
         return
     await event.get_chat()
-    legend_id = event.query.user_id
-    await event.edit("Okay let Me Think🤫")
+    legend_id = legend.query.user_id
+    await legend.edit("Okay let Me Think🤫")
     await asyncio.sleep(2)
-    await event.edit("Okay Giving You A Chance🤨")
+    await legend.edit("Okay Giving You A Chance🤨")
     await asyncio.sleep(2)
-    await event.edit(
+    await legend.edit(
         "You Will Spam?", buttons= [
         [Button.inline("Yes", data="lemme_ban")],
         [Button.inline("No", data="hmm")],
@@ -92,7 +92,7 @@ async def legend_query(event):
     reqws = "`Warning`- ❗️⚠️Don't send any message now wait kindly!!!❗️⚠️"
 
 
-    await bot.send_message(event.query.user_id, reqws)
+    await bot.send_message(legend.query.user_id, reqws)
     await bot.send_message(
         LIGHT_LOGS,
         message=f"Hello, Master  [Nibba](tg://user?id={legend_id}). Wants To Request Something.",
