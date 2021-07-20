@@ -41,7 +41,9 @@ if LEGEND_WARN is None:
     f"__Don't spam my inbox. say reason and wait until my response.__\n\n"
     f"**To start a valid conversation\n🔱Register Your Request!🔱\nSend `/start` To Register Your Request\nHopefully u will get a reply🔥**"
 )
-    
+ 
+    modules = CMD_HELP
+if Var.TG_BOT_USER_NAME_BF_HER is not None and tgbot is not None:   
 @tgbot.on(events.InlineQuery)
 async def inline_handler(legend):
     builder = legend.builder
