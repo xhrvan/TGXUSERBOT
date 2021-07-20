@@ -5,7 +5,7 @@ HANDLER = os.environ.get("HANDLER", r".")
 
 
 # Made this class for help menu
-class CmdHelp:
+class CMD_HELP:
     FILE = ""
     ORIGINAL_FILE = ""
     FILE_AUTHOR = ""
