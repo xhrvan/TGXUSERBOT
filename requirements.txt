@@ -9,7 +9,6 @@ PyDictionary
 motor>=2.3.1
 PyPDF2
 pygments
-pyrogram
 wget==3.2
 asyncurban
 pySmartDL
