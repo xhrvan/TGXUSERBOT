@@ -19,6 +19,7 @@ from . import *
 
 LEGEND_row = Config.BUTTONS_IN_HELP
 LEGEND_emoji = Config.EMOJI_IN_HELP
+PMPERMIT_PIC = os.environ.get("PMPERMIT_PIC", None)
 LEGEND_pic = Config.PMPERMIT_PIC or "https://telegra.ph/file/58df4d86400922aa32acd.jpg"
 cstm_pmp = Config.CUSTOM_PMPERMIT
 ALV_PIC = Config.ALIVE_PIC
