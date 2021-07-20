@@ -4,7 +4,7 @@ from userbot import bot as LEGENDBOT
 from LEGENDBOT.utils import admin_cmd, edit_or_reply, sudo_cmd
 DEFAULTUSER = str(ALIVE_NAME) if ALIVE_NAME else "LEGEND"
 LEGEND_logo = "./LEGEND/LEGENDBOT_logo.jpg"
-
+from userbot import *
 @bot.on(admin_cmd(pattern=r"cmds"))
 @bot.on(sudo_cmd(pattern=r"cmds", allow_sudo=True))
 async def install(event):
