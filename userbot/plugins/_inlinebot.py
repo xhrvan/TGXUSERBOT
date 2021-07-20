@@ -42,9 +42,9 @@ DEFAULTUSER = str(ALIVE_NAME) if ALIVE_NAME else 'LEGEND'
 USER_BOT_WARN_ZERO = "Enough Of Your Flooding In My Master's PM!! \n\n**🚫 Blocked and Reported**"
 LEGEND_FIRST = (
     "__**Hello Sir/Miss,I haven't approved you yet to personal message me😎⚠️**__.\n"
-    "This is My Owner {DEFAULTUSER}**
-    "{} is currently unavailable.\nThis is an automated message.\n\n"
-    "{}\n\n**Please Choose Why You Are Here!!**".format(hell_mention, mssge))
+    "This is My Owner {DEFAULTUSER}**"
+    "{DEFAULTUSER} is currently unavailable.\nThis is an automated message.\n\n"
+    "{DEFAULTUSER}\n\n**Please Choose Why You Are Here!!**".format(DEFAULTUSER, mssge))
 
 alive_txt = """
 **⚜️ LEGENDBOT ιѕ σиℓιиє ⚜️**
@@ -53,7 +53,6 @@ alive_txt = """
 **Telethon :**  `{}`
 **Legend  :**  **{}**
 **Uptime   :**  `{}`
-**Abuse    :**  **{}**
 **Sudo      :**  **{}**
 """
 
