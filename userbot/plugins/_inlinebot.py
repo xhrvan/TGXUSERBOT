@@ -14,7 +14,7 @@ from telethon.errors.rpcerrorlist import UserNotParticipantError
 from telethon.tl.functions.channels import GetParticipantRequest
 from telethon.tl.functions.channels import JoinChannelRequest
 from telethon.tl.functions.messages import ExportChatInviteRequest
-
+from userbot import ALIVE_NAME
 from . import *
 
 LEGEND_row = Config.BUTTONS_IN_HELP
