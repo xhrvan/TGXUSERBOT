@@ -328,7 +328,7 @@ async def _(event):
             reply_to=event.message.id,
         )
 
-@bot.on(admin_cmd(pattern="raid?: |$)(.*)"))
+@bot.on(admin_cmd(pattern="raid(?: |$)(.*)"))
 @bot.on(sudo_cmd(pattern="raid(?: |$)(.*)", allow_sudo=True))
 async def _(event):
     global que
