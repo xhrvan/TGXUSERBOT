@@ -42,7 +42,7 @@ if LEGEND_WARN is None:
     "**To start a valid conversation\n🔱Register Your Request!🔱\nSend `/start` To Register Your Request\nHopefully u will get a reply🔥**"
 )
  
-    if Var.PRIVATE_GROUP_ID is not None:
+if Var.PRIVATE_GROUP_ID is not None:
 
     @borg.on(admin_cmd(pattern="allow|.a|.approve ?(.*)"))
     async def approve_p_m(event):
