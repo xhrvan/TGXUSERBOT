@@ -68,7 +68,7 @@ async def inline_handler(event):
            )
  
 @tgbot.on(events.callbackquery.CallbackQuery(data=re.compile(b"fck_ask")))
-async def fck_ask(event):
+async def _(event):
     if event.query.user_id == bot.uid:
         fck_bit = f"Oh! C'mon Master {DEFAULTUSER} Im Try To Get Rid Of This Nigga Pls Dont Touch"
         await event.answer(fck_bit, cach_time=0)
@@ -190,39 +190,39 @@ async def _(event):
     
     
 @tgbot.on(events.callbackquery.CallbackQuery(data=re.compile(b"tg_okay")))
-async def yeahbaba(lightning):
-        if lightning.query.user_id == bot.uid:
+async def yeahbaba(event):
+        if event.query.user_id == bot.uid:
             fck_bit = f"Oh! C'mon Master {LIGHTNINGUSER} "
-            await lightning.answer(fck_bit, cache_time=0, alert=True)
+            await event.answer(fck_bit, cache_time=0)
             return
         light_text = "**So You  Are TG Friend** Okay wait"
-        lightning_id = lightning.query.user_id
+        legend_id = event.query.user_id
         await asyncio.sleep(2)
-        await lightning.edit(f"`Informing To Master {LIGHTNINGUSER}`")
+        await event.edit(f"`Informing To Master {DEFAULTUSER}`")
         await asyncio.sleep(2)
-        await lightning.edit("`Done Informed`")
-        await bot.send_message(lightning.query.user_id, light_text)
+        await event.edit("`Done Informed`")
+        await bot.send_message(event.query.user_id, light_text)
         await bot.send_message(
         LIGHT_LOGS,
-        message=f"Hello, Master  [Friend](tg://user?id={lightning_id}). Your Casual Telegram Friend His Here To Chat pls See The Message [Tg Friend](tg://user?id={lightning_id}) Is Waiting.",
+        message=f"Hello, Master  [Friend](tg://user?id={legend_id}). Your Casual Telegram Friend His Here To Chat pls See The Message [Tg Friend](tg://user?id={lightning_id}) Is Waiting.",
     
     )
 @tgbot.on(events.callbackquery.CallbackQuery(data=re.compile(b"School")))
-async def yeahbaba(lightning):
-        if lightning.query.user_id == bot.uid:
+async def yeahbaba(event):
+        if event.query.user_id == bot.uid:
             fck_bit = f"Oh! C'mon Master {LIGHTNINGUSER} "
-            await lightning.answer(fck_bit, cache_time=0, alert=True)
+            await event.answer(fck_bit, cache_time=0)
             return
         light_text = "**So You  Are  Friend** Okay wait"
-        lightning_id = lightning.query.user_id
+        legend_id = event.query.user_id
         await asyncio.sleep(2)
-        await lightning.edit(f"`Informing To Master {LIGHTNINGUSER}`")
+        await event.edit(f"`Informing To Master {DEFAULTUSER}`")
         await asyncio.sleep(2)
-        await lightning.edit("`Done Informed`")
-        await bot.send_message(lightning.query.user_id, light_text)
+        await event.edit("`Done Informed`")
+        await bot.send_message(event.query.user_id, light_text)
         await bot.send_message(
         LIGHT_LOGS,
-        message=f"Hello, Master  [Friend](tg://user?id={lightning_id}). Your Casual Telegram Friend His Here To Chat pls See The Message [Tg Friend](tg://user?id={lightning_id}) Is Waiting.",
+        message=f"Hello, Master  [Friend](tg://user?id={legend_id}). Your Casual Telegram Friend His Here To Chat pls See The Message [Tg Friend](tg://user?id={lightning_id}) Is Waiting.",
         )  
     
 if Var.PRIVATE_GROUP_ID is not None:
