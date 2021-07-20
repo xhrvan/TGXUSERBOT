@@ -14,7 +14,7 @@
 import asyncio
 import io
 import re
-
+from . import *
 from telethon import Button, custom, events
 from telethon.tl.functions.users import GetFullUserRequest
 
