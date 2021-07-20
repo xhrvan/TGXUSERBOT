@@ -43,11 +43,11 @@ if LEGEND_WARN is None:
 )
     
 @tgbot.on(events.InlineQuery)
-async def inline_handler(event):
-    builder = event.builder
+async def inline_handler(legend):
+    builder = legend.builder
     result = None
-    query = event.text
-    if event.query.user_id == bot.uid and query == "Hello Sir":
+    query = legend.text
+    if legend.query.user_id == bot.uid and query == "Hello Sir":
         result = builder.article(
             "Hello Sir",
             file=LEGENDPIC,
