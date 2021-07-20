@@ -68,7 +68,7 @@ async def inline_handler(event):
            )
  
 @tgbot.on(events.callbackquery.CallbackQuery(data=re.compile(b"fck_ask")))
-async def _(event):
+async def on_plug_in_callback_query_handler(event):
     if event.query.user_id == bot.uid:
         fck_bit = f"Oh! C'mon Master {DEFAULTUSER} Im Try To Get Rid Of This Nigga Pls Dont Touch"
         await event.answer(fck_bit, cach_time=0)
