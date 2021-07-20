@@ -15,7 +15,7 @@ from LEGENDBOT.utils import admin_cmd
 from userbot.cmdhelp import CmdHelp
 LEGEND_row = Config.BUTTONS_IN_HELP
 PM_TRUE_FALSE = Config.PM_DATA
-LIGHT_LOGS = Config.PM_LOGGR_BOT_API_ID 
+
 PMPERMIT_PIC = os.environ.get("PMPERMIT_PIC", None)
 LEGENDPIC = (
     PMPERMIT_PIC
@@ -25,7 +25,7 @@ LEGENDPIC = (
 PM_WARNS = {}
 PREV_REPLY_MESSAGE = {}
 myid = bot.uid
-LEGEND_WARN = os.environ.get("LEGEND_WARNING", None)
+
 LEGEND = (
     str(CUSTOM_PMPERMIT)
     if CUSTOM_PMPERMIT
@@ -33,7 +33,7 @@ LEGEND = (
 )
 DEFAULTUSER = str(ALIVE_NAME) if ALIVE_NAME else "LEGEND"
 USER_BOT_WARN_ZERO = "**Hello Sir/Miss, ʏᴏᴜ ᴅɪᴅ'ɴᴛ sᴇᴇ ᴡʜᴀᴛ ɪ sᴀɪᴅ ᴍʏ ᴍᴀsᴛᴇʀ ɪs ᴄᴜʀʀᴇɴᴛʟʏ ᴏғғʟɪɴᴇ ᴅᴏɴᴛ sᴘᴀᴍ.`\n**ɴᴏᴡ sʜᴜᴛ ᴜᴘ.... ᴀɴᴅ ɢᴇᴛ ʟᴏsᴛ**"
-    USER_BOT_NO_WARN = (
+USER_BOT_NO_WARN = (
     "__**Hello Sir/Miss,I haven't approved you yet to personal message me😎⚠️**__.\n"
     f"This is My Owner {DEFAULTUSER}'s\n"
     f"\n**{LEGEND}**\n\n"
