@@ -7,7 +7,7 @@ NUMBER = ["0", "1"]
 
 
 
-RAID = [
+REPLYRAID = [
     "MADARCHOD TERI MAA KI CHUT ME GHUTKA KHAAKE THOOK DUNGA 🤣🤣",
     "TERE BEHEN K CHUT ME CHAKU DAAL KAR CHUT KA KHOON KAR DUGA",
     "TERI VAHEEN NHI HAI KYA? 9 MAHINE RUK SAGI VAHEEN DETA HU 🤣🤣🤩",
@@ -323,7 +323,7 @@ async def _(event):
     async with event.client.action(event.chat_id, "typing"):
         await event.client.send_message(
             entity=event.chat_id,
-            message="""{}""".format(random.choice(RAID)),
+            message="""{}""".format(random.choice(REPLYRAID)),
             reply_to=event.message.id,
         )
 
