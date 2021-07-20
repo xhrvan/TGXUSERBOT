@@ -41,7 +41,7 @@ if LEGEND_WARN is None:
 )
     
 @tgbot.on(events.InlineQuery)
-async def _(event):
+async def inline_handler(event):
     builder = event.builder
     result = None
     query = event.text
