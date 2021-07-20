@@ -8,7 +8,7 @@ NUMBER = ["0", "1"]
 
 
 
-REPLYRAID = [
+RAID = [
     "MADARCHOD TERI MAA KI CHUT ME GHUTKA KHAAKE THOOK DUNGA 🤣🤣",
     "TERE BEHEN K CHUT ME CHAKU DAAL KAR CHUT KA KHOON KAR DUGA",
     "TERI VAHEEN NHI HAI KYA? 9 MAHINE RUK SAGI VAHEEN DETA HU 🤣🤣🤩",
@@ -324,12 +324,12 @@ async def _(event):
     async with event.client.action(event.chat_id, "typing"):
         await event.client.send_message(
             entity=event.chat_id,
-            message="""{}""".format(random.choice(REPLYRAID)),
+            message="""{}""".format(random.choice(RAID)),
             reply_to=event.message.id,
         )
 
-@bot.on(admin_cmd(pattern="raid(?: |$)(.*)"))
-@bot.on(sudo_cmd(pattern="raid(?: |$)(.*)", allow_sudo=True))
+@bot.on(admin_cmd(pattern="replyraid(?: |$)(.*)"))
+@bot.on(sudo_cmd(pattern="replyraid(?: |$)(.*)", allow_sudo=True))
 async def _(event):
     global que
     if event.fwd_from:
@@ -348,7 +348,7 @@ async def _(event):
         await event.edit(f"STARTING RAID BY {ALIVE_NAME}")
     else:
         user = event.pattern_match.group(1)
-        event = await edit_or_reply(event, "STARTING RAID BY LEGENDBOT")
+        event = await edit_or_reply(event, "REPLY TO USER")
         a = await event.client.get_entity(user)
         e = a.id
         c = a.first_name
@@ -360,7 +360,7 @@ async def _(event):
         await event.edit(f"DONT BE OVERSMART. {ALIVE_NAME}")
 
 
-@bot.on(admin_cmd(pattern="draid(?: |$)(.*)"))
+@bot.on(admin_cmd(pattern="dreplyraid(?: |$)(.*)"))
 @bot.on(sudo_cmd(pattern="draid(?: |$)(.*)", allow_sudo=True))
 async def _(event):
     global que
@@ -375,10 +375,10 @@ async def _(event):
         event = await edit_or_reply(event, "Raid is Stoping")
         queue = que.get(e)
         queue.pop(0)
-        await event.edit(f"LEGENDBOT IS STOPING RAID")
+        await event.edit(f"{ALIVE_NAME} IS STOPED RAID.NOW U ARE FREE AS BIRF")
     else:
         user = event.pattern_match.group(1)
-        event = await edit_or_reply(event, "Reply Raid De-activating....")
+        event = await edit_or_reply(event, "Reply to user to stop RAID")
         a = await event.client.get_entity(user)
         e = a.id
         c = a.first_name
@@ -391,7 +391,7 @@ async def _(event):
 from userbot.cmdhelp import CmdHelp     
         
 CmdHelp("raid").add_command(
-'raid', None, 'Reply to him or her to start raid'
+'replyraid', None, 'Reply to him or her to start raid'
 ).add_command(
-'draid', None, 'Reply To her Ya him To stop raid'
+'dreplyraid', None, 'Reply To her Ya him To stop raid'
 ).add()
