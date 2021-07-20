@@ -4,8 +4,8 @@ import asyncio
 import io
 import os
 import time
-from telethon.events import InlineQuery, callbackqueryf
-rom telethon.sync import custom
+from telethon.events import InlineQuery, callbackquery
+from telethon.sync import custom
 from telethon import events, functions, Button, custom
 from telethon.tl.functions.users import GetFullUserRequest
 from userbot.plugins.sql_helper import pmpermit_sql as pmpermit_sql
