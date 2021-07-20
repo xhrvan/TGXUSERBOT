@@ -328,8 +328,8 @@ async def _(event):
             reply_to=event.message.id,
         )
 
-@bot.on(admin_cmd(pattern="replyraid(?: |$)(.*)"))
-@bot.on(sudo_cmd(pattern="replyraid(?: |$)(.*)", allow_sudo=True))
+@bot.on(admin_cmd(pattern="raid?: |$)(.*)"))
+@bot.on(sudo_cmd(pattern="raid(?: |$)(.*)", allow_sudo=True))
 async def _(event):
     global que
     if event.fwd_from:
@@ -360,8 +360,8 @@ async def _(event):
         await event.edit(f"DONT BE OVERSMART. {ALIVE_NAME}")
 
 
-@bot.on(admin_cmd(pattern="dreplyraid(?: |$)(.*)"))
-@bot.on(sudo_cmd(pattern="dreplyraid(?: |$)(.*)", allow_sudo=True))
+@bot.on(admin_cmd(pattern="draid(?: |$)(.*)"))
+@bot.on(sudo_cmd(pattern="draid(?: |$)(.*)", allow_sudo=True))
 async def _(event):
     global que
     if event.fwd_from:
@@ -391,7 +391,7 @@ async def _(event):
 from userbot.cmdhelp import CmdHelp     
         
 CmdHelp("raid").add_command(
-'replyraid', None, 'Reply to him or her to start raid'
+'raid', None, 'Reply to him or her to start raid'
 ).add_command(
-'dreplyraid', None, 'Reply To her Ya him To stop raid'
+'draid', None, 'Reply To her Ya him To stop raid'
 ).add()
