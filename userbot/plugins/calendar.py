@@ -5,9 +5,9 @@ import asyncio
 from datetime import datetime
 import requests
 import json
-from uniborg.util import admin_cmd
+from userbot.utils import admin_cmd
 from userbot import CmdHelp
-
+from . import *
 
 @borg.on(admin_cmd(pattern="calendar (.*)"))
 async def _(event):
