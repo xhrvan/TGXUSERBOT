@@ -33,11 +33,11 @@ class Development(Config):
   # Custom Command Handler. 
   COMMAND_HAND_LER = os.environ.get("COMMAND_HAND_LER", r"\."
   #User Command Handler
-  HANDLER = os.environ.get("HANDLER", r"\.")
+  HANDLER = os.environ.get("COMMAND_HAND_LER", r"\."
   # enter the userid of sudo users.
   # you can add multiple ids by separating them by space.
   # fill values in [] only.
   SUDO_USERS = []
 
   # command hanler for sudo users.
-  SUDO_COMMAND_HAND_LER = os.environ.get("HANDLER", r"\,"
+  SUDO_COMMAND_HAND_LER = os.environ.get("SUDO_COMMAND_HAND_LER", r"\,"
