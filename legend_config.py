@@ -13,7 +13,7 @@ if ENV:
         # Send .get_id in any group to fill this value.
         SUDO_COMMAND_HAND_LER = os.environ.get("SUDO_COMMAND_HAND_LER", r"\.")
          #handler of bot
-        HANDLER = os.environ.get("HANDLER", r"\.")
+        HANDLER = os.environ.get("COMMAND_HAND_LER", r"\.")
         # This is required for the plugins involving the file system.
         TMP_DOWNLOAD_DIRECTORY = os.environ.get("TMP_DOWNLOAD_DIRECTORY", "./DOWNLOADS/")
         # This is required for the speech to text module. Get your USERNAME from https://console.bluemix.net/docs/services/speech-to-text/getting-started.html
