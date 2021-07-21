@@ -254,7 +254,7 @@ async def payf(event):
 
 
 
-CmdHelp("animations4").add_command(
+CmdHelp("αɳเɱαƭเσɳร4").add_command(
   "phub", None, "Animated PORNHUB Typing"
 ).add_command(
   "amore", None, "Animated AMORE Typing"
