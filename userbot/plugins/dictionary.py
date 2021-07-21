@@ -1,9 +1,7 @@
-"""Dictionary Plugin for @UniBorg
-Syntax: .meaning <word>"""
 
 import requests
 from telethon import events
-from uniborg.util import admin_cmd
+from userbot.utils import admin_cmd, sudo_cmd, edit_or_reply
 from userbot.cmdhelp import CmdHelp
 CmdHelp("dictionary").add_command(
    'meaning', None, 'get meaning'
