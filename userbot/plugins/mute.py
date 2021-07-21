@@ -1,6 +1,6 @@
 import asyncio
 
-from W2HBOT.utils import admin_cmd, sudo_cmd, edit_or_reply
+from LEGENDBOT.utils import admin_cmd, sudo_cmd, edit_or_reply
 from userbot.cmdhelp import CmdHelp
 from userbot.plugins.sql_helper.mute_sql import is_muted, mute, unmute
 
@@ -75,7 +75,7 @@ async def startmute(event):
         elif private == True:
             pass
         else:
-            return await edit_or_reply(event, "I'm not admin here!! Chutiya sala...😒🚶"
+            return await edit_or_reply(event, "I'm not admin here!! So i cant mute...😒🚶"
             )
         if is_muted(userid, chat_id):
             return await edit_or_reply(event, "This user is already muted in this chat ~~lmfao sed rip~~"
@@ -85,7 +85,7 @@ async def startmute(event):
         except Exception as e:
             await edit_or_reply(event, "Error occured!\nError is " + str(e))
         else:
-            await edit_or_reply(event, "Chup Reh Lawde.\n**｀-´)⊃━☆ﾟ.*･｡ﾟ **")
+            await edit_or_reply(event, "Chup Hi Raho \n**｀-´)⊃━☆ﾟ.*･｡ﾟ **")
 
 
 @bot.on(admin_cmd(pattern="unmute ?(\d+)?", outgoing=True))
@@ -156,7 +156,7 @@ async def endmute(event):
         except Exception as e:
             await edit_or_reply(event, "Error occured!\nError is " + str(e))
         else:
-            await edit_or_reply(event, "Haa Abb Boll lavde\n乁( ◔ ౪◔)「    ┑(￣Д ￣)┍")
+            await edit_or_reply(event, "Haa Abb Boll Bhai unmute successfully \n乁( ◔ ౪◔)「    ┑(￣Д ￣)┍")
 
 
 @command(incoming=True)
