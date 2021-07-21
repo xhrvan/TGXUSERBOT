@@ -14,9 +14,9 @@ async def reply_id(event):
     return reply_to_id
 
 
-DEFAULTUSER = ALIVE_NAME or "LEGEND"
+DEFAULTUSER = ALIVE_NAME or "ℓєgєи∂ϐοτ"
 LEGEND_IMG = Config.ALIVE_PIC
-CUSTOM_ALIVE_TEXT = Config.ALIVE_MSG or "Legend's Choice LEGENDBOT"
+CUSTOM_ALIVE_TEXT = Config.ALIVE_MSG or "ℓєgєи∂ Choice ℓєgєи∂ϐοτ"
 
 USERID = bot.uid
 
@@ -65,16 +65,14 @@ async def amireallyalive(alive):
         LEGEND_caption = f"**{CUSTOM_ALIVE_TEXT}**\n"
         
         LEGEND_caption += f"~~~~~~~~~~~~~~~~~~~~~~~\n"
-        LEGEND_caption += f"**┏━━━━━━━━━━━━━┓**\n"
-        LEGEND_caption += f"        __**𖤍BOT STATUS𖤍**__\n"
-        LEGEND_caption += f"**🇮🇳 Telethon version :** `{version.__version__}`\n"
-        LEGEND_caption += f"**🇮🇳 LEGENDBOT :**`{LEGENDversion}`\n"
-        LEGEND_caption += f"**🇮🇳 Uptime :** `{uptime}`\n"
-        LEGEND_caption += f"**🔱 Master:** {mention}\n"
-        LEGEND_caption += f"**🔱 OWNER :** [LEGEND](t.me/Legend_Mr_Hacker)\n"
-        LEGEND_caption += f"**┗━━━━━━━━━━━━━┛**\n"
+        LEGEND_caption += f"      𖤍𝕭𝖔𝖙 𝕾𝖙𝖆𝖙𝖚𝖘𖤍\n"
+        LEGEND_caption += f"🇮🇳 τєℓєτнοи : `{version.__version__}`\n"
+        LEGEND_caption += f"🇮🇳 ℓєgєи∂ϐοτ :`{LEGENDversion}`\n"
+        LEGEND_caption += f"🇮🇳 υρτιмє : `{uptime}`\n"
+        LEGEND_caption += f"🔱 ɱαรƭεɾ : {mention}\n"
+        LEGEND_caption += f"🔱 σωɳεɾ : [ℓєgєиd](t.me/Legend_Mr_Hacker)\n",
         
-        LEGEND_caption += " [✨REPO✨](https://github.com/LEGEND-OS/LEGENDBOT) 🔹 [📜License📜](https://github.com/LEGEND-OS/LEGENDBOT/blob/master/LICENSE)"
+        LEGEND_caption += " [✨ᖇᗴᑭᝪ✨](https://github.com/LEGEND-OS/LEGENDBOT) 🔹 [📜lเςєภรє📜](https://github.com/LEGEND-OS/LEGENDBOT/blob/master/LICENSE)"
         await alive.client.send_file(
             alive.chat_id, LEGEND_IMG, caption=LEGEND_caption, reply_to=reply_to_id
         )
@@ -84,14 +82,12 @@ async def amireallyalive(alive):
             alive,
             f"**{CUSTOM_ALIVE_TEXT}**\n\n"
             f"~~~~~~~~~~~~~~~~~~~~~~~ \n"
-            f"**┏━━━━━━━━━━━━━┓**\n"
-            f"         __**𖤍BOT STATUS𖤍**__\n"
-            f"**🇮🇳 Telethon Version :** `{version.__version__}`\n"
-            f"**🇮🇳 LEGENDBOT:** `{LEGENDversion}`\n"
-            f"**🇮🇳 Uptime :** `{uptime}`\n"
-            f"**🔱 Master:** {mention}\n"
-            f"**🔱 OWNER :** [LEGEND](t.me/Legend_Mr_Hacker)\n"
-            f"**┗━━━━━━━━━━━━━┛**\n",
+            f"         𝕭𝖔𝖙 𝕾𝖙𝖆𝖙𝖚𝖘\n"
+            f"🇮🇳 τєℓєτнοи : `{version.__version__}`\n"
+            f"🇮🇳 ℓєgєи∂ϐοτ : `{LEGENDversion}`\n"
+            f"🇮🇳 υρτιмє : `{uptime}`\n"
+            f"🔱 ɱαรƭεɾ: {mention}\n"
+            f"🔱 σωɳεɾ : [ℓєgєи∂](t.me/Legend_Mr_Hacker)\n"
         )
 
 CmdHelp("botstatus").add_command(
