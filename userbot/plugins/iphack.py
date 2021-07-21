@@ -5,9 +5,10 @@
 import json
 import urllib.request
 
-from uniborg.util import admin_cmd
+from userbot.utils import admin_cmd
 
 from userbot import CMD_HELP
+from . import *
 
 
 @borg.on(admin_cmd(pattern="ip (.*)"))
@@ -39,10 +40,6 @@ async def _(event):
     )
 
 
-CMD_HELP.update(
-    {
-        "iphack": "**IP HACK**\
-\n\n**Syntax : **`.ip <ip address>`\
-\n**Usage :** Gives details about the ip address."
-    }
-)
+CmdHelp("íթհαck").add_command(
+    "ip", "<reply to anyone>", "use and see"
+).add()
