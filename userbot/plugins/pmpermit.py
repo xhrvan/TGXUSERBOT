@@ -34,11 +34,11 @@ LEGEND = (
 DEFAULTUSER = str(ALIVE_NAME) if ALIVE_NAME else "LEGEND"
 USER_BOT_WARN_ZERO = "**Hello Sir/Miss, ʏᴏᴜ ᴅɪᴅ'ɴᴛ sᴇᴇ ᴡʜᴀᴛ ɪ sᴀɪᴅ ᴍʏ ᴍᴀsᴛᴇʀ ɪs ᴄᴜʀʀᴇɴᴛʟʏ ᴏғғʟɪɴᴇ ᴅᴏɴᴛ sᴘᴀᴍ.`\n**ɴᴏᴡ sʜᴜᴛ ᴜᴘ.... ᴀɴᴅ ɢᴇᴛ ʟᴏsᴛ**"
 USER_BOT_NO_WARN = (
-    "__**Hello Sir/Miss,I haven't approved you yet to personal message me😎⚠️**__.\n"
-    f"This is My Owner {DEFAULTUSER}'s\n"
+    "нєℓℓο ѕιя/мιѕѕ,ι нανєи'τ αρρяονє∂ γου γєτ το ρєяѕοиαℓ мєѕѕαgє мє😎⚠️**__.\n"
+    f"𝔗𝔥𝔦𝔰 ℑ𝔰 𝔪𝔶 𝔒𝔴𝔫𝔢𝔯 {DEFAULTUSER}'s\n"
     f"\n**{LEGEND}**\n\n"
-    f"__Don't spam my inbox. say reason and wait until my response.__\n\n"
-    "**To start a valid conversation\n🔱Register Your Request!🔱\nSend `/start` To Register Your Request\nHopefully u will get a reply🔥**"
+    f"∂οи'τ ѕραм мγ ιиϐοϰ. ѕαγ яєαѕοи αи∂ ωαιτ υиτιℓ мγ яєѕροиѕє.\n\n"
+    "**To start a valid conversation\n⚡Register Your Request!⚡\nSend `/start` To Register Your Request\nHopefully u will get a reply🔥**"
 )
  
 if Var.PRIVATE_GROUP_ID is not None:
