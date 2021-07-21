@@ -897,7 +897,7 @@ async def _(event):
         
         
 
-CmdHelp("animations").add_command(
+CmdHelp("αɳเɱαƭเσɳร").add_command(
   'eyes', None, 'Use And see'
 ).add_command(
   'think', None, 'Use and see'
