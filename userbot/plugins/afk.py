@@ -44,7 +44,7 @@ async def set_not_afk(event):
     if ".afk" not in current_message and "yes" in USER_AFK:  # pylint:disable=E0602
         LEGENDBOT = await borg.send_message(
             event.chat_id,
-            "🔥__Back alive!__\n**No Longer afk🙂.**\n⏱️ `Was afk for:``"
+            "🔥__Back alive!__\n**No Longer afk.**\n⏱️ `Was afk for:``"
             + total_afk_time
             + "`", file=LEGENDpic
         )
@@ -52,7 +52,7 @@ async def set_not_afk(event):
             await borg.send_message(  # pylint:disable=E0602
                 Config.PRIVATE_GROUP_BOT_API_ID,  # pylint:disable=E0602
                 "#AFKFALSE \nSet AFK mode to False\n"
-                + "🔥__Back alive!__\n**No Longer afk🙂.**\n⏱️ `Was afk for:``"
+                + "🔥𝓑𝓪𝓬𝓴 𝓐𝓵𝓲𝓿𝓮!\n**No Longer afk.**\n⏱️ `Was afk for:``"
                 + total_afk_time
             )
         except Exception as e:  # pylint:disable=C0103,W0703
@@ -96,10 +96,10 @@ async def on_afk(event):
         msg = None
         
         message_to_reply = (
-            f"Hey Sir/Miss🤔!! My Legend master [{DEFAULTUSER}](tg://user?id={LEGEND}) is currently offline... Since when?\n**For** `{total_afk_time}`\n"
-            + f"\n\n👇__The Reason Is__👇 :-\n`{reason}`"
+            f"ℋℯ𝓎 𝒮𝒾𝓇 / ℳ𝒾𝓈𝓈🤔!! ɱყ ℓεɠεɳ∂ ɱαรƭεɾ [{DEFAULTUSER}](tg://user?id={LEGEND}) ιѕ ϲυяяєиτℓγ οƒƒℓιє... síղcҽ ահҽղ? `{total_afk_time}`\n"
+            + f"\n\n👇𝕽𝖊𝖆𝖘𝖔𝖓👇 :-\n`{reason}`"
   if reason
-            else f"**Hey Sir/Miss🤔!**\n__I am currently unavailable😛. I Reply U After Come BackOnline.__\n__Since when, you ask? From__ `{total_afk_time}`\nI'll be back when I feel to come🚶😛"
+            else f"ℋℯ𝓎 𝒮𝒾𝓇 / ℳ𝒾𝓈𝓈🤔!\nι αм ϲυяяєиτℓγ υиαναιℓαϐℓє😛. ι яєρℓγ υ αƒτєя ϲοмє ϐαϲκοиℓιиє.\n__Since when, you ask? From__ `{total_afk_time}`\nI'll be back when I feel to come🚶😛"
         )
         msg = await event.reply(message_to_reply, file=LEGENDpic)
         await asyncio.sleep(2)
@@ -137,10 +137,10 @@ async def _(event):
         USER_AFK = f"yes: {reason} {LEGENDpic}"  # pylint:disable=E0602
         if reason:
             await borg.send_message(
-                event.chat_id, f"__**I'm going afk🚶**__ \n⚜️ Because `{reason}`", file=LEGENDpic
+                event.chat_id, f"ι'м gοιиg αƒκ🚶 \n⚜️ 𝕽𝖊𝖆𝖘𝖔𝖓 `{reason}`", file=LEGENDpic
             )
         else:
-            await borg.send_message(event.chat_id, f"**I am Going afk!**🚶", file=LEGENDpic)
+            await borg.send_message(event.chat_id, f"ι'м gοιиg αƒκ !🚶", file=LEGENDpic)
         await asyncio.sleep(0.001)
         await event.delete()
         try:
