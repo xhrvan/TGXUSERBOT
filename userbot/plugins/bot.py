@@ -23,19 +23,19 @@ mention = f"[{DEFAULTUSER}](tg://user?id={aura})"
 
 
 PM_IMG = "https://telegra.ph/file/baf1bde222c614d6040e9.jpg"
-pm_caption ="**LEGENDBOT Is Online**\n\n"
+pm_caption ="**ℓєgєи∂ϐοτ Is οиℓιиє**\n\n"
 
 pm_caption += f"**┏━━━━━━━━━━━━━┓**\n"
-pm_caption += f"      __**𖤍OP𖤍**__\n"
-pm_caption += f"**┣🇮🇳 Master : {mention}**\n"
-pm_caption += f"**┣🇮🇳 Telethon : `{version.__version__}`**\n"
-pm_caption += f"**┣🇮🇳 LEGENDBOT : {LEGENDversion}**\n"
-pm_caption += f"**┣🇮🇳 Sudo       : `{sudou}`**\n"
-pm_caption += f"**┣🇮🇳 Owner   : [LEGEND](https://t.me/Legend_Mr_Hacker)**\n"
-pm_caption += f"**┣🇮🇳 Group    : [LEGENDGROUP](https://t.me/Legend_Userbot)**\n"
+pm_caption += f"        𖤍ℓєgєи∂ϐοτ𖤍\n"
+pm_caption += f"**┣🇮🇳 мαѕτєя    : {mention}**\n"
+pm_caption += f"**┣🇮🇳 τєℓєτнοи  : `{version.__version__}`**\n"
+pm_caption += f"**┣🇮🇳 ℓєgєи∂ϐοτ : {LEGENDversion}**\n"
+pm_caption += f"**┣🇮🇳 𝖘𝖚𝖉𝖔      : `{sudou}`**\n"
+pm_caption += f"**┣🇮🇳 𝕺𝖜𝖓𝖊𝖗     : [ℓεɠεɳ∂](https://t.me/Legend_Mr_Hacker)**\n"
+pm_caption += f"**┣🇮🇳 𝕲𝖗𝖔𝖚𝖕     : [𝕲𝖗𝖔𝖚𝖕](https://t.me/Legend_Userbot)**\n"
 pm_caption += f"**┗━━━━━━━━━━━━━┛**\n"
 
-pm_caption += "    [✨REPO✨](https://github.com/LEGEND-OS/LEGENDBOT) 🔹 [📜License📜](https://github.com/LEGEND-OS/LEGENDBOT/blob/master/LICENSE)"
+pm_caption += "    [✨яєρο✨](https://github.com/LEGEND-OS/LEGENDBOT) 🔹 [📜ℓιϲєиѕє📜](https://github.com/LEGEND-OS/LEGENDBOT/blob/master/LICENSE)"
 
 
 @bot.on(admin_cmd(outgoing=True, pattern="bot$"))
@@ -50,7 +50,7 @@ async def amireallyalive(alive):
     await alive.delete()
 
 
-CmdHelp("alive").add_command(
+CmdHelp("αℓเѵε").add_command(
   'alive', None, 'Check weather the bot is alive or not'
 ).add_command(
   'bot', None, 'Check weather the bot is alive or not. In your custom Alive Pic and Alive Msg'
