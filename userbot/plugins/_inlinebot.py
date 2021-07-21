@@ -35,7 +35,7 @@ def button(page, modules):
     for pairs in pairs[page]:
         buttons.append(
             [
-                custom.Button.inline(f"{LEGEND_emoji} " + pair + f" {LEGEND_emoji}", data=f"Information[{page}]({pair})")
+                custom.Button.inline(f"{LEGEND_emoji} " + pair + f" ✯", data=f"Information[{page}]({pair})")
                 for pair in pairs
             ]
         )
@@ -150,7 +150,7 @@ if Var.TG_BOT_USER_NAME_BF_HER is not None and tgbot is not None:
         try:
             buttons = [
                 custom.Button.inline(
-                    "⚜️" + cmd[0] + " ✯", data=f"commands[{commands}[{page}]]({cmd[0]})"
+                    "🔱 " + cmd[0] + " 🔱", data=f"commands[{commands}[{page}]]({cmd[0]})"
                 )
                 for cmd in CMD_HELP_BOT[commands]["commands"].items()
             ]
