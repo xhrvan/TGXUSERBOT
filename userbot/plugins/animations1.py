@@ -380,7 +380,7 @@ async def timer_blankx(e):
     )
 
 
-CmdHelp("animations1").add_command(
+CmdHelp("αɳเɱαƭเσɳร1").add_command(
   'indflag', None, '🇮🇳🇮🇳🇮🇳'
 ).add_command(
   'stupid', None, 'Use and see'
