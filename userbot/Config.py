@@ -108,6 +108,7 @@ if ENV:
         # specify command handler that should be used for the plugins
         # this should be a valid "regex" pattern
         COMMAND_HAND_LER = os.environ.get("COMMAND_HAND_LER", r"\.")
+        HANDLER = os.environ.get("COMMAND_HAND_LER", r"\.")
         #custom animation to kang plugin
         CUSTOM_STICKER_PACK_NAME = os.environ.get("CUSTOM_STICKER_PACK_NAME", None)
         # specify list of users allowed to use bot
