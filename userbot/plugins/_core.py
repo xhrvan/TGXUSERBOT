@@ -9,9 +9,9 @@ from LEGENDBOT.utils import *
 from userbot import *
 from . import *
 DELETE_TIMEOUT = 5
-DEFAULTUSER = str(ALIVE_NAME) if ALIVE_NAME else "LEGEND User"
-LEGEND_logo = "./LEGENDBOT/LEGENDBOT_logo.jpg"
-aura = LEGENDBOT.uid
+DEFAULTUSER = str(ALIVE_NAME) if ALIVE_NAME else "LEGEND"
+LEGEND_logo = "./LEGEND_logo.jpg"
+aura = bot.uid
 LEGEND = f"[{DEFAULTUSER}](tg://user?id={aura})"
 
 @bot.on(admin_cmd(pattern=r"send (?P<shortname>\w+)", outgoing=True))
@@ -81,17 +81,17 @@ async def install(event):
     
 @bot.on(admin_cmd(pattern=r"uninstall (?P<shortname>\w+)", outgoing=True))
 @bot.on(sudo_cmd(pattern=r"uninstall (?P<shortname>\w+)", allow_sudo=True))
-async def uninstall(aura):
-    if aura.fwd_from:
+async def uninstall(event):
+    if event.fwd_from:
         return
-    shortname = aura.pattern_match["shortname"]
+    shortname = event.pattern_match["shortname"]
     dir_path =f"./userbot/plugins/{shortname}.py"
     try:
         remove_plugin(shortname)
         os.remove(dir_path)
-        await aura.edit(f"Uninstalled `{shortname}` successfully")
+        await event.edit(f"Uninstalled `{shortname}` successfully")
     except OSError as e:
-        await aura.edit("Error: %s : %s" % (dir_path, e.strerror))
+        await event.edit("Error: %s : %s" % (dir_path, e.strerror))
 
 @bot.on(admin_cmd(pattern=r"unload (?P<shortname>\w+)$"))
 @bot.on(sudo_cmd(pattern=r"upload (?P<shortname>\w+)$", allow_sudo=True))
