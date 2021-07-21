@@ -72,7 +72,7 @@ if Var.TG_BOT_USER_NAME_BF_HER is not None and tgbot is not None:
                     apn.append(y)
             result = await builder.article(
                 f"Hey! Only use .help please", 
-                text=f"🔰**[{ALIVE_NAME}](https://t.me/Legend_Mr_Hacker)**\n\n📁**ղօ. օբ ρℓµɠเɳร ιиѕταℓℓє∂⭆** `{len(CMD_HELP)}` \n🗂**τοταℓ ϲοммαи∂ѕ⭆** `{len(apn)}`\n📙**թαցҽ⭆** 1/{veriler[0]}",
+                text=f"🔰[{ALIVE_NAME}](https://t.me/Legend_Mr_Hacker)\n\n📁ղօ. օբ ρℓµɠเɳร ιиѕταℓℓє∂⭆ `{len(CMD_HELP)}` \n🗂τοταℓ ϲοммαи∂ѕ⭆ `{len(apn)}`\n📙թαցҽ⭆ 1/{veriler[0]}",
                 buttons=veriler[1],
                 link_preview=False,
             )
@@ -87,7 +87,7 @@ if Var.TG_BOT_USER_NAME_BF_HER is not None and tgbot is not None:
         else:
             result = builder.article(
                 "@LEGEND_Userbot",
-                text="""**Hey! This is [LEGENDBOT.](https://t.me/Legend_Mr_Hacker) \nYou can know more about me from the links given below 👇**""",
+                text="""**Hey! This is [ℓєgєи∂ϐοτ.](https://t.me/Legend_Mr_Hacker) \nYou can know more about me from the links given below 👇**""",
                 buttons=[
                     [
                         custom.Button.url("🔥 ϲяєατοя 🔥", "https://t.me/Legend_Mr_Hacker"),
@@ -119,7 +119,7 @@ if Var.TG_BOT_USER_NAME_BF_HER is not None and tgbot is not None:
             for y in x:
                 apn.append(y)
         await event.edit(
-            f"🛡️**[{ALIVE_NAME}](https://t.me/Legend_Mr_Hacker)** **ฬ๏гкเภﻮ.....**\n\n**📁ղօ. օբ ρℓµɠเɳร ιиѕταℓℓє∂⭆** `{len(CMD_HELP)}`\n🗂**τοταℓ ϲοммαи∂ѕ⭆** `{len(apn)}` \n📙**թαցҽ⭆** {page + 1}/{veriler[0]}",
+            f"🛡️[{ALIVE_NAME}](https://t.me/Legend_Mr_Hacker) ฬ๏гкเภﻮ.....\n\n📁ղօ. օբ ρℓµɠเɳร ιиѕταℓℓє∂⭆ `{len(CMD_HELP)}`\n🗂τοταℓ ϲοммαи∂ѕ⭆ `{len(apn)}` \n📙թαցҽ⭆ {page + 1}/{veriler[0]}",
             buttons=veriler[1],
             link_preview=False,
         )
@@ -150,7 +150,7 @@ if Var.TG_BOT_USER_NAME_BF_HER is not None and tgbot is not None:
         try:
             buttons = [
                 custom.Button.inline(
-                    "💎 " + cmd[0] + " 💎", data=f"commands[{commands}[{page}]]({cmd[0]})"
+                    "⚜️" + cmd[0] + " ✯", data=f"commands[{commands}[{page}]]({cmd[0]})"
                 )
                 for cmd in CMD_HELP_BOT[commands]["commands"].items()
             ]
