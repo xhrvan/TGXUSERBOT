@@ -70,7 +70,7 @@ async def amireallyalive(alive):
         LEGEND_caption += f"🇮🇳 ℓєgєи∂ϐοτ :`{LEGENDversion}`\n"
         LEGEND_caption += f"🇮🇳 υρτιмє : `{uptime}`\n"
         LEGEND_caption += f"🔱 ɱαรƭεɾ : {mention}\n"
-        LEGEND_caption += f"🔱 σωɳεɾ : [ℓєgєиd](t.me/Legend_Mr_Hacker)\n",
+        LEGEND_caption += f"🔱 σωɳεɾ : [ℓєgєиd](t.me/Legend_Mr_Hacker)\n"
         
         LEGEND_caption += " [✨ᖇᗴᑭᝪ✨](https://github.com/LEGEND-OS/LEGENDBOT) 🔹 [📜lเςєภรє📜](https://github.com/LEGEND-OS/LEGENDBOT/blob/master/LICENSE)"
         await alive.client.send_file(
@@ -90,6 +90,6 @@ async def amireallyalive(alive):
             f"🔱 σωɳεɾ : [ℓєgєи∂](t.me/Legend_Mr_Hacker)\n"
         )
 
-CmdHelp("botstatus").add_command(
-    'bot', None, 'Use and See'
+CmdHelp("ɓσƭรƭαƭµร").add_command(
+    'bot', None, 'υѕє αи∂ ѕєє'
 ).add()
