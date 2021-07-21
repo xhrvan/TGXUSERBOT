@@ -1,6 +1,7 @@
 import asyncio
 import io
 from userbot import ALIVE_NAME
+from . import *
 from userbot import bot as LEGENDBOT
 from LEGENDBOT.utils import admin_cmd, edit_or_reply, sudo_cmd
 DEFAULTUSER = str(ALIVE_NAME) if ALIVE_NAME else "LEGEND"
