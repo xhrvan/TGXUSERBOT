@@ -10,7 +10,7 @@ from userbot import *
 from . import *
 DELETE_TIMEOUT = 5
 DEFAULTUSER = str(ALIVE_NAME) if ALIVE_NAME else "LEGEND User"
-LEGEND_logo = "./LEGEND/LEGENDBOT_logo.jpg"
+LEGEND_logo = "./LEGENDBOT/LEGENDBOT_logo.jpg"
 aura = LEGENDBOT.uid
 LEGEND = f"[{DEFAULTUSER}](tg://user?id={aura})"
 
