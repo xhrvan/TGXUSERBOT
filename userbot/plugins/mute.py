@@ -21,7 +21,7 @@ async def startmute(event):
         [
             x in event.raw_text
             for x in (
-                "/mute",
+                "•mute",
             )
         ]
     ):
