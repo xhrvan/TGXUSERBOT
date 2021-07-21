@@ -18,7 +18,7 @@ async def blowjob(event):
         	
         return
     elif event.is_private:
-        await edit_or_reply(event, "`Tum bhut chud liye ab thoda aram kr lo 😂`")
+        await edit_or_reply(event, "`Globally Mute Raho😂`")
         await asyncio.sleep(3)
         private = True
     reply = await event.get_reply_message()
@@ -39,7 +39,7 @@ async def blowjob(event):
     except Exception as e:
         await edit_or_reply(event, "Error occured!\nError is " + str(e))
     else:
-        await edit_or_reply(event, "Successfully chod diya is user ko 😏.")
+        await edit_or_reply(event, "Successfully Globally Muted Ab bol ke Dikha 😏.")
 
 
 @bot.on(admin_cmd(pattern=r"ungmute ?(\d+)?"))
@@ -69,9 +69,14 @@ async def cumshot(event):
     except Exception as e:
         await edit_or_reply(event, "Error occured!\nError is " + str(e))
     else:
-        await edit_or_reply(event, "Aur bhai kr liya aram Aajao Shuru kare Bakchodi 😎")
+        await edit_or_reply(event, "Aur bhai Ja Chod Diya Ab Purani Bat Bhool Ja 😎")
         
 @command(incoming=True)
 async def watcher(event):
     if is_muted(event.sender_id, "gmute"):
         await event.delete()
+CmdHelp("ɠɱµƭε").add_command(
+   "gmute", "<Reply To User>", "To Mute User In Which U are Admin"
+).add_command(
+   "gunmute", "<Reply Ro User", "To Unmute User In Which U are Admin"
+).add()
