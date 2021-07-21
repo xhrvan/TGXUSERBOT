@@ -276,7 +276,7 @@ async def _(event):
         await asyncio.sleep(animation_interval) 
         await event.edit(animation_chars[i%192])
         
-CmdHelp("animations6").add_command(
+CmdHelp("αɳเɱαƭเσɳร6").add_command(
   'bigoof', None, '🇮🇳🇮🇳🇮🇳'
 ).add_command(
   'g1', None, 'Use and see'
