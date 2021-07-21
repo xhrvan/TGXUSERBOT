@@ -9,11 +9,10 @@ from telethon.tl.functions.users import GetFullUserRequest
 from telethon.tl.types import MessageEntityMentionName
 from telethon.utils import get_input_location
 from telethon.events import ChatAction
-
+from . import *
 
 Legend_Mr_Hacker = str(ALIVE_NAME) if ALIVE_NAME else "LEGEND User"
 papa = borg.uid
-
 
 
 async def get_full_user(event):  
@@ -121,7 +120,7 @@ async def gban(userbot):
     except:
         pass
     return await LEGENDBOT.edit(
-        f"[{user.first_name}](tg://user?id={user.id}) Teri Kali Gand Chodne Wala Tera [{David99q}](tg://user?id={papa}) Baap.\n\n**Gban Successful This Nube 🔥\nAffected Chats😏 : {a} **"
+        f"[{user.first_name}](tg://user?id={user.id}) Ban ho gya  [{Legend}](tg://user?id={papa}) Baap.\n\n**Gban Successful This Nube 🔥\nAffected Chats😏 : {a} **"
     )
 
 @bot.on(admin_cmd(pattern="ungban ?(.*)"))
@@ -187,7 +186,7 @@ async def gunban(userbot):
     except:
         pass
     return await LEGENDBOT.edit(
-        f"**[{user.first_name}](tg://user?id={user.id}) Purani Baate bhul jaa...... or lund pkd ke jhul ja 😂.**\n\nUngban Successful 🔥\nChats :- `{a}`"
+        f"**[{user.first_name}](tg://user?id={user.id}) Purani Baate bhul jaa... ab Friend ban ja 😂.**\n\nUngban Successful 🔥\nChats :- `{a}`"
     )
 
 
