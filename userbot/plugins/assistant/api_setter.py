@@ -64,7 +64,7 @@ async def rmbgapi(event):
             )
 
 
-tgbot.on(callbackquery.CallbackQuery(data=compile(b"oaspi")))
+@tgbot.on(callbackquery.CallbackQuery(data=compile(b"oaspi")))
 async def rmbgapi(event):
     await event.delete()
     pru = event.sender_id
