@@ -56,6 +56,6 @@ async def _(event):
     for files in (sedlyf, km):
         if files and os.path.exists(files):
             os.remove(files)
-CmdHelp("ytmusic").add_command(
+CmdHelp("γτмυѕιϲ").add_command(
     'ytmusic', None, 'Find Song From Youtube'
-)
+).add()
