@@ -16,7 +16,7 @@ from . import ALIVE_NAME
 
 naam = str(ALIVE_NAME)
 
-bots = "@Legend_Mr_Bot"
+bots = "@SuzieRobot"
 
 BOTLOG_CHATID = Config.PRIVATE_GROUP_BOT_API_ID
 
@@ -73,8 +73,8 @@ async def _(event):
                 await event.edit("**Error:** `unblock` @MissRose_Bot `and try again!")
 
 
-@bot.on(admin_cmd("legendinfo ?(.*)"))
-@bot.on(sudo_cmd("legendinfo ?(.*)", allow_sudo=True))
+@bot.on(admin_cmd("suzieinfo ?(.*)"))
+@bot.on(sudo_cmd("suzieinfo ?(.*)", allow_sudo=True))
 async def _(event):
     if event.fwd_from:
         return
@@ -111,8 +111,8 @@ async def _(event):
                 await event.edit("**Error:** `unblock` @MissRose_Bot `and try again!")
 
 
-@bot.on(admin_cmd("superfedinfo ?(.*)"))
-@bot.on(sudo_cmd("superfedinfo ?(.*)", allow_sudo=True))
+@bot.on(admin_cmd("superfinfo ?(.*)"))
+@bot.on(sudo_cmd("superfinfo ?(.*)", allow_sudo=True))
 async def _(event):
     if event.fwd_from:
         return
@@ -243,8 +243,8 @@ async def get_users(show):
         )
 
 
-@bot.on(admin_cmd(pattern="superbgban ?(.*)"))
-@bot.on(sudo_cmd(pattern="superbgban ?(.*)", allow_sudo=True))
+@bot.on(admin_cmd(pattern="supergban ?(.*)"))
+@bot.on(sudo_cmd(pattern="supergban ?(.*)", allow_sudo=True))
 async def _(event):
     if G_BAN_LOGGER_GROUP is None:
         await event.edit("ENV VAR is not set. This module will not work.")
@@ -265,8 +265,8 @@ async def _(event):
     await event.delete()
 
 
-@bot.on(admin_cmd(pattern="superbungban ?(.*)"))
-@bot.on(sudo_cmd(pattern="superbungban ?(.*)", allow_sudo=True))
+@bot.on(admin_cmd(pattern="superungban ?(.*)"))
+@bot.on(sudo_cmd(pattern="superungban ?(.*)", allow_sudo=True))
 async def _(event):
     if G_BAN_LOGGER_GROUP is None:
         await event.edit("ENV VAR is not set. This module will not work.")
@@ -297,7 +297,6 @@ if FBAN_GROUP_ID:
     FBAN_GROUP_ID = int(FBAN_GROUP_ID)
 EXCLUDE_FED = os.environ.get("EXCLUDE_FED", None)
 
-# By @HeisenbergTheDanger, @its_xditya
 @bot.on(admin_cmd("superfban ?(.*)"))
 @bot.on(sudo_cmd("superfban ?(.*)", allow_sudo=True))
 async def _(event):
@@ -346,8 +345,8 @@ async def _(event):
             return
     except:
         if (
-            FBAN == "@LEGEND_Owner"
-            or FBAN == "@LEGEND_Queen"
+            FBAN == "@Legend_Mr_Hacker"
+            or FBAN == "@Legend_Userbot"
             or FBAN == "@LEGEND_CoOwnerr"
         ):
             await event.edit("Something went wrong.")
@@ -507,7 +506,7 @@ async def _(event):
     await event.edit(f"SuperUnFBan Completed. Affected {len(fedList)} feds.")
 
 
-CmdHelp("superfban").add_command(
+CmdHelp("รµρεɾƒɓαɳ").add_command(
   'superfban', '<user-id> or reply to a user' , 'Ban the selected user in all the federations'
 ).add_command(
   'superunfban', '<User-id> or reply to a user', 'Unban the selected user from all the federations'
