@@ -1,7 +1,7 @@
 import json
 import os
 from json.decoder import JSONDecodeError
-
+from telethon import events
 from aiohttp import web
 from aiohttp.http_websocket import WSMsgType
 from pyUltroid import udB, vcbot
@@ -15,7 +15,7 @@ from telethon.tl.functions.phone import (
 )
 from telethon.tl.types import DataJSON
 
-LOG_CHANNEL = int(udB.get("LOG_CHANNEL"))
+LOG_CHANNEL = int(event.get("LOG_CHANNEL"))
 if vcbot:
 
     bot = TelegramClient(None, Var.API_ID, Var.API_HASH).start(
