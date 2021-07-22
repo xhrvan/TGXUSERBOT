@@ -3,8 +3,7 @@ from . import *
 # main menu for api setting
 
 
-@callback("apiset")
-@owner
+@tgbot.on(callbackquery.CallbackQuery(data=compile(b"apiset")))
 async def apiset(event):
     await event.edit(
         get_string("ast_1"),
@@ -17,8 +16,7 @@ async def apiset(event):
     )
 
 
-@callback("rmbg")
-@owner
+@tgbot.on(callbackquery.CallbackQuery(data=compile(b"rmbgapi")))
 async def rmbgapi(event):
     await event.delete()
     pru = event.sender_id
@@ -42,8 +40,7 @@ async def rmbgapi(event):
             )
 
 
-@callback("dapi")
-@owner
+@tgbot.on(callbackquery.CallbackQuery(data=compile(b"dapi")))
 async def rmbgapi(event):
     await event.delete()
     pru = event.sender_id
@@ -62,13 +59,12 @@ async def rmbgapi(event):
         else:
             await setit(event, var, themssg)
             await conv.send_message(
-                f"{name} changed to {themssg}",
+                f"{ALIVE_NAME} changed to {themssg}",
                 buttons=get_back_button("apiset"),
             )
 
 
-@callback("oapi")
-@owner
+tgbot.on(callbackquery.CallbackQuery(data=compile(b"oaspi")))
 async def rmbgapi(event):
     await event.delete()
     pru = event.sender_id
@@ -87,6 +83,6 @@ async def rmbgapi(event):
         else:
             await setit(event, var, themssg)
             await conv.send_message(
-                f"{name} changed to {themssg}",
+                f"{ALIVE_NAME} changed to {themssg}",
                 buttons=get_back_button("apiset"),
             )
