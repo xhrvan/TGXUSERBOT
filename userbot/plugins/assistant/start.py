@@ -53,7 +53,8 @@ async def closet(event):
     await event.delete()
 
 
-return ping_time @tgbot.on(events.NewMessage(pattern="^/start", func=lambda e: e.sender_id == bot.uid))
+
+@tgbot.on(events.NewMessage(pattern="^/start", func=lambda e: e.sender_id == bot.uid))
 async def _(event):
     if event.is_group:
         if str(event.sender_id) in owner_and_sudos():
