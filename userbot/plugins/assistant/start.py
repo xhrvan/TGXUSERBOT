@@ -8,9 +8,9 @@ from . import *
 
 Owner_info_msg = f"""
 **Owner** - {ALIV_NAME}
-**OwnerID** - `{ALIVE_ID}`
-**Message Forwards** - {udB.get("PMBOT")}
-__Legend {__version}, powered by @Legend_Userbot__
+**OwnerID** - `{OWNER_ID}`
+**Message Forwards** - {event.get("PMBOT")}
+__Legend {LEGENDversion}, powered by @Legend_Userbot__
 """
 
 _settings = [
@@ -39,7 +39,8 @@ _start = [
 ]
 
 
-@callback("ownerinfo")
+
+@tgbot.on(events.callbackquery.CallbackQuery(data=re.compile(b"ownerinfo")))
 async def own(event):
     await event.edit(
         Owner_info_msg,
@@ -47,9 +48,9 @@ async def own(event):
     )
 
 
-@callback("closeit")
-async def closet(lol):
-    await lol.delete()
+@tgbot.on(events.callbackquery.CallbackQuery(data=re.compile(b"closeit")))
+async def closet(event):
+    await event.delete()
 
 
 return ping_time @tgbot.on(events.NewMessage(pattern="^/start", func=lambda e: e.sender_id == bot.uid))
@@ -60,7 +61,7 @@ async def _(event):
                 "`I dont work in groups`",
                 buttons=[
                     Button.url(
-                        "⚙️Sᴛᴀʀᴛ⚙️", url=f"https://t.me/Legend_Mr_Hacker?start=set"
+                        "⚙️Sᴛᴀʀᴛ⚙️", url=f"https://t.me/Legend_Userbot?start=set"
                     )
                 ],
             )
@@ -73,16 +74,16 @@ async def _(event):
         if str(event.sender_id) not in owner_and_sudos():
             ok = ""
             u = await event.client.get_entity(event.chat_id)
-            if not udB.get("STARTMSG"):
-                if udB.get("PMBOT") == "True":
+            if not event.get("STARTMSG"):
+                if event.get("PMBOT") == "True":
                     ok = "You can contact my master using this bot!!\n\nSend your Message, I will Deliver it To Master."
                 await event.reply(
-                    f"Hey there [{get_display_name(u)}](tg://user?id={u.id}), this is Ultroid Assistant of [{ultroid_bot.me.first_name}](tg://user?id={ultroid_bot.uid})!\n\n{ok}",
+                    f"Hey Sir / ตíss, his is Legend Assistant of {ALIVE_NAME}!",
                     buttons=[Button.inline("Info.", data="ownerinfo")],
                 )
             else:
-                me = f"[{ultroid_bot.me.first_name}](tg://user?id={ultroid_bot.uid})"
-                mention = f"[{get_display_name(u)}](tg://user?id={u.id})"
+                me = f"[{ALIVE_NAME}]"
+                mention = f"[{DEFAULTUSER}](tg://user?id={bot.uid})"
                 await event.reply(
                     Redis("STARTMSG").format(me=me, mention=mention),
                     buttons=[Button.inline("Info.", data="ownerinfo")],
@@ -101,19 +102,17 @@ async def _(event):
                 )
 
 
-@callback("mainmenu")
-@owner
+@tgbot.on(events.callbackquery.CallbackQuery(data=re.compile(b"mainmenu")))
 async def _(event):
     if event.is_group:
         return
     await event.edit(
-        get_string("ast_3").format(OWNER_NAME),
+        get_string("ast_3").format(ALIVE_NAME),
         buttons=_start,
     )
 
 
-@callback("stat")
-@owner
+@tgbot.on(events.callbackquery.CallbackQuery(data=re.compile(b"stat")))
 async def botstat(event):
     ok = len(get_all_users())
     msg = """LEGEND Assistant - Stats
@@ -123,8 +122,7 @@ Total Users - {}""".format(
     await event.answer(msg, cache_time=0, alert=True)
 
 
-@callback("bcast")
-@owner
+@tgbot.on(events.callbackquery.CallbackQuery(data=re.compile(b"bcast")))
 async def bdcast(event):
     ok = get_all_users()
     await event.edit(f"Broadcast to {len(ok)} users.")
@@ -159,8 +157,7 @@ Failed for {fail} user(s).""",
             )
 
 
-@callback("setter")
-@owner
+@tgbot.on(events.callbackquery.CallbackQuery(data=re.compile(b"setting")))
 async def setting(event):
     await event.edit(
         "Choose from the below options -",
