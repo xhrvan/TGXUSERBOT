@@ -2,7 +2,29 @@ from datetime import datetime
 from telethon import events
 from telethon.utils import get_display_name
 
-from plugins import *
+from datetime import datetime
+from telethon import events
+from telethon.utils import get_display_name
+from math import ceil
+from re import compile
+import asyncio
+import html
+import os
+import re
+import sys
+from telethon import Buttons
+from telethon.events import InlineQuery, callbackquery
+from telethon.sync import custom
+from telethon.tl.functions.channels import GetParticipantRequest
+from telethon.tl.functions.channels import JoinChannelRequest
+
+from userbot import *
+from userbot.cmdhelp import *
+from LEGENDBOT.utils import *
+from userbot.Config import Config
+from userbot import ALIVE_NAME
+LEGEND_row = Config.BUTTONS_IN_HELP
+LEGEND_emoji = Config.EMOJI_IN_HELP
 
 from . import *
 
