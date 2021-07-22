@@ -20,7 +20,8 @@ LEGEND_row = Config.BUTTONS_IN_HELP
 LEGEND_emoji = Config.EMOJI_IN_HELP
 # thats how a lazy guy imports
 # LEGENDBOT
-
+# sαlҽ ískօ kαղց ตαԵ kαɾ ตc ճc
+# αϐє τυ ρα∂н нι яαнα н γαнα ѕє ϐнαg
 def button(page, modules):
     Row = LEGEND_row
     Column = 3
@@ -72,7 +73,7 @@ if Var.TG_BOT_USER_NAME_BF_HER is not None and tgbot is not None:
                     apn.append(y)
             result = await builder.article(
                 f"Hey! Only use .help please", 
-                text=f"🔰[{ALIVE_NAME}](https://t.me/Legend_Mr_Hacker)\n\n📁ղօ. օբ ρℓµɠเɳร ιиѕταℓℓє∂⭆ `{len(CMD_HELP)}` \n🗂τοταℓ ϲοммαи∂ѕ⭆ `{len(apn)}`\n📙թαցҽ⭆ 1/{veriler[0]}",
+                text=f"🔰[{ALIVE_NAME}](https://t.me/Legend_Mr_Hacker)\n\n📁τοταℓ ρℓµɠเɳร ιиѕταℓℓє∂⭆ `{len(CMD_HELP)}` \n🗂τοταℓ ϲοммαи∂ѕ⭆ `{len(apn)}`\n📙թαցҽ⭆ 1/{veriler[0]}",
                 buttons=veriler[1],
                 link_preview=False,
             )
@@ -87,10 +88,10 @@ if Var.TG_BOT_USER_NAME_BF_HER is not None and tgbot is not None:
         else:
             result = builder.article(
                 "@LEGEND_Userbot",
-                text="""**Hey! This is [ℓєgєи∂ϐοτ.](https://t.me/Legend_Mr_Hacker) \nYou can know more about me from the links given below 👇**""",
+                text="""**нєγ! τнιѕ ιѕ [ℓєgєи∂ϐοτ.](https://t.me/Legend_Mr_Hacker) \nγου ϲαи κиοω мοяє αϐουτ мє👇**""",
                 buttons=[
                     [
-                        custom.Button.url("🔥 ϲяєατοя 🔥", "https://t.me/Legend_Mr_Hacker"),
+                        custom.Button.url("🔥 gяουρ 🔥", "https://t.me/Legend_Userbot"),
                         custom.Button.url(
                             "⚡ οωиєя ⚡", "https://t.me/Legend_Mr_Hacker"
                         ),
@@ -119,7 +120,7 @@ if Var.TG_BOT_USER_NAME_BF_HER is not None and tgbot is not None:
             for y in x:
                 apn.append(y)
         await event.edit(
-            f"🛡️[{ALIVE_NAME}](https://t.me/Legend_Mr_Hacker) ฬ๏гкเภﻮ.....\n\n📁ղօ. օբ ρℓµɠเɳร ιиѕταℓℓє∂⭆ `{len(CMD_HELP)}`\n🗂τοταℓ ϲοммαи∂ѕ⭆ `{len(apn)}` \n📙թαցҽ⭆ {page + 1}/{veriler[0]}",
+            f"🛡️[{ALIVE_NAME}](https://t.me/Legend_Mr_Hacker) ฬ๏гкเภﻮ.....\n\n📁τοταℓ ρℓµɠเɳร ιиѕταℓℓє∂⭆ `{len(CMD_HELP)}`\n🗂τοταℓ ϲοммαи∂ѕ⭆ `{len(apn)}` \n📙թαցҽ⭆ {page + 1}/{veriler[0]}",
             buttons=veriler[1],
             link_preview=False,
         )
