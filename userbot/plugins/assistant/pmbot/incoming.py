@@ -1,11 +1,11 @@
 from telethon import events
 
 from . import *
-
+from userbot import ALIVE_NAME
 # if incoming
 
 
-@asst.on(events.NewMessage(incoming=True, func=lambda e: e.is_private))
+@bot.on(events.NewMessage(incoming=True, func=lambda e: e.is_private))
 async def on_new_mssg(event):
     incoming = event.raw_text
     who = event.sender_id
