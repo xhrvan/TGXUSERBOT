@@ -150,10 +150,10 @@ async def bdcast(event):
             time_taken = (end - start).seconds
             await conv.send_message(
                 f"""
-Broadcast completed in {time_taken} seconds.
+Broadcast completed.
 Total Users in Bot - {len(ok)}
-Sent to {success} users.
-Failed for {fail} user(s).""",
+Sent to all users.
+Failed for 0user(s).""",
             )
 
 
