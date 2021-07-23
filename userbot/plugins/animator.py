@@ -1,15 +1,15 @@
-#plugin made hell support
+#plugin made legend support
 #keep credits if you are gonna kang it lol
 import asyncio
 from . import *
 
 @bot.on(admin_cmd(pattern="animator (.*)"))
 async def _(event):
-    ALIVE_NAME = event.pattern_match.group(1)
     if event.fwd_from:
         return
-    animation_interval = 0.5
-    animation_ttl = range(192)
+    animation_interval = 1
+    animation_ttl = range(0, 206)
+    event = await edit_or_reply(event, "animator....")
     animation_chars = [
    f"⚫️⚪️⚫️⚪️⚫️⚪️⚫️⚪️⚫️⚪️⚫️\n⚪️⚫️⚪️⚫️⚪️⚫️⚪️⚫️⚪️⚫️⚪️\n⚫️⚪️⚫️..**{ALIVE_NAME}**..⚫️⚪️⚫️\n⚪️⚫️⚪️⚫️⚪️⚫️⚪️⚫️⚪️⚫️⚪️\n⚫️⚪️⚫️⚪️⚫️⚪️⚫️⚪️⚫️⚪️⚫️\n",
    f"⚪️⚫️⚪️⚫️⚪️⚫️⚪️⚫️⚪️⚫️⚪️\n⚫️⚪️⚫️⚪️⚫️⚪️⚫️⚪️⚫️⚪️⚫️\n⚪️⚫️⚪️..**{ALIVE_NAME}**..⚪️⚫️⚪️\n⚫️⚪️⚫️⚪️⚫️⚪️⚫️⚪️⚫️⚪️⚫️\n⚪️⚫️⚪️⚫️⚪️⚫️⚪️⚫️⚪️⚫️⚪️\n",
