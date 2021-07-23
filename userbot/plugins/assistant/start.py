@@ -28,7 +28,7 @@ LEGEND_emoji = Config.EMOJI_IN_HELP
 from . import *
 
 Owner_info_msg = f"""
-**Owner** - {ALIV_NAME}
+**Owner** - {ALIVE_NAME}
 **OwnerID** - `{OWNER_ID}`
 **Message Forwards** - {event.get("PMBOT")}
 __Legend {LEGENDversion}, powered by @Legend_Userbot__
