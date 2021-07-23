@@ -142,7 +142,7 @@ async def promote(promt):
     LEGENDevent = await edit_or_reply(promt, "Promoting...")
     user, rank = await get_user_from_event(promt)
     if not rank:
-        rank = "『🔱🇱 🇪 🇬 🇪 🇳 🇩 🔱』"
+        rank = "lҽցҽղժ"
     if not user:
         return
     try:
@@ -363,8 +363,8 @@ async def kick(usr):
         )
 
 
-@bot.on(admin_cmd("undlt$"))
-@bot.on(sudo_cmd(pattern="undlt$", allow_sudo=True))
+@bot.on(admin_cmd("undelet$"))
+@bot.on(sudo_cmd(pattern="undelet$", allow_sudo=True))
 async def _(event):
     if event.fwd_from:
         return
@@ -455,5 +455,5 @@ CmdHelp("admin").add_command(
 ).add_command(
         'kick', '<username/reply>', 'kick the person off your chat'
 ).add_command(
-        'iundlt', None, 'display last 5 deleted messages in group.'
+        'undelet', None, 'display last 5 deleted messages in group.'
 ).add()
