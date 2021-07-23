@@ -8,7 +8,7 @@ from LEGENDBOT.utils import admin_cmd, edit_or_reply, sudo_cmd, humanbytes
 
 
 @bot.on(admin_cmd(  # pylint:disable=E0602
-    pattern="movie (torrentz2\.eu|idop\.se) (.*)"
+    pattern="anibsdk (torrentz2\.eu|idop\.se) (.*)"
 ))
 async def _(event):
     if event.fwd_from:
@@ -113,5 +113,5 @@ from . import *
 
 
 CmdHelp("torrentz").add_command(
-  'movie', None, 'Show the movie'
+  'anibsdk', None, 'Show the movie of abuse'
 ).add()
