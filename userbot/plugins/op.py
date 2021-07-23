@@ -1,7 +1,4 @@
-# Thanks to @PYTHON_CODER_SRINIVAS.. 
-# animation Idea by @PYTHON_CODER_SRINIVAS
-# Made by @PYTHON_CODER_SRINIVAS...and thanks to @PYTHON_CODER_SRINIVAS...the logos...
-# Kang with credits else gay...
+
 import asyncio
 import random
 from telethon import events
@@ -13,8 +10,7 @@ from telethon.tl.types import ChannelParticipantsAdmins
 DEFAULTUSER = str(ALIVE_NAME) if ALIVE_NAME else "LEGEND"
 
 # Thanks to LEGEND BRO.. 
-# animation Idea by @PYTHON_CODER_SRINIVAS (op coder)
-# Made by @PYTHON_CODER_SRINIVAS...and thanks to @koi_nhi_apna for the logos...
+# animation Idea by @Legend_Mr_Hacker (op coder)
 # Kang with credits else gay...
 # alive.py for
 
@@ -24,14 +20,14 @@ file1="https://telegra.ph/file/2d41a6b1b3713579c63c2.jpg"
 file2="https://telegra.ph/file/d80f4df893d30ed11ec87.jpg"
 file3="https://telegra.ph/file/498446e602ba527c5ee3a.jpg"
 file4="https://telegra.ph/file/22d0976cc9c7627d48319.jpg"""" =======================CONSTANTS====================== """
-pm_caption = "『🔱🇱 🇪 🇬 🇪 🇳 🇩 🔱』 Is OP\n\n"
+pm_caption = "🔱ℓєgєи∂ϐοτ🔱 ιѕ ορ\n\n"
 pm_caption += "💌💌 **𝐆𝐨𝐝,𝒚𝒐𝒖 𝒂𝒓𝒆 𝒂𝒍𝒎𝒊𝒈𝒉𝒕𝒚 , 𝗉𝗅𝗌 𝗍𝖺𝗄𝖾 𝖼𝖺𝗋𝖾 𝗈𝖿 𝗆𝗒 𝖻𝖾𝗌𝗍𝗂𝖾 .. 𝗆𝗂𝗌𝗌𝗂𝗇𝗀 𝗁𝗂𝗆 𝗏𝖾𝗋𝗒 𝗆𝗎𝖼𝗁💫😇.**💌💌\n\n"
 pm_caption += "༆༄🎀🌹About Me \n\n"
-pm_caption += "💫💫**my assistant**💫💫 >>》 15.0.0\n"
-pm_caption += "😇😇**LEGEND HERE**😇😇   >>》 [OWNER](https://t.me/Legend_Mr_Hacker)\n"
+pm_caption += "💫💫**ℓєgєи∂ϐοτ**💫💫 >>》 15.0.0\n"
+pm_caption += "😇😇**ℓєgєи∂**😇😇   >>》 [οωиєя](https://t.me/Legend_Mr_Hacker)\n"
 pm_caption += f"🔰🔰**ᴍᴀsᴛᴇʀ**🔰🔰  >>》 {DEFAULTUSER}\n"
-pm_caption += "❣❣ **ᴄʀᴇᴀᴛᴏʀ**❣❣ >>》 [CREATOR](https://t.me/Legend_Mr_Hacker)\n\n"
-pm_caption += "🎊🎊 **LEGEND FEDS**🎊🎊  >>》 [FEDS](https://t.me/Legend_Mr_Feds)\n\n"
+pm_caption += "❣❣ **ᴄʀᴇᴀᴛᴏʀ**❣❣ >>》 [gяουρ](https://t.me/Legend_Userbot)\n\n"
+pm_caption += "🎊🎊 **яєρο**🎊🎊  >>》 [яєρο](https://github.com/LEGEND-OS/LEGENDBOT)\n\n"
 pm_caption += "[....▄███▄███▄\n....█████████\n.......▀██❣🌹💫😇💫🌹❣███▀\n...............▀█▀\n](https://t.me/Legend_Mr_Hacker)\n\n"
 @borg.on(admin_cmd(pattern=r"op"))
 
