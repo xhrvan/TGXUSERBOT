@@ -11,7 +11,7 @@ if ENV:
         # Get your own ACCESS_KEY from http://api.screenshotlayer.com/api/capture
         SCREEN_SHOT_LAYER_ACCESS_KEY = os.environ.get("SCREEN_SHOT_LAYER_ACCESS_KEY", None)
         # Send .get_id in any group to fill this value.
-        SUDO_COMMAND_HAND_LER = os.environ.get("SUDO_COMMAND_HAND_LER", r"\.")
+        SUDO_COMMAND_HAND_LER = os.environ.get("SUDO_COMMAND_HAND_LER", r"\,")
 
         # This is required for the plugins involving the file system.
         TMP_DOWNLOAD_DIRECTORY = os.environ.get("TMP_DOWNLOAD_DIRECTORY", "./DOWNLOADS/")
@@ -96,13 +96,13 @@ if ENV:
         # can be None in which case plugins requiring
         # DataBase would not work
         DB_URI = os.environ.get("DATABASE_URL", None)
-        # number of rows of buttons to be displayed in .helpme command
-        BUTTONS_IN_HELP = int(os.environ.get("BUTTONS_IN_HELP", 7))
+        # number of rows of buttons to be displayed in .legend command
+        BUTTONS_IN_HELP = int(os.environ.get("NO_OF_BUTTONS_DISPLAYED_IN_H_ME_CMD", 8))
         #open load
         OPEN_LOAD_LOGIN = os.environ.get("OPEN_LOAD_LOGIN", None)
         OPEN_LOAD_KEY = os.environ.get("OPEN_LOAD_KEY", None)
         # number of colums of buttons to be displayed in .legend command
-        NO_OF_COLOUMS_DISPLAYED_IN_H_ME_CMD = int(os.environ.get("NO_OF_COLOUMS_DISPLAYED_IN_H_ME_CMD", 3))
+        NO_OF_COLOUMS_DISPLAYED_IN_H_ME_CMD = int(os.environ.get("NO_OF_COLOUMS_DISPLAYED_IN_H_ME_CMD", 2))
         # emoji to be displayed  in help .legend
         EMOJI_IN_HELP = os.environ.get("EMOJI_IN_HELP", "⚜️ ")
         # specify command handler that should be used for the plugins
@@ -136,7 +136,6 @@ if ENV:
             t_file.write(AUTH_TOKEN_DATA)
             t_file.close()
 
-        CUSTOM_STICKER_PACK_NAME = os.environ.get("CUSTOM_STICKER_PACK_NAME", None)
         YOUTUBE_API_KEY = os.environ.get("YOUTUBE_API_KEY", None)
         GDRIVE_FOLDER_ID = os.environ.get("GDRIVE_FOLDER_ID", None)
         #MongoDB
@@ -144,9 +143,9 @@ if ENV:
         #alive
         ALIVE_PIC = os.environ.get("ALIVE_PIC", None)
         ALIVE_MSG = os.environ.get("ALIVE_MSG", None)
-        BOT_PIC = os.environ.get("BOT_PIC", None)
+        BOT_PIC = os.environ.get("ALIVE_PIC", None)
         #auto bio
-        BIO_MSG = os.environ.get("BIO_MSG", None)
+        BIO_MSG = os.environ.get("ALIVE_MSG", None)
         #Lydia API
         LYDIA_API = os.environ.get("LYDIA_API",None)
         PLUGIN_CHANNEL = int(os.environ.get("PLUGIN_CHANNEL", None))
@@ -157,8 +156,8 @@ if ENV:
         BOT_MODE = os.environ.get("BOT_MODE", "ON")
         BOT_TRIGGER = os.environ.get("BOT_TRIGGER", "^/")
         BOTMODE_LOG = int(os.environ.get("BOTMODE_LOG", False))
-        BOT_TOKEN = os.environ.get("BOT_TOKEN", None) 
-        BOT_USERNAME = os.environ.get("BOT_USERNAME", None)
+        BOT_TOKEN = os.environ.get("TG_BOT_TOKEN_BF_HER", None) 
+        BOT_USERNAME = os.environ.get("TG_BOT_USER_NAME_BF_HER", None)
         FORCE_SUB = os.environ.get("FORCE_SUB", None)
         FORCE_CHANNEL_UN = os.environ.get("FORCE_CHANNEL_UN", None)
         LOGGER_ID = os.environ.get("LOGGER_ID", None)
