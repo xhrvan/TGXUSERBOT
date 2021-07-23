@@ -72,7 +72,7 @@ async def amireallyalive(alive):
         LEGEND_caption += f"🔱 ɱαรƭεr    : {mention}\n"
         LEGEND_caption += f"🔱 σωɳεɾ     : [ℓєgєиd](t.me/Legend_Mr_Hacker)\n"
         
-        LEGEND_caption += " [✨ᖇᗴᑭᝪ✨](https://github.com/LEGEND-OS/LEGENDBOT) 🔹 [📜lเςєภรє📜](https://github.com/LEGEND-OS/LEGENDBOT/blob/master/LICENSE)"
+        LEGEND_caption += " [✨ɠɾσµρ✨](https://t.me/Legend_Userbot) 🔹 [📜lเςєภรє📜](https://github.com/LEGEND-OS/LEGENDBOT/blob/master/LICENSE)"
         await alive.client.send_file(
             alive.chat_id, LEGEND_IMG, caption=LEGEND_caption, reply_to=reply_to_id
         )
