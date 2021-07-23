@@ -52,7 +52,7 @@ async def _(event):
         await event.edit(str(e))
 
 
-@borg.on(admin_cmd(pattern="ppic"))  # pylint:disable=E0602
+@borg.on(admin_cmd(pattern="upic"))  # pylint:disable=E0602
 async def _(event):
     if event.fwd_from:
         return
@@ -86,10 +86,10 @@ async def _(event):
     except Exception as e:  # pylint:disable=C0103,W0703
         logger.warn(str(e))  # pylint:disable=E0602
 
-CmdHelp("acc_profile").add_command(
-  'pbio', None, 'Start Wallpapers on DP'
+CmdHelp("editprofile").add_command(
+  'pbio', None, '.pbio <Bio>'
 ).add_command(
-  'pname', None, 'Use and see'
+  'pname', None, '.pname <Name>'
 ).add_command(
-  'ppic', None, 'Use and see'
+  'upic', None, '.upic <Reply to image to upload in ur profile pic>'
 ).add()
