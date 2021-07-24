@@ -67,7 +67,7 @@ async def amireallyalive(alive):
         LEGEND_caption += f"~~~~~~~~~~~~~~~~~~~~~~~\n"
         LEGEND_caption += f"      𖤍𝕭𝖔𝖙 𝕾𝖙𝖆𝖙𝖚𝖘𖤍\n"
         LEGEND_caption += f"🇮🇳 τєℓєτнοи   : `{version.__version__}`\n"
-        LEGEND_caption += f"🇮🇳 ℓєgєи∂ϐοτ :`{LEGENDversion}`\n"
+        LEGEND_caption += f"🇮🇳 ℓєgєи∂ϐοτ : `{LEGENDversion}`\n"
         LEGEND_caption += f"🇮🇳 υρτιмє       : `{uptime}`\n"
         LEGEND_caption += f"🔱 ɱαรƭεr       : {mention}\n"
         LEGEND_caption += f"🔱 σωɳεɾ        : [ℓєgєиd](t.me/Legend_Mr_Hacker)\n"
