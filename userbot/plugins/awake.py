@@ -20,7 +20,7 @@ from telethon import events, errors, custom
 import io
 from platform import python_version, uname
 from userbot.Config import AWAKE_PIC
-LEGEND_IMG = str(AWAKE_PIC) if AWAKE_PIC else https://telegra.ph/file/805dfd46e7019bb2a0b80.jpg
+LEGEND_IMG = str(AWAKE_PIC) if AWAKE_PIC else "https://telegra.ph/file/805dfd46e7019bb2a0b80.jpg"
 DEFAULTUSER = str(ALIVE_NAME) if ALIVE_NAME else "Set ALIVE_NAME in config vars in Heroku"
 
 if LEGEND_IMG:
