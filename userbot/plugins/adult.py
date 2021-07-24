@@ -5,7 +5,7 @@ from telethon.errors.rpcerrorlist import YouBlockedUserError
 from . import *
 
 
-@borg.on(hell_cmd(pattern="xnxx?(.*)"))
+@borg.on(admin_cmd(pattern="xnxx?(.*)"))
 async def _(event):
     if event.fwd_from:
         return
@@ -30,7 +30,7 @@ async def _(event):
             await event.client.send_file(event.chat_id, response.message)
 
 
-@borg.on(hell_cmd(pattern="picx?(.*)"))
+@borg.on(admin_cmd(pattern="picx?(.*)"))
 async def _(event):
     if event.fwd_from:
         return
@@ -55,7 +55,7 @@ async def _(event):
             await event.client.send_file(event.chat_id, response.message)
 
 
-@borg.on(hell_cmd(pattern="les?(.*)"))
+@borg.on(admin_cmd(pattern="les?(.*)"))
 async def _(event):
     if event.fwd_from:
         return
