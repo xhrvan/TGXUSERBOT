@@ -10,7 +10,7 @@ If You Add Him The Bot Won't Restrict."""
 @borg.on(ChatAction)
 async def ok(event):
     juser = await event.get_user()
-    if ./config.legendconfig.ANTISPAM_FEATURE != "ENABLE":
+    if userbot.config.legendconfig.ANTISPAM_FEATURE != "ENABLE":
         return
     if event.user_joined:
         hmmyep = await borg.get_permissions(event.chat_id, bot.uid)
