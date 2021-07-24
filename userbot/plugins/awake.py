@@ -21,7 +21,7 @@ import io
 from platform import python_version, uname
 DEFAULTUSER = str(ALIVE_NAME) if ALIVE_NAME else "Set ALIVE_NAME in config vars in Heroku"
 
-PM_IMG = "https://telegra.ph/file/baf1bde222c614d6040e9.jpg"
+PM_IMG = "https://telegra.ph/file/310e8f7a06460d88dda55.jpg"
 pm_caption ="**🔱LEGENDBOT IS Awake🔱**\n\n"
 pm_caption += f"**🇮🇳 Telethon : TELETHON-1.19.0**\n"
 pm_caption += f"**🇮🇳 Python : PYTHON-3.8.5**\n"
