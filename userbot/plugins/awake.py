@@ -5,7 +5,7 @@
 import os
 import asyncio
 from telethon import events
-from userbot import ALIVE_NAME, CMD_HELP
+from userbot import ALIVE_NAME, CMD_HELP, AWAKE_PIC
 from LEGENDBOT.utils import *
 from userbot.cmdhelp import CmdHelp
 from telethon import version, events
