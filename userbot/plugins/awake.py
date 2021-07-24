@@ -18,9 +18,10 @@ import random
 import re
 from telethon import events, errors, custom
 import io
+from . import *
 from platform import python_version, uname
 from userbot import Config
-LEGEND_IMG = Config.AWAKE_PIC
+LEGEND_IMG = userbot.Config.AWAKE_PIC
 DEFAULTUSER = str(ALIVE_NAME) if ALIVE_NAME else "Set ALIVE_NAME in config vars in Heroku"
 
 if LEGEND_IMG:
