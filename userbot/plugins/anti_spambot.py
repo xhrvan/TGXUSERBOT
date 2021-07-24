@@ -1,4 +1,4 @@
-""" A module for helping ban group join spammers. """
+
 
 from asyncio import sleep
 
@@ -190,6 +190,3 @@ async def ANTI_SPAMBOT(welcm):
         pass
 
 
-CmdHelp("anti_spambot").add_command(
-'antispambot', None, 'if enabled in config.env or env var this module will ban(or inform the admins of the group about) the spammer(s) if they match the userbot anti-spam algorithm.'
-).add()
