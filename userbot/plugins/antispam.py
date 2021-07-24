@@ -2,7 +2,7 @@ from telethon.events import ChatAction
 
 from userbot import *
 from . import *
-
+from userbot.config import legendconfig
 """Bans Spammers/Scammer At time Of Arrival 
 If You Add Him The Bot Won't Restrict."""
 
