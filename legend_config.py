@@ -141,6 +141,7 @@ if ENV:
         MONGO_URI = os.environ.get("MONGO_URI", None)
         #alive
         ALIVE_PIC = os.environ.get("ALIVE_PIC", None)
+        AWAKE_PIC = os.environ.get("AWAKE_PIC", "https://telegra.ph/file/310e8f7a06460d88dda55.jpg")
         ALIVE_MSG = os.environ.get("ALIVE_MSG", None)
         BOT_PIC = os.environ.get("BOT_PIC", None)
         #auto bio
