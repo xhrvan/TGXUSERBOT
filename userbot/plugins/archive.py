@@ -5,14 +5,16 @@ import os
 import shutil
 import tarfile
 import time
-import zipfile
+from zipfile import ZipFile
 from datetime import datetime
-
+import zipfile
+import subprocess
 import patoolib
+from pySmartDL import SmartDL
 from hachoir.metadata import extractMetadata
 from hachoir.parser import createParser
 from telethon.tl.types import DocumentAttributeVideo
-
+from telethon import events
 from userbot import CMD_HELP
 from userbot.Config import Config
 from LEGENDBOT.utils import admin_cmd, progress
