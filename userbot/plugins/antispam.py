@@ -1,7 +1,7 @@
 from telethon.events import ChatAction
 
-from userbot import bot, sclient
-from userbot.thunderconfig import Config
+from userbot import *
+from userbot import Config
 
 """Bans Spammers/Scammer At time Of Arrival 
 If You Add Him The Bot Won't Restrict."""
