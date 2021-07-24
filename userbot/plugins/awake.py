@@ -18,7 +18,6 @@ import random
 import re
 from telethon import events, errors, custom
 import io
-from userbot import 
 from platform import python_version, uname
 from userbot.Config import AWAKE_PIC
 LEGEND_IMG = str(AWAKE_PIC) if AWAKE_PIC else https://telegra.ph/file/805dfd46e7019bb2a0b80.jpg
