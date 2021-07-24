@@ -1,7 +1,7 @@
 from telethon.events import ChatAction
 
 from userbot import *
-from userbot import Config
+from . import *
 
 """Bans Spammers/Scammer At time Of Arrival 
 If You Add Him The Bot Won't Restrict."""
@@ -10,7 +10,7 @@ If You Add Him The Bot Won't Restrict."""
 @borg.on(ChatAction)
 async def ok(event):
     juser = await event.get_user()
-    if Config.ANTISPAM_FEATURE != "ENABLE":
+    if config.legendconfig.ANTISPAM_FEATURE != "ENABLE":
         return
     if event.user_joined:
         hmmyep = await borg.get_permissions(event.chat_id, bot.uid)
@@ -19,7 +19,7 @@ async def ok(event):
         user = sclient.is_banned(juser.id)
         if user:
             await event.reply(
-                f"**Lightning-Antispam** \n**Detected Malicious User.** \n**User-ID :** `{juser.id}`  \n**Reason :** `{user.reason}`"
+                f"**Legend-Antispam** \n**Detected Malicious User.** \n**User-ID :** `{juser.id}`  \n**Reason :** `{user.reason}`"
             )
             try:
                 await borg.edit_permissions(
