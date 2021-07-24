@@ -141,7 +141,7 @@ async def _(event):
         await event.edit(animation_chars[i % 11])
 
 
-@borg.on(admin_cmd(outgoing=True, pattern="hand( (.*)|$)"))
+@borg.on(admin_cmd(outgoing=True, pattern="hands( (.*)|$)"))
 async def _(event):
     if event.fwd_from:
         return
@@ -192,7 +192,7 @@ async def _(event):
         await event.edit(animation_chars[i % 13])
 
 
-@borg.on(admin_cmd(outgoing=True, pattern="theart( (.*)|$)"))
+@borg.on(admin_cmd(outgoing=True, pattern="thearts( (.*)|$)"))
 async def _(event):
     if event.fwd_from:
         return
@@ -288,7 +288,7 @@ CmdHelp("αɳเɱαƭเσɳร5").add_command(
 
 ).add_command(
 
-  'theart', None, 'Use and see'
+  'thearts', None, 'Use and see'
 
 ).add_command(
 
