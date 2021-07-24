@@ -14,7 +14,6 @@ class Config(object):
     TEMP_DOWNLOAD_DIRECTORY = os.environ.get("TEMP_DOWNLOAD_DIRECTORY", None)
     # This is required for the modules involving the file system.
     TMP_DOWNLOAD_DIRECTORY = os.environ.get("TMP_DOWNLOAD_DIRECTORY", "./DOWNLOADS/")
-    MAX_ANTI_FLOOD_MESSAGES = 10
     # warn mode for anti flood
     ANTI_FLOOD_WARN_MODE = ChatBannedRights(
         until_date=None, view_messages=None, send_messages=True
@@ -38,9 +37,6 @@ class Config(object):
         int(x) for x in os.environ.get("SUPPORT_USERS", "1232461895").split()
     )
     BEST_USERS = set(int(x) for x in os.environ.get("BEST_USERS", "1754865180").split())
-    DEVLOPERS = set(
-        int(x) for x in os.environ.get("DEVLOPERS_USERS", "1311769691").split()
-    )
   
     ASSISTANT_START_PIC = os.environ.get(
         "ASSISTANT_START_PIC",
@@ -54,8 +50,7 @@ class Config(object):
     NC_LOG_P_M_S = bool(os.environ.get("NC_LOG_P_M_S", False))
     ENABLE_ASSISTANTBOT = os.environ.get("ENABLE_ASSISTANTBOT", "ENABLE")
     PM_DATA = os.environ.get("PM_DATA", "ENABLE")
-    LIGHTNING_PRO = os.environ.get("LIGHTNING_PRO", "YES")
-    TELEGRAPH_SHORT_NAME = os.environ.get("TELEGRAPH_SHORT_NAME", "IndianBot")
+    LEGEND_PRO = os.environ.get("LIGHTNING_PRO", "YES")
     ANTISPAM_FEATURE = os.environ.get("ANTISPAM_FEATURE", "ENABLE")
     ANTI_SPAMINC_TOKEN = os.environ.get("ANTI_SPAMINC_TOKEN", None)
     SCREEN_SHOT_LAYER_ACCESS_KEY = os.environ.get("SCREEN_SHOT_LAYER_ACCESS_KEY", None)
