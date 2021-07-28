@@ -29,7 +29,7 @@ pm_caption += f"🔰🔰**ᴍᴀsᴛᴇʀ**🔰🔰  >>》 {DEFAULTUSER}\n"
 pm_caption += "❣❣ **ᴄʀᴇᴀᴛᴏʀ**❣❣ >>》 [gяουρ](https://t.me/Legend_Userbot)\n\n"
 pm_caption += "🎊🎊 **яєρο**🎊🎊  >>》 [яєρο](https://github.com/LEGEND-OS/LEGENDBOT)\n\n"
 pm_caption += "[....▄███▄███▄\n....█████████\n.......▀██❣🌹💫😇💫🌹❣███▀\n...............▀█▀\n](https://t.me/Legend_Mr_Hacker)\n\n"
-@borg.on(admin_cmd(pattern=r"op"))
+@borg.on(admin_cmd(pattern=r"aboutbot"))
 
 async def amireallyalive(yes):
     chat = await yes.get_chat()
@@ -62,6 +62,6 @@ async def amireallyalive(yes):
     """ For .alive command, check if the bot is running.  """
     await borg.send_file(alive.chat_id, PM_IMG,caption=pm_caption)
     await alive.delete()
-    CmdHelp("op").add_command(
-      'op', None , 'BEST alive command'
+    CmdHelp("aboutbot").add_command(
+      'aboutbot', None , 'BEST alive command'
 ).add()
