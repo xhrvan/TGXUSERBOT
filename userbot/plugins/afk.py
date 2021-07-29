@@ -96,8 +96,8 @@ async def on_afk(event):
         msg = None
         
         message_to_reply = (
-            f"ℋℯ𝓎 𝒮𝒾𝓇 / ℳ𝒾𝓈𝓈🤔!! ɱყ ℓεɠεɳ∂ ɱαรƭεɾ [{DEFAULTUSER}](tg://user?id={LEGEND}) ιѕ ϲυяяєиτℓγ οƒƒℓιє... síղcҽ ահҽղ? `{total_afk_time}`\n"
-            + f"\n\n👇𝕽𝖊𝖆𝖘𝖔𝖓👇 :-\n`{reason}`"
+            f"ɱყ ℓεɠεɳ∂ ɱαรƭεɾ [{DEFAULTUSER}](tg://user?id={LEGEND}) ιѕ ON AFK \n\n⏲️síղcҽ ահҽղ:-\n`{total_afk_time}`\n"
+            + f"👇𝕽𝖊𝖆𝖘𝖔𝖓👇 :\n`{reason}`"
   if reason
             else f"ℋℯ𝓎 𝒮𝒾𝓇 / ℳ𝒾𝓈𝓈🤔!\nι αм ϲυяяєиτℓγ υиαναιℓαϐℓє😛. ι яєρℓγ υ αƒτєя ϲοмє ϐαϲκοиℓιиє.\n__Since when, you ask? From__ `{total_afk_time}`\nI'll be back when I feel to come🚶😛"
         )
@@ -137,7 +137,7 @@ async def _(event):
         USER_AFK = f"yes: {reason} {LEGENDpic}"  # pylint:disable=E0602
         if reason:
             await borg.send_message(
-                event.chat_id, f"ι'м gοιиg αƒκ🚶 \n⚜️ 𝕽𝖊𝖆𝖘𝖔𝖓 `{reason}`", file=LEGENDpic
+                event.chat_id, f"ι'м gοιиg αƒκ🚶 \n⚜️📂 𝕽𝖊𝖆𝖘𝖔𝖓 `{reason}`", file=LEGENDpic
             )
         else:
             await borg.send_message(event.chat_id, f"ι'м gοιиg αƒκ !🚶", file=LEGENDpic)
