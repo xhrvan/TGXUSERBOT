@@ -276,6 +276,27 @@ async def _(event):
         await asyncio.sleep(animation_interval) 
         await event.edit(animation_chars[i%192])
         
+        
+@borg.on(admin_cmd(pattern=r"tlol"))
+async def _(event):
+    if event.fwd_from:
+        return
+    deq = deque(list("🤔🧐🤨🤔🧐🤨"))
+    for _ in range(999):
+        await asyncio.sleep(1)
+        await event.edit("".join(deq))
+        deq.rotate(1)
+    
+@borg.on(admin_cmd(pattern=r"lol"))
+async def _(event):
+    if event.fwd_from:
+        return
+    deq = deque(list("😂🤣😂🤣😂🤣"))
+    for _ in range(999):
+        await asyncio.sleep(1)
+        await event.edit("".join(deq))
+        deq.rotate(1)
+
 CmdHelp("αɳเɱαƭเσɳร6").add_command(
   'bigoof', None, '🇮🇳🇮🇳🇮🇳'
 ).add_command(
@@ -296,4 +317,8 @@ CmdHelp("αɳเɱαƭเσɳร6").add_command(
   'muth', None, 'Use And See'
 ).add_command(
   'birthday', None, 'Use And See'
+).add_command(
+  'lol', None, 'Use and See'
+).add_command(
+  'tlol', None, 'Use and See'
 ).add()
