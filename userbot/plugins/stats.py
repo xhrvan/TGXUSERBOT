@@ -1,3 +1,4 @@
+#ℓєgєи∂
 import time
 
 from telethon.events import NewMessage
