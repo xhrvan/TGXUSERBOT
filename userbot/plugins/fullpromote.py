@@ -8,7 +8,7 @@ from telethon.errors import BadRequestError
 from telethon.errors.rpcerrorlist import ChatNotModifiedError, UserIdInvalidError
 from telethon.tl.functions.channels import DeleteUserHistoryRequest, EditAdminRequest
 from telethon.tl.functions.channels import ExportMessageLinkRequest as ExpLink
-from telethon.tl.functions.messages import SetHistoryTTLRequest
+
 from telethon.tl.types import Chat, ChatAdminRights, InputMessagesFilterPinned
 
 from . import *
@@ -21,7 +21,7 @@ from . import *
     ignore_dualmode=True,
 )
 async def prmte(event):
-    xx = await eor(ult, get_string("com_1"))
+    xx = await eor(event, get_string("com_1"))
     await event.get_chat()
     user, rank = await get_user_info(ult)
     if not rank:
@@ -31,7 +31,7 @@ async def prmte(event):
     try:
         await event.client(
             EditAdminRequest(
-                ult.chat_id,
+                event.chat_id,
                 user.id,
                 ChatAdminRights(
                     add_admins=True,
