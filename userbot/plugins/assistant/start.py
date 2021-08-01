@@ -8,30 +8,30 @@ import telethon
 from telethon.tl.functions.users import GetFullUserRequest
 from telethon.utils import pack_bot_file_id
 from userbot.uniborgConfig import Config
-from userbot import xbot, devs as DEVS
+from userbot import bot, devs as DEVS
 from userbot import bot
-from userbot.plugins.sql_helper.blacklist_ass import (
+from userbot.plugins.sql_helper.blacklist_assistant import (
     add_nibba_in_db,
     is_he_added,
     removenibba,
 )
 
-from userbot.plugins.sql_helper.bot_users_sql import add_me_in_db, his_userid
-from userbot.plugins.sql_helper.idadder_sql import (
+from userbot.plugins.sql_helper.botusers import add_me_in_db, his_userid
+from userbot.plugins.sql_helper.idadder import (
     add_usersid_in_db,
     already_added,
     get_all_users,
 )
 # await function async def ke baad lagega
 
-@xbot.on(events.NewMessage(pattern="/start$"))
+@bot.on(events.NewMessage(pattern="/start$"))
 async def start(event):
     pro = await bot.get_me()
     boy = pro.id
-    iam = await xbot.get_me()
+    iam = await bot.get_me()
     bot_id = iam.first_name
     bot_username = iam.username
-    replied_user = await xbot(GetFullUserRequest(event.sender_id))
+    replied_user = await bot(GetFullUserRequest(event.sender_id))
     firstname = replied_user.user.first_name
     devlop = await bot.get_me()
     hmmwow = devlop.first_name
@@ -39,7 +39,7 @@ async def start(event):
     mypic = LEGEND_logo
     starttext = f"Hello, **{firstname}**!!\nNice To Meet You 🤗 !!\nI guess, that you know me, Uhh you don't, np..\nWell I'm **{bot_id}**.\n\n**A Pᴏᴡᴇʀғᴜʟ Assɪᴛᴀɴᴛ Oғ** [{hmmwow}](tg://user?id={boy})\n\n                           **Pᴏᴡᴇʀᴇᴅ Bʏ** [UʟᴛʀᴀX](t.me/UltraXOT)\n\n**Yᴏᴜ Cᴀɴ Cʜᴀᴛ Wɪᴛʜ Mʏ Mᴀsᴛᴇʀ Tʜʀᴏᴜɢʜ Tʜɪs Bᴏᴛ.**\n**Iғ Yᴏᴜ Wᴀɴᴛ Yᴏᴜʀ Oᴡɴ Assɪᴛᴀɴᴛ Yᴏᴜ Cᴀɴ Dᴇᴘʟᴏʏ Fʀᴏᴍ Bᴜᴛᴛᴏɴ Bᴇʟᴏᴡ.**"
     if event.sender_id == boy:
-        await xbot.send_message(
+        await bot.send_message(
             event.chat_id,
             message=f"Hi Master, It's Me {bot_id}, Your Assistant !! \nWhat You Wanna Do today ?",
             buttons=[
@@ -57,7 +57,7 @@ async def start(event):
             pass
         elif not already_added(event.sender_id):
             add_usersid_in_db(event.sender_id)
-        await xbot.send_file(
+        await bot.send_file(
             event.chat_id,
             file=mypic,
             caption=starttext,
@@ -71,7 +71,7 @@ async def start(event):
             os.remove(mypic)
 
 
-@xbot.on(events.callbackquery.CallbackQuery(data=re.compile(b"users")))
+@bot.on(events.callbackquery.CallbackQuery(data=re.compile(b"users")))
 async def users(event):
     pro = await bot.get_me()
     boy = pro.id
@@ -101,8 +101,8 @@ async def users(event):
 async def users(event):
     Pro = "The button is under construction...\nSorry for inconvenience, Will update soon....\nThanks..."
     await event.answer(Pro, alert=True)
-    #@LEGENDX, #@PROBOY add cmd List Here
-    # later bro
+   
+
     pass
 
 @xbot.on(events.NewMessage(func=lambda e: e.is_private))
@@ -117,7 +117,7 @@ async def all_messages_catcher(event):
         try:
             result = await xbot(
                 functions.channels.GetParticipantRequest(
-                    channel=Config.JTM_CHANNEL_ID, user_id=event.sender_id
+                    channel=Config.PLUGIN_CHANNEL, user_id=event.sender_id
                 )
             )
         except telethon.errors.rpcerrorlist.UserNotParticipantError:
@@ -129,7 +129,7 @@ async def all_messages_catcher(event):
     add_me_in_db(sed.id, event.sender_id, event.id)
 
 
-@xbot.on(events.NewMessage(func=lambda e: e.is_private))
+@bot.on(events.NewMessage(func=lambda e: e.is_private))
 async def sed(event):
     msg = await event.get_reply_message()
     if msg is None:
@@ -143,7 +143,7 @@ async def sed(event):
         return
     elif event.text is not None and event.media:
         bot_api_file_id = pack_bot_file_id(event.media)
-        await xbot.send_file(
+        await bot.send_file(
             user_id,
             file=bot_api_file_id,
             caption=event.text,
@@ -153,7 +153,7 @@ async def sed(event):
         msg_s = event.raw_text
         info = event.sender_id
         msg_s = f"{msg_s}\n user id = `{info}`"
-        await xbot.send_message(
+        await bot.send_message(
             user_id,
             msg_s,
             reply_to=reply_message_id,
@@ -162,7 +162,7 @@ async def sed(event):
 
 
 
-@xbot.on(events.NewMessage(pattern="/broadcast ?(.*)"))
+@bot.on(events.NewMessage(pattern="/broadcast ?(.*)"))
 async def sedlyfsir(event):
     pro = await bot.get_me()
     boy = pro.id
@@ -193,7 +193,7 @@ async def sedlyfsir(event):
     )
 
 
-@xbot.on(events.NewMessage(pattern="/stats"))
+@bot.on(events.NewMessage(pattern="/stats"))
 async def _(event):
     pro = await bot.get_me()
     boy = pro.id
@@ -206,7 +206,7 @@ async def _(event):
 
 
 
-@xbot.on(events.NewMessage(pattern="/block ?(.*)"))
+@bot.on(events.NewMessage(pattern="/block ?(.*)"))
 async def ok(event):
     pro = await bot.get_me()
     boy = pro.id
@@ -220,12 +220,12 @@ async def ok(event):
     elif not is_he_added(user_id):
         add_nibba_in_db(user_id)
         await event.reply("Blacklisted This Dumb Person")
-        await xbot.send_message(
+        await bot.send_message(
             user_id, "You Have Been Blacklisted And You Can't Message My Master Now."
         )
 
 
-@xbot.on(events.NewMessage(pattern="/unblock ?(.*)"))
+@bot.on(events.NewMessage(pattern="/unblock ?(.*)"))
 async def gey(event):
     pro = await bot.get_me()
     boy = pro.id
@@ -241,6 +241,6 @@ async def gey(event):
     elif is_he_added(user_id):
         removenibba(user_id)
         await event.reply("DisBlacklisted This Dumb Person")
-        await xbot.send_message(
+        await bot.send_message(
             user_id, "Congo! You Have Been Unblacklisted By My Master."
         )
