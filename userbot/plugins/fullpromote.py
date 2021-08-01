@@ -14,12 +14,7 @@ from telethon.tl.types import Chat, ChatAdminRights, InputMessagesFilterPinned
 from . import *
 
 
-@bot.on(
-    pattern="fullpromote ?(.*)",
-    admins_only=True,
-    type=["official", "manager"],
-    ignore_dualmode=True,
-)
+@borg.on(admin_cmd(pattern="fullpromote ?(.*)"))
 async def prmte(event):
     xx = await eor(event, get_string("com_1"))
     await event.get_chat()
