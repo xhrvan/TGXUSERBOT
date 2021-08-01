@@ -62,25 +62,25 @@ async def stats(
         unread += dialog.unread_count
     stop_time = time.time() - start_time
     full_name = inline_mention(await event.client.get_me())
-    response = f"🢂**Stats for {full_name}**🢀\n\n"
-    response += f"🢂 **Private Chats:** {private_chats} \n"
-    response += f"🢂   `Users: {private_chats - bots}` \n"
-    response += f"🢂   `Bots: {bots}` \n"
-    response += f"🢂 **Groups:** {groups} \n"
-    response += f"🢂 **Channels:** {broadcast_channels} \n"
-    response += f"🢂  **Admin in Groups:** {admin_in_groups} \n"
-    response += f"🢂   `Creator: {creator_in_groups}` \n"
-    response += f"🢂   `Admin Rights: {admin_in_groups - creator_in_groups}` \n"
-    response += f"🢂  **Admin in Channels:** {admin_in_broadcast_channels} \n"
-    response += f"🢂   `Creator: {creator_in_channels}` \n"
+    response = f"⚜️**ѕτατѕ ƒοя {full_name}**⚜️\n\n"
+    response += f"🔱   **𝔭𝔯𝔦𝔳𝔞𝔱𝔢 𝔠𝔥𝔞𝔱𝔰:** {private_chats} \n"
+    response += f"🔷        `𝔲𝔰𝔢𝔯𝔰: {private_chats - bots}` \n"
+    response += f"🔸         `𝔟𝔬𝔱𝔰: {bots}` \n"
+    response += f"🔱        **𝔤𝔯𝔬𝔲𝔭𝔰:** {groups} \n"
+    response += f"🔱       **𝔠𝔥𝔞𝔫𝔫𝔢𝔩𝔰:** {broadcast_channels} \n"
+    response += f"⚠️**𝔞𝔡𝔪𝔦𝔫 𝔦𝔫 𝔤𝔯𝔬𝔲𝔭𝔰:** {admin_in_groups} \n"
+    response += f"🔺        `𝔠𝔯𝔢𝔞𝔱𝔬𝔯: {creator_in_groups}` \n"
+    response += f"🔱    `𝔞𝔡𝔪𝔦𝔫 𝔯𝔦𝔤𝔥𝔱𝔰: {admin_in_groups - creator_in_groups}` \n"
+    response += f"🔱**α∂мιи 𝔦𝔫 𝔠𝔥𝔞𝔫𝔫𝔢𝔩𝔰:** {admin_in_broadcast_channels} \n"
+    response += f"🔺         `𝔠𝔯𝔢𝔞𝔱𝔬𝔯: {creator_in_channels}` \n"
     response += (
-        f"♛   `Admin Rights: {admin_in_broadcast_channels - creator_in_channels}` \n"
+        f"🔴     `𝔞𝔡𝔪𝔦𝔫 𝔯𝔦𝔤𝔥𝔱𝔰: {admin_in_broadcast_channels - creator_in_channels}` \n"
     )
-    response += f"♛ **Unread:** {unread} \n"
-    response += f"♛ **Unread Mentions:** {unread_mentions} \n\n"
-    response += f"🢂   __It Took:__ {stop_time:.02f}s \n"
+    response += f"🔵 **𝔲𝔫𝔯𝔢𝔞𝔡:** {unread} \n"
+    response += f"⚪ **𝔲𝔫𝔯𝔢𝔞𝔡 𝔪𝔢𝔫𝔱𝔦𝔬𝔫𝔰:** {unread_mentions} \n\n"
+    response += f"🔴   __𝔦𝔱 𝔱𝔬𝔬𝔨:__ {stop_time:.02f}s \n"
     response += (
-        f"📌 **From The DataBase Of** :- [LEGENDBOT](https://t.me/LEGEND_Userbot)"
+        f"🇮🇳 **ƒɾσɱ ƭɦε ∂αƭαɓαรε σƒ** :- [🇮🇳ℓєgєи∂ϐοτ🇮🇳](https://t.me/LEGEND_Userbot)"
     )
     await LEGEND.edit(response)
 
@@ -102,7 +102,7 @@ def user_full_name(user):
     return " ".join(names)
 
 
-CmdHelp("stats").add_command(
+CmdHelp("ѕτατѕ").add_command(
   'stats', None, 'Shows you the count of your groups, channels, private chats, etc.'
 ).add()
 
