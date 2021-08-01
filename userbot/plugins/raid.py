@@ -361,7 +361,7 @@ async def _(event):
 
 
 @bot.on(admin_cmd(pattern="dreplyraid(?: |$)(.*)"))
-@bot.on(sudo_cmd(pattern="draid(?: |$)(.*)", allow_sudo=True))
+@bot.on(sudo_cmd(pattern="dreplyraid(?: |$)(.*)", allow_sudo=True))
 async def _(event):
     global que
     if event.fwd_from:
@@ -375,7 +375,7 @@ async def _(event):
         event = await edit_or_reply(event, "Raid is Stoping")
         queue = que.get(e)
         queue.pop(0)
-        await event.edit(f"{ALIVE_NAME} IS STOPED RAID.NOW U ARE FREE AS BIRF")
+        await event.edit(f"{ALIVE_NAME} HAS STOPED RAID NOW U ARE FREE AS BIRD")
     else:
         user = event.pattern_match.group(1)
         event = await edit_or_reply(event, "Reply to user to stop RAID")
