@@ -16,7 +16,7 @@ from . import *
 
 @borg.on(admin_cmd(pattern="fullpromote ?(.*)"))
 async def prmte(event):
-    xx = await eor(event, get_string("com_1"))
+    xx = await eor(event)
     await event.get_chat()
     user, rank = await get_user_info(ult)
     if not rank:
