@@ -64,24 +64,24 @@ async def stats(
     stop_time = time.time() - start_time
     full_name = inline_mention(await event.client.get_me())
     response = f"⚜️**ѕτατѕ ƒοя {full_name}**⚜️\n\n"
-    response += f"🔱   **𝔭𝔯𝔦𝔳𝔞𝔱𝔢 𝔠𝔥𝔞𝔱𝔰:** {private_chats} \n"
-    response += f"🔷        `𝔲𝔰𝔢𝔯𝔰: {private_chats - bots}` \n"
-    response += f"🔸         `𝔟𝔬𝔱𝔰: {bots}` \n"
-    response += f"🔱        **𝔤𝔯𝔬𝔲𝔭𝔰:** {groups} \n"
-    response += f"🔱       **𝔠𝔥𝔞𝔫𝔫𝔢𝔩𝔰:** {broadcast_channels} \n"
-    response += f"⚠️**𝔞𝔡𝔪𝔦𝔫 𝔦𝔫 𝔤𝔯𝔬𝔲𝔭𝔰:** {admin_in_groups} \n"
-    response += f"🔺        `𝔠𝔯𝔢𝔞𝔱𝔬𝔯: {creator_in_groups}` \n"
-    response += f"🔱    `𝔞𝔡𝔪𝔦𝔫 𝔯𝔦𝔤𝔥𝔱𝔰: {admin_in_groups - creator_in_groups}` \n"
-    response += f"🔱**α∂мιи 𝔦𝔫 𝔠𝔥𝔞𝔫𝔫𝔢𝔩𝔰:** {admin_in_broadcast_channels} \n"
-    response += f"🔺         `𝔠𝔯𝔢𝔞𝔱𝔬𝔯: {creator_in_channels}` \n"
+    response += f"🔱  ρяινατє ϲнατѕ: {private_chats} \n"
+    response += f"🔷         `υѕєяѕ: {private_chats - bots}` \n"
+    response += f"🔸          `ϐοτѕ: {bots}` \n"
+    response += f"🔱         gяουρѕ: {groups} \n"
+    response += f"🔱       ϲнαииєℓѕ: {broadcast_channels} \n"
+    response += f"⚠️α∂мιи ιи gяουρѕ: {admin_in_groups} \n"
+    response += f"🔺       `ϲяєατοя: {creator_in_groups}` \n"
+    response += f"🔱  `α∂мιи яιgнτѕ: {admin_in_groups - creator_in_groups}` \n"
+    response += f"🔱α∂мιи ιи ϲнαииєℓѕ: {admin_in_broadcast_channels} \n"
+    response += f"🔺         `ϲяєατοя: {creator_in_channels}` \n"
     response += (
-        f"🔴     `𝔞𝔡𝔪𝔦𝔫 𝔯𝔦𝔤𝔥𝔱𝔰: {admin_in_broadcast_channels - creator_in_channels}` \n"
+        f"🔴      `α∂мιи яιgнτѕ: {admin_in_broadcast_channels - creator_in_channels}` \n"
     )
-    response += f"🔵 **𝔲𝔫𝔯𝔢𝔞𝔡:** {unread} \n"
-    response += f"⚪ **𝔲𝔫𝔯𝔢𝔞𝔡 𝔪𝔢𝔫𝔱𝔦𝔬𝔫𝔰:** {unread_mentions} \n\n"
-    response += f"🔴   __𝔦𝔱 𝔱𝔬𝔬𝔨:__ {stop_time:.02f}s \n"
+    response += f"🔵          υияєα∂: {unread} \n"
+    response += f"⚪ υияєα∂ мємτιοиѕ: {unread_mentions} \n\n"
+    response += f"🔴       __ιτ τοοκ:__ {stop_time:.02f}s \n"
     response += (
-        f"🇮🇳 **ƒɾσɱ ƭɦε ∂αƭαɓαรε σƒ** :- [🇮🇳ℓєgєи∂ϐοτ🇮🇳](https://t.me/LEGEND_Userbot)"
+        f"ƒɾσɱ ƭɦε ∂αƭαɓαรε σƒ:-[**🇮🇳ℓєgєи∂ϐοτ🇮🇳**](https://t.me/LEGEND_Userbot)"
     )
     await LEGEND.edit(response)
 
