@@ -142,7 +142,7 @@ async def promote(promt):
     LEGENDevent = await edit_or_reply(promt, "Promoting...")
     user, rank = await get_user_from_event(promt)
     if not rank:
-        rank = "lҽցҽղժ"
+        rank = "ℓєgєи∂"
     if not user:
         return
     try:
@@ -191,7 +191,7 @@ async def demote(dmod):
     except BadRequestError:
         await LEGENDevent.edit(NO_PERM)
         return
-    await LEGENDevent.edit("Demoted Successfully!Bhut ud rhe the admin bn kr aa gyy zameen pe 😏")
+    await LEGENDevent.edit("∂ємοτє∂ ѕυϲϲєѕѕƒυℓℓγ!ϐнυτ υ∂∂ янє τнє α∂мιи ϐαи καя αα gγє zαмєєи ρє 😏")
     if BOTLOG:
         await dmod.client.send_message(
             BOTLOG_CHATID,
@@ -230,7 +230,7 @@ async def ban(bon):
         await LEGENDevent.edit("I ain't got msg deleting right. But still Banned!")
         return
     if reason:
-        await LEGENDevent.edit(f"{str(user.id)} is banned !!\nReason: {reason}")
+        await LEGENDevent.edit(f"{str(user.id)} ιѕ ϐαииє∂ !!\nяєαѕοи: {reason}")
     else:
         await LEGENDevent.edit(f"{str(user.id)} is banned!")
     if BOTLOG:
@@ -261,7 +261,7 @@ async def nothanos(unbon):
         return
     try:
         await unbon.client(EditBannedRequest(unbon.chat_id, user.id, UNBAN_RIGHTS))
-        await LEGENDevent.edit("Unbanned Successfully! Giving one more chance 😏")
+        await LEGENDevent.edit("υиϐαииє∂ ѕυϲϲєѕѕƒυℓℓγ! Giving one more chance 😏")
         if BOTLOG:
             await unbon.client.send_message(
                 BOTLOG_CHATID,
@@ -308,7 +308,7 @@ async def pin(msg):
     except BadRequestError:
         await edit_or_reply(msg, NO_PERM)
         return
-    hmm = await edit_or_reply(msg, "Pinned Successfully!")
+    hmm = await edit_or_reply(msg, "ριииє∂ ѕυϲϲєѕѕƒυℓℓγ!")
     user = await get_user_from_id(msg.sender_id, msg)
     if BOTLOG:
         await msg.client.send_message(
@@ -350,7 +350,7 @@ async def kick(usr):
         return
     if reason:
         await LEGENDevent.edit(
-            f"Kicked [{user.first_name}](tg://user?id={user.id})!\nReason: {reason}"
+            f"🔶κιϲκє∂ [{user.first_name}](tg://user?id={user.id})!\n🔶яєαѕοи: {reason}"
         )
     else:
         await LEGENDevent.edit(f"Kicked [{user.first_name}](tg://user?id={user.id})!")
@@ -435,7 +435,7 @@ async def get_user_from_id(user, event):
         return None
     return user_obj
 
-CmdHelp("admin").add_command(
+CmdHelp("gяουρє∂ιτ").add_command(
        'setgpic', '<reply to image>', 'Changes the groups display picture'
 ).add_command(
         'promote', '<username/reply> <custom rank (optional)>',
