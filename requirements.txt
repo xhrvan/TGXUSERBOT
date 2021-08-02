@@ -1,4 +1,3 @@
-pokedex
 aioflies
 pymediainfo
 fontTools
@@ -83,6 +82,7 @@ nekos.py
 numpy
 oauth2client
 patool
+pokedex
 psycopg2
 psycopg2-binary
 PIL
