@@ -120,7 +120,7 @@ if Var.TG_BOT_USER_NAME_BF_HER is not None and tgbot is not None:
             for y in x:
                 apn.append(y)
         await event.edit(
-            f"🛡️[{ALIVE_NAME}](https://t.me/Legend_Mr_Hacker) ฬ๏гкเภﻮ.....\n\n📁τοταℓ ρℓµɠเɳร ιиѕταℓℓє∂⭆ `{len(CMD_HELP)}`\n🗂τοταℓ ϲοммαи∂ѕ⭆ `{len(apn)}` \n📙թαցҽ⭆ {page + 1}/{veriler[0]}",
+            f"🔰[{ALIVE_NAME}](https://t.me/Legend_Mr_Hacker) ωσɾҡเɳɠ...\n\n📁τοταℓ ρℓµɠเɳร ιиѕταℓℓє∂⭆ `{len(CMD_HELP)}`\n🗂τοταℓ ϲοммαи∂ѕ⭆ `{len(apn)}` \n📙թαցҽ⭆ {page + 1}/{veriler[0]}",
             buttons=veriler[1],
             link_preview=False,
         )
@@ -141,7 +141,7 @@ if Var.TG_BOT_USER_NAME_BF_HER is not None and tgbot is not None:
     async def Information(event):
         if not event.query.user_id == bot.uid:
             return await event.answer(
-                "∂οиτ τяγ το ϐє ονєяѕмαяτ ∂єρℓογ υя οωи ©ℓεɠεɳ∂ɓσƭ(https://t.me/Legend_Userbot)",
+                "κγα υиgℓι καя янє нο мєяє ϐοτ ραя αgαя ϲнαнιγє τοн κнυ∂ κα ϐαиα ℓο иα αα נατє нο υиgℓι καяиє мєяє ϐοτ ρє.   ©ℓεɠεɳ∂ɓσƭ(https://t.me/Legend_Userbot)",
                 cache_time=0,
                 alert=True,
             )
@@ -198,9 +198,9 @@ if Var.TG_BOT_USER_NAME_BF_HER is not None and tgbot is not None:
 
         command = CMD_HELP_BOT[cmd]["commands"][commands]
         if command["params"] is None:
-            result += f"🛠 ℭ𝔬𝔪𝔪𝔞𝔫𝔡𝔰: `{COMMAND_HAND_LER[:1]}{command['command']}`\n"
+            result += f"🛠 𝕮𝖔𝖒𝖒𝖆𝖓𝖉𝖘: `{COMMAND_HAND_LER[:1]}{command['command']}`\n"
         else:
-            result += f"🛠 ℭ𝔬𝔪𝔪𝔞𝔫𝔡𝔰: `{COMMAND_HAND_LER[:1]}{command['command']} {command['params']}`\n"
+            result += f"🛠 𝕮𝖔𝖒𝖒𝖆𝖓𝖉𝖘: `{COMMAND_HAND_LER[:1]}{command['command']} {command['params']}`\n"
 
         if command["example"] is None:
             result += f"💬 𝔈𝔵𝔭𝔩𝔞𝔦𝔫𝔞𝔱𝔦𝔬𝔫: `{command['usage']}`\n\n"
