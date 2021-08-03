@@ -1,5 +1,4 @@
-"""night Plugin for Sensible_userbot
-Syntax: .night REASON"""
+
 
 import asyncio
 import datetime
@@ -68,9 +67,9 @@ async def _(event):
             night_time = datetime.datetime.now()  # pylint:disable=E0602
         USER_night = f"yes: {reason}"  # pylint:disable=E0602
         if reason:
-            await event.edit(f"My OWNER Is Going To sleep  Dnd 🛏💤😴 ")
+            await event.edit(f"мy мαѕτєя ιѕ gοιиg To sleep  Dnd нιм 🛏💤😴 ")
         else:
-            await event.edit(f"My OWNER is Going To Sleep")
+            await event.edit(f"My мαѕτєя is Going To Sleep")
         await asyncio.sleep(5)
         await event.delete()
         try:
@@ -129,10 +128,10 @@ async def on_night(event):
                 night_since = f"`{int(seconds)}s` **ago**"
         msg = None
         message_to_reply = (
-            f"My Master Has Been Gone For {night_since}\nWhere He Is: **On Bed Sleeping** "
+            f"мγ мαѕτєя нαѕ gοиє ƒοя ѕℓєєριиg\nѕιиϲє ωнєи:- {night_since}\nWhere He Is: **On Bed Sleeping** "
             + f"\n\n__ I'll back in a few Light years__\n**"
             if reason
-            else f"**Important Notice**\n\n{DEFAULTUSER} Is Sleeping DND And Also Good [night To You...](https://telegra.ph/file/949056fe28ce6ed0d0b62.jpg) "
+            else f"**ιмροяταиτ иοτιϲє **\n\n{DEFAULTUSER} нαѕ ϐєєи gοиє ƒοя ѕℓєєριиg.\nѕιиϲє ωнєи:-{night_since}\n And Also Good [night To You...](https://telegra.ph/file/949056fe28ce6ed0d0b62.jpg) "
         )
         msg = await event.reply(message_to_reply)
         await asyncio.sleep(5)
@@ -140,6 +139,6 @@ async def on_night(event):
             await last_night_message[event.chat_id].delete()  # pylint:disable=E0602
         last_night_message[event.chat_id] = msg  # pylint:disable=E0602
 
-CmdHelp("night").add_command(
-  "night", None, "Same like AFK. But fixed reason and for sleeping purpose only. Sed ;_;"
+CmdHelp("иιgнτ").add_command(
+  "night", None, "Same like AFK. But fixed reason and for sleeping purpose only. Sed ;_;example:- .night <reason>"
 ).add()
