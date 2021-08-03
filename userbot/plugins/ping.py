@@ -68,7 +68,7 @@ async def _(event):
     end = datetime.now()
     ms = (end - start).microseconds / 1000
     await event.edit(
-        f"🔱 𝕻οиg! 🔱\n\n ⚘ {ms}\n 🔰 **мγ** **мαѕτєя** [{DEFAULTUSER}](tg://user?id={legend})\n        [𝕴tß 𝕷êgëñd𝕭øt 🇮🇳](https://t.me/Legend_Userbot)" 
+        f"🔱 𝕻οиg! 🔱\n\n ⚘ {ms}\n 🔰 **мγ** **мαѕτєя** [{DEFAULTUSER}](tg://user?id={legend})\n                  [𝕴tß 𝕷êgëñd𝕭øt 🇮🇳](https://t.me/Legend_Userbot)" 
     )
 
 CmdHelp("ριиg").add_command(
