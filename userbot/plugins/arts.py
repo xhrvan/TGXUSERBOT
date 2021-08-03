@@ -8,8 +8,8 @@ USERID = bot.uid
 
 mention = f"[{DEFAULTUSER}](tg://user?id={USERID})"
 
-@bot.on(admin_cmd(pattern="carry (.*)"))
-@bot.on(sudo_cmd(pattern="carry (.*)", allow_sudo=True))
+@bot.on(admin_cmd(pattern="car (.*)"))
+@bot.on(sudo_cmd(pattern="car (.*)", allow_sudo=True))
 async def aura(carry):
     if carry.fwd_from:
         return
@@ -460,11 +460,7 @@ Q = (
 
 
 R = (
-    "────██──────▀▀▀██\n"
-    "──▄▀█▄▄▄─────▄▀█▄▄▄\n"
-    "▄▀──█▄▄──────█─█▄▄\n"
-    "─▄▄▄▀──▀▄───▄▄▄▀──▀▄\n"
-    "─▀───────▀▀─▀───────▀▀\n🚶🏻‍♂️🚶🏻‍♂️ɮʏɛ ʄʀɨɛռɖֆ.."
+    "[🚶🏻‍♂️🚶🏻‍♂️ɮʏɛ ʄʀɨɛռɖֆ...](https://telegra.ph/file/de154141d5e7c507184c1.jpg)"
 )
 
 S = (
@@ -606,7 +602,7 @@ async def bluedevildislike(dislike):
     await edit_or_reply(dislike, T)
 
 
-CmdHelp("arts").add_command(
+CmdHelp("αяτѕορ").add_command(
   'elove', None, 'Use and see'
 ).add_command(
   'monster', None, 'Use and see'
@@ -637,7 +633,7 @@ CmdHelp("arts").add_command(
 ).add_command(
   'dislike', None, 'Use and see'
 ).add_command(
-  'carry', '<text>', 'send your text with carry art'
+  'car', '<text>', 'send your text with carry art'
 ).add_command(
   'ded', '<text>', 'Hang yourself'
 ).add_command(
