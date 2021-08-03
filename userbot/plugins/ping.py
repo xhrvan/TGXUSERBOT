@@ -6,7 +6,7 @@ from ..utils import admin_cmd, edit_or_reply, sudo_cmd
 from ..cmdhelp import CmdHelp
 
 DEFAULTUSER = str(ALIVE_NAME) if ALIVE_NAME else "LEGEND User"
-aura = borg.uid
+legend = borg.uid
 
 
 @bot.on(admin_cmd(pattern=f"hbping$", outgoing=True))
@@ -64,14 +64,14 @@ async def _(event):
     if event.fwd_from:
         return
     start = datetime.now()
-    event = await edit_or_reply(event, "__**(❛ ᑭσɳց ❜!__**")
+    event = await edit_or_reply(event, "**(❛ ᑭσɳց ❜!**")
     end = datetime.now()
     ms = (end - start).microseconds / 1000
     await event.edit(
-        f"__**🔱 Pong! 🔱__**\n\n ⚘ {ms}\n ⚘ __**My**__ __**Master**__ [{DEFAULTUSER}](tg://user?id={aura})" 
+        f"🔱 𝕻οиg! 🔱\n\n ⚘ {ms}\n 🔰 **мγ** **мαѕτєя** [{DEFAULTUSER}](tg://user?id={legend})\n        [Group](https://t.me/Legend_Userbot)" 
     )
 
-CmdHelp("ping").add_command(
+CmdHelp("ριиg").add_command(
   "ping", None, "Shows you the ping speed of server"
 ).add_command(
   "hbping", None, "Shows you the ping speed of server with an animation"
