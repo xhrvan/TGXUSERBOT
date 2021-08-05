@@ -65,7 +65,7 @@ async def updater(message):
     )
 
     if not changelog:
-        await message.edit("`⚜️υρ∂ατιиg ιѕ ιи ρяοgяєѕѕ......`")
+        await message.edit("`υρ∂ατιиg ιѕ ιи ρяοgяєѕѕ......`")
         await asyncio.sleep(5)
 
     message_one = NEW_BOT_UP_DATE_FOUND.format(
@@ -136,7 +136,7 @@ def generate_change_log(git_repo, diff_marker):
 async def deploy_start(tgbot, message, refspec, remote):
     await message.edit(RESTARTING_APP)
     await message.edit(
-        "⚜️𝕷єgєи∂ϐοτ ιѕ οи υρ∂ατιиg!!!🚀\nαƒτєя 10 мιи τγρє `.ping` οя `.alive` το ϲнєϲκ ιƒ ι αм οи ѕιя 😎"
+        "𝕷єgєи∂ϐοτ ιѕ οи υρ∂ατιиg!!!\nαƒτєя 10 мιи τγρє `.ping` οя `.alive` το ϲнєϲκ ιƒ ι αм οи ѕιя 😎"
     )
     await remote.push(refspec=refspec)
     await tgbot.disconnect()
