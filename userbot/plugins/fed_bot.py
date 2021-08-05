@@ -24,10 +24,10 @@ from LEGENDBOT.plugins.sql_helper.fban_sql import (
 
 logs_id = Config.FBAN_LOGGER_GROUP
 bot = "@MissRose_bot"
-LEGEND_logo = "./LEGEND/LEGENDBOT_logo.jpg"
+LEGEND_logo = "./LEGEND_logo.jpg"
 # Keep all credits pls
-# madewith great effort by @HeisenbergTheDanger
-# modified by @David99q for fbans
+# madewith great effort by @Legend_Mr_Hacker
+# modified by @Legend_Mr_Hacker for fbans
 
 
 @LEGENDBOT.on(admin_cmd(pattern="fban ?(.*)"))
