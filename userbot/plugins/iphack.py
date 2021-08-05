@@ -7,7 +7,7 @@ import urllib.request
 
 from userbot.utils import admin_cmd
 
-from userbot import CMD_HELP
+from userbot.cmdhelp import CmdHelp
 from . import *
 
 
