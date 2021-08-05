@@ -1,7 +1,4 @@
-"""Restart or Terminate the bot from any chat
-Available Commands:
-.restartsys
-.shutdown"""
+
 # This Source Code Form is subject to the terms of the GNU
 # General Public License, v.3.0. If a copy of the GPL was not distributed with this
 # file, You can obtain one at https://www.gnu.org/licenses/gpl-3.0.en.html
@@ -23,7 +20,7 @@ async def _(event):
     await event.edit("Restarting **[ █░░ ]** ...\nType `.ping` or `.help` to check if I am working 🙂")
     await event.edit("Restarting **[ ██░ ]** ...\nType `.ping` or `.help` to check if I am working 🙂")
     await event.edit("Restarting **[ ███ ]** ...\nType `.ping` or `.help` to check if I am working 🙂")
-    await event.edit("Restarted **[ ✓ ]** ...\nType `.ping` or `.help` to check if I am working 🙂")
+    await event.edit("Restarted **[ ✓ ]** ...\nType `.ping` or `.legend` after 10min to check if I am working 🙂")
     await bot.disconnect()
     os.execl(sys.executable, sys.executable, *sys.argv)
     quit()
@@ -32,7 +29,7 @@ async def _(event):
 async def _(event):
     if event.fwd_from:
         return
-    await event.edit("**[ ! ]** `Turning off bot now ... Manually turn me on later` ಠ_ಠ")
+    await event.edit("**[ ! ]** `Turning off bot now ... Manually turn me on later or follow step of update in @Legend_Userbot` ಠ_ಠ")
     if HEROKU_APP is not None:
         HEROKU_APP.process_formation()["userbot"].scale(0)
     else:
