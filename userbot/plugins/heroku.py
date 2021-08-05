@@ -4,8 +4,8 @@ import os
 
 import heroku3
 import requests
-
-from userbot import CMD_HELP
+from . import *
+from userbot.cmdhelp import CmdhHelp
 from userbot.Config import Config
 from LEGENDBOT.utils import admin_cmd, sudo_cmd, edit_or_reply
 from userbot.cmdhelp import CmdHelp
@@ -22,8 +22,8 @@ HEROKU_API_KEY = Config.HEROKU_API_KEY
 
 Heroku = heroku3.from_key(Var.HEROKU_API_KEY)
 heroku_api = "https://api.heroku.com"
-LEGEND_logo = "./LEGEND/LEGENDBOT_logo.jpg"
-
+LEGEND_logo = "./LEGEND_logo.jpg"
+Legend_Group = https://t.me/Legend_Userbot
 
 @borg.on(
     admin_cmd(pattern="(set|get|del) var(?: |$)(.*)(?: |$)([\s\S]*)", outgoing=True)
@@ -91,7 +91,7 @@ async def variable(var):
         await asyncio.sleep(1.5)
         if variable in heroku_var:
             await var.edit(
-                f"**{variable}**  `successfully changed to`  ->  **{value}**"
+                f"**{variable}**  `successfully changed to`  ->  **{value}** Type .ping after 5 min to check i'm on or not"
             )
         else:
             await var.edit(
@@ -177,7 +177,7 @@ async def dyno_usage(dyno):
     )
 
 
-@borg.on(admin_cmd(pattern="logs$", outgoing=True))
+@borg.on(admin_cmd(pattern="viewlogs$", outgoing=True))
 async def _(dyno):
     if dyno.fwd_from:
         return
@@ -228,7 +228,36 @@ def prettyjson(obj, indent=2, maxlinelength=80):
     return indentitems(items, indent, level=0)
 
 
-CmdHelp("heroku").add_command(
+
+@bot.on(admin_cmd(pattern="logs$"))
+@bot.on(sudo_cmd(pattern="logs$", allow_sudo=True))
+async def _(dyno):
+    if (HEROKU_APP_NAME is None) or (HEROKU_API_KEY is None):
+        return await eor(dyno, f"Make Sure Your HEROKU_APP_NAME & HEROKU_API_KEY are filled correct. Visit {Legend_Group} for help.", link_preview=False)
+    try:
+        Heroku = heroku3.from_key(HEROKU_API_KEY)
+        app = Heroku.app(HEROKU_APP_NAME)
+    except BaseException:
+        return await dyno.reply(f"Make Sure Your Heroku AppName & API Key are filled correct. Visit {hell_grp} for help.", link_preview=False)
+   # event = await eor(dyno, "Downloading Logs...")
+    LEGEND_data = app.get_log()
+    await eor(dyno, LEGEND_data, deflink=True, linktext=f"**🗒️ Heroku Logs of 💯 lines. 🗒️**\n\n🌟 **Bot Of :**  {ALIVE_NAME}\n\n🚀** Pasted**  ")
+    
+
+def prettyjson(obj, indent=2, maxlinelength=80):
+    """Renders JSON content with indentation and line splits/concatenations to fit maxlinelength.
+    Only dicts, lists and basic types are supported"""
+    items, _ = getsubitems(
+        obj,
+        itemkey="",
+        islast=True,
+        maxlinelength=maxlinelength - indent,
+        indent=indent,
+    )
+    return indentitems(items, indent, level=0)
+
+
+CmdHelp("нєяοκυ").add_command(
   "usage", None, "Check your heroku dyno hours status."
 ).add_command(
   "set var", "<NEW VAR> <value>", "Add new variable or update existing value/variable\nAfter setting a variable the bot will restart. So be calm for a minute😃"
