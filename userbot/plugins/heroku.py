@@ -237,7 +237,7 @@ async def _(dyno):
         Heroku = heroku3.from_key(HEROKU_API_KEY)
         app = Heroku.app(HEROKU_APP_NAME)
     except BaseException:
-        return await dyno.reply(f"Make Sure Your Heroku AppName & API Key are filled correct. Or Visit Legend Group)
+        return await dyno.reply(f"Make Sure Your Heroku AppName & API Key are filled correct. Or Visit Legend Group")
    # event = await eor(dyno, "Downloading Logs...")
     LEGEND_data = app.get_log()
     await eor(dyno, LEGEND_data")
