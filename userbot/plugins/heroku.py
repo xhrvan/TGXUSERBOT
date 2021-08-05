@@ -23,7 +23,6 @@ HEROKU_API_KEY = Config.HEROKU_API_KEY
 Heroku = heroku3.from_key(Var.HEROKU_API_KEY)
 heroku_api = "https://api.heroku.com"
 LEGEND_logo = "./LEGEND_logo.jpg"
-Legend_Group = https://t.me/Legend_Userbot
 
 @borg.on(
     admin_cmd(pattern="(set|get|del) var(?: |$)(.*)(?: |$)([\s\S]*)", outgoing=True)
