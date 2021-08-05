@@ -240,7 +240,7 @@ async def _(dyno):
         return await dyno.reply(f"Make Sure Your Heroku AppName & API Key are filled correct. Visit {hell_grp} for help.", link_preview=False)
    # event = await eor(dyno, "Downloading Logs...")
     LEGEND_data = app.get_log()
-    await eor(dyno, LEGEND_data, deflink=True, linktext=f"**🗒️ Heroku Logs of 💯 lines. 🗒️**\n\n🌟 **Bot Of :**  {ALIVE_NAME}\n\n🚀** Pasted**  ")
+    await eor(dyno, LEGEND_data, deflink=True, linktext=f"**🗒️ Heroku Logs of 💯 lines. 🗒️**\n\n🌟 BOT \n\n🚀** Pasted**  ")
     
 
 def prettyjson(obj, indent=2, maxlinelength=80):
