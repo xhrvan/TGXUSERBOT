@@ -117,6 +117,7 @@ twitter_scraper
 telethon==1.19.0
 html-telegraph-poster
 urbandict>=0.5
+urllib
 validators
 vcam
 wikipedia>=1.4.0
