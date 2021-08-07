@@ -49,7 +49,7 @@ async def _(event):
 async def _(event):
     if event.fwd_from:
         return
-    await edit_or_reply( "**All The Language Codes Can Be Found** \n ⚡ [Here](https://telegra.ph/SfMæisér--𐌷𐌴ࠋࠋ𐌱𐍈𐌸-𐌾𐌰𐍀𐌾-06-04) ⚡", link_preview=False)
+    await edit_or_reply( "**All The Language Codes Can Be Found** \n ⚡ [Here](https://telegra.ph/file/d2d666595b61c676169c1.jpg) ⚡", link_preview=False)
 
 
 @bot.on(admin_cmd(pattern="voices (.*)"))
