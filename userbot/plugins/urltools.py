@@ -5,9 +5,9 @@ from . import *
 from LEGENDBOT.utils import admin_cmd, edit_or_reply, sudo_cmd
 from userbot.cmdhelp import CmdHelp
 
-@bot.on(admin_cmd(pattern=f"dns$", outgoing=True))
 
-   async def _(event):
+@bot.on(admin_cmd(pattern=f"dns$", outgoing=True))
+async def _(event):
     "To get Domain Name System(dns) of the given link."
     input_str = "".join(event.text.split(maxsplit=1)[1:])
     reply = await event.get_reply_message()
@@ -33,7 +33,7 @@ from userbot.cmdhelp import CmdHelp
         )
 
 
-bot.on(admin_cmd(pattern=f"shor$", outgoing=True))
+bot.on(admin_cmd(pattern=f"short$", outgoing=True))
 async def _(event):
     "shortens the given link"
     input_str = "".join(event.text.split(maxsplit=1)[1:])
