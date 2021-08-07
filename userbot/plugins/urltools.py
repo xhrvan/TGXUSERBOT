@@ -1,11 +1,12 @@
 import requests
 from validators.url import url
 
-from userbot import *
+from . import *
 from LEGENDBOT.utils import admin_cmd, edit_or_reply, sudo_cmd
 from userbot.cmdhelp import CmdHelp
 
-@bot.on(admin_cmd(pattern=f"indflag$", outgoing=True))
+@bot.on(admin_cmd(pattern=f"dns$", outgoing=True))
+
    async def _(event):
     "To get Domain Name System(dns) of the given link."
     input_str = "".join(event.text.split(maxsplit=1)[1:])
@@ -13,7 +14,7 @@ from userbot.cmdhelp import CmdHelp
     if not input_str and reply:
         input_str = reply.text
     if not input_str:
-        return await edit_delete(
+        return await edit_or_reply(
             event, "`Either reply to link or give link as input to get data`", 5
         )
     check = url(input_str)
@@ -21,7 +22,7 @@ from userbot.cmdhelp import CmdHelp
         catstr = "http://" + input_str
         check = url(catstr)
     if not check:
-        return await edit_delete(event, "`the given link is not supported`", 5)
+        return await edit_or_reply(event, "`the given link is not supported`", 5)
     sample_url = f"https://da.gd/dns/{input_str}"
     response_api = requests.get(sample_url).text
     if response_api:
@@ -32,15 +33,7 @@ from userbot.cmdhelp import CmdHelp
         )
 
 
-@catub.cat_cmd(
-    pattern="short(?:\s|$)([\s\S]*)",
-    command=("short", plugin_category),
-    info={
-        "header": "To short the given url.",
-        "usage": "{tr}short <url/reply to url>",
-        "examples": "{tr}short https://github.com/sandy1709/catuserbot",
-    },
-)
+bot.on(admin_cmd(pattern=f"shor$", outgoing=True))
 async def _(event):
     "shortens the given link"
     input_str = "".join(event.text.split(maxsplit=1)[1:])
@@ -48,7 +41,7 @@ async def _(event):
     if not input_str and reply:
         input_str = reply.text
     if not input_str:
-        return await edit_delete(
+        return await edit_or_reply(
             event, "`Either reply to link or give link as input to get data`", 5
         )
     check = url(input_str)
@@ -56,7 +49,7 @@ async def _(event):
         catstr = f"http://" + input_str
         check = url(catstr)
     if not check:
-        return await edit_delete(event, "`the given link is not supported`", 5)
+        return await edit_or_reply(event, "`the given link is not supported`", 5)
     if not input_str.startswith("http"):
         input_str = "http://" + input_str
     sample_url = f"https://da.gd/s?url={input_str}"
@@ -69,15 +62,7 @@ async def _(event):
         await edit_or_reply(event, "`Something is wrong, please try again later.`")
 
 
-@catub.cat_cmd(
-    pattern="unshort(?:\s|$)([\s\S]*)",
-    command=("unshort", plugin_category),
-    info={
-        "header": "To unshort the given dagb shorten url.",
-        "usage": "{tr}unshort <url/reply to url>",
-        "examples": "{tr}unshort https://da.gd/rm6qri",
-    },
-)
+bot.on(admin_cmd(pattern=f"unshort$", outgoing=True))
 async def _(event):
     "To unshort the given dagb shorten url."
     input_str = "".join(event.text.split(maxsplit=1)[1:])
@@ -85,7 +70,7 @@ async def _(event):
     if not input_str and reply:
         input_str = reply.text
     if not input_str:
-        return await edit_delete(
+        return await edit_or_reply(
             event, "`Either reply to link or give link as input to get data`", 5
         )
     check = url(input_str)
@@ -93,7 +78,7 @@ async def _(event):
         catstr = "http://" + input_str
         check = url(catstr)
     if not check:
-        return await edit_delete(event, "`the given link is not supported`", 5)
+        return await edit_or_reply(event, "`the given link is not supported`", 5)
     if not input_str.startswith("http"):
         input_str = "http://" + input_str
     r = requests.get(input_str, allow_redirects=False)
@@ -110,21 +95,15 @@ async def _(event):
         )
 
 
-# By Priyam Kalra
-@bot.on(admin_cmd(pattern=".(?:\s|$)([\s\S]*))",
-    info={
-        "header": "To hide the url with white spaces using hyperlink.",
-        "usage": "{tr}hl <url/reply to url>",
-        "examples": "{tr}hl https://da.gd/rm6qri",
-    },
-)
+
+bot.on(admin_cmd(pattern=f"trs$", outgoing=True))
 async def _(event):
     input_str = "".join(event.text.split(maxsplit=1)[1:])
     reply = await event.get_reply_message()
     if not input_str and reply:
         input_str = reply.text
     if not input_str:
-        return await edit_delete(
+        return await edit_or_reply(
             event, "`Either reply to link or give link as input to get data`", 5
         )
     check = url(input_str)
@@ -132,5 +111,12 @@ async def _(event):
         catstr = "http://" + input_str
         check = url(catstr)
     if not check:
-        return await edit_delete(event, "`the given link is not supported`", 5)
+        return await edit_or_reply(event, "`the given link is not supported`", 5)
     await edit_or_reply(event, "[ㅤㅤㅤㅤㅤㅤㅤ](" + input_str + ")")
+
+   
+   
+   
+CmdHelp("รɦσɾƭℓเɳҡ").add_command(
+   "short", "Reply to A link", "Short To link"
+).add()
