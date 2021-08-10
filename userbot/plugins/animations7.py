@@ -1,0 +1,94 @@
+import asynci
+from . import *
+from userbot.cmdhelp import CmdHelp
+CmdHelp("fancytext").add_command(
+      'mst', None, 'Use and See'
+ ).add_command(
+      'gmgs', None, 'Use nd See'
+).add_command(
+      'good', None, 'Use and see'
+).add_command(
+       'thnq', None, 'Use and see'
+).add_command(
+       'hhlo', None, 'Use and See'
+).add_command(
+       'sry', None, 'Use and See'
+).add_command(
+       'ok', None, 'Use and See'
+
+
+
+@bot.on(admin_cmd(pattern="mst ?(.*)"))
+async def _(event):
+    if not event.text[0].isalpha() and event.text[0] not in ("/", "#", "@", "!"):
+        await event.edit("mst hu bbro ")
+        await asyncio.sleep(1)
+        await event.edit("╔═╦═╗╔══╗╔══╗\n║║║║║║══╣╚╗╔╝\n║║║║║╠══║─║║─\n╚╩═╩╝╚══╝─╚╝─")
+
+
+@bot.on(admin_cmd(pattern="gmgs?(.*)"))
+async def _(event):
+    if not event.text[0].isalpha() and event.text[0] not in ("/", "#", "@", "!"):
+        await event.edit("good morning ")
+        await asyncio.sleep(1)
+        await event.edit("╔══╗╔═╦═╗\n║╔═╣║║║║║\n║╚╗║║║║║║\n╚══╝╚╩═╩╝")
+
+
+@bot.on(admin_cmd(pattern="good ?(.*)"))
+async def _(event):
+    if not event.text[0].isalpha() and event.text[0] not in ("/", "#", "@", "!"):
+        await event.edit(
+            "╔══╗╔═╗╔═╗╔══╗\n║╔═╣║║║║║║╚╗╗║\n║╚╗║║║║║║║╔╩╝║\n╚══╝╚═╝╚═╝╚══╝"
+        )
+
+
+@bot.on(admin_cmd(pattern="hhlo ?(.*)"))
+async def _(event):
+    if not event.text[0].isalpha() and event.text[0] not in ("/", "#", "@", "!"):
+        await event.edit("hello,how r u")
+        await asyncio.sleep(1)
+        await event.edit("╔╗╔╗╔╗─╔═╗\n║╚╝║║║─║║║\n║╔╗║║╚╗║║║\n╚╝╚╝╚═╝╚═╝")
+
+
+@bot.on(admin_cmd(pattern="sry ?(.*)"))
+async def _(event):
+    if not event.text[0].isalpha() and event.text[0] not in ("/", "#", "@", "!"):
+        await event.edit("i'm sorry")
+        await asyncio.sleep(1)
+        await event.edit("last time forgive me")
+        await asyncio.sleep(1)
+        await event.edit(
+            "╔══╗╔═╗╔═╗╔═╗╔═╦╗\n║══╣║║║║╬║║╬║╚╗║║\n╠══║║║║║╗╣║╗╣╔╩╗║\n╚══╝╚═╝╚╩╝╚╩╝╚══╝"
+        )
+
+
+@bot.on(admin_cmd(pattern="thnq ?(.*)"))
+async def _(event):
+    if not event.text[0].isalpha() and event.text[0] not in ("/", "#", "@", "!"):
+        await event.edit("thanks for your help")
+        await asyncio.sleep(1)
+        await event.edit(
+            "╔══╗╔╗╔╗╔══╗╔═╦╗╔╦╗╔══╗\n╚╗╔╝║╚╝║║╔╗║║║║║║╔╝║══╣\n─║║─║╔╗║║╠╣║║║║║║╚╗╠══║\n─╚╝─╚╝╚╝╚╝╚╝╚╩═╝╚╩╝╚══╝"
+        )
+
+
+@bot.on(admin_cmd(pattern="ok ?(.*)"))
+async def _(event):
+    if not event.text[0].isalpha() and event.text[0] not in ("/", "#", "@", "!"):
+        await event.edit("▒▐█▀▀█▌▒▐█▒▐▀\n▒▐█▄▒█▌▒▐██▌░\n▒▐██▄█▌▒▐█▒▐▄")
+
+
+@bot.on(admin_cmd(pattern="smile ?(.*)"))
+async def _(event):
+    if not event.text[0].isalpha() and event.text[0] not in ("/", "#", "@", "!"):
+        await event.edit("how sad ")
+        await asyncio.sleep(1)
+        await event.edit(
+            "╔══╗╔═╦═╗╔══╗╔╗─╔═╗\n║══╣║║║║║╚║║╝║║─║╦╝\n╠══║║║║║║╔║║╗║╚╗║╩╗\n╚══╝╚╩═╩╝╚══╝╚═╝╚═╝"
+        )
+
+
+@bot.on(admin_cmd(pattern="lal ?(.*)"))
+async def _(event):
+    if not event.text[0].isalpha() and event.text[0] not in ("/", "#", "@", "!"):
+        await event.edit("╔╗─╔═╗╔╗─\n║╚╗║╬║║╚╗\n╚═╝╚═╝╚═╝")
