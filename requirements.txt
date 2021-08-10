@@ -55,6 +55,7 @@ deep_translator
 dnspython
 emoji==0.6.0
 faker
+getpass
 glitch_this
 glitch-this==1.0.1
 gc
