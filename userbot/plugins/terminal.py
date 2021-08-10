@@ -48,6 +48,10 @@ async def dc(event):
     await event.client.send_file(event.chat_id, "term.txt", reply_to=event.id, caption=f"{DARKultra}: Output too large, sending as file")
     os.remove("term.txt")           
     return
+
+
+
 from userbot.cmdhelp import CmdHelp
 CmdHelp("Terminal").add_command(
   'term', None, 'Reply to python file'
+).add()
