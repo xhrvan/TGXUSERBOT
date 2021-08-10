@@ -22,3 +22,7 @@ async def _(event):
     for i in animation_ttl:
         await asyncio.sleep(animation_interval)
         await event.edit(animation_chars[i % 4])
+ from userbot.cmdhelp import CmdHelp
+CmdHelp("τнαиοѕ").add_command(
+    'Thanos', None, 'Use and See'
+).add()
