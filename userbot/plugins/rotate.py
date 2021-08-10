@@ -37,3 +37,6 @@ async def hmm(event):
     await event.client.send_file(event.chat_id, "s_h_1_v_a_m_s.png", force_document=False, reply_to=event.reply_to_msg_id)
     shutil.rmtree(sedpath)
     os.remove("Legend.png")
+CmdHelp("rotate").add_command(
+    "rotate", "reply to image", ".rotate reply to any image to turn pic"
+).add()
