@@ -29,6 +29,9 @@ TELEGRAPH_MEDIA_LINKS = [
     "https://telegra.ph/file/bc96df71964af1a4ac625.jpg",
     "https://telegra.ph/file/bc96df71964af1a4ac625.jpg",
     "https://telegra.ph/file/bc96df71964af1a4ac625.jpg",
+    "https://telegra.ph/file/c7b64ed41f6113f00415e.jpg",
+    "https://telegra.ph/file/c7b64ed41f6113f00415e.jpg",
+    "https://telegra.ph/file/c7b64ed41f6113f00415e.jpg",
 ]
 
 
