@@ -15,57 +15,34 @@ async def _(event):
     await asyncio.sleep(2)
     x=(random.randrange(1,25))
     if x==1:
-        await event.edit("\n\nMere paas, mere paas... Maa hai... \n\n **From : Deewar**")
+        await event.edit("Inqilab Zindabad \n\n **By : Bhagat Singh**")
     if x==2:
         await event.edit("DON'T TRY TO KNOW ABUOT ME I M LEGEND✌️ @Legend_Mr_Hacker\nfrom: @Legend_Userbot")
     if x==3:
-        await event.edit("Amitabh Bachchan: 'Rishte mein to hum tumhare baap lagte hain,\n naam hai Shahenshah\nfrom: Shahenshah ")
+        await event.edit("Subhash Chandra Bose : Dilli Chalo ")
     if x==4:
-        await event.edit("Kaun kambakth hai jo bardasht karne ke liye peeta hai. Main toh peeta hoon ke bas saans le sakoon\nfrom:devdas")
+        await event.edit("Mahatma Gamdhi : 'Do or die' (Karo Ya Maro)")
     if x==5:
-        await event.edit("Main aaj bhi pheke hue paise nahin uthata\nfrom: deewar")
+        await event.edit("Chandra Shekhar Azad : Dushman ki goliyon ka hum samna karenge, Azad hee rahein hain, Azad hee rahenge ")
     if x==6:
-        await event.edit("Pushpa, I hate tears...\nfrom: Amar Prem")
+        await event.edit("Bal Gandhar Tilak : Swaraj Mera Janamsiddh adhikar hai, aur main ise lekar rahunga")
     if x==7:
-        await event.edit("Bade bade shehron mein aisi chhoti chhoti baatein hoti rehti hain, Senorita.\nfrom: Dilwale Dulhaniya le jayenge  ")    
+        await event.edit("A.P.J Abdul Kalam : Don't take rest after your first victory because if you fail in second, more lips are waiting to say that your first victory was just luck ")    
     if x==8:
-        await event.edit("Mogambo khush hua!\nFrom: Mr. India")
+        await event.edit("Atal Bihari Bhajpai : Jai Jawan Jai kisan Jai Vigyan")
     if x==9:
-        await event.edit("Taareekh pe taareekh, taareekh pe taareekh, taarekh pe taareekh\nFrom: Damini")
+        await event.edit("Subhash Chandra Bose : Tum Mujhe Khoon Do, main Tumhe Ajadi Doonga”. (Give me blood and I will give you freedom)")
     if x==10:
-        await event.edit("Dosti ka ek usool hai, madam: no sorry, no thank you\nFrom:Maine Pyaar Kiya")
+        await event.edit("Iqbal : Saare jahan se achchha hindustan hamara")
     if x==11:
-        await event.edit("Filmein sirf teen cheezon ki wajah se chalti hain- entertainment, entertainment, entertainment. Aur main entertainment hoon!\nFrom: The Dirty Picture")
+        await event.edit("Ram Prasad Bismil : Sarfaroshi ki tamanna, ab hamare dil me hai")
     if x==12:
-        await event.edit("Zindagi mein bhi end mein sab theek ho jaata hai. Happys Endings. Aur agar, aur agar theek na ho to woh the end nahin hai dosto, picture abhi baaki hai.\nFrom: Om Shanti Om")
+        await event.edit("Bal Gandhar Tilak : Swaraj (Self Rule) is my birthright")
     if x==13:
-        await event.edit("Kabhi Kabhi Kuch Jeetne Ke Liya Kuch Haar Na Padta Hai. Aur Haar Ke Jeetne Wale Ko Baazigar Kehte Hain.\nFrom:Baazigar")
+        await event.edit("Rabindra Nath Tagore : Jan Gan Man Adhinayak Jaya hey")
     if x==14:
-        await event.edit("Salim tujhe marne nahi dega ... aur hum Anarkali tujhe jeene nahi denge.\nFrom:Mughal-e-Azam")
-    if x==15:
-        await event.edit("Don ka intezaar toh baarah mulko ki police kar rahi hai, but Don ko pakadna mushkil hi nahi, namumkin hai\nFrom: Don")
-    if x==16:
-        await event.edit("Aapke paon dekhe, bahut haseen hai. Inhe zameen par mat utariyega, maile ho jayenge\nFrom:Pakeezah")
-    if x==17:
-        await event.edit("Hum tum mein itne ched karenge ... ki confuse ho jaoge ki saans kahan se le ... aur paadein kahan se\nFrom: Dabangg")
-    if x==18:
-        await event.edit("Crime Master Gogo naam hai mera, aankhen nikal ke gotiyan khelta hun main.\nFrom: Andaaz apna apna")
-    if x==19:
-        await event.edit("Hum jahan khade ho jaate hain, line wahi se shuru hoti hain.\nFrom: Kaalia")
-    if x==20:
-        await event.edit("Thapad se darr nahi lagta, pyaar se lagta hai\nFrom:Dabangg")
-    if x==21:
-        await event.edit("Our Business Is\nOur Business/nNone of Your Business\nFrom: Race 3")
-    if x==22:
-        await event.edit("Jo Ye Tera\nTorture Hai Wo\nMera Warm-up Hai\nFrom: Baaghi 2")
-    if x==23:
-        await event.edit("School Ke Bahar\nJab Zindagi Imtehaan\nLeti Hai To Subject Wise\nNahi Leti\nFrom: Hichki")
-    if x==24:
-        await event.edit("America Ke Pas Superman Hai,\nBatman Hai, Spiderman Hai…\n Lekin India Ke Pas Padman Hai\nFrom: Padman")
-    if x==25:
-        await event.edit("Written and Created By: @Legend_Mr_Hacker ! thank you🙏🏻❤")
-        
-        
+        await event.edit("Jawahar Lal Nehru : Aaram Haraam Hai (Cast off your laziness) ")
+  
         
 CmdHelp("ind slogan").add_command(
   'indslogan', None, 'slogan'
