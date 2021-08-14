@@ -36,5 +36,5 @@ async def _(event):
             animation_chars[i % 17], link_preview=True
         ) 
 CmdHelp("indpendance").add_command(
-    'indpendance', None, 'For Wishing Happy Birthday'
+    'indpendance', None, 'Happy Indpendance Day'
 ).add()
