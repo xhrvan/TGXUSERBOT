@@ -21,4 +21,6 @@ async def xd(event):
     await event.reply(f"happy Independence day 🇮🇳 from ᏞᎬᏀᎬΝᎠᏴϴͲ support thanks for using this Plugin.")
 
 
-
+CmdHelp("indanime").add_command(
+    "indanime", None, "Wish u happy indpendamce day"
+).add()
