@@ -7,7 +7,7 @@ from userbot import ALIVE_NAME
 DEFAULTUSER = str(ALIVE_NAME) if ALIVE_NAME else "LEGEND"
 
 
-@borg.on(admin_cmd(pattern="indpendence$"))
+@borg.on(admin_cmd(pattern="independence$"))
 async def _(event):
     if event.fwd_from:
         return
@@ -17,8 +17,8 @@ async def _(event):
     animation_chars = [
         "**нєℓℓο!👋**",
         "**нοω αяє υ?**",
-        f"**{DEFAULTUSER} : нαρργ ιи∂ρєи∂єиϲє ∂αγ**"
-        "ωιѕнιиg υ нαρργ ιи∂ρєи∂єиϲє ∂αγ",
+        f"**{DEFAULTUSER} : нαρργ ιи∂єρєи∂єиϲє ∂αγ**",
+        "ωιѕнιиg υ нαρργ ιи∂єρєи∂єиϲє ∂αγ",
         "**Happy 😊 Indpendence Day!**",
         "**From every mountain side Let Fredom Ring**",
         "**Independence means.. enjoying freedom and empowering others too to let them do so.**",
@@ -32,6 +32,6 @@ async def _(event):
         await event.edit(
             animation_chars[i % 17], link_preview=True
         ) 
-CmdHelp("indpendence").add_command(
-    'indpendence', None, 'Happy Indpendance Day'
+CmdHelp("ιи∂єρєи∂єиϲє").add_command(
+    'independence', None, 'Happy Indpendance Day'
 ).add()
