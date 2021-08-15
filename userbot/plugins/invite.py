@@ -81,25 +81,25 @@ async def get_users(event):
     f = 0
     error = "None"
 
-    await LEGEND.edit("**TerminalStatus**\n\n`Collecting Users.......`")
+    await LEGEND.edit("**⚜️[Ͳєямιиαℓ Տτατυѕ](https://t.me/Legend_Userbot)**\n\n`🔸ιиνιτιиg Ⴎѕєяѕ.......`")
     async for user in event.client.iter_participants(aura.full_chat.id):
         try:
             if error.startswith("Too"):
                 return await LEGEND.edit(
-                    f"**Terminal Finished With Error**\n(`May Got Limit Error from telethon Please try agin Later`)\n**Error** : \n`{error}`\n\n• Invited `{s}` people \n• Failed to Invite `{f}` people"
+                    f"[τєямιиαℓ ƒιиιѕнє∂ ωιτн єяяοя](https;//t.me/Legend_Userbot)\n(`🔸 мαγ gοτ ℓιмιτє∂ ƒяοм τєℓєτнοи ρℓєαѕє τяγ αgαιи ℓατєя`)\n🔸 єяяοя : \n`{error}`\n\n🔸 ιиνιτє∂ `{s}` ρєορℓє \n ⚠️ƒαιℓє∂ το ιиνιτє`{f}` ρєορℓє"
                 )
             await event.client(
                 functions.channels.InviteToChannelRequest(channel=chat, users=[user.id])
             )
             s = s + 1
             await LEGEND.edit(
-                f"**Terminal Running...**\n\n• Invited `{s}` people \n• Failed to Invite `{f}` people\n\n**× LastError:** `{error}`"
+                f"[τєямιиαℓ яυииιиg](https://t.me/Legend_Userbot)\n\n🔸 ιиνιτє∂ `{s}` ρєορℓє \n⚠️ ƒαιℓє∂ το ιиνιτє `{f}` ρєορℓє \n\n** ℓαѕτ єяяοя** `{error}`"
             )
         except Exception as e:
             error = str(e)
             f = f + 1
     return await LEGEND.edit(
-        f"**Terminal Finished** \n\n• Successfully Invited `{s}` people \n• failed to invite `{f}` people"
+        f"[τєямנиαℓ ƒιиιѕнє∂](https://t.me/Legend_Userbot) \n\n🔸 Sυϲϲєѕѕƒυℓℓγ ιиνιτє∂ `{s}` ρєορℓє \n⚠️ ƒαιℓє∂ το ιиνιτє `{f}` ρєορℓє"
     )
 
 
