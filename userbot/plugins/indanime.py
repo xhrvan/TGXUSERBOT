@@ -3,7 +3,7 @@
 
 from . import *
 
-@bot.on(admin_cmd(pattern="indanime(.*)"))
+@bot.on(admin_cmd(pattern="indpendence(.*)"))
 async def xd(event):
     await event.edit("wishing to all🇮🇳🇮🇳...")
     themessage = event.pattern_match.group(1)
@@ -22,5 +22,5 @@ async def xd(event):
 
 
 CmdHelp("indanime").add_command(
-    "indanime", None, "Wish u happy indpendamce day"
+    "indpendence", None, "Wish u happy indpendamce day"
 ).add()
