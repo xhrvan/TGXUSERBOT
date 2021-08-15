@@ -68,5 +68,5 @@ async def autopic(event):
         except:
             return
 CmdHelp("independp").add_command(
-       'inddp', None, 'Starts autopic of Indpendance & now wait for 5 min'
+       'inddp', None, 'Starts autopic of Independence & now wait for 5 min'
 ).add()
