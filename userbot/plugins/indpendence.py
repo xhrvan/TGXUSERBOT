@@ -7,7 +7,7 @@ from userbot import ALIVE_NAME
 DEFAULTUSER = str(ALIVE_NAME) if ALIVE_NAME else "LEGEND"
 
 
-@borg.on(admin_cmd(pattern="indpendance$"))
+@borg.on(admin_cmd(pattern="indpendence$"))
 async def _(event):
     if event.fwd_from:
         return
