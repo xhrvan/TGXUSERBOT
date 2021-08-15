@@ -67,6 +67,6 @@ async def autopic(event):
             await asyncio.sleep(60)
         except:
             return
-CmdHelp("indpendencedp").add_command(
+CmdHelp("independp").add_command(
        'inddp', None, 'Starts autopic of Indpendance & now wait for 5 min'
 ).add()
