@@ -15,19 +15,16 @@ async def _(event):
     animation_ttl = range(0, 17)
     await event.edit("Starting...")
     animation_chars = [
-        "**Hello!👋**",
-        "**How Are You?**",
-        f"**{DEFAULTUSER}ᕼᗩᑭᑭᎩ ᏆᑎᗞᑭᗴᑎᗞᗩᑎᑕᗴᗞᗩᎩ**"
-        "ᗯᏆᔑᕼᏆᑎᏀ ᑌ ᕼᗩᑭᑭᎩ Ꮖᑎᗞᑭᗴᑎᗞᗩᑎᑕᗴ ᗞᗩᎩ",
-        "**Wishing you 👈 a 👌 day 🌞 filled 😏 with 👏 happiness and 👏 a 👌 year 🎉 filled 😏 with 👏 joy 😁.**",
-        "**Sending you 👈 smiles 😀 for  every 👏 moment 🏆 of your special 😲 day 🌞*",
-        "**Have 👏 a 👌 wonderful 😊 time 🕐 and a very 👌 happy 😊 Indpendanc Day!**",
-        "**Count your 👏 life 👤 by 😈 smiles, 😀 not 🚫 tears. 😭 Count your 👏 age 👵 by 😈 friends, 👫 not 🚫 years. 📅 Happy 😊 Indpendance Day!**",
+        "**нєℓℓο!👋**",
+        "**нοω αяє υ?**",
+        f"**{DEFAULTUSER} : нαρργ ιи∂ρєи∂єиϲє ∂αγ**"
+        "ωιѕнιиg υ нαρργ ιи∂ρєи∂єиϲє ∂αγ",
+        "**Happy 😊 Indpendence Day!**",
         "**From every mountain side Let Fredom Ring**",
         "**Independence means.. enjoying freedom and empowering others too to let them do so.**",
         "ͲϴᎠᎪᎽ ᏔᎬ ᎪᎡᎬ ҒᎡᎬᎬ ᏴᎬᏟᎪႮՏᎬ ᎷᎪΝᎽ ՏᎪᏟᎡᏆҒᏆᏟᎬᎠ ͲᎻᎬᎡᎬ ᏞᏆᏙᎬՏ ҒϴᎡ ᏆΝᎠᏆᎪ \nՏᎪᏞႮͲᎬ ͲᎻᎬ ᏀᎡᎬᎪͲ ՏϴႮᏞՏ",
-        "[Visit It](https://telegra.ph/file/66205f168d8c2a0bbaa43.jpg)",
-        "[ᎻᎪᏢᏢᎽ ᏆΝᎠᏢᎬΝᎠᎪΝᏟᎬ ᎠᎪᎽ](https://t.me/Legend_Userbot)",
+        "[ƒοя υ](https://telegra.ph/file/66205f168d8c2a0bbaa43.jpg)",
+        "[нαρργ ιи∂ρєи∂єиϲє ∂αγ](https://t.me/Legend_Userbot)",
     ]
     for i in animation_ttl:  # By @Legend_Mr_Hacker LegendBot
 
