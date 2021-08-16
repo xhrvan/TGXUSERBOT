@@ -81,6 +81,7 @@ math
 nekos.py
 numpy
 oauth2client
+opencv-python--headless
 patool
 pokedex
 psycopg2
