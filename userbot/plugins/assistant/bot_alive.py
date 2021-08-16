@@ -3,7 +3,7 @@ from . import *
 from userbot import ALIVE_NAME
 from userbot import bot
 DEFAULTUSER = str(ALIVE_NAME) if ALIVE_NAME else "LEGEND"
-PM_IMG = "https://telegra.ph/file/08e2419d8c4acec39fc23.jpg"
+PM_IMG = "https://telegra.ph/file/2c9be46a59b1497553f06.jpg"
 pm_caption = "➥ αssísԵαղԵ ís օղlíղҽ \n\n"
 pm_caption += "➥ ѕγѕτєм ѕτατѕ\n"
 pm_caption += "➥ τєℓєτнοи νєяѕιοи: `1.15.0` \n"
@@ -15,7 +15,7 @@ pm_caption += f"➥ мγ ϐοѕѕ: {DEFAULTUSER} \n"
 pm_caption += "➥ нєяοκυ ∂αταϐαѕє: `AWS - Working Properly`\n\n"
 pm_caption += "➥ **𝓛𝓲𝓬𝓮𝓷𝓼𝓮** : [GNU General Public License v3.0](github.com/LEGEND-OS/LEGENBOT/blob/master/LICENSE)\n"
 pm_caption += "➥ 𝓒𝓸𝓹𝔂𝓻𝓲𝓼𝓱𝓽 : By [lҽցҽղժճօԵ](https://t.me/Legend_Userbot)\n"
-pm_caption += "[Assistant By ℓεɠεɓ∂](https://t.me/Legend_Mr_Hacker)"
+pm_caption += "[Assistant By ℓεɠεn∂](https://t.me/Legend_Mr_Hacker)"
 
 # only Owner Can Use it
 @tgbot.on(events.NewMessage(pattern="^/alive", func=lambda e: e.sender_id == bot.uid))
