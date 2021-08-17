@@ -53,6 +53,6 @@ async def waifu(animu):
     )
     await animu.delete()
     
-CmdHelp("animesticker").add_command(
+CmdHelp("αиιмєѕτιϲκєя").add_command(
     'waifus', None, 'Use and See'
 ).add()
