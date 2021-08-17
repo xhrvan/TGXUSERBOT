@@ -11,7 +11,7 @@ from userbot import ALIVE_NAME, LEGENDversion
 from LEGENDBOT.utils import admin_cmd, edit_or_reply
 from userbot.cmdhelp import CmdHelp
 
-DEFAULTUSER = str(ALIVE_NAME) if ALIVE_NAME else "LEGEND"
+DEFAULTUSER = str(ALIVE_NAME) if ALIVE_NAME else "ℓєgєи∂"
 
 LEGEND = bot.uid
 
@@ -96,10 +96,10 @@ async def on_afk(event):
         msg = None
         
         message_to_reply = (
-            f"ɱყ ℓεɠεɳ∂ ɱαรƭεɾ [{DEFAULTUSER}](tg://user?id={LEGEND}) ιѕ ON AFK \n\n⏲️ℓαѕτ ѕєєи:-\n`{total_afk_time}`\n"
-            + f"👇𝕽𝖊𝖆𝖘𝖔𝖓👇 :\n`{reason}`"
+            f"♦️[{DEFAULTUSER}](tg://user?id={LEGEND}) ιѕ иοω οи αƒκ \n\nℓαѕτ ѕєєи:-`{total_afk_time}`\n"
+            + f"𝕽єαѕοи :`{reason}`"
   if reason
-           else f"ℋℯ𝓎 𝒮𝒾𝓇 / ℳ𝒾𝓈𝓈🤔!\nι αм ϲυяяєиτℓγ υиαναιℓαϐℓє😛. ι яєρℓγ υ αƒτєя ϲοмє ϐαϲκοиℓιиє.\n__Since when, you ask? From__ `{total_afk_time}`\nI'll be back when I feel to come🚶😛"
+           else f"нєγ ѕιя / мιѕѕ🤔!\nι αм ϲυяяєиτℓγ υиαναιℓαϐℓє😛. ι яєρℓγ υ αƒτєя ϲοмє ϐαϲκοиℓιиє.\n__Since when, you ask? From__ `{total_afk_time}`\nI'll be back when I feel to come🚶😛"
         )
         msg = await event.reply(message_to_reply, file=LEGENDpic)
         await asyncio.sleep(2)
