@@ -13,7 +13,7 @@ async def oho(event):
   """)
   await event.delete()
   
-CmdHelp("Self Destruction").add_command(
+CmdHelp("∂ιѕτя ριϲ").add_command(
   "spic", "This Command Can Capture The Self Destruction Picturr"
 ).add_info(
   "Capture 🤫 Pic."
