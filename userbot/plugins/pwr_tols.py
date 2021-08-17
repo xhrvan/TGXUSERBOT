@@ -36,7 +36,7 @@ async def _(event):
         sys.exit(0)
 
 
-CmdHelp("power_tools").add_command(
+CmdHelp("ρωя τοℓѕ").add_command(
   "restart", None, "Restarts your userbot. Redtarting Bot may result in better functioning of bot when its laggy"
 ).add_command(
   "shutdown", None, "Turns off Dynos of Userbot. Userbot will stop working unless you manually turn it on from heroku"
