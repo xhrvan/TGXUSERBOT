@@ -1,6 +1,4 @@
-# thanks to @Skastickers for stickers....
-# Among us.....
-# credits to catuserbot
+#@ℓєgєи∂_мя_нαϲκєя
 
 
 import asyncio
