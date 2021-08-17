@@ -23,6 +23,6 @@ async def _(event):
 """)
 	
 	
-CmdHelp("goodmorning").add_command(
+CmdHelp("gм").add_command(
 	'gm', None, 'Use and See'
 ).add()
