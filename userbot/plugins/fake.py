@@ -83,7 +83,7 @@ async def gbun(event):
     await event.delete()
 
 
-CmdHelp("fake").add_command(
+CmdHelp("ƒακє").add_command(
   'fake', '<action>', 'This shows the fake action in the group  the actions are typing, contact, game ,location, voice, round, video, photo, document.'
 ).add_command(
   'gbam', '<reason> (optional)', 'Fake gban. Just for fun🤓'
