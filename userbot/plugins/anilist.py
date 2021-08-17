@@ -1,8 +1,3 @@
-"""	
-	Anilist Search Plugin for Userbot	
-	Usage : .anilist animeName	
-	By :- @Zero_cool7870	
-"""
 
 import json
 import re
@@ -90,6 +85,6 @@ async def anilist(event):
     await event.edit(msg, link_preview=True)
 
 
-CmdHelp("anilist").add_command(
+CmdHelp("αиιℓιѕτ").add_command(
   'anilist', '<anime name>', 'Shows you the details of the anime'
 ).add()
