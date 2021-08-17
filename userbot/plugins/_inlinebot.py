@@ -18,7 +18,6 @@ from userbot.Config import Config
 from userbot import ALIVE_NAME
 LEGEND_row = Config.BUTTONS_IN_HELP
 LEGEND_emoji = Config.EMOJI_IN_HELP
-LEGEND_emoji2 = Config.EMOJI_IN_HELP2
 # thats how a lazy guy imports
 # LEGENDBOT
 # sαlҽ ískօ kαղց ตαԵ kαɾ ตc ճc
@@ -152,7 +151,7 @@ if Var.TG_BOT_USER_NAME_BF_HER is not None and tgbot is not None:
         try:
             buttons = [
                 custom.Button.inline(
-                    "{LEGEND_emoji2} " + cmd[0] + " {LEGEND_emoji2} ", data=f"commands[{commands}[{page}]]({cmd[0]})"
+                    "🔰 " + cmd[0] + " 🔰", data=f"commands[{commands}[{page}]]({cmd[0]})"
                 
                 for cmd in CMD_HELP_BOT[commands]["commands"].items()
             ]
