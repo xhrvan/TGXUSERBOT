@@ -99,7 +99,7 @@ if Var.PRIVATE_GROUP_ID is not None:
                     await asyncio.sleep(3)
                     await rko.delete()
 
-    @borg.on(admin_cmd(pattern="block|blk ?(.*)"))
+    @borg.on(admin_cmd(pattern="block|.blk ?(.*)"))
     async def approve_p_m(event):
         if event.fwd_from:
             return
@@ -143,7 +143,7 @@ if Var.PRIVATE_GROUP_ID is not None:
                 await asyncio.sleep(3)
                 await event.delete()
 
-    @borg.on(admin_cmd(pattern="disallow|da|disapprove ?(.*)"))
+    @borg.on(admin_cmd(pattern="disallow|.da|.disapprove ?(.*)"))
     async def approve_p_m(event):
         if event.fwd_from:
             return
@@ -181,7 +181,7 @@ if Var.PRIVATE_GROUP_ID is not None:
                 await event.delete()    
                 
 
-    @borg.on(admin_cmd(pattern="listallowed|la"))
+    @borg.on(admin_cmd(pattern="listallowed|.la"))
     async def approve_p_m(event):
         if event.fwd_from:
             return
