@@ -175,7 +175,7 @@ async def dyno_usage(dyno):
     )
 
 
-@borg.on(admin_cmd(pattern="viewlogs$", outgoing=True))
+@borg.on(admin_cmd(pattern="logs$", outgoing=True))
 async def _(dyno):
     if dyno.fwd_from:
         return
