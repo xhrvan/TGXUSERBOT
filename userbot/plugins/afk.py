@@ -96,10 +96,10 @@ async def on_afk(event):
         msg = None
         
         message_to_reply = (
-            f"ɱყ ℓεɠεɳ∂ ɱαรƭεɾ [{DEFAULTUSER}](tg://user?id={LEGEND}) ιѕ ON AFK \n\n⏲️síղcҽ ահҽղ:-\n`{total_afk_time}`\n"
+            f"ɱყ ℓεɠεɳ∂ ɱαรƭεɾ [{DEFAULTUSER}](tg://user?id={LEGEND}) ιѕ ON AFK \n\n⏲️ℓαѕτ ѕєєи:-\n`{total_afk_time}`\n"
             + f"👇𝕽𝖊𝖆𝖘𝖔𝖓👇 :\n`{reason}`"
   if reason
-            else f"ℋℯ𝓎 𝒮𝒾𝓇 / ℳ𝒾𝓈𝓈🤔!\nι αм ϲυяяєиτℓγ υиαναιℓαϐℓє😛. ι яєρℓγ υ αƒτєя ϲοмє ϐαϲκοиℓιиє.\n__Since when, you ask? From__ `{total_afk_time}`\nI'll be back when I feel to come🚶😛"
+           else f"ℋℯ𝓎 𝒮𝒾𝓇 / ℳ𝒾𝓈𝓈🤔!\nι αм ϲυяяєиτℓγ υиαναιℓαϐℓє😛. ι яєρℓγ υ αƒτєя ϲοмє ϐαϲκοиℓιиє.\n__Since when, you ask? From__ `{total_afk_time}`\nI'll be back when I feel to come🚶😛"
         )
         msg = await event.reply(message_to_reply, file=LEGENDpic)
         await asyncio.sleep(2)
@@ -152,6 +152,6 @@ async def _(event):
             logger.warn(str(e))  # pylint:disable=E0602
 
 
-CmdHelp("afk").add_command(
+CmdHelp("αƒκ").add_command(
   'afk', '<reply to media>/<or type a reson>', 'Marks you AFK(Away from Keyboard) with reason(if given) also shows afk time. Media also supported.'
 ).add()
