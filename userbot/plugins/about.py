@@ -17,19 +17,19 @@ DEFAULTUSER = str(ALIVE_NAME) if ALIVE_NAME else "LEGEND"
 edit_time = 5
 """ =======================CONSTANTS====================== """
 file1="https://telegra.ph/file/2d41a6b1b3713579c63c2.jpg"
-file2="https://telegra.ph/file/d80f4df893d30ed11ec87.jpg"
+file2=""
 file3="https://telegra.ph/file/498446e602ba527c5ee3a.jpg"
 file4="https://telegra.ph/file/22d0976cc9c7627d48319.jpg"""" =======================CONSTANTS====================== """
-pm_caption = "🔱ℓєgєи∂ϐοτ🔱 ιѕ ορ\n\n"
+pm_caption = "🔥𝕷êgëñd𝕭øt ιѕ ορ🔥\n\n"
 pm_caption += "💌💌 **𝐆𝐨𝐝,𝒚𝒐𝒖 𝒂𝒓𝒆 𝒂𝒍𝒎𝒊𝒈𝒉𝒕𝒚 , 𝗉𝗅𝗌 𝗍𝖺𝗄𝖾 𝖼𝖺𝗋𝖾 𝗈𝖿 𝗆𝗒 𝖻𝖾𝗌𝗍𝗂𝖾 .. 𝗆𝗂𝗌𝗌𝗂𝗇𝗀 𝗁𝗂𝗆 𝗏𝖾𝗋𝗒 𝗆𝗎𝖼𝗁💫😇.**💌💌\n\n"
-pm_caption += "༆༄🎀🌹About Me \n\n"
-pm_caption += "💫💫**ℓєgєи∂ϐοτ**💫💫 >>》 15.0.0\n"
-pm_caption += "😇😇**ℓєgєи∂**😇😇   >>》 [οωиєя](https://t.me/Legend_Mr_Hacker)\n"
-pm_caption += f"🔰🔰**ᴍᴀsᴛᴇʀ**🔰🔰  >>》 {DEFAULTUSER}\n"
-pm_caption += "❣❣ **ᴄʀᴇᴀᴛᴏʀ**❣❣ >>》 [gяουρ](https://t.me/Legend_Userbot)\n\n"
-pm_caption += "🎊🎊 **яєρο**🎊🎊  >>》 [яєρο](https://github.com/LEGEND-OS/LEGENDBOT)\n\n"
+pm_caption += "༆༄🎀🌹𝕬𝖇𝖔𝖚𝖙 𝕸𝖊 \n\n"
+pm_caption += "💫💫**𝕷êgëñd𝕭øt**💫💫 >>》 15.0.0\n"
+pm_caption += "😇😇**𝕷êgëñd**😇😇   >>》 [οωиєя](https://t.me/Legend_Mr_Hacker)\n"
+pm_caption += f"🔰🔰**𝕸𝖆𝖙𝖊𝖗**🔰🔰  >>》 {DEFAULTUSER}\n"
+pm_caption += "❣❣ **𝕷êgëñd𝕭øt**❣❣ >>》 [𝕲𝖗ουρ](https://t.me/Legend_Userbot)\n\n"
+pm_caption += "🎊🎊 **𝕽𝖊𝖕ο**🎊🎊  >>》 [𝕽єρο](https://github.com/LEGEND-OS/LEGENDBOT)\n\n"
 pm_caption += "[....▄███▄███▄\n....█████████\n.......▀██❣🌹💫😇💫🌹❣███▀\n...............▀█▀\n](https://t.me/Legend_Mr_Hacker)\n\n"
-@borg.on(admin_cmd(pattern=r"aboutbot"))
+@borg.on(admin_cmd(pattern=r"abot"))
 
 async def amireallyalive(yes):
     chat = await yes.get_chat()
@@ -62,6 +62,6 @@ async def amireallyalive(yes):
     """ For .alive command, check if the bot is running.  """
     await borg.send_file(alive.chat_id, PM_IMG,caption=pm_caption)
     await alive.delete()
-    CmdHelp("aboutbot").add_command(
-      'aboutbot', None , 'BEST alive command'
+    CmdHelp("αϐοτ").add_command(
+      'abot', None , 'BEST alive command'
 ).add()
