@@ -1,8 +1,3 @@
-"""
-Torrent Search Plugin for Userbot. //torrentdownloads.me
-cmd: .search search_string
-Note: Number of results are currently limited to 15
-By:-@Zero_cool7870
 
 from datetime import datetime
 import requests
@@ -212,7 +207,7 @@ def search_torrentz_eu(search_query):
     return r
 
 
-CmdHelp("torrent_search").add_command(
+CmdHelp("τяиτ ѕяϲн").add_command(
   "tsearch", "<query>", "Fetches torrent links of given query"
 ).add_command(
   "movie idop.se", "<query>", "Fetches torrent links of given query alternative way"
