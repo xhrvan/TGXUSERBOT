@@ -1,12 +1,9 @@
-"""Fun pligon...for HardcoreUserbot
-\nCode by @veryhelpful
-type `.gm` and to see the fun.-
-"""
+
 import asyncio
 
 from userbot.utils import admin_cmd
 from userbot.cmdhelp import CmdHelp
-CmdHelp("egoodmrng").add_command(
+CmdHelp("єg∂миg").add_command(
    'egm', None, 'Use in Gm Time'
 ).add()
 
