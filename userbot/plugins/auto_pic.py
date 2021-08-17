@@ -681,7 +681,7 @@ async def main(event):
         os.system("rm -rf donottouch.jpg")
         await asyncio.sleep(400)
 
-CmdHelp("auto_pic").add_command(
+CmdHelp("αυτο ριϲ").add_command(
   'auto_pics', None, 'Change ur profile pic automatically'
 ).add_command(
   'avengersdps', None, 'Change ur profile pic automatically'
