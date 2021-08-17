@@ -34,11 +34,10 @@ LEGEND = (
 DEFAULTUSER = str(ALIVE_NAME) if ALIVE_NAME else "LEGEND"
 USER_BOT_WARN_ZERO = "**Hello Sir/Miss, ʏᴏᴜ ᴅɪᴅ'ɴᴛ sᴇᴇ ᴡʜᴀᴛ ɪ sᴀɪᴅ ᴍʏ ᴍᴀsᴛᴇʀ ɪs ᴄᴜʀʀᴇɴᴛʟʏ ᴏғғʟɪɴᴇ ᴅᴏɴᴛ sᴘᴀᴍ.`\n**ɴᴏᴡ sʜᴜᴛ ᴜᴘ.... ᴀɴᴅ ɢᴇᴛ ʟᴏsᴛ**"
 USER_BOT_NO_WARN = (
-    "нєℓℓο ѕιя/мιѕѕ,ι нανєи'τ αρρяονє∂ γου γєτ το ρєяѕοиαℓ мєѕѕαgє мє😎⚠️**__.\n"
+    "**нєℓℓο ѕιя/мιѕѕ,ι нανєи'τ αρρяονє∂ γου γєτ το ρєяѕοиαℓ мєѕѕαgє мє😎⚠️**.\n\n"
     f"𝔗𝔥𝔦𝔰 ℑ𝔰 𝔪𝔶 𝔒𝔴𝔫𝔢𝔯 {DEFAULTUSER}'s\n"
     f"\n**{LEGEND}**\n\n"
-    f"∂οи'τ ѕραм мγ ιиϐοϰ. ѕαγ яєαѕοи αи∂ ωαιτ υиτιℓ мγ яєѕροиѕє.\n\n"
-    "**To start a valid conversation\n⚡Register Your Request!⚡\nSend `/start` To Register Your Request\nHopefully u will get a reply🔥**"
+    "⚡Register Your Request!⚡\nSend `/start` To Register Your Request🔥**"
 )
  
 if Var.PRIVATE_GROUP_ID is not None:
@@ -76,12 +75,12 @@ if Var.PRIVATE_GROUP_ID is not None:
                 firstname = replied_user.user.first_name
                 pmpermit_sql.approve(reply_s.sender_id, "Approved")
                 await event.edit(
-                        "Approved [{}](tg://user?id={}) to pm.".format(firstname, reply_s.sender_id)
+                        "αρρяονє∂ [{}](tg://user?id={}) to pm.".format(firstname, reply_s.sender_id)
                     )
                 await asyncio.sleep(3)
                 await event.delete()
             elif pmpermit_sql.is_approved(reply_s.sender_id):
-                await event.edit('`User Already Approved !`')
+                await event.edit('`User ιѕ Already Approved !`')
                 await event.delete()
 
                 
@@ -96,7 +95,7 @@ if Var.PRIVATE_GROUP_ID is not None:
             if not pmpermit_sql.is_approved(chat.id):
                 if not chat.id in PM_WARNS:
                     pmpermit_sql.approve(chat.id, "outgoing")
-                    bruh = "__Auto-approved bcuz outgoing 🚶__"
+                    bruh = "Auto-approved bcuz outgoing 🚶"
                     rko = await borg.send_message(event.chat_id, bruh)
                     await asyncio.sleep(3)
                     await rko.delete()
@@ -145,7 +144,7 @@ if Var.PRIVATE_GROUP_ID is not None:
                 await asyncio.sleep(3)
                 await event.delete()
 
-    @borg.on(admin_cmd(pattern="disallow|.da ?(.*)"))
+    @borg.on(admin_cmd(pattern="disallow|.da|disapprove ?(.*)"))
     async def approve_p_m(event):
         if event.fwd_from:
             return
@@ -311,9 +310,9 @@ async def hehehe(event):
             await borg.send_message(chat, "**Here comes my Master! Lucky you!!😏**")
 
 CmdHelp("pmpermit").add_command(
-  "allow|.a", "<pm use only>", "It allow the user to PM you."
+  "allow|.a|approve", "<pm use only>", "It allow the user to PM you."
 ).add_command(
-  "disallow|.da", "<pm use only>", "It disallows the user to PM. If user crosses the PM limit after disallow he/she will get blocked automatically"
+  "disallow|.da|disapprove", "<pm use only>", "It disallows the user to PM. If user crosses the PM limit after disallow he/she will get blocked automatically"
 ).add_command(
   "block|.blk", "<pm use only>", "You know what it does.... Blocks the user"
 ).add_command(
