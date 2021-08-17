@@ -30,6 +30,6 @@ async def info(event):
             string += "`\n"
         await event.reply(string)
 
-CmdHelp("plugin_info").add_command(
+CmdHelp("ρℓυg ιиƒο").add_command(
   "plinfo", "<plugin name>", "Gives the info triggered plugin. Every Commands with its usage and how to use.."
 ).add()
