@@ -1,7 +1,4 @@
 
-# A over powerful bot
-# I know u will kang...
-# GTFO!! MOTHERFUCKER!!!!!!!!!!!
 
 
 from telethon import events
@@ -66,7 +63,7 @@ async def _(event):
     if event.fwd_from:
         return
     if not event.reply_to_msg_id:
-        await edit_or_reply(event, "Reply to any user message.😒🤐")
+        await edit_or_reply(event, "Reply to any мє∂ια message.😒🤐")
         return
     reply_message = await event.get_reply_message()
     if not reply_message.media:
@@ -75,7 +72,7 @@ async def _(event):
     chat = "@Lines50Bot"
     reply_message.sender
     if reply_message.sender.bot:
-        await edit_or_reply(event, "Reply to actual users message.😒🤐")
+        await edit_or_reply(event, "Reply to actual мє∂ια message.😒🤐")
         return
     aura = await edit_or_reply(event, "`Processing`")
     async with event.client.conversation(chat) as conv:
