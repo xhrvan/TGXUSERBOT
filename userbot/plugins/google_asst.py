@@ -116,7 +116,7 @@ async def _(event):
     except Exception as e:
         await eod(event, str(e), 10)
 
-CmdHelp("google_asst").add_command(
+CmdHelp("ggℓ αѕѕτ").add_command(
   "voices", "<reply to a msg> <lang code>", "Sends the replied msg content in audio format."
 ).add_command(
     "trs", "<lang code> <reply to msg>", "Translates the replied message to desired language code. Type '.trc' to get all the language codes", f"trt en - hello | .trt en <reply to msg>"
