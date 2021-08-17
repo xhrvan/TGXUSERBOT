@@ -16,6 +16,8 @@ from userbot.cmdhelp import CmdHelp
 from LEGENDBOT.Config import Config
 
 SUDO_WALA = Config.SUDO_USERS
+lg_id = Config.LOGGER_ID
+
 
 @bot.on(admin_cmd(pattern="spam (.*)"))
 @bot.on(sudo_cmd(pattern="spam (.*)", allow_sudo=True))
@@ -26,26 +28,26 @@ async def spammer(e):
         spam_message = str(e.text[8:])
         await asyncio.wait([e.respond(spam_message) for i in range(counter)])
         await e.delete()
-        if LOGGER:
-            await e.client.send_message(
-                LOGGER_GROUP, "#SPAM \n\n" "Spam was executed successfully"
-            )
-
-
+        await e.client.send_message(
+            lg_id, f"#SPAM \n\nSpammed  `{counter}`  messages!!"
+        )
 @bot.on(admin_cmd(pattern="bigspam"))
 @bot.on(sudo_cmd(pattern="bigspam", allow_sudo=True))
 async def bigspam(LEGEND):
     if not LEGEND.text[0].isalpha() and LEGEND.text[0] not in ("/", "#", "@", "!"):
         LEGEND_msg = LEGEND.text
-        LEGENDBOT_count = int(LEGEND_msg[9:13])
-        LEGEND_spam = str(LEGEND.text[13:])
+        HELLBOT_count = int(LEGEND_msg[9:13])
+        reply_msg = await LEGEND.get_reply_message()
+        if reply_msg:
+            LEGEND_spam = reply_msg
+        else:
+            LEGEND_spam = str(LEGEN.text[13:])
         for i in range(1, LEGENDBOT_count):
             await LEGEND.respond(LEGEND_spam)
         await LEGEND.delete()
-        if LOGGER:
-            await LEGEND.client.send_message(
-                LOGGER_GROUP, "#BIGSPAM \n\n" "Bigspam was executed successfully"
-            )
+        await LEGEND.client.send_message(
+                lg_id, f"#BIGSPAM \n\nBigspammed  `{LEGENDBOT_count}`  messages !!"
+        )
 
 
 @bot.on(admin_cmd("dspam (.*)"))
