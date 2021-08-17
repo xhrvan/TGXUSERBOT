@@ -435,7 +435,7 @@ async def get_user_from_id(user, event):
         return None
     return user_obj
 
-CmdHelp("gяουρє∂ιτ").add_command(
+CmdHelp("ցяρ є∂ιτ").add_command(
        'setgpic', '<reply to image>', 'Changes the groups display picture'
 ).add_command(
         'promote', '<username/reply> <custom rank (optional)>',
