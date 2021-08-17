@@ -51,7 +51,7 @@ async def set_not_afk(event):
         try:
             await borg.send_message(  # pylint:disable=E0602
                 Config.PRIVATE_GROUP_BOT_API_ID,  # pylint:disable=E0602
-                "#AFKFALSE \nSet AFK mode to False\n"
+                "#AFKFALSE \nSet AFK mode to False\nReply to pic and use .afk reason"
                 + "🔥𝓑𝓪𝓬𝓴 𝓐𝓵𝓲𝓿𝓮!\n**𝔑𝔬 𝔏𝔬𝔫𝔤𝔢𝔯 𝔞𝔣𝔨.**\n⏱️ `աαs αբk for:``"
                 + total_afk_time
             )
@@ -60,7 +60,7 @@ async def set_not_afk(event):
                 event.chat_id,
                 "Please set `PRIVATE_GROUP_BOT_API_ID` "
                 + "for the proper functioning of afk functionality "
-                + "Ask in @Legend_Mr_Hacker to get help setting this value\n\n `{}`".format(str(e)),
+                + "Ask in @Legend_Userbot to get help setting this value\n\n `{}`".format(str(e)),
                 reply_to=event.message.id,
                 silent=True,
             )
