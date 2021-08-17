@@ -1,8 +1,4 @@
-# BY @Deonnn
-""" Game of Thrones Dialogues That You Can Use In Everyday Situations
- command .gotm
- by @Deonnn
-"""
+
 
 from telethon import events
 
@@ -19,7 +15,7 @@ from userbot.cmdhelp import CmdHelp
 
 
 
-CmdHelp("got_memes").add_command(
+CmdHelp("gτ мємѕ").add_command(
     'gotm', None, 'Use And See'
 ).add_warning(
   "✅ Harmless Module."
