@@ -14,6 +14,6 @@ async def _(event):
         await event.edit("".join(deq))
         deq.rotate(1)
         
-CmdHelp("angry").add_command(
-  "🤬", None, "Use and See"
+CmdHelp("αиgяγ").add_command(
+  "🤬", None, "υѕє αи∂ ѕєє"
 ).add()
