@@ -33,6 +33,6 @@ async def _(event):
 /▌✿🌷✿
 / \     \|/\n▃▃▃▃▃▃▃▃▃▃▃
 """)
-CmdHelp("happybirthday").add_command(
+CmdHelp("нαρϐιяτн").add_command(
 	'happybirhtday', None, 'Use and See'
 ).add()
