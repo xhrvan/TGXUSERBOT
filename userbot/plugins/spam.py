@@ -36,7 +36,7 @@ async def spammer(e):
 async def bigspam(LEGEND):
     if not LEGEND.text[0].isalpha() and LEGEND.text[0] not in ("/", "#", "@", "!"):
         LEGEND_msg = LEGEND.text
-        HELLBOT_count = int(LEGEND_msg[9:13])
+        LEGENDBOT_count = int(LEGEND_msg[9:13])
         reply_msg = await LEGEND.get_reply_message()
         if reply_msg:
             LEGEND_spam = reply_msg
