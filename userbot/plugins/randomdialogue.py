@@ -68,6 +68,6 @@ async def _(event):
         
         
         
-CmdHelp("яи∂м ∂ιαℓg).add_command(
+CmdHelp("яи∂м ∂ιαℓg").add_command(
   'rfilmy', None, 'Use and See'
 ).add()
