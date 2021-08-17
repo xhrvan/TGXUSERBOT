@@ -1,7 +1,4 @@
-#PLUGIN CREATED BY @Backup_pista123
-#PLUGIN CREATED FOR GLOBALLY PROMOTION WITH ALL RIGHTS
-#KANG WITH CREDIT ELSE GAY
-#HATERS APNI MAA CHUDAO
+
 marculs=9
 from telethon.errors.rpcerrorlist import (UserIdInvalidError,
                                             MessageTooLongError)
@@ -162,7 +159,7 @@ async def gben(userbot):
     )
 
 
-CmdHelp("gpromote").add_command(
+CmdHelp("gρяοмο").add_command(
   'gpromote', '<user-id> or reply to a user' , 'Promote the user in all of your groups'
 ).add_command(
   'gdemote', '<User-id> or reply to a user', 'demote the user in all of your groups'
