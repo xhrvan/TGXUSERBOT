@@ -77,9 +77,9 @@ async def device_info(request):
         reply = f"**Search results for {codename}**:\n\n"
         for item in results:
             reply += (
-                f"**Brand**: {item['brand']}\n"
-                f"**Name**: {item['name']}\n"
-                f"**Model**: {item['model']}\n\n"
+                f"**ϐяαи∂**: {item['brand']}\n"
+                f"**иαмє**: {item['name']}\n"
+                f"**мο∂єℓ**: {item['model']}\n\n"
             )
     else:
         reply = f"`Couldn't find info about {codename}!`\n"
@@ -124,9 +124,9 @@ async def codename_info(request):
             results = results[:8]
         for item in results:
             reply += (
-                f"**Device**: {item['device']}\n"
-                f"**Name**: {item['name']}\n"
-                f"**Model**: {item['model']}\n\n"
+                f"**∂єνιϲє**: {item['device']}\n"
+                f"**иαмє**: {item['name']}\n"
+                f"**мο∂єℓ**: {item['model']}\n\n"
             )
     else:
         reply = f"`Couldn't find {device} codename!`\n"
@@ -232,7 +232,7 @@ async def twrp(request):
     await edit_or_reply(request, reply)
 
 
-CmdHelp("android").add_command(
+CmdHelp("αи∂яοι∂").add_command(
   'magisk', None, 'Get latest magisk release'
 ).add_command(
   'device', '<codename>', 'Get info about android device codename or model'
