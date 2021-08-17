@@ -23,7 +23,6 @@ blob==0.16
 borg==2012.4.1
 cairosvg
 cfscrape
-coffeehouse
 collection
 coffeehouse==2.2.4
 chromedriver_autoinstaller
