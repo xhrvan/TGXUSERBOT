@@ -62,6 +62,6 @@ async def _(event):
     await event.edit("Created BarCode in {} seconds".format(ms))
     await asyncio.sleep(5)
     await event.delete()
-CmdHelp("barcodes").add_command(
+CmdHelp("barcod").add_command(
   'barcodes', None, '.barcode <name>'
 ).add()
