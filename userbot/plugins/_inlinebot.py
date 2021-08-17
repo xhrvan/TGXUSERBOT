@@ -18,6 +18,7 @@ from userbot.Config import Config
 from userbot import ALIVE_NAME
 LEGEND_row = Config.BUTTONS_IN_HELP
 LEGEND_emoji = Config.EMOJI_IN_HELP
+LEGEND_emoji2 = Config.EMOJI_IN_HELP2
 # thats how a lazy guy imports
 # LEGENDBOT
 # sαlҽ ískօ kαղց ตαԵ kαɾ ตc ճc
@@ -73,7 +74,7 @@ if Var.TG_BOT_USER_NAME_BF_HER is not None and tgbot is not None:
                     apn.append(y)
             result = await builder.article(
                 f"Hey! Only use .help please", 
-                text=f"🔰[{ALIVE_NAME}](https://t.me/Legend_Mr_Hacker)\n\n📁τοταℓ ρℓµɠเɳร ιиѕταℓℓє∂⭆ `{len(CMD_HELP)}` \n🗂τοταℓ ϲοммαи∂ѕ⭆ `{len(apn)}`\n📙թαցҽ⭆ 1/{veriler[0]}",
+                text=f"🔰[{ALIVE_NAME}](https://t.me/Legend_Userbot)\n\n📁Tοταℓ Pℓµɠเɳร Iиѕταℓℓє∂⭆ `{len(CMD_HELP)}` \n🗂Tοταℓ Cοммαи∂ѕ⭆ `{len(apn)}`\n📙Pαցҽ⭆ 1/{veriler[0]}",
                 buttons=veriler[1],
                 link_preview=False,
             )
@@ -88,12 +89,12 @@ if Var.TG_BOT_USER_NAME_BF_HER is not None and tgbot is not None:
         else:
             result = builder.article(
                 "@LEGEND_Userbot",
-                text="""**нєγ! τнιѕ ιѕ [ℓєgєи∂ϐοτ.](https://t.me/Legend_Mr_Hacker) \nγου ϲαи κиοω мοяє αϐουτ мє👇**""",
+                text="""**нєγ! τнιѕ ιѕ [ℓєgєи∂ϐοτ.](https://t.me/Legend_Userbot) \nγου ϲαи κиοω мοяє αϐουτ мє👇**""",
                 buttons=[
                     [
-                        custom.Button.url("🔥 gяουρ 🔥", "https://t.me/Legend_Userbot"),
+                        custom.Button.url("🔥 Gяουρ 🔥", "https://t.me/Legend_Userbot"),
                         custom.Button.url(
-                            "⚡ οωиєя ⚡", "https://t.me/Legend_Mr_Hacker"
+                            "⚡ Oωиєя ⚡", "https://t.me/Legend_Mr_Hacker"
                         ),
                     ],
                     [
@@ -151,8 +152,8 @@ if Var.TG_BOT_USER_NAME_BF_HER is not None and tgbot is not None:
         try:
             buttons = [
                 custom.Button.inline(
-                    "💫 " + cmd[0] + " 💫", data=f"commands[{commands}[{page}]]({cmd[0]})"
-                )
+                    "{LEGEND_emoji2} " + cmd[0] + " {LEGEND_emoji2} ", data=f"commands[{commands}[{page}]]({cmd[0]})"
+                
                 for cmd in CMD_HELP_BOT[commands]["commands"].items()
             ]
         except KeyError:
@@ -198,14 +199,14 @@ if Var.TG_BOT_USER_NAME_BF_HER is not None and tgbot is not None:
 
         command = CMD_HELP_BOT[cmd]["commands"][commands]
         if command["params"] is None:
-            result += f"🛠 𝕮𝖔𝖒𝖒𝖆𝖓𝖉𝖘: `{COMMAND_HAND_LER[:1]}{command['command']}`\n"
+            result += f"🛠 𝕮οммαи∂ѕ: `{COMMAND_HAND_LER[:1]}{command['command']}`\n"
         else:
-            result += f"🛠 𝕮𝖔𝖒𝖒𝖆𝖓𝖉𝖘: `{COMMAND_HAND_LER[:1]}{command['command']} {command['params']}`\n"
+            result += f"🛠 𝕮οммαи∂ѕ: `{COMMAND_HAND_LER[:1]}{command['command']} {command['params']}`\n"
 
         if command["example"] is None:
-            result += f"💬 𝔈𝔵𝔭𝔩𝔞𝔦𝔫𝔞𝔱𝔦𝔬𝔫: `{command['usage']}`\n\n"
+            result += f"💬 𝔈ϰρℓαиατιοи: `{command['usage']}`\n\n"
         else:
-            result += f"💬 𝔈𝔵𝔭𝔩𝔞𝔦𝔫𝔞𝔱𝔦𝔬𝔫: `{command['usage']}`\n"
+            result += f"💬 𝔈ϰρℓαиατιοи: `{command['usage']}`\n"
             result += f"⌨️ ℱℴ𝓇 ℰ𝓍𝒶𝓂𝓅𝓁ℯ: `{COMMAND_HAND_LER[:1]}{command['example']}`\n\n"
 
         await event.edit(
