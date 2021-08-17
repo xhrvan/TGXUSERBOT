@@ -8,7 +8,7 @@ from telethon.events import InlineQuery, callbackquery
 from telethon.sync import custom
 from telethon import events, functions, Button, custom
 from telethon.tl.functions.users import GetFullUserRequest
-from userbot.plugins.sql_helper import pmpermit_sql
+from userbot.plugins.sql_helper import pmpermit_sql as pmpermit_sql
 from userbot import ALIVE_NAME, CUSTOM_PMPERMIT, LEGEND_ID
 from userbot.Config import Config
 from LEGENDBOT.utils import admin_cmd
