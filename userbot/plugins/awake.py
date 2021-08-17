@@ -44,6 +44,6 @@ async def amireallyalive(alive):
            
     
     
-CmdHelp("awake").add_command(
+CmdHelp("αωακє").add_command(
   'awake', None, 'Awake Or Not'
 ).add()
