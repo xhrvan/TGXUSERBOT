@@ -9,6 +9,7 @@ from userbot.Config import Config
 from LEGENDBOT.utils import admin_cmd, sudo_cmd, edit_or_reply
 from userbot.cmdhelp import CmdHelp
 import urllib3
+from . import *
 
 urllib3.disable_warnings(urllib3.exceptions.InsecureRequestWarning)
 # =====================================
@@ -163,19 +164,19 @@ async def dyno_usage(dyno):
     await asyncio.sleep(1.5)
 
     return await dyno.edit(
-        "⚡ **Dyno Usage** ⚡:\n\n"
-        f" ➠ `Dyno usage for` • **{Var.HEROKU_APP_NAME}** • :\n"
-        f"     ★  `{AppHours}`**h**  `{AppMinutes}`**m**  "
+        " **Dyno Usage** :\n\n"
+        f" ➠ 🥇`Dyno usage for`🥇 • **{Var.HEROKU_APP_NAME}** • :\n"
+        f"     🔰  `{AppHours}`**h**  `{AppMinutes}`**m**  "
         f"**|**  [`{AppPercentage}`**%**]"
         "\n\n"
         " ➠ `Dyno hours quota remaining this month`:\n"
-        f"     ★  `{hours}`**h**  `{minutes}`**m**  "
+        f"     🔰 `{hours}`**h**  `{minutes}`**m**  "
         f"**|**  [`{percentage}`**%**]"
         f"** ➠ Total Space: __GB**"
     )
 
 
-@borg.on(admin_cmd(pattern="logs$", outgoing=True))
+@borg.on(admin_cmd(pattern="viewlogs$", outgoing=True))
 async def _(dyno):
     if dyno.fwd_from:
         return
@@ -224,34 +225,14 @@ def prettyjson(obj, indent=2, maxlinelength=80):
         indent=indent,
     )
     return indentitems(items, indent, level=0)
+@borg.on(admin_cmd(pattern="logs$", outgoing=True))
+async def gib_logs(client, message, happ):
+    engine = message.Engine
+    msg_ = await edit_or_reply(message, engine.get_string("PROCESSING"))
+    logs = happ.get_log()
+    capt = f"Heroku Logs Of {Config.HEROKU_APP_NAME}"
+    await edit_or_send_as_file(logs, msg_, client, capt, "logs")
 
-
-
-@borg.on(admin_cmd(pattern="logs$"))
-async def _(dyno):
-    if (HEROKU_APP_NAME is None) or (HEROKU_API_KEY is None):
-        return await eor(dyno, f"Make Sure Your HEROKU_APP_NAME & HEROKU_API_KEY are filled correct. Visit group for help.")
-    try:
-        Heroku = heroku3.from_key(HEROKU_API_KEY)
-        app = Heroku.app(HEROKU_APP_NAME)
-    except BaseException:
-        return await dyno.reply(f"Make Sure Your Heroku AppName & API Key are filled correct. Or Visit Legend Group")
-   # event = await eor(dyno, "Downloading Logs...")
-    LEGEND_data = app.get_log()
-    await eor(dyno, LEGEND_data)
-    
-
-def prettyjson(obj, indent=2, maxlinelength=80):
-    """Renders JSON content with indentation and line splits/concatenations to fit maxlinelength.
-    Only dicts, lists and basic types are supported"""
-    items, _ = getsubitems(
-        obj,
-        itemkey="",
-        islast=True,
-        maxlinelength=maxlinelength - indent,
-        indent=indent,
-    )
-    return indentitems(items, indent, level=0)
 
 
 CmdHelp("нєяοκυ").add_command(
