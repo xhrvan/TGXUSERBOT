@@ -1,5 +1,5 @@
 
-
+#ℓωg∂и∂ϐ∂נ∂
 from asyncio import sleep
 
 from requests import get
@@ -14,7 +14,6 @@ from userbot import (
     bot,
 )
 from userbot.utils import errors_handler
-from userbot.cmdhelp import CmdHelp
 
 @borg.on(ChatAction)
 @errors_handler
