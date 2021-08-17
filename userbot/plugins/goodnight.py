@@ -30,7 +30,7 @@ async def _(event):
 
 	
 	
-CmdHelp("goodnight").add_command(
+CmdHelp("gи").add_command(
 	'gn', None, 'Use and See'
 ).add()
 
