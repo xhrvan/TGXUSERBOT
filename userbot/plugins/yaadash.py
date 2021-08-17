@@ -32,6 +32,6 @@ async def _(event):
 
 
 
-CmdHelp("yaadash").add_command(
+CmdHelp("γ∂αѕн").add_command(
 	'yaadash', None, 'Use and see'
 ).add()
