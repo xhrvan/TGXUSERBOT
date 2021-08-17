@@ -218,6 +218,6 @@ async def _(event):
         
         
 CmdHelp("αиιмατοя").add_command(
-  'animator', None 'Try It'
+  'animator', None, 'Try It'
 ).add()
         
