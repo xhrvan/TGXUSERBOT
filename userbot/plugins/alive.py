@@ -65,14 +65,14 @@ async def amireallyalive(alive):
         LEGEND_caption = f"**{CUSTOM_ALIVE_TEXT}**\n"
         
         LEGEND_caption += f"~~~~~~~~~~~~~~~~~~~~~~~\n"
-        LEGEND_caption += f"      𖤍𝕭𝖔𝖙 𝕾𝖙𝖆𝖙𝖚𝖘𖤍\n"
-        LEGEND_caption += f"🇮🇳 τєℓєτнοи   : `{version.__version__}`\n"
-        LEGEND_caption += f"🇮🇳 ℓєgєи∂ϐοτ : `{LEGENDversion}`\n"
-        LEGEND_caption += f"🇮🇳 υρτιмє       : `{uptime}`\n"
-        LEGEND_caption += f"🔱 ɱαรƭεr       : {mention}\n"
-        LEGEND_caption += f"🔱 σωɳεɾ        : [ℓєgєиd](t.me/Legend_Mr_Hacker)\n"
+        LEGEND_caption += f"      ⚡𝕭𝖔𝖙 𝕾𝖙𝖆𝖙𝖚𝖘⚡\n"
+        LEGEND_caption += f"•⚡• 𝕿єℓєτнοи   : `{version.__version__}`\n"
+        LEGEND_caption += f"•⚡• 𝕷êgëñd𝕭øt  : `{LEGENDversion}`\n"
+        LEGEND_caption += f"•⚡• 𝖀ptïmê       : `{uptime}`\n"
+        LEGEND_caption += f"•⚡• 𝕸αѕτєя       : {mention}\n"
+        LEGEND_caption += f"•⚡• 𝕺ωɳεɾ        : [𝕷êgëñd](t.me/Legend_Mr_Hacker)\n"
         
-        LEGEND_caption += " [✨ɠɾσµρ✨](https://t.me/Legend_Userbot) 🔹 [📜lเςєภรє📜](https://github.com/LEGEND-OS/LEGENDBOT/blob/master/LICENSE)"
+        LEGEND_caption += " [gяουρ](https://t.me/Legend_Userbot) 🔹 [📜ʟɪᴄᴇɴᴄᴇ📜](https://github.com/LEGEND-OS/LEGENDBOT/blob/master/LICENSE)"
         await alive.client.send_file(
             alive.chat_id, LEGEND_IMG, caption=LEGEND_caption, reply_to=reply_to_id
         )
@@ -83,7 +83,7 @@ async def amireallyalive(alive):
             f"**{CUSTOM_ALIVE_TEXT}**\n\n"
             f"~~~~~~~~~~~~~~~~~~~~~~~ \n"
             f"         𝕭𝖔𝖙 𝕾𝖙𝖆𝖙𝖚𝖘\n"
-            f"🇮🇳 τєℓєτнοи    : `{version.__version__}`\n"
+            f"•⚡• 𝕿єℓєτнοи    : `{version.__version__}`\n"
             f"🇮🇳 ℓєgєи∂ϐοτ  : `{LEGENDversion}`\n"
             f"🇮🇳 υρτιмє        : `{uptime}`\n"
             f"🔱 ɱαรƭεɾ        : {mention}\n"
