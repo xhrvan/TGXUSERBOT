@@ -1,7 +1,6 @@
 import asyncio
 import math
 import os
-
 import heroku3
 import requests
 from userbot.cmdhelp import CmdHelp
@@ -10,7 +9,8 @@ from LEGENDBOT.utils import admin_cmd, sudo_cmd, edit_or_reply
 from userbot.cmdhelp import CmdHelp
 import urllib3
 from . import *
-
+DEFAULTUSER = ALIVE_NAME or "ℓєgєи∂ϐοτ"
+mention = f"[{DEFAULTUSER}](tg://user?id={USERID})"
 urllib3.disable_warnings(urllib3.exceptions.InsecureRequestWarning)
 # =====================================
 
@@ -176,47 +176,24 @@ async def dyno_usage(dyno):
     )
 
 
-@borg.on(admin_cmd(pattern="viewlogs$", outgoing=True))
+@bot.on(admin_cmd(pattern="logs$"))
+@bot.on(sudo_cmd(pattern="logs$", allow_sudo=True))
 async def _(dyno):
-    if dyno.fwd_from:
-        return
+    if (HEROKU_APP_NAME is None) or (HEROKU_API_KEY is None):
+        return await eor(dyno, f"Make Sure Your HEROKU_APP_NAME & HEROKU_API_KEY are filled correct. Visit {mentiom} for help.", link_preview=False)
     try:
         Heroku = heroku3.from_key(HEROKU_API_KEY)
         app = Heroku.app(HEROKU_APP_NAME)
-        thumb = LEGEND_logo
-    except:
-        return await dyno.reply(
-            " Please make sure your Heroku API Key, Your App name are configured correctly in the heroku\n\n[Visit Support Group For Help](https://t.me/LEGEND_Support)"
-        )
+    except BaseException:
+        return await dyno.reply(f"Make Sure Your Heroku AppName & API Key are filled correct. Visit {mention} for help.", link_preview=False)
+   # event = await eor(dyno, "Downloading Logs...")
     LEGEND_data = app.get_log()
-    LEGEND_key = (
-        requests.post("https://nekobin.com/api/documents", json={"content": LEGEND_data})
-        .json()
-        .get("result")
-        .get("key")
-    )
-    LEGEND_url = f"⚡ Pasted this logs.txt to [NekoBin](https://nekobin.com/{LEGEND_key}) && [RAW PAGE](https://nekobin.com/raw/{LEGEND_key}) ⚡"
-    await dyno.edit("Getting Logs....")
-    with open("logs.txt", "w") as log:
-        log.write(app.get_log())
-    await dyno.edit("Got the logs wait a sec")
-    await dyno.client.send_file(
-        dyno.chat_id,
-        "logs.txt",
-        reply_to=dyno.id,
-        thumb=thumb,
-        caption=LEGEND_url,
-    )
-
-    await asyncio.sleep(5)
-    await dyno.delete()
-    return os.remove("logs.txt")
-
+    await eor(dyno, LEGEND_data, deflink=True, linktext=f"**🗒️ Heroku Logs of 💯 lines. 🗒️**\n\n🌟 **Bot Of :{mention}\n\n🚀** Pasted**  ")
+    
 
 def prettyjson(obj, indent=2, maxlinelength=80):
     """Renders JSON content with indentation and line splits/concatenations to fit maxlinelength.
     Only dicts, lists and basic types are supported"""
-
     items, _ = getsubitems(
         obj,
         itemkey="",
@@ -225,13 +202,7 @@ def prettyjson(obj, indent=2, maxlinelength=80):
         indent=indent,
     )
     return indentitems(items, indent, level=0)
-@borg.on(admin_cmd(pattern="logs$", outgoing=True))
-async def gib_logs(client, message, happ):
-    engine = message.Engine
-    msg_ = await edit_or_reply(message, engine.get_string("PROCESSING"))
-    logs = happ.get_log()
-    capt = f"Heroku Logs Of {Config.HEROKU_APP_NAME}"
-    await edit_or_send_as_file(logs, msg_, client, capt, "logs")
+
 
 
 
