@@ -1,4 +1,4 @@
-# Ascii module by @David99q for @LEGEND_Userbot
+
 # A over powerful bot
 # I know u will kang...
 # GTFO!! MOTHERFUCKER!!!!!!!!!!!
@@ -24,16 +24,16 @@ async def _(event):
     if event.fwd_from:
         return
     if not event.reply_to_msg_id:
-        await edit_or_reply(event, "Reply to any user message.😒🤐")
+        await edit_or_reply(event, "яєρℓγ το αиγ ιмαgє😒🤐")
         return
     reply_message = await event.get_reply_message()
     if not reply_message.media:
-        await edit_or_reply(event, "Reply to media message😒🤐")
+        await edit_or_reply(event, "Reply to media ιмαgє😒🤐")
         return
     chat = "@asciiart_bot"
     reply_message.sender
     if reply_message.sender.bot:
-        await edit_or_reply(event, "Reply to actual users message.😒🤐")
+        await edit_or_reply(event, "Reply to actual мє∂נα ιмαgє.😒🤐")
         return
     aura = await edit_or_reply(event, "Wait making ASCII...🤓🔥🔥")
     async with event.client.conversation(chat) as conv:
@@ -96,7 +96,7 @@ async def _(event):
             caption=f"**Image Type :** LINE Art \n**Uploaded By :** {mention}",
         )
 
-CmdHelp("ascii").add_command(
+CmdHelp("αѕϲιι").add_command(
   'ascii', 'reply to any image file', 'Makes an image ascii style, try out your own'
 ).add_command(
   'line', 'reply to any image file', 'Makes an image in line style'
