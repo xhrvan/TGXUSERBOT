@@ -169,7 +169,7 @@ async def _(event):
     if event.fwd_from:
         return
     animation_interval = 0.1
-    animation_ttl = range(0, 36)
+    animation_ttl = range(0, 18)
     # input_str = event.pattern_match.group(1)
     # if input_str == "ok":
     await event.edit("ok")
@@ -177,7 +177,7 @@ async def _(event):
         "οκ",
         "ѕιя",
         "мιѕα",
-        "οκ ϐιτϲн",
+        "οκ bro",
         "οκ ϐяο",
         "οκ gƒ",
         "οκ ϐƒ",
@@ -187,8 +187,8 @@ async def _(event):
         "οκ ѕκ",
         "οκ ∂и",
         "οκ",
-        "мα∂",
-        "Yeahhhh",
+        "sis",
+        "Yeah",
         "O",
         "K",
         "οκ ѕιя/мιѕѕ! 😇",
