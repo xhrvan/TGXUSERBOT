@@ -1,5 +1,4 @@
-# imported from ppe-remix by @heyworld & @DeletedUser420
-# Translated & Updated by @Sur_vivor
+
 import random
 import re
 
@@ -56,6 +55,4 @@ async def waifu(animu):
     
 CmdHelp("animesticker").add_command(
     'waifus', None, 'Use and See'
-).add_command(
-    'op', None, 'Use and See'
 ).add()
