@@ -44,7 +44,7 @@ async def set_not_afk(event):
     if ".afk" not in current_message and "yes" in USER_AFK:  # pylint:disable=E0602
         LEGENDBOT = await borg.send_message(
             event.chat_id,
-            "🔥𝓑𝓪𝓬𝓴 𝓐𝓵𝓲𝓿𝓮!\n**𝔑𝔬 𝔏𝔬𝔫𝔤𝔢𝔯 𝔞𝔣𝔨.**\n⏱️ `աαs αբk for:``"
+            "🔥Bαϲκ αℓινє !\n**и𝔬 𝔏οиgєя мοяє 𝔞ƒκ.**\n⏱️ `աαs αƒk for:``"
             + total_afk_time
             + "`", file=LEGENDpic
         )
@@ -52,7 +52,7 @@ async def set_not_afk(event):
             await borg.send_message(  # pylint:disable=E0602
                 Config.PRIVATE_GROUP_BOT_API_ID,  # pylint:disable=E0602
                 "#AFKFALSE \nSet AFK mode to False\nReply to pic and use .afk reason"
-                + "🔥𝓑𝓪𝓬𝓴 𝓐𝓵𝓲𝓿𝓮!\n**𝔑𝔬 𝔏𝔬𝔫𝔤𝔢𝔯 𝔞𝔣𝔨.**\n⏱️ `աαs αբk for:``"
+                + "🔥Bαck αℓινє\n**𝔑𝔬 𝔏𝔬𝔫𝔤𝔢𝔯 𝔞𝔣𝔨.**\n⏱️ `աαs αբk for:``"
                 + total_afk_time
             )
         except Exception as e:  # pylint:disable=C0103,W0703
@@ -96,8 +96,8 @@ async def on_afk(event):
         msg = None
         
         message_to_reply = (
-            f"♦️[{DEFAULTUSER}](tg://user?id={LEGEND}) ιѕ иοω οи αƒκ \n\nℓαѕτ ѕєєи:-`{total_afk_time}`\n"
-            + f"𝕽єαѕοи :`{reason}`"
+            f"♦️[{DEFAULTUSER}](tg://user?id={LEGEND}) ιѕ иοω οи 𝖆ƒκ \n\n♦️𝕷αѕτ 𝕾єєи:-`{total_afk_time}`\n"
+            + f"♦️𝕽єαѕοи :`{reason}`"
   if reason
            else f"нєγ ѕιя / мιѕѕ🤔!\nι αм ϲυяяєиτℓγ υиαναιℓαϐℓє😛. ι яєρℓγ υ αƒτєя ϲοмє ϐαϲκοиℓιиє.\n__Since when, you ask? From__ `{total_afk_time}`\nI'll be back when I feel to come🚶😛"
         )
