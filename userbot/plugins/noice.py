@@ -200,7 +200,7 @@ async def _(event):
         await event.edit(animation_chars[i % 18])
         
 
-CmdHelp("noice").add_command(
+CmdHelp("иοιϲє").add_command(
   "f", "<text>", "Gives out the text in 'F' letter"
 ).add_command(
   "shrug", None, "¯\_(ツ)_/¯"
