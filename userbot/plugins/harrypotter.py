@@ -95,7 +95,7 @@ async def _(event):
 
 from userbot.cmdhelp import CmdHelp
 
-CmdHelp("harrypotter").add_command(
+CmdHelp("hry ptr").add_command(
        'hp', None, 'its animation of harrypotter'
 ).add()
 
