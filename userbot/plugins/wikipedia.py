@@ -23,6 +23,6 @@ async def _(event):
     await event.edit(
         "WikiPedia **Search**: {} \n\n **Result**: \n\n{}".format(input_str, result)
     )
-CmdHelp("wikipedia").add_command(
+CmdHelp("ωκιρє∂ια").add_command(
     'wikipedia', None, 'Search anything on Wikipedia'
 )
