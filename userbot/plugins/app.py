@@ -1,7 +1,4 @@
-"""Fetch App Details from Playstore. @LEGEND_Userbot
-.app <app_name> to fetch app details.
-.appr <app_name>  to fetch app details with Xpl0iter request link.
-.mods <app_name> to get the premier app from telegram if available.."""
+
 
 import bs4
 import requests
