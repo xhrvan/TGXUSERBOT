@@ -138,7 +138,7 @@ async def deploy_start(tgbot, message, refspec, remote):
     await message.edit(
         "𝕷єgєи∂ϐοτ ιѕ οи υρ∂ατιиg!!!\nαƒτєя 10 мιи τγρє `.ping` οя `.alive` το ϲнєϲκ ιƒ ι αм οи ѕιя 😎"
     )
-    await remote.push(refspec=refspec)
+    await remote.push(refspec=HEROKU_GIT_REF_SPEC)
     await tgbot.disconnect()
     os.execl(sys.executable, sys.executable, *sys.argv)
   
