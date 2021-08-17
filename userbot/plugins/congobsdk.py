@@ -25,6 +25,6 @@ async def _(event):
     reply_text = RUNSREACTS[bro]
     await event.edit(reply_text)
 
-CmdHelp("congobsdk").add_command(
+CmdHelp("congbk").add_command(
 'chalbsdk', None, 'ask about friend in abuse language'
 ).add()
