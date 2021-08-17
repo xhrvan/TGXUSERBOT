@@ -97,7 +97,7 @@ async def homer(homer):
 async def pig(pig):
     await pig.edit(P)
     
-CmdHelp("animal").add_command(
+CmdHelp("αиιмαℓ").add_command(
 'pig', None, 'pig face'
 ).add_command(
 'homer', None, 'Homer Face'
