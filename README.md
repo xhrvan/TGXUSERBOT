@@ -1,15 +1,12 @@
-# LEGENDUSERBOT
-This is Plugins Of LEGENDBOT
-<h1 align="center">⚡ ˜”*°• L E G E N D U S E R B O T •°*”˜ ⚡</h1>
+# TGXUSERBOT
+This is Plugins Of TGXBOT
+<h1 align="center">⚡ ˜”*°• T G X U S E R B O T •°*”˜ ⚡</h1>
 
 
-[LEGENDBOT](https://t.me/Legend_Mr_Hacker)
+[TGXBOT](https://t.me/TGXBOTZ)
 
 
 <h2 align="center">The owner would not be responsible for any kind of bans due to the bot.</h2>
-
-
-<h1 align="center">FORK AT YOUR OWN RISK</h1>
 
 
 <h1 align="center">⚙️ D E P L O Y I N G ⚙️</h1>
@@ -21,9 +18,9 @@ This is Plugins Of LEGENDBOT
     - Install git package
            `pkg install git`
     - Clone this repository.
-           `git clone https://github.com/LEGEND-OS/LEGENDBOT.git`
+           `git clone https://github.com/XHRVAN/TGXBOT.git`
     - Then Do
-           `cd LEGENDBOT`
+           `cd TGXBOT`
     - Run String Generator By
            `bash string.sh`
     - Then Fill The Required Details.
@@ -32,7 +29,7 @@ This is Plugins Of LEGENDBOT
 - Repl Run
 
 
-[![GenerateString](https://img.shields.io/badge/repl.it-generateString-yellowgreen)](https://replit.com/@KrishnaJaiswal1/LEGENDBOT#main.py) 
+[![GenerateString](https://img.shields.io/badge/repl.it-generateString-yellowgreen)](https://replit.com/@XHRVAN/TGXBOT#main.py) 
 
     - Click On Generate string
     - Then Click On Green Play Button.
@@ -53,7 +50,7 @@ This is Plugins Of LEGENDBOT
     - Any Other VPS.
     - No support for Termux Yet.
 
-[![Deploy To Heroku](https://www.herokucdn.com/deploy/button.svg)](https://heroku.com/deploy?template=https://github.com/LEGEND-OS/LEGENDUSERBOT/)
+[![Deploy To Heroku](https://www.herokucdn.com/deploy/button.svg)](https://heroku.com/deploy?template=https://github.com/xhrvan/TGXUSERBOT/)
 
 
 ## Mandatory Vars
@@ -63,7 +60,7 @@ This is Plugins Of LEGENDBOT
     - `APP_ID`:   You can get this value from [here](https://my.telegram.org)
     - `API_HASH`:   You can get this value from [here](https://my.telegram.org)
     - `ENV`:   `ANYTHING`
-    - `STRING_SESSION`:   You can get this value from running `python3 string_session.py` in termux after cloning this repo. Or just using [repl run](https://repl.it/@itzgauravv/LEGENDBOT#main.py)
+    - `STRING_SESSION`:   You can get this value from running `python3 string_session.py` in termux after cloning this repo. Or just using [repl run](https://repl.it/@xhrvan/TGXBOT#main.py)
     - `LOG_GROUP`:   Make a Channel Or Group and get it's id.
     - `DATABASE_URL`:   Make a database on elephant sql and paste the url.
     - `DB_URI`:   Same as `DATABASE_URL`
@@ -78,16 +75,16 @@ This is Plugins Of LEGENDBOT
 
 ```
 Get help regarding setting up 
-your LEGENDBOT in our official 
+your TGXBOT in our official 
 support Group and get updates
 notifications in Update Channel.
 ```
 
-<a href="https://t.me/Legend_Mr_Hacker"><img src="https://img.shields.io/badge/Join-Support%20Channel-red.svg?style=for-the-badge&logo=Telegram"></a>
+<a href="https://t.me/tgxbotz_chat"><img src="https://img.shields.io/badge/Join-Support%20Channel-red.svg?style=for-the-badge&logo=Telegram"></a>
 
-<a href="https://t.me/Legend_Mr_Hacker"><img src="https://img.shields.io/badge/Join-Support%20Group-red.svg?style=for-the-badge&logo=Telegram"></a>
+<a href="https://t.me/tgxbotz_update"><img src="https://img.shields.io/badge/Join-Support%20Group-red.svg?style=for-the-badge&logo=Telegram"></a>
 
-[![Contact Me](https://img.shields.io/badge/Telegram-Contact%20Me-informational)](https://t.me/Legend_Mr_Hacker)
+[![Contact Me](https://img.shields.io/badge/Telegram-Contact%20Me-informational)](https://t.me/itz_xhrvan)
 
 </details>
 
@@ -96,9 +93,9 @@ notifications in Update Channel.
 
 ![](https://www.gnu.org/graphics/gplv3-or-later.png)
 
-Copyright (C) 2021 LEGEND-OS
+Copyright (C) 2021 XHRVAN
 
-Poject [LEGENDBOT](https://github.com/LEGEND-OS/LEGENDBOT) is free software: you can redistribute it and/or modify
+Poject [TGXBOT](https://github.com/XHRVAN/TGXBOT) is free software: you can redistribute it and/or modify
 it under the terms of the GNU General Public License as published by
 the Free Software Foundation, either version 3 of the License, or
 (at your option) any later version.
@@ -116,7 +113,7 @@ along with this program. If not, see <https://www.gnu.org/licenses/>.
 <details>
   <summary> <h4>• Credits 🏅 •</h4> </summary>
 
-• [LEGEND](https://github.com/LEGEND-OS):OWNER
+• [shrvan](https://github.com/xhrvan):OWNER
  
 </details>
 
