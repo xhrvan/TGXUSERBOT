@@ -179,20 +179,20 @@ async def dyno_usage(dyno):
 
 @bot.on(admin_cmd(pattern="logs$"))
 @bot.on(sudo_cmd(pattern="logs$", allow_sudo=True))
-async def _(dyno):
+async def _(events):
     if (HEROKU_APP_NAME is None) or (HEROKU_API_KEY is None):
         return await eor(dyno, f"Make Sure Your HEROKU_APP_NAME & HEROKU_API_KEY are filled correct. Visit {mentiom} for help.", link_preview=False)
     try:
         Heroku = heroku3.from_key(HEROKU_API_KEY)
         app = Heroku.app(HEROKU_APP_NAME)
     except BaseException:
-        return await dyno.reply(f"Make Sure Your Heroku AppName & API Key are filled correct. Visit {mention} for help.", link_preview=False)
+        return await event.reply(f"Make Sure Your Heroku AppName & API Key are filled correct. Visit {mention} for help.", link_preview=False)
    # event = await eor(dyno, "Downloading Logs...")
     LEGEND_data = app.get_log()
-    await eor(dyno, LEGEND_data, deflink=True, linktext=f"**🗒️ Heroku Logs of 💯 lines. 🗒️**\n\n🌟 **Bot Of :{mention}\n\n🚀** Pasted**  ")
+    await eor(dyno, LEGEND_data)
     
 
-def prettyjson(obj, indent=2, maxlinelength=80):
+def prettyjson(obj, indent=2, maxlinelength=80):y
     """Renders JSON content with indentation and line splits/concatenations to fit maxlinelength.
     Only dicts, lists and basic types are supported"""
     items, _ = getsubitems(
