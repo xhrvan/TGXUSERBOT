@@ -19,8 +19,8 @@ echo """
 
 
 
-Legendary LEGENDBOT
-@LEGENDSupport
+Legendary TGXBOT
+@TGXBOTZ_CHAT
 """
 
 python3 string_session.py
