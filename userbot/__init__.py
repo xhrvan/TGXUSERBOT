@@ -11,8 +11,8 @@ from userbot.Config import Config
 from var import Var
 
 StartTime = time.time()
-LEGENDversion = "2.O"
-botversion = "1.O"
+LEGENDversion = "2.ο"
+botversion = "1.ο"
 
 os.system("pip install --upgrade pip")
 if Var.STRING_SESSION:
