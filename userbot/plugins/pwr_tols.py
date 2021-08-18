@@ -1,7 +1,4 @@
-
-# This Source Code Form is subject to the terms of the GNU
-# General Public License, v.3.0. If a copy of the GPL was not distributed with this
-# file, You can obtain one at https://www.gnu.org/licenses/gpl-3.0.en.html
+ 
 import os
 import sys
 import asyncio
@@ -20,7 +17,7 @@ async def _(event):
     await event.edit("Restarting **[ █░░ ]** ...\nType `.ping` or `.help` to check if I am working 🙂")
     await event.edit("Restarting **[ ██░ ]** ...\nType `.ping` or `.help` to check if I am working 🙂")
     await event.edit("Restarting **[ ███ ]** ...\nType `.ping` or `.help` to check if I am working 🙂")
-    await event.edit("Restarted **[ ✓ ]** ...\nType `.ping` or `.legend` after 10min to check if I am working 🙂")
+    await event.edit("Restarted 𝕷𝐞̂𝐠𝐞́𝐧̃𝐝𝕭ø𝖙 ν2.ο**[ ✓ ]** ...\nType `.ping` or `.legend` after 10min to check if I am working 🙂")
     await bot.disconnect()
     os.execl(sys.executable, sys.executable, *sys.argv)
     quit()
@@ -37,7 +34,7 @@ async def _(event):
 
 
 CmdHelp("ρωя τοℓѕ").add_command(
-  "restart", None, "Restarts your userbot. Redtarting Bot may result in better functioning of bot when its laggy"
+  "restart", None, "Restarts your userbot. Reѕtarting Bot may result in better functioning of bot when its laggy"
 ).add_command(
   "shutdown", None, "Turns off Dynos of Userbot. Userbot will stop working unless you manually turn it on from heroku"
 ).add()
