@@ -166,7 +166,7 @@ async def dyno_usage(dyno):
 
     return await dyno.edit(
         " **Dyno Usage** :\n\n"
-        f" ➠ 🥇`Dyno usage for`🥇 • **{Var.HEROKU_APP_NAME}** • :\n"
+        f" ➠🥇`Dyno usage for`🥇 • **{Var.HEROKU_APP_NAME}** 🥇:\n"
         f"     🔰  `{AppHours}`**h**  `{AppMinutes}`**m**  "
         f"**|**  [`{AppPercentage}`**%**]"
         "\n\n"
