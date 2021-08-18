@@ -96,8 +96,8 @@ async def on_afk(event):
         msg = None
         
         message_to_reply = (
-            f"♦️[{DEFAULTUSER}](tg://user?id={LEGEND}) ιѕ иοω οи 𝖆ƒκ \n\n♦️𝕷αѕτ 𝕾єєи:-`{total_afk_time}`\n"
-            + f"♦️𝕽єαѕοи :`{reason}`"
+            f"⚜️𓆩[{DEFAULTUSER}](tg://user?id={LEGEND})𓆪 ιѕ иοω οи 𝖆ƒκ \n\n•♦️•𝕷αѕτ 𝕾єєи : `{total_afk_time}`\n"
+            + f"•♦️•𝕽єαѕοи : `{reason}`"
   if reason
            else f"нєγ ѕιя / мιѕѕ🤔!\nι αм ϲυяяєиτℓγ υиαναιℓαϐℓє😛. ι яєρℓγ υ αƒτєя ϲοмє ϐαϲκοиℓιиє.\n__Since when, you ask? From__ `{total_afk_time}`\nI'll be back when I feel to come🚶😛"
         )
