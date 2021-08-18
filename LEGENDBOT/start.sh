@@ -18,8 +18,8 @@
 echo """
 
               
-Legendary LEGENDBOT!!
-@LEGEND_Userbot
+Legendary TGXBOT!!
+@TGXBOTZ_CHAT
 """
 
 python3 -m userbot
