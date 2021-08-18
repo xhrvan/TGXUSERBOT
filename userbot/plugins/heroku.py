@@ -192,15 +192,7 @@ async def _(events):
     await eor(dyno, LEGEND_data)
     
 
-def prettyjson(obj, indent=2, maxlinelength=80):y
-   items, _ = getsubitems(
-        obj,
-        itemkey="",
-        islast=True,
-        maxlinelength=maxlinelength - indent,
-        indent=indent,
-    )
-    return indentitems(items, indent, level=0)
+
 
 
 
