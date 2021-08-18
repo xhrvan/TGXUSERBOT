@@ -214,4 +214,3 @@ CmdHelp("τяиτ ѕяϲн").add_command(
 ).add_command(
   "movie torrentz2.eu", "<query>", "Fetches torrent links of given query alternative way"
 ).add()
-"""
