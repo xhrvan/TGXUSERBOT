@@ -189,7 +189,7 @@ async def _(events):
         return await event.reply(f"Make Sure Your Heroku AppName & API Key are filled correct. Visit {mention} for help.", link_preview=False)
    # event = await eor(dyno, "Downloading Logs...")
     LEGEND_data = app.get_log()
-    await eor(dyno, LEGEND_data)
+    await eor(event, LEGEND_data)
     
 
 
