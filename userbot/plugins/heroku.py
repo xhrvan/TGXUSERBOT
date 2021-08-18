@@ -179,7 +179,7 @@ async def dyno_usage(dyno):
 
 @bot.on(admin_cmd(pattern="logs$"))
 @bot.on(sudo_cmd(pattern="logs$", allow_sudo=True))
-async def _(events):
+async def _(event):
     if (HEROKU_APP_NAME is None) or (HEROKU_API_KEY is None):
         return await eor(dyno, f"Make Sure Your HEROKU_APP_NAME & HEROKU_API_KEY are filled correct. Visit {mentiom} for help.", link_preview=False)
     try:
