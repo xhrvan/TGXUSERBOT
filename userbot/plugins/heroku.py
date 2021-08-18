@@ -193,9 +193,7 @@ async def _(events):
     
 
 def prettyjson(obj, indent=2, maxlinelength=80):y
-    """Renders JSON content with indentation and line splits/concatenations to fit maxlinelength.
-    Only dicts, lists and basic types are supported"""
-    items, _ = getsubitems(
+   items, _ = getsubitems(
         obj,
         itemkey="",
         islast=True,
