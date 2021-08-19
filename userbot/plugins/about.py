@@ -29,7 +29,7 @@ pm_caption += "😇😇**TGX**😇😇   >>》 [Owner](https://t.me/itz_xhrvan)\
 pm_caption += f"🔰🔰**𝕸𝖆𝖙𝖊𝖗**🔰🔰  >>》 {DEFAULTUSER}\n"
 pm_caption += "❣❣ **Tgxbot**❣❣ >>》 [Group](https://t.me/Tgxbotz_chat)\n\n"
 pm_caption += "🎊🎊 **Repo**🎊🎊  >>》 [Repo](https://github.com/xhrvan/TGXBOT)\n\n"
-pm_caption += "[....▄███▄███▄\n....█████████\n.......▀██❣🌹💫😇💫🌹❣███▀\n...............▀█▀\n](https://t.me/Legend_Userbot)\n\n"
+pm_caption += "[❣🌹💫😇💫🌹❣](https://t.me/tgxbotz_chat)\n\n"
 @borg.on(admin_cmd(pattern=r"abot"))
 
 async def amireallyalive(yes):
