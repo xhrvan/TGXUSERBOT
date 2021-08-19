@@ -17,7 +17,7 @@ async def _(event):
     await event.edit("Restarting **[ █░░ ]** ...\nType `.ping` or `.help` to check if I am working 🙂")
     await event.edit("Restarting **[ ██░ ]** ...\nType `.ping` or `.help` to check if I am working 🙂")
     await event.edit("Restarting **[ ███ ]** ...\nType `.ping` or `.help` to check if I am working 🙂")
-    await event.edit("Restarted 𝕷𝐞̂𝐠𝐞́𝐧̃𝐝𝕭ø𝖙 ν2.ο**[ ✓ ]** ...\nType `.ping` or `.legend` after 10min to check if I am working 🙂")
+    await event.edit("Restarted TgxBot ν2.ο**[ ✓ ]** ...\nType `.ping` or `.help` after 10min to check if I am working 🙂")
     await bot.disconnect()
     os.execl(sys.executable, sys.executable, *sys.argv)
     quit()
