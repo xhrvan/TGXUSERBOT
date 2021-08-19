@@ -33,10 +33,10 @@ LEGEND = (
 DEFAULTUSER = str(ALIVE_NAME) if ALIVE_NAME else "ℓєgєи∂"
 USER_BOT_WARN_ZERO = "**Hello Sir/Miss, ʏᴏᴜ ᴅɪᴅ'ɴᴛ sᴇᴇ ᴡʜᴀᴛ ɪ sᴀɪᴅ ᴍʏ ᴍᴀsᴛᴇʀ ɪs ᴄᴜʀʀᴇɴᴛʟʏ ᴏғғʟɪɴᴇ ᴅᴏɴᴛ sᴘᴀᴍ.`\n**ɴᴏᴡ sʜᴜᴛ ᴜᴘ.... ᴀɴᴅ ɢᴇᴛ ʟᴏsᴛ**"
 USER_BOT_NO_WARN = (
-    "**нєℓℓο ѕιя/мιѕѕ,ι нανєи'τ αρρяονє∂ γου γєτ το ρєяѕοиαℓ мєѕѕαgє мє😎⚠️**.\n\n"
+    "**🔥 ƬɠӾẞø𝚝 Prîvã†é Sêçürïty Prø†öçõl 🔥**.\n\n"
     f"τнιѕ ιѕ мγ οωиєя {DEFAULTUSER}'s\n"
     f"\n**{LEGEND}**\n\n"
-    "⚡Register Your Request!⚡\nSend `/start` To Register Your Request🔥**"
+    "⚡яєgιѕτєя γουя яєգυєѕτ!⚡\nѕєи∂ `/start` το яєgιѕτєя γουя яєգυєѕτ🔥**"
 )
  
 if Var.PRIVATE_GROUP_ID is not None:
