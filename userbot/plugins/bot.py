@@ -32,7 +32,7 @@ pm_caption += f"**┣🇮🇳 τєℓєτнοи  : `{version.__version__}`**\n"
 pm_caption += f"**┣🇮🇳 ℓєgєи∂ϐοτ : {LEGENDversion}**\n"
 pm_caption += f"**┣🇮🇳 𝖘𝖚𝖉𝖔      : `{sudou}`**\n"
 pm_caption += f"**┣🇮🇳 𝕺𝖜𝖓𝖊𝖗     : [ℓεɠεɳ∂](https://t.me/Legend_Mr_Hacker)**\n"
-pm_caption += f"**┣🇮🇳 𝕲𝖗𝖔𝖚𝖕     : [𝕲𝖗𝖔𝖚𝖕](https://t.me/Legend_Userbot)**\n"
+pm_caption += f"**┣🇮🇳 𝕲𝖗𝖔𝖚𝖕     : [𝕲𝖗𝖔𝖚𝖕](https://t.me/Tgxbotz_chat)**\n"
 pm_caption += f"**┗━━━━━━━━━━━━━┛**\n"
 
 pm_caption += "    [✨яєρο✨](https://github.com/LEGEND-OS/TGXBOT) 🔹 [📜ℓιϲєиѕє📜](https://github.com/LEGEND-OS/TGXBOT/blob/master/LICENSE)"

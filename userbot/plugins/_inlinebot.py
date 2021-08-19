@@ -73,7 +73,7 @@ if Var.TG_BOT_USER_NAME_BF_HER is not None and tgbot is not None:
                     apn.append(y)
             result = await builder.article(
                 f"Hey! Only use .help please", 
-                text=f"🔰[{ALIVE_NAME}](https://t.me/Legend_Userbot)\n\n📁Tοταℓ Pℓµɠเɳร Iиѕταℓℓє∂⭆ `{len(CMD_HELP)}` \n🗂Tοταℓ Cοммαи∂ѕ⭆ `{len(apn)}`\n📙Pαցҽ⭆ 1/{veriler[0]}",
+                text=f"🔰[{ALIVE_NAME}](https://t.me/Tgxbotz_chat)\n\n📁Tοταℓ Pℓµɠเɳร Iиѕταℓℓє∂⭆ `{len(CMD_HELP)}` \n🗂Tοταℓ Cοммαи∂ѕ⭆ `{len(apn)}`\n📙Pαցҽ⭆ 1/{veriler[0]}",
                 buttons=veriler[1],
                 link_preview=False,
             )
@@ -88,10 +88,10 @@ if Var.TG_BOT_USER_NAME_BF_HER is not None and tgbot is not None:
         else:
             result = builder.article(
                 "@LEGEND_Userbot",
-                text="""**нєγ! τнιѕ ιѕ [ℓєgєи∂ϐοτ.](https://t.me/Legend_Userbot) \nγου ϲαи κиοω мοяє αϐουτ мє👇**""",
+                text="""**нєγ! τнιѕ ιѕ [ℓєgєи∂ϐοτ.](https://t.me/Tgxbotz_chat) \nγου ϲαи κиοω мοяє αϐουτ мє👇**""",
                 buttons=[
                     [
-                        custom.Button.url("🔥 Gяουρ 🔥", "https://t.me/Legend_Userbot"),
+                        custom.Button.url("🔥 Gяουρ 🔥", "https://t.me/Tgxbotz_chat"),
                         custom.Button.url(
                             "⚡ Oωиєя ⚡", "https://t.me/Legend_Mr_Hacker"
                         ),
@@ -109,7 +109,7 @@ if Var.TG_BOT_USER_NAME_BF_HER is not None and tgbot is not None:
     async def page(event):
         if not event.query.user_id == bot.uid:
             return await event.answer(
-                "мιℓ gγι ταѕαℓℓι..? καϐѕє мєяє ϐοτ мє υиgℓι κя янє н. κнυ∂κα ϐиα ℓο иα αgя ϲнαιγє το ρτα инι καнα ѕє ααנατє н ∂ιѕτυяϐ κяиє. ©ℓєgєи∂ϐοτ™(https://t.me/Legend_Userbot)",
+                "мιℓ gγι ταѕαℓℓι..? καϐѕє мєяє ϐοτ мє υиgℓι κя янє н. κнυ∂κα ϐиα ℓο иα αgя ϲнαιγє το ρτα инι καнα ѕє ααנατє н ∂ιѕτυяϐ κяиє. ©ℓєgєи∂ϐοτ™(https://t.me/Tgxbotz_chat)",
                 cache_time=0,
                 alert=True,
             )
@@ -129,10 +129,10 @@ if Var.TG_BOT_USER_NAME_BF_HER is not None and tgbot is not None:
     async def on_plug_in_callback_query_handler(event):
         if event.query.user_id == bot.uid:
             await delete_LEGEND(event,
-              "⚜️ℓεɠεɳ∂ɓσƭ ตҽղմ թɾօѵíժҽɾ ís ղօա clօsҽժ.💫\n\n            **[©ℓєgєи∂ϐοτ](https://t.me/Legend_Userbot)**", 5, link_preview=False
+              "⚜️ℓεɠεɳ∂ɓσƭ ตҽղմ թɾօѵíժҽɾ ís ղօա clօsҽժ.💫\n\n            **[©ℓєgєи∂ϐοτ](https://t.me/Tgxbotz_chat)**", 5, link_preview=False
             )
         else:
-            LEGEND_alert = "οн ϲοммοи γαяя υ τнιиκ υ ϲαи ϲℓιϲκ οи ιτ😁😁😁. ∂єρℓογ υя οωи ϐοτ ©ℓεɠεɳ∂ɓσƭ(https://t.me/Legend_Userbot)"
+            LEGEND_alert = "οн ϲοммοи γαяя υ τнιиκ υ ϲαи ϲℓιϲκ οи ιτ😁😁😁. ∂єρℓογ υя οωи ϐοτ ©ℓεɠεɳ∂ɓσƭ(https://t.me/Tgxbotz_chat)"
             await event.answer(LEGEND_alert, cache_time=0, alert=True)
           
     @tgbot.on(
@@ -141,7 +141,7 @@ if Var.TG_BOT_USER_NAME_BF_HER is not None and tgbot is not None:
     async def Information(event):
         if not event.query.user_id == bot.uid:
             return await event.answer(
-                "κγα υиgℓι καя янє нο мєяє ϐοτ ραя αgαя ϲнαнιγє τοн κнυ∂ κα ϐαиα ℓο иα αα נατє нο υиgℓι καяиє мєяє ϐοτ ρє.   ©ℓεɠεɳ∂ɓσƭ(https://t.me/Legend_Userbot)",
+                "κγα υиgℓι καя янє нο мєяє ϐοτ ραя αgαя ϲнαнιγє τοн κнυ∂ κα ϐαиα ℓο иα αα נατє нο υиgℓι καяиє мєяє ϐοτ ρє.   ©ℓεɠεɳ∂ɓσƭ(https://t.me/Tgxbotz_chat)",
                 cache_time=0,
                 alert=True,
             )

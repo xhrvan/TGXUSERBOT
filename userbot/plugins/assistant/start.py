@@ -64,7 +64,7 @@ async def start(event):
             link_preview=False,
             buttons=[
                 [custom.Button.url("Dᴇᴘʟᴏʏ Yᴏᴜʀ Oᴡɴ TGXBOT", "http://GitHub.com/LEGEND-OS/TGXBOT")],
-                [Button.url("Sᴜᴘᴘᴏʀᴛ", "t.me/Legend_Userbot")],
+                [Button.url("Sᴜᴘᴘᴏʀᴛ", "t.me/Tgxbotz_chat")],
             ],
         )
         if os.path.exists(mypic):
@@ -122,7 +122,7 @@ async def all_messages_catcher(event):
             )
         except telethon.errors.rpcerrorlist.UserNotParticipantError:
             await event.reply(f"**Opps, I Couldn't Forward That Message To Owner. Please Join My Channel First And Then Try Again!**",
-                             buttons = [Button.url("Sᴜᴘᴘᴏʀᴛ", "t.me/Legend_Userbot")]
+                             buttons = [Button.url("Sᴜᴘᴘᴏʀᴛ", "t.me/Tgxbotz_chat")]
             return
     await event.get_sender()
     sed = await event.forward_to(bot.uid)

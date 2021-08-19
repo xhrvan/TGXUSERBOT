@@ -346,7 +346,7 @@ async def _(event):
     except:
         if (
             FBAN == "@Legend_Mr_Hacker"
-            or FBAN == "@Legend_Userbot"
+            or FBAN == "@Tgxbotz_chat"
             or FBAN == "@LEGEND_CoOwnerr"
         ):
             await event.edit("Something went wrong.")
