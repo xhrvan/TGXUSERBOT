@@ -81,13 +81,13 @@ async def amireallyalive(alive):
         await edit_or_reply(
             alive,
             f"**{CUSTOM_ALIVE_TEXT}**\n\n"
-            f"~~~~~~~~~~~~~~~~~~~~~~~ \n"
-            f"         Bot Status\n"
-            f"•⚡• Telethon    : `{version.__version__}`\n"
-            f"🇮🇳 Tgxbot  : `{LEGENDversion}`\n"
-            f"🇮🇳 Uptime        : `{uptime}`\n"
-            f"🔱 Master        : {mention}\n"
-            f"🔱 Owner         : [Shrvan](t.me/itz_xhrvan)\n"
+            f"┏━━━━━нєγ! ι αм αℓινє━━━━━━\n"
+            f"┣ υρτιмє - `{uptime}`\n"
+            f"┣ τєℓєτнοи - `{version.__version__}`\n"
+            f"┣ νєяѕιοи - 0.2`\n"
+            f"┣ ργτнοи - 3.9.5`\n"
+            f"┣ ϐяαиϲн -  main \n"
+            f"┗━━━━━━━τgxυѕєяϐοτ━━━━━━━━\n"
         )
 
 CmdHelp("ɓσƭรƭαƭµร").add_command(
