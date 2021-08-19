@@ -19,7 +19,7 @@ jobs:
 
         with:
 
-          find: "LegendBøt"
+          find: " 𝕴tß 𝕷êgëñd𝕭øt 🇮🇳"
 
           replace: "TGXBOT"
 
