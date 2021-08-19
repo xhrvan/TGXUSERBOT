@@ -64,13 +64,13 @@ async def amireallyalive(alive):
     if  LEGEND_IMG:
         LEGEND_caption = f"**{CUSTOM_ALIVE_TEXT}**\n"
         
-        LEGEND_caption += f"~~~~~~~~~~~~~~~~~~~~~~~\n"
-        LEGEND_caption += f"      🥇Bot Status🥇\n"
-        LEGEND_caption += f"•⚜️• Owner       : {mention}\n\n"
-        LEGEND_caption += f"•⚡• Tgxbot  : {LEGENDversion}\n"
-        LEGEND_caption += f"•⚡• Telethon   : `{version.__version__}`\n"
-        LEGEND_caption += f"•⚡• Uptime       : `{uptime}`\n"
-        LEGEND_caption += f"•⚡• Group        : [𝕲𝖗𝖔𝖚𝖕](t.me/Tgxbotz_chat)\n"
+        LEGEND_caption += f"┏━━━━━нєγ! ι αм αℓινє━━━━━━\n"
+        LEGEND_caption += f"┣ νєяѕιοи - 0.2
+        LEGEND_caption += f"┣ ργτнοи - 3.9.5\n\n"
+        LEGEND_caption += f"┣ ϐяαиϲн - main \n"
+        LEGEND_caption += f"┣ τєℓєτнοи - `{version.__version__}`\n"
+        LEGEND_caption += f"┣ υρτιмє - `{uptime}`\n"
+        LEGEND_caption += f"┗━━━━━━━[τgxυѕєяϐοτ](t.me/tgxbotz)━━━━━━━━\n"
            
 
         await alive.client.send_file(
