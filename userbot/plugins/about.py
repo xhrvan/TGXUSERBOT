@@ -10,7 +10,7 @@ from telethon.tl.types import ChannelParticipantsAdmins
 DEFAULTUSER = str(ALIVE_NAME) if ALIVE_NAME else "LEGEND"
 
 # Thanks to LEGEND BRO.. 
-# animation Idea by @Legend_Mr_Hacker (op coder)
+# animation Idea by @xhrvan (op coder)
 # Kang with credits else gay...
 # alive.py for
 
@@ -21,14 +21,14 @@ file2="https://telegra.ph/file/9fb5502699714b8eabca3.jpg"
 file3="https://telegra.ph/file/f04dcb487d52b97c36a54.jpg"
 file4="https://telegra.ph/file/bac71ea81bebea8332f86.jpg"
 file5="https://telegra.ph/file/56330a785e4f2a5919e1c.jpg"""" =======================CONSTANTS====================== """
-pm_caption = "🔥𝕷êgëñd𝕭øt ιѕ ορ🔥\n\n"
+pm_caption = "🔥Tgxbot is op🔥\n\n"
 pm_caption += "💌💌 **𝐆𝐨𝐝,𝒚𝒐𝒖 𝒂𝒓𝒆 𝒂𝒍𝒎𝒊𝒈𝒉𝒕𝒚 , 𝗉𝗅𝗌 𝗍𝖺𝗄𝖾 𝖼𝖺𝗋𝖾 𝗈𝖿 𝗆𝗒 𝖻𝖾𝗌𝗍𝗂𝖾 .. 𝗆𝗂𝗌𝗌𝗂𝗇𝗀 𝗁𝗂𝗆 𝗏𝖾𝗋𝗒 𝗆𝗎𝖼𝗁💫😇.**💌💌\n\n"
-pm_caption += "༆༄🎀🌹𝕬𝖇𝖔𝖚𝖙 𝕸𝖊 \n\n"
-pm_caption += "💫💫**𝕷êgëñd𝕭øt**💫💫 >>》 15.0.0\n"
-pm_caption += "😇😇**𝕷êgëñd**😇😇   >>》 [οωиєя](https://t.me/Legend_Mr_Hacker)\n"
+pm_caption += "༆༄🎀🌹About Me \n\n"
+pm_caption += "💫💫**Tgxbot**💫💫 >>》 15.0.0\n"
+pm_caption += "😇😇**TGX**😇😇   >>》 [Owner](https://t.me/itz_xhrvan)\n"
 pm_caption += f"🔰🔰**𝕸𝖆𝖙𝖊𝖗**🔰🔰  >>》 {DEFAULTUSER}\n"
-pm_caption += "❣❣ **𝕷êgëñd𝕭øt**❣❣ >>》 [𝕲𝖗ουρ](https://t.me/Tgxbotz_chat)\n\n"
-pm_caption += "🎊🎊 **𝕽𝖊𝖕ο**🎊🎊  >>》 [𝕽єρο](https://github.com/LEGEND-OS/TGXBOT)\n\n"
+pm_caption += "❣❣ **Tgxbot**❣❣ >>》 [Group](https://t.me/Tgxbotz_chat)\n\n"
+pm_caption += "🎊🎊 **Repo**🎊🎊  >>》 [Repo](https://github.com/xhrvan/TGXBOT)\n\n"
 pm_caption += "[....▄███▄███▄\n....█████████\n.......▀██❣🌹💫😇💫🌹❣███▀\n...............▀█▀\n](https://t.me/Legend_Mr_Hacker)\n\n"
 @borg.on(admin_cmd(pattern=r"abot"))
 
