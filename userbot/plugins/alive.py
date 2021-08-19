@@ -65,12 +65,12 @@ async def amireallyalive(alive):
         LEGEND_caption = f"**{CUSTOM_ALIVE_TEXT}**\n"
         
         LEGEND_caption += f"~~~~~~~~~~~~~~~~~~~~~~~\n"
-        LEGEND_caption += f"      🥇𝕭𝖔𝖙 𝕾𝖙𝖆𝖙𝖚𝖘🥇\n"
-        LEGEND_caption += f"•⚜️• 𝕺ωɳεɾ       : {mention}\n\n"
-        LEGEND_caption += f"•⚡• 𝕷êgëñd𝕭øt  : {LEGENDversion}\n"
-        LEGEND_caption += f"•⚡• 𝕿єℓєτнοи   : `{version.__version__}`\n"
-        LEGEND_caption += f"•⚡• 𝖀ptïmê       : `{uptime}`\n"
-        LEGEND_caption += f"•⚡• Gяουρ        : [𝕲𝖗𝖔𝖚𝖕](t.me/Tgxbotz_chat)\n"
+        LEGEND_caption += f"      🥇Bot Status🥇\n"
+        LEGEND_caption += f"•⚜️• Owner       : {mention}\n\n"
+        LEGEND_caption += f"•⚡• Tgxbot  : {LEGENDversion}\n"
+        LEGEND_caption += f"•⚡• Telethon   : `{version.__version__}`\n"
+        LEGEND_caption += f"•⚡• Uptime       : `{uptime}`\n"
+        LEGEND_caption += f"•⚡• Group        : [𝕲𝖗𝖔𝖚𝖕](t.me/Tgxbotz_chat)\n"
            
 
         await alive.client.send_file(
@@ -82,12 +82,12 @@ async def amireallyalive(alive):
             alive,
             f"**{CUSTOM_ALIVE_TEXT}**\n\n"
             f"~~~~~~~~~~~~~~~~~~~~~~~ \n"
-            f"         𝕭𝖔𝖙 𝕾𝖙𝖆𝖙𝖚𝖘\n"
-            f"•⚡• 𝕿єℓєτнοи    : `{version.__version__}`\n"
-            f"🇮🇳 ℓєgєи∂ϐοτ  : `{LEGENDversion}`\n"
-            f"🇮🇳 υρτιмє        : `{uptime}`\n"
-            f"🔱 ɱαรƭεɾ        : {mention}\n"
-            f"🔱 σωɳεɾ         : [ℓєgєи∂](t.me/Legend_Mr_Hacker)\n"
+            f"         Bot Status\n"
+            f"•⚡• Telethon    : `{version.__version__}`\n"
+            f"🇮🇳 Tgxbot  : `{LEGENDversion}`\n"
+            f"🇮🇳 Uptime        : `{uptime}`\n"
+            f"🔱 Master        : {mention}\n"
+            f"🔱 Owner         : [Shrvan](t.me/itz_xhrvan)\n"
         )
 
 CmdHelp("ɓσƭรƭαƭµร").add_command(
