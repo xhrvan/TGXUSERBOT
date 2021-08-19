@@ -65,7 +65,7 @@ async def amireallyalive(alive):
         LEGEND_caption = f"**{CUSTOM_ALIVE_TEXT}**\n"
         
         LEGEND_caption += f"┏━━━━━нєγ! ι αм αℓινє━━━━━━\n"
-        LEGEND_caption += f"┣ νєяѕιοи - 0.2
+        LEGEND_caption += f"┣ νєяѕιοи - 0.2\n"
         LEGEND_caption += f"┣ ργτнοи - 3.9.5\n\n"
         LEGEND_caption += f"┣ ϐяαиϲн - main \n"
         LEGEND_caption += f"┣ τєℓєτнοи - `{version.__version__}`\n"
