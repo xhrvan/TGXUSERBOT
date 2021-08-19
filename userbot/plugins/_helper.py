@@ -8,7 +8,7 @@ from userbot import ALIVE_NAME, CMD_LIST, SUDO_LIST
 from TGXBOT.utils import admin_cmd, edit_or_reply, sudo_cmd
 
 
-@bot.on(admin_cmd(pattern="legend ?(.*)", outgoing=True))
+@bot.on(admin_cmd(pattern="help ?(.*)", outgoing=True))
 async def yardim(event):
     if event.fwd_from:
         return
