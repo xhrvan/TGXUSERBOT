@@ -26,10 +26,10 @@ pm_caption ="**🔱LegendBøt IS Awake🔱**\n\n"
 pm_caption += f"**🇮🇳 Telethon : TELETHON-1.19.0**\n"
 pm_caption += f"**🇮🇳 Python : PYTHON-3.8.5**\n"
 pm_caption += f"**🇮🇳 I'll Be With You Master Till My Dyno Ends!!☠**\n"
-pm_caption += f"**🇮🇳 OWNER` : @Legend_Mr_Hacker**\n"
+pm_caption += f"**🇮🇳 OWNER` : @xhrvan**\n"
 pm_caption += f"**🇮🇳 MY BOSS😊: {DEFAULTUSER}**\n"
-pm_caption += f"**🇮🇳 CREATOR : [LEGEND](https://t.me/Legend_Mr_Hacker)**\n" 
-pm_caption += " [✨REPO✨](https://github.com/LEGEND-OS/LEGENDBOT) 🔹 [📜License📜](https://github.com/LEGEND-OS/LEGENDBOT/blob/master/LICENSE)" 
+pm_caption += f"**🇮🇳 GROUP : [TGX](https://t.me/https://t.me/TGxBOTz_CHAT)**\n" 
+pm_caption += " [✨REPO✨](https://github.com/xhrvan/TGXBOTZ) 🔹 [📜License📜](https://github.com/LEGEND-OS/LEGENDBOT/blob/master/LICENSE)" 
 @bot.on(admin_cmd(outgoing=True, pattern="awake$"))
 @bot.on(sudo_cmd(pattern="awake$", allow_sudo=True))
 async def amireallyalive(alive):
