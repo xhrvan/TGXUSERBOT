@@ -7,7 +7,7 @@ from telethon import events
 from telethon.tl import functions, types
 
 from userbot import ALIVE_NAME
-from LEGENDBOT.utils import admin_cmd
+from TGXBOT.utils import admin_cmd
 from userbot.cmdhelp import CmdHelp
 
 global USER_night  # pylint:disable=E0602
@@ -39,7 +39,7 @@ async def set_not_night(event):
                 event.chat_id,
                 "Please set `PLUGIN_CHANNEL` "
                 + "for the proper functioning of night functionality "
-                + "report in [LEGENDBOT](t.me/Legend_Mr_Hacker)\n\n `{}`".format(str(e)),
+                + "report in [TGXBOT](t.me/Legend_Mr_Hacker)\n\n `{}`".format(str(e)),
                 reply_to=event.message.id,
                 silent=True,
             )

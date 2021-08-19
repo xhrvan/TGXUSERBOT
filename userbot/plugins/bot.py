@@ -1,5 +1,5 @@
 from userbot import *
-from LEGENDBOT.utils import *
+from TGXBOT.utils import *
 from userbot.cmdhelp import CmdHelp
 from telethon import events, version
 from telethon.events import NewMessage
@@ -35,7 +35,7 @@ pm_caption += f"**┣🇮🇳 𝕺𝖜𝖓𝖊𝖗     : [ℓεɠεɳ∂](https:
 pm_caption += f"**┣🇮🇳 𝕲𝖗𝖔𝖚𝖕     : [𝕲𝖗𝖔𝖚𝖕](https://t.me/Legend_Userbot)**\n"
 pm_caption += f"**┗━━━━━━━━━━━━━┛**\n"
 
-pm_caption += "    [✨яєρο✨](https://github.com/LEGEND-OS/LEGENDBOT) 🔹 [📜ℓιϲєиѕє📜](https://github.com/LEGEND-OS/LEGENDBOT/blob/master/LICENSE)"
+pm_caption += "    [✨яєρο✨](https://github.com/LEGEND-OS/TGXBOT) 🔹 [📜ℓιϲєиѕє📜](https://github.com/LEGEND-OS/TGXBOT/blob/master/LICENSE)"
 
 
 @bot.on(admin_cmd(outgoing=True, pattern="bot$"))

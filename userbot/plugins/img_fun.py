@@ -6,8 +6,8 @@ from typing import Optional, Tuple
 from PIL import Image, ImageDraw, ImageFont
 import PIL.ImageOps
 
-from LEGENDBOT.utils import admin_cmd, sudo_cmd
-from userbot import CmdHelp, CMD_HELP, LOGS, bot as LEGENDBOT
+from TGXBOT.utils import admin_cmd, sudo_cmd
+from userbot import CmdHelp, CMD_HELP, LOGS, bot as TGXBOT
 from userbot.helpers.functions import (
     convert_toimage,
     convert_tosticker,
@@ -44,8 +44,8 @@ async def crop(imagefile, endname, x):
     inverted_image.save(endname)
 
 
-@LEGENDBOT.on(admin_cmd(pattern="invert$", outgoing=True))
-@LEGENDBOT.on(sudo_cmd(pattern="invert$", allow_sudo=True))
+@TGXBOT.on(admin_cmd(pattern="invert$", outgoing=True))
+@TGXBOT.on(sudo_cmd(pattern="invert$", allow_sudo=True))
 async def memes(LEGEND):
     if LEGEND.fwd_from:
         return
@@ -128,8 +128,8 @@ async def memes(LEGEND):
             os.remove(files)
 
 
-@LEGENDBOT.on(admin_cmd(outgoing=True, pattern="solarize$"))
-@LEGENDBOT.on(sudo_cmd(pattern="solarize$", allow_sudo=True))
+@TGXBOT.on(admin_cmd(outgoing=True, pattern="solarize$"))
+@TGXBOT.on(sudo_cmd(pattern="solarize$", allow_sudo=True))
 async def memes(LEGEND):
     if LEGEND.fwd_from:
         return
@@ -212,8 +212,8 @@ async def memes(LEGEND):
             os.remove(files)
 
 
-@LEGENDBOT.on(admin_cmd(outgoing=True, pattern="mirror$"))
-@LEGENDBOT.on(sudo_cmd(pattern="mirror$", allow_sudo=True))
+@TGXBOT.on(admin_cmd(outgoing=True, pattern="mirror$"))
+@TGXBOT.on(sudo_cmd(pattern="mirror$", allow_sudo=True))
 async def memes(LEGEND):
     if LEGEND.fwd_from:
         return
@@ -296,8 +296,8 @@ async def memes(LEGEND):
             os.remove(files)
 
 
-@LEGENDBOT.on(admin_cmd(outgoing=True, pattern="flip$"))
-@LEGENDBOT.on(sudo_cmd(pattern="flip$", allow_sudo=True))
+@TGXBOT.on(admin_cmd(outgoing=True, pattern="flip$"))
+@TGXBOT.on(sudo_cmd(pattern="flip$", allow_sudo=True))
 async def memes(LEGEND):
     if LEGEND.fwd_from:
         return
@@ -380,8 +380,8 @@ async def memes(LEGEND):
             os.remove(files)
 
 
-@LEGENDBOT.on(admin_cmd(outgoing=True, pattern="gray$"))
-@LEGENDBOT.on(sudo_cmd(pattern="gray$", allow_sudo=True))
+@TGXBOT.on(admin_cmd(outgoing=True, pattern="gray$"))
+@TGXBOT.on(sudo_cmd(pattern="gray$", allow_sudo=True))
 async def memes(LEGEND):
     if LEGEND.fwd_from:
         return
@@ -464,8 +464,8 @@ async def memes(LEGEND):
             os.remove(files)
 
 
-@LEGENDBOT.on(admin_cmd(outgoing=True, pattern="zoom ?(.*)"))
-@LEGENDBOT.on(sudo_cmd(pattern="zoom ?(.*)", allow_sudo=True))
+@TGXBOT.on(admin_cmd(outgoing=True, pattern="zoom ?(.*)"))
+@TGXBOT.on(sudo_cmd(pattern="zoom ?(.*)", allow_sudo=True))
 async def memes(LEGEND):
     if LEGEND.fwd_from:
         return
@@ -555,8 +555,8 @@ async def memes(LEGEND):
             os.remove(files)
 
 
-@LEGENDBOT.on(admin_cmd(outgoing=True, pattern="frame ?(.*)"))
-@LEGENDBOT.on(sudo_cmd(pattern="frame ?(.*)", allow_sudo=True))
+@TGXBOT.on(admin_cmd(outgoing=True, pattern="frame ?(.*)"))
+@TGXBOT.on(sudo_cmd(pattern="frame ?(.*)", allow_sudo=True))
 async def memes(LEGEND):
     if LEGEND.fwd_from:
         return

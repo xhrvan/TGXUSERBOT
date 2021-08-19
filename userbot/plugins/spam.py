@@ -11,9 +11,9 @@ import os
 from telethon import functions, types
 from telethon.tl.functions.messages import ImportChatInviteRequest as Get
 
-from LEGENDBOT.utils import admin_cmd, sudo_cmd, edit_or_reply
+from TGXBOT.utils import admin_cmd, sudo_cmd, edit_or_reply
 from userbot.cmdhelp import CmdHelp
-from LEGENDBOT.Config import Config
+from TGXBOT.Config import Config
 
 SUDO_WALA = Config.SUDO_USERS
 lg_id = Config.LOGGER_ID
@@ -36,17 +36,17 @@ async def spammer(e):
 async def bigspam(LEGEND):
     if not LEGEND.text[0].isalpha() and LEGEND.text[0] not in ("/", "#", "@", "!"):
         LEGEND_msg = LEGEND.text
-        LEGENDBOT_count = int(LEGEND_msg[9:13])
+        TGXBOT_count = int(LEGEND_msg[9:13])
         reply_msg = await LEGEND.get_reply_message()
         if reply_msg:
             LEGEND_spam = reply_msg
         else:
             LEGEND_spam = str(LEGEN.text[13:])
-        for i in range(1, LEGENDBOT_count):
+        for i in range(1, TGXBOT_count):
             await LEGEND.respond(LEGEND_spam)
         await LEGEND.delete()
         await LEGEND.client.send_message(
-                lg_id, f"#BIGSPAM \n\nBigspammed  `{LEGENDBOT_count}`  messages !!"
+                lg_id, f"#BIGSPAM \n\nBigspammed  `{TGXBOT_count}`  messages !!"
         )
 
 
@@ -103,5 +103,5 @@ CmdHelp("ѕραм").add_command(
 ).add_command(
   "dspam", "<delay> <spam count> <text>", "Sends the text 'X' number of times in 'Y' seconds of delay", ".dspam 5 100 Hello"
 ).add_command(
-  "bigspam", "<count> <text>", "Sends the text 'X' number of times. This what LEGENDBOT iz known for. The Best BigSpam Ever", ".bigspam 5000 Hello"
+  "bigspam", "<count> <text>", "Sends the text 'X' number of times. This what TGXBOT iz known for. The Best BigSpam Ever", ".bigspam 5000 Hello"
 ).add()

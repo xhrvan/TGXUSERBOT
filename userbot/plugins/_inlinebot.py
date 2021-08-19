@@ -13,13 +13,13 @@ from telethon.tl.functions.channels import JoinChannelRequest
 
 from userbot import *
 from userbot.cmdhelp import *
-from LEGENDBOT.utils import *
+from TGXBOT.utils import *
 from userbot.Config import Config
 from userbot import ALIVE_NAME
 LEGEND_row = Config.BUTTONS_IN_HELP
 LEGEND_emoji = Config.EMOJI_IN_HELP
 # thats how a lazy guy imports
-# LEGENDBOT
+# TGXBOT
 # sαlҽ ískօ kαղց ตαԵ kαɾ ตc ճc
 # αϐє τυ ρα∂н нι яαнα н γαнα ѕє ϐнαg
 def button(page, modules):
@@ -55,7 +55,7 @@ def button(page, modules):
         ]
     )
     return [max_pages, buttons]
-    # Changing this line may give error in bot as i added some special cmds in LEGENDBOT channel to get this module work...
+    # Changing this line may give error in bot as i added some special cmds in TGXBOT channel to get this module work...
 
     modules = CMD_HELP
 if Var.TG_BOT_USER_NAME_BF_HER is not None and tgbot is not None:
@@ -98,7 +98,7 @@ if Var.TG_BOT_USER_NAME_BF_HER is not None and tgbot is not None:
                     ],
                     [
                         custom.Button.url(
-                            "✨ яєρο ✨", "https://github.com/LEGEND-OS/LEGENDBOT"),
+                            "✨ яєρο ✨", "https://github.com/LEGEND-OS/TGXBOT"),
                     ],
                 ],
                 link_preview=False,

@@ -5,7 +5,7 @@ from datetime import datetime
 from pathlib import Path
 from telethon import events, functions, types
 from telethon.tl.types import InputMessagesFilterDocument
-from LEGENDBOT.utils import *
+from TGXBOT.utils import *
 from userbot import *
 from . import *
 DELETE_TIMEOUT = 5
@@ -22,7 +22,7 @@ async def send(event):
     message_id = event.message.id
     thumb = LEGEND_logo
     input_str = event.pattern_match.group(1)
-    omk = f"**⍟ Plugin name ≈** `{input_str}`\n**⍟ Uploaded by ≈** {LEGEND}\n\n⚡ **[Legendary LEGENDBOT](t.me/LEGEND_Userbot)** ⚡"
+    omk = f"**⍟ Plugin name ≈** `{input_str}`\n**⍟ Uploaded by ≈** {LEGEND}\n\n⚡ **[Legendary TGXBOT](t.me/LEGEND_Userbot)** ⚡"
     the_plugin_file = "./userbot/plugins/{}.py".format(input_str)
     if os.path.exists(the_plugin_file):
         lauda = await event.client.send_file(
@@ -70,7 +70,7 @@ async def install(event):
                             a = "__Installing...__"
                             b = 1
                         await event.edit(a)
-                    return await event.edit(f"✅ **Installed module** :- `{shortname}` \n✨ BY :- {LEGEND}\n\n{string}\n\n        ⚡ **[Legendary LEGENDBOT](t.me/LEGEND_Userbot)** ⚡", link_preview=False)
+                    return await event.edit(f"✅ **Installed module** :- `{shortname}` \n✨ BY :- {LEGEND}\n\n{string}\n\n        ⚡ **[Legendary TGXBOT](t.me/LEGEND_Userbot)** ⚡", link_preview=False)
                 return await event.edit(f"Installed module `{os.path.basename(downloaded_file_name)}`")
             else:
                 os.remove(downloaded_file_name)
@@ -147,7 +147,7 @@ async def install(event):
     o = stdout.decode()
     _o = o.split("\n")
     o = "\n".join(_o)
-    OUTPUT = f"List of Plugins in LEGENDBOT :- \n\n{o}\n\n<><><><><><><><><><><><><><><><><><><><><><><><>\nHELP:- If you want to know the commands for a plugin, do :- \n.plinfo <plugin name> without the < > brackets. \nJoin https://t.me/LEGENDSupport for help."
+    OUTPUT = f"List of Plugins in TGXBOT :- \n\n{o}\n\n<><><><><><><><><><><><><><><><><><><><><><><><>\nHELP:- If you want to know the commands for a plugin, do :- \n.plinfo <plugin name> without the < > brackets. \nJoin https://t.me/LEGENDSupport for help."
     if len(OUTPUT) > 69:
         with io.BytesIO(str.encode(OUTPUT)) as out_file:
             out_file.name = "cmd_list.text"
@@ -159,7 +159,7 @@ async def install(event):
                 thumb=thumb,
                 reply_to=reply_to_id,
             )
-            await edit_or_reply(LEGEND_file, f"Output Too Large. This is the file for the list of plugins in LEGENDBOT.\n\n**BY :-** {DEFAULTUSER}")
+            await edit_or_reply(LEGEND_file, f"Output Too Large. This is the file for the list of plugins in TGXBOT.\n\n**BY :-** {DEFAULTUSER}")
             await event.delete()
 
 
@@ -175,5 +175,5 @@ CmdHelp("ϲοяє").add_command(
 ).add_command(
   "send", "<file name>", "Sends the given file from your userbot server, if any.", "send alive"
 ).add_command(
-  "cmds", None, "Gives out the list of modules in LEGENDBOT."
+  "cmds", None, "Gives out the list of modules in TGXBOT."
 ).add()

@@ -1,6 +1,6 @@
 # Made by @David99q for @LEGEND_Userbot
 
-from LEGENDBOT.utils import *
+from TGXBOT.utils import *
 from userbot.cmdhelp import CmdHelp
 
 

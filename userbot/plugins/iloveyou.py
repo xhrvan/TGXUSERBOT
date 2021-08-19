@@ -1,8 +1,8 @@
-# PLUGIN MADE BY @David99q FOR LEGENDBOT
+# PLUGIN MADE BY @David99q FOR TGXBOT
 # KEEP CREDITS ELSE GAY
 
 import random, re
-from LEGENDBOT.utils import admin_cmd
+from TGXBOT.utils import admin_cmd
 import asyncio
 from telethon import events
 

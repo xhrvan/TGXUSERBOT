@@ -2,7 +2,7 @@
 # porting to hellbot by @David99q...
 # i asked rekcah before porting...not like other kangers....
 # keep credit if u wanna kang...
-# Now in LEGENDBOT
+# Now in TGXBOT
 # else u are a gay...no doubt in that....
 
 # --------------------------------------------------------------------------------------------------------------------------------
@@ -17,7 +17,7 @@ from telethon.tl.functions.channels import GetFullChannelRequest
 from telethon.tl.functions.messages import GetFullChatRequest
 
 from userbot import CMD_HELP
-from LEGENDBOT.utils import admin_cmd, edit_or_reply, sudo_cmd
+from TGXBOT.utils import admin_cmd, edit_or_reply, sudo_cmd
 from userbot.cmdhelp import CmdHelp
 
 async def get_chatinfo(event):

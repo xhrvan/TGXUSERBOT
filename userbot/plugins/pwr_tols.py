@@ -5,7 +5,7 @@ import asyncio
 from os import execl
 from time import sleep
 
-from LEGENDBOT.utils import admin_cmd
+from TGXBOT.utils import admin_cmd
 from userbot.cmdhelp import CmdHelp
 from userbot import HEROKU_APP, bot
 

@@ -1,4 +1,4 @@
-# pmpermit for LEGENDBOT.....
+# pmpermit for TGXBOT.....
 
 import asyncio
 import io
@@ -11,7 +11,7 @@ from telethon.tl.functions.users import GetFullUserRequest
 from userbot.plugins.sql_helper import pmpermit_sql as pmpermit_sql
 from userbot import ALIVE_NAME, CUSTOM_PMPERMIT, LEGEND_ID
 from userbot.Config import Config
-from LEGENDBOT.utils import admin_cmd
+from TGXBOT.utils import admin_cmd
 from userbot.cmdhelp import CmdHelp
 PM_TRUE_FALSE = Config.PM_DATA
 
@@ -205,7 +205,7 @@ if Var.PRIVATE_GROUP_ID is not None:
                     out_file,
                     force_document=True,
                     allow_cache=False,
-                    caption="[LEGENDBOT]Current Approved PMs",
+                    caption="[TGXBOT]Current Approved PMs",
                     reply_to=event,
                 )
                 await event.delete()

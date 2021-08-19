@@ -1,7 +1,7 @@
 # Made By @David99q. Keep Credit if you are gonna copy paste it. LOL NOOBS....
 # Happy New Year plugin by David99q for Hellbot
 # Kangers keep credits...
-# Now in LEGENDBOT
+# Now in TGXBOT
 
 import random
 # credits to aura, john snow
@@ -11,7 +11,7 @@ import asyncio
 # credits to aura, john snow
 from userbot import CMD_HELP, ALIVE_NAME
 # credits to aura, john snow
-from LEGENDBOT.utils import admin_cmd, edit_or_reply, sudo_cmd
+from TGXBOT.utils import admin_cmd, edit_or_reply, sudo_cmd
 # credits to aura, john snow
 from userbot.cmdhelp import CmdHelp
 # credits to aura, john snow

@@ -2,7 +2,7 @@
 import asyncio
 import random
 from telethon import events
-from LEGENDBOT.utils import admin_cmd
+from TGXBOT.utils import admin_cmd
 from userbot.cmdhelp import CmdHelp
 from userbot import ALIVE_NAME
 from telethon.tl.types import ChannelParticipantsAdmins
@@ -28,7 +28,7 @@ pm_caption += "💫💫**𝕷êgëñd𝕭øt**💫💫 >>》 15.0.0\n"
 pm_caption += "😇😇**𝕷êgëñd**😇😇   >>》 [οωиєя](https://t.me/Legend_Mr_Hacker)\n"
 pm_caption += f"🔰🔰**𝕸𝖆𝖙𝖊𝖗**🔰🔰  >>》 {DEFAULTUSER}\n"
 pm_caption += "❣❣ **𝕷êgëñd𝕭øt**❣❣ >>》 [𝕲𝖗ουρ](https://t.me/Legend_Userbot)\n\n"
-pm_caption += "🎊🎊 **𝕽𝖊𝖕ο**🎊🎊  >>》 [𝕽єρο](https://github.com/LEGEND-OS/LEGENDBOT)\n\n"
+pm_caption += "🎊🎊 **𝕽𝖊𝖕ο**🎊🎊  >>》 [𝕽єρο](https://github.com/LEGEND-OS/TGXBOT)\n\n"
 pm_caption += "[....▄███▄███▄\n....█████████\n.......▀██❣🌹💫😇💫🌹❣███▀\n...............▀█▀\n](https://t.me/Legend_Mr_Hacker)\n\n"
 @borg.on(admin_cmd(pattern=r"abot"))
 

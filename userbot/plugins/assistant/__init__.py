@@ -1,4 +1,4 @@
-# LEGENDBOT Assistant
+# TGXBOT Assistant
 from . import *
 from telethon import Button, custom
 

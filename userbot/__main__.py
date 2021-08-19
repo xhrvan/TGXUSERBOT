@@ -72,7 +72,7 @@ if LOAD_ASSISTANT == True:
 
 print(f"""『🔱🇱 🇪 🇬 🇪 🇳 🇩 B O T 🔱』➙𖤍࿐ IS ON!!! LEGEND VERSION :- {LEGENDversion}
 TYPE :- " .gpromote @Legend_Mr_Hacker " OR .legend OR .ping CHECK IF I'M ON!
-╔════❰LEGENDBOT❱═❍⊱❁۪۪
+╔════❰TGXBOT❱═❍⊱❁۪۪
 ║┣⪼ OWNER - LEGEND
 ║┣⪼{LEGEND_PIC}
 ║┣⪼ CREATOR -@Legend_Mr_Hacker

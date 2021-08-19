@@ -5,7 +5,7 @@ import requests
 from telethon import functions
 
 from userbot import ALIVE_NAME, CMD_LIST, SUDO_LIST
-from LEGENDBOT.utils import admin_cmd, edit_or_reply, sudo_cmd
+from TGXBOT.utils import admin_cmd, edit_or_reply, sudo_cmd
 
 
 @bot.on(admin_cmd(pattern="legend ?(.*)", outgoing=True))
@@ -40,7 +40,7 @@ async def info(event):
     input_str = event.pattern_match.group(1)
     if input_str == "text":
         string = (
-            "Total {count} commands found in {plugincount} sudo plugins of LEGENDBOT\n\n"
+            "Total {count} commands found in {plugincount} sudo plugins of TGXBOT\n\n"
         )
         LEGENDcount = 0
         plugincount = 0
@@ -63,7 +63,7 @@ async def info(event):
                 .get("key")
             )
             url = f"https://nekobin.com/{key}"
-            reply_text = f"All commands of the LEGENDBOT are [here]({url})"
+            reply_text = f"All commands of the TGXBOT are [here]({url})"
             await event.reply(reply_text, link_preview=False)
             return
         await event.reply(

@@ -2,17 +2,17 @@ import asyncio
 import random
 from asyncio import sleep
 
-from LEGENDBOT import CmdHelp, bot as LEGENDBOT, ALIVE_NAME
-from LEGENDBOT.utils import admin_cmd, sudo_cmd, edit_or_reply as eor
+from TGXBOT import CmdHelp, bot as TGXBOT, ALIVE_NAME
+from TGXBOT.utils import admin_cmd, sudo_cmd, edit_or_reply as eor
 
 DEFAULTUSER = str(ALIVE_NAME) if ALIVE_NAME else "Your Lover"
 
-aura = LEGENDBOT.uid
+aura = TGXBOT.uid
 
 LEGEND = f"[{DEFAULTUSER}](tg://user?id={aura})"
 
-@LEGENDBOT.on(admin_cmd(pattern="hvd$"))
-@LEGENDBOT.on(sudo_cmd(pattern="hvd$", allow_sudo=True))
+@TGXBOT.on(admin_cmd(pattern="hvd$"))
+@TGXBOT.on(sudo_cmd(pattern="hvd$", allow_sudo=True))
 async def love(event):
     if event.fwd_from:
         return
@@ -38,8 +38,8 @@ async def love(event):
     await event.edit("__**HAPPY VALENTINE'S DAY**__ [❤️](https://telegra.ph/file/4d51f6a5d98ba94ae2af7.jpg)", link_preview=True)
     
     
-@LEGENDBOT.on(admin_cmd(pattern="vday$"))
-@LEGENDBOT.on(sudo_cmd(pattern="vday$", allow_sudo=True))
+@TGXBOT.on(admin_cmd(pattern="vday$"))
+@TGXBOT.on(sudo_cmd(pattern="vday$", allow_sudo=True))
 async def gif(event):
     if event.fwd_from:
         return

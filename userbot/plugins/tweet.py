@@ -5,7 +5,7 @@
 # mia, johhny, sunny, dani
 # modi, rahul, trump, gandhiji
 # no offence. Made for fun purpose only
-# Now in LEGENDBOT
+# Now in TGXBOT
 
 from userbot import CMD_HELP
 from userbot.helpers.functions import (
@@ -21,7 +21,7 @@ from userbot.helpers.functions import (
     trumptweet,
     dani,
 )
-from LEGENDBOT.utils import admin_cmd, sudo_cmd, edit_or_reply
+from TGXBOT.utils import admin_cmd, sudo_cmd, edit_or_reply
 from userbot.cmdhelp import CmdHelp
 
 

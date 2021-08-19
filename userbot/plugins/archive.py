@@ -17,7 +17,7 @@ from telethon.tl.types import DocumentAttributeVideo
 from telethon import events
 from userbot import CMD_HELP
 from userbot.Config import Config
-from LEGENDBOT.utils import admin_cmd, progress
+from TGXBOT.utils import admin_cmd, progress
 from userbot.cmdhelp import CmdHelp
 
 thumb_image_path = Config.TMP_DOWNLOAD_DIRECTORY + "/thumb_image.jpg"
@@ -57,7 +57,7 @@ async def _(event):
     await borg.send_file(
         event.chat_id,
         directory_name + ".zip",
-        caption="Zipped By LEGENDBOT",
+        caption="Zipped By TGXBOT",
         force_document=True,
         allow_cache=False,
         reply_to=event.message.id,
@@ -104,7 +104,7 @@ async def _(event):
             await borg.send_file(
                 event.chat_id,
                 directory_name + ".rar",
-                caption="rarred By LEGENDBOT",
+                caption="rarred By TGXBOT",
                 force_document=True,
                 allow_cache=False,
                 reply_to=event.message.id,
@@ -156,7 +156,7 @@ async def _(event):
             await borg.send_file(
                 event.chat_id,
                 directory_name + ".7z",
-                caption="7z archived By LEGENDBOT",
+                caption="7z archived By TGXBOT",
                 force_document=True,
                 allow_cache=False,
                 reply_to=event.message.id,
@@ -208,7 +208,7 @@ async def _(event):
             await borg.send_file(
                 event.chat_id,
                 output,
-                caption="TAR By LEGENDBOT",
+                caption="TAR By TGXBOT",
                 force_document=True,
                 allow_cache=False,
                 reply_to=event.message.id,

@@ -6,7 +6,7 @@ import os
 import asyncio
 from telethon import events
 from userbot import ALIVE_NAME, CMD_HELP
-from LEGENDBOT.utils import *
+from TGXBOT.utils import *
 from userbot.cmdhelp import CmdHelp
 from telethon import version, events
 from math import ceil
@@ -29,7 +29,7 @@ pm_caption += f"**🇮🇳 I'll Be With You Master Till My Dyno Ends!!☠**\n"
 pm_caption += f"**🇮🇳 OWNER` : @xhrvan**\n"
 pm_caption += f"**🇮🇳 MY BOSS😊: {DEFAULTUSER}**\n"
 pm_caption += f"**🇮🇳 GROUP : [TGX](https://t.me/https://t.me/TGxBOTz_CHAT)**\n" 
-pm_caption += " [✨REPO✨](https://github.com/xhrvan/TGXBOTZ) 🔹 [📜License📜](https://github.com/LEGEND-OS/LEGENDBOT/blob/master/LICENSE)" 
+pm_caption += " [✨REPO✨](https://github.com/xhrvan/TGXBOTZ) 🔹 [📜License📜](https://github.com/LEGEND-OS/TGXBOT/blob/master/LICENSE)" 
 @bot.on(admin_cmd(outgoing=True, pattern="awake$"))
 @bot.on(sudo_cmd(pattern="awake$", allow_sudo=True))
 async def amireallyalive(alive):
