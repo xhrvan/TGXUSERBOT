@@ -44,13 +44,13 @@ def button(page, modules):
     buttons.append(
         [
             custom.Button.inline(
-               f"⭅ϐαϲκ", data=f"page({(max_pages - 1) if page == 0 else (page - 1)})"
+               f"☜ϐαϲκ", data=f"page({(max_pages - 1) if page == 0 else (page - 1)})"
             ),
             custom.Button.inline(
-               f"💝 ❌ 💝", data="close"
+               f" ❌ ", data="close"
             ),
             custom.Button.inline(
-               f"ղҽxԵ⭆", data=f"page({0 if page == (max_pages - 1) else page + 1})"
+               f"ղҽxԵ☞", data=f"page({0 if page == (max_pages - 1) else page + 1})"
             ),
         ]
     )
@@ -88,17 +88,17 @@ if Var.TG_BOT_USER_NAME_BF_HER is not None and tgbot is not None:
         else:
             result = builder.article(
                 "@LEGEND_Userbot",
-                text="""**нєγ! τнιѕ ιѕ [ℓєgєи∂ϐοτ.](https://t.me/Tgxbotz_chat) \nγου ϲαи κиοω мοяє αϐουτ мє👇**""",
+                text="""**Hey! This is [Tgxbot.](https://t.me/Tgxbotz_chat) \nyou can know more about me👇**""",
                 buttons=[
                     [
                         custom.Button.url("🔥 Gяουρ 🔥", "https://t.me/Tgxbotz_chat"),
                         custom.Button.url(
-                            "⚡ Oωиєя ⚡", "https://t.me/Legend_Mr_Hacker"
+                            "⚡ Owner ⚡", "https://t.me/itz_xhrvan"
                         ),
                     ],
                     [
                         custom.Button.url(
-                            "✨ яєρο ✨", "https://github.com/LEGEND-OS/TGXBOT"),
+                            "✨ Repo ✨", "https://github.com/xhrvan/TGXBOT"),
                     ],
                 ],
                 link_preview=False,
@@ -129,10 +129,10 @@ if Var.TG_BOT_USER_NAME_BF_HER is not None and tgbot is not None:
     async def on_plug_in_callback_query_handler(event):
         if event.query.user_id == bot.uid:
             await delete_LEGEND(event,
-              "⚜️ℓεɠεɳ∂ɓσƭ ตҽղմ թɾօѵíժҽɾ ís ղօա clօsҽժ.💫\n\n            **[©ℓєgєи∂ϐοτ](https://t.me/Tgxbotz_chat)**", 5, link_preview=False
+              "⚜️Tgxbotz menu provider is now closed.💫\n\n            **[Tgxbot](https://t.me/Tgxbotz_chat)**", 5, link_preview=False
             )
         else:
-            LEGEND_alert = "οн ϲοммοи γαяя υ τнιиκ υ ϲαи ϲℓιϲκ οи ιτ😁😁😁. ∂єρℓογ υя οωи ϐοτ ©ℓεɠεɳ∂ɓσƭ(https://t.me/Tgxbotz_chat)"
+            LEGEND_alert = "OH COMMON YARR U THINK U CAN CLICK ON OT😁😁😁.deploy ur own bot [©Tgxbot](https://t.me/Tgxbotz_chat)"
             await event.answer(LEGEND_alert, cache_time=0, alert=True)
           
     @tgbot.on(
@@ -174,7 +174,7 @@ if Var.TG_BOT_USER_NAME_BF_HER is not None and tgbot is not None:
     async def commands(event):
         if not event.query.user_id == bot.uid:
             return await event.answer(
-                "ᵃᵇʰⁱ ᵗᵃᵏ ⁿʰⁱ ˢᵃᵐʲʰᵃ ᵏʰᵘᵈᵏᵃ ᵇᵃⁿᵃ ˡᵒ ⁿᵃ ᵗᵒʰ ᵘˢᵉ ᵏᵃʳⁿᵃ ʰ ᵗᵒʰ ᵏʸᵃ ᵘⁿᵍˡⁱ ᵏᵃʳ ʳʰᵉ ʰᵒ.🤦‍♂️🤦‍♂️🤦‍♂️ ©ℓєgєи∂ϐοτ ",
+                "ᵃᵇʰⁱ ᵗᵃᵏ ⁿʰⁱ ˢᵃᵐʲʰᵃ ᵏʰᵘᵈᵏᵃ ᵇᵃⁿᵃ ˡᵒ ⁿᵃ ᵗᵒʰ ᵘˢᵉ ᵏᵃʳⁿᵃ ʰ ᵗᵒʰ ᵏʸᵃ ᵘⁿᵍˡⁱ ᵏᵃʳ ʳʰᵉ ʰᵒ.🤦‍♂️🤦‍♂️🤦‍♂️ ©Tgxbot ",
                 cache_time=0,
                 alert=True,
             )
