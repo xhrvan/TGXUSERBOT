@@ -7,7 +7,7 @@ import emoji
 from googletrans import Translator
 
 from TGXBOT.utils import *
-from smartbot.cmdhelp import CmdHelp
+from userbot.cmdhelp import CmdHelp
 
 @bot.on(admin_cmd(pattern="trt ?(.*)"))
 @bot.on(sudo_cmd(pattern="trt ?(.*)", allow_sudo=True))

@@ -7,7 +7,7 @@ from telethon.tl import functions
 from datetime import datetime
 
 from PIL import Image, ImageDraw, ImageFont
-from smartbot.cmdhelp import CmdHelp
+from userbot.cmdhelp import CmdHelp
 
 from TGXBOT.utils import admin_cmd, edit_or_reply, sudo_cmd
 
@@ -83,7 +83,7 @@ from datetime import datetime
 from PIL import Image, ImageDraw, ImageFont
 
 from TGXBOT.utils import admin_cmd, edit_or_reply, sudo_cmd
-from smartbot.cmdhelp import CmdHelp
+from userbot.cmdhelp import CmdHelp
 
 import asyncio
 
@@ -464,7 +464,7 @@ async def autopic(event):
     while True:
         piclink = random.randint(0, len(TELEGRAPH_MEDIA_LINKS) - 1)
         AUTOPP = TELEGRAPH_MEDIA_LINKS[piclink]
-        downloaded_file_name = "./smartbot/original_pic.png"
+        downloaded_file_name = "./userbot/original_pic.png"
         downloader = SmartDL(AUTOPP, downloaded_file_name, progress_bar=True)
         downloader.start(blocking=False)
         photo = "photo_pfp.png"

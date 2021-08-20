@@ -1,7 +1,7 @@
-from smartbot import bot, CMD_HELP, ALIVE_NAME
+from userbot import bot, CMD_HELP, ALIVE_NAME
 from telethon.tl.functions.contacts import BlockRequest, UnblockRequest
 from TGXBOT.utils import admin_cmd, sudo_cmd, edit_or_reply
-from smartbot.cmdhelp import CmdHelp
+from userbot.cmdhelp import CmdHelp
 import html
 from telethon import events
 from telethon.tl.functions.photos import GetUserPhotosRequest
@@ -57,29 +57,29 @@ async def get_user_from_id(user, event):
 
 @bot.on(admin_cmd(pattern="gban ?(.*)"))
 @bot.on(sudo_cmd(pattern="gban ?(.*)", allow_sudo=True))
-async def gban(smartbot):
-    if smartbot.fwd_from:
+async def gban(userbot):
+    if userbot.fwd_from:
         return
-    ids = smartbot
+    ids = userbot
     sender = await ids.get_sender()
     hum = await ids.client.get_me()
     if not sender.id == hum.id:
         TGXBOT = await edit_or_reply(ids, "Trying to gban this retard!")
     else:
         TGXBOT = await edit_or_reply(ids, "`Ok! Gban ho rha h intzarrr karo....`")
-    hum = await smartbot.client.get_me()
+    hum = await userbot.client.get_me()
     await TGXBOT.edit(f"`🔥Global Ban ho rha h ruko'💦....dekhte jaao bus kya hota h 😎 `")
     my_mention = "[{}](tg://user?id={})".format(hum.first_name, hum.id)
     f"@{hum.username}" if hum.username else my_mention
-    await smartbot.get_chat()
+    await userbot.get_chat()
     a = b = 0
-    if smartbot.is_private:
-        user = smartbot.chat
-        reason = smartbot.pattern_match.group(1)
+    if userbot.is_private:
+        user = userbot.chat
+        reason = userbot.pattern_match.group(1)
     else:
-        smartbot.chat.title
+        userbot.chat.title
     try:
-        user, reason = await get_full_user(smartbot)
+        user, reason = await get_full_user(userbot)
     except:
         pass
     try:
@@ -93,21 +93,21 @@ async def gban(smartbot):
                 f"`First Grow Some Balls To Gban My Creater🤫🚶`"
             )
         try:
-            from smartbot.modules.sql_helper.gmute_sql import gmute
+            from userbot.modules.sql_helper.gmute_sql import gmute
         except:
             pass
         try:
-            await smartbot.client(BlockRequest(user))
+            await userbot.client(BlockRequest(user))
         except:
             pass
-        testsmartbot = [
+        testuserbot = [
             d.entity.id
-            for d in await smartbot.client.get_dialogs()
+            for d in await userbot.client.get_dialogs()
             if (d.is_group or d.is_channel)
         ]
-        for i in testsmartbot:
+        for i in testuserbot:
             try:
-                await smartbot.client.edit_permissions(i, user, view_messages=False)
+                await userbot.client.edit_permissions(i, user, view_messages=False)
                 a += 1
                 await TGXBOT.edit(f"Gbaning ho rha h 😂\n\nTotal Chats :- `{a}`")
             except:
@@ -125,29 +125,29 @@ async def gban(smartbot):
 
 @bot.on(admin_cmd(pattern="ungban ?(.*)"))
 @bot.on(sudo_cmd(pattern="ungban ?(.*)", allow_sudo=True))
-async def gunban(smartbot):
-    if smartbot.fwd_from:
+async def gunban(userbot):
+    if userbot.fwd_from:
         return
-    ids = smartbot
+    ids = userbot
     sender = await ids.get_sender()
     hum = await ids.client.get_me()
     if not sender.id == hum.id:
         TGXBOT = await edit_or_reply(ids, "`Trying to ungban this kid...`")
     else:
         TGXBOT = await edit_or_reply(ids, "`Ungban in progress...`")
-    hum = await smartbot.client.get_me()
+    hum = await userbot.client.get_me()
     await TGXBOT.edit(f"`Trying to ungban this kiddo...`")
     my_mention = "[{}](tg://user?id={})".format(hum.first_name, hum.id)
     f"@{hum.username}" if hum.username else my_mention
-    await smartbot.get_chat()
+    await userbot.get_chat()
     a = b = 0
-    if smartbot.is_private:
-        user = smartbot.chat
-        reason = smartbot.pattern_match.group(1)
+    if userbot.is_private:
+        user = userbot.chat
+        reason = userbot.pattern_match.group(1)
     else:
-        smartbot.chat.title
+        userbot.chat.title
     try:
-        user, reason = await get_full_user(smartbot)
+        user, reason = await get_full_user(userbot)
     except:
         pass
     try:
@@ -159,21 +159,21 @@ async def gunban(smartbot):
         if user.id == 1100735944:
             return await TGXBOT.edit("**You need to grow some balls to gban / ungban my creator**")
         try:
-            from smartbot.modules.sql_helper.gmute_sql import ungmute
+            from userbot.modules.sql_helper.gmute_sql import ungmute
         except:
             pass
         try:
-            await smartbot.client(UnblockRequest(user))
+            await userbot.client(UnblockRequest(user))
         except:
             pass
-        testsmartbot = [
+        testuserbot = [
             d.entity.id
-            for d in await smartbot.client.get_dialogs()
+            for d in await userbot.client.get_dialogs()
             if (d.is_group or d.is_channel)
         ]
-        for i in testsmartbot:
+        for i in testuserbot:
             try:
-                await smartbot.client.edit_permissions(i, user, send_messages=True)
+                await userbot.client.edit_permissions(i, user, send_messages=True)
                 a += 1
                 await TGXBOT.edit(f"Ok! Now Ungbaning ho rha h nhi to yhi patak kr chod dete.\nChats:- `{a}`")
             except:
@@ -196,7 +196,7 @@ async def gunban(smartbot):
 async def handler(aura): 
    if aura.user_joined or aura.user_added:      
        try:       	
-         from smartbot.plugins.sql_helper.gmute_sql import is_gmuted
+         from userbot.plugins.sql_helper.gmute_sql import is_gmuted
          guser = await aura.get_user()      
          gmuted = is_gmuted(guser.id)             
        except:      

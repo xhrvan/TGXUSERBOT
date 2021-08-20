@@ -5,9 +5,9 @@
 
 import re
 
-from smartbot import bot
-from smartbot.utils import admin_cmd
-from smartbot.cmdhelp import CmdHelp
+from userbot import bot
+from userbot.utils import admin_cmd
+from userbot.cmdhelp import CmdHelp
 
 IF_EMOJI = re.compile(
     "["

@@ -8,8 +8,8 @@ from telethon.errors import ChatAdminRequiredError
 from telethon.errors.rpcerrorlist import YouBlockedUserError
 from telethon.tl.functions.users import GetFullUserRequest
 
-from smartbot import CMD_HELP
-from smartbot.cmdhelp import CmdHelp
+from userbot import CMD_HELP
+from userbot.cmdhelp import CmdHelp
 
 from ..utils import admin_cmd , sudo_cmd
 from . import ALIVE_NAME

@@ -9,11 +9,11 @@ from asyncio import sleep
 # credits to aura, john snow
 import asyncio
 # credits to aura, john snow
-from smartbot import CMD_HELP, ALIVE_NAME
+from userbot import CMD_HELP, ALIVE_NAME
 # credits to aura, john snow
 from TGXBOT.utils import admin_cmd, edit_or_reply, sudo_cmd
 # credits to aura, john snow
-from smartbot.cmdhelp import CmdHelp
+from userbot.cmdhelp import CmdHelp
 # credits to aura, john snow
 DEFAULTUSER = str(ALIVE_NAME) if ALIVE_NAME else "LEGEND User"
 # credits to aura, john snow

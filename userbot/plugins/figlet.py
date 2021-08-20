@@ -1,8 +1,8 @@
 import pyfiglet
 
-from smartbot import CMD_HELP
+from userbot import CMD_HELP
 from TGXBOT.utils import admin_cmd, edit_or_reply, sudo_cmd
-from smartbot.cmdhelp import CmdHelp
+from userbot.cmdhelp import CmdHelp
 
 @bot.on(admin_cmd(pattern="figlet ?(.*)", outgoing=True))
 @bot.on(sudo_cmd(pattern="figlet ?(.*)", allow_sudo=True))

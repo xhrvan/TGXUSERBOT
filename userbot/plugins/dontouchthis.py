@@ -1,13 +1,13 @@
 """
-Files Batch Uploader Plugin for smartbot.
+Files Batch Uploader Plugin for userbot.
 usage:- .upb 
 Note:- set TEMP_DIR in Your ENV Vars First.
 By:-@Zero_cool7870	
 """
 import os
 
-from smartbot.utils import admin_cmd
-from smartbot.cmdhelp import CmdHelp
+from userbot.utils import admin_cmd
+from userbot.cmdhelp import CmdHelp
 CmdHelp("upbs").add_command(
    'upbs', None, 'upload file to telegram'
 ).add()

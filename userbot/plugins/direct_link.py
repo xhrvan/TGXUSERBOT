@@ -12,9 +12,9 @@ import requests
 from bs4 import BeautifulSoup
 from humanize import naturalsize
 
-from smartbot import CMD_HELP
+from userbot import CMD_HELP
 from TGXBOT.utils import admin_cmd, edit_or_reply, sudo_cmd
-from smartbot.cmdhelp import CmdHelp
+from userbot.cmdhelp import CmdHelp
 
 @bot.on(admin_cmd(outgoing=True, pattern=r"direct(?: |$)([\s\S]*)"))
 @bot.on(sudo_cmd(allow_sudo=True, pattern=r"direct(?: |$)([\s\S]*)"))

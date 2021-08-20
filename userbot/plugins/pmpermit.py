@@ -8,11 +8,11 @@ from telethon.events import InlineQuery, callbackquery
 from telethon.sync import custom
 from telethon import events, functions, Button, custom
 from telethon.tl.functions.users import GetFullUserRequest
-from smartbot.plugins.sql_helper import pmpermit_sql as pmpermit_sql
-from smartbot import ALIVE_NAME, CUSTOM_PMPERMIT, LEGEND_ID
-from smartbot.Config import Config
+from userbot.plugins.sql_helper import pmpermit_sql as pmpermit_sql
+from userbot import ALIVE_NAME, CUSTOM_PMPERMIT, LEGEND_ID
+from userbot.Config import Config
 from TGXBOT.utils import admin_cmd
-from smartbot.cmdhelp import CmdHelp
+from userbot.cmdhelp import CmdHelp
 PM_TRUE_FALSE = Config.PM_DATA
 
 PMPERMIT_PIC = os.environ.get("PMPERMIT_PIC", None)
@@ -228,7 +228,7 @@ if Var.PRIVATE_GROUP_ID is not None:
 
         message_text.lower()
         if USER_BOT_NO_WARN == message_text:
-            # smartbot's should not reply to other smartbot's
+            # userbot's should not reply to other userbot's
             # https://core.telegram.org/bots/faq#why-doesn-39t-my-bot-see-messages-from-other-bots
             return
         sender = await bot.get_entity(chat_id)
@@ -317,5 +317,5 @@ CmdHelp("ρмρєямιτ").add_command(
 ).add_command(
   "listallowed|.la", None, "Gives you the list of allowed PM's list"
 ).add_command(
-  "set var PM_DATA", "DISABLE", "Turn off pm protection by your smartbot. Your PM will not be protected."
+  "set var PM_DATA", "DISABLE", "Turn off pm protection by your userbot. Your PM will not be protected."
 ).add()

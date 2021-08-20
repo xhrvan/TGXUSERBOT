@@ -1,9 +1,9 @@
 import asyncio
 from collections import deque
 
-from smartbot import *
+from userbot import *
 from TGXBOT.utils import admin_cmd, edit_or_reply, sudo_cmd
-from smartbot.cmdhelp import CmdHelp
+from userbot.cmdhelp import CmdHelp
 
 @bot.on(admin_cmd(pattern=f"bigoof$", outgoing=True))
 async def _(event):

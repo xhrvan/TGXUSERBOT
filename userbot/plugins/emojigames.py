@@ -1,9 +1,9 @@
-# imported from smartbot credit goes to spechide
+# imported from userbot credit goes to spechide
 from telethon.tl.types import InputMediaDice
 
-from smartbot.utils import admin_cmd
+from userbot.utils import admin_cmd
 
-from smartbot.cmdhelp import CmdHelp
+from userbot.cmdhelp import CmdHelp
 CmdHelp("earth").add_command(
    'dart', None, 'animation'
 ).add_command(

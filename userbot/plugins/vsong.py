@@ -1,22 +1,22 @@
 # Plugin made by @hellboi_atul and bug fixes By Shivam Patel(Team Cobra)
 # Give credits... Dont remove or edit these lines
 # uses ytdl 
-# made for DARK COBRA smartbot..
-# Now in Dark ultra smartbot..
+# made for DARK COBRA userbot..
+# Now in Dark ultra userbot..
 import os
 import time
 import math
 import asyncio, json
 from youtube_dl import YoutubeDL
 from pySmartDL import SmartDL
-from smartbot.utils import progress
+from userbot.utils import progress
 from youtube_dl.utils import (DownloadError, ContentTooShortError,
                               ExtractorError, GeoRestrictedError,
                               MaxDownloadsReached, PostProcessingError,
                               UnavailableVideoError, XAttrMetadataError)
 from asyncio import sleep
 from telethon.tl.types import DocumentAttributeAudio
-from smartbot.utils import admin_cmd
+from userbot.utils import admin_cmd
 
 
 try:

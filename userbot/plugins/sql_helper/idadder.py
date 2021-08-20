@@ -1,6 +1,6 @@
 from sqlalchemy import Column, String
 
-from smartbot.plugins.sql_helper import BASE, SESSION
+from userbot.plugins.sql_helper import BASE, SESSION
 
 
 class Moidata(BASE):

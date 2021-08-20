@@ -3,7 +3,7 @@
 import asyncio
 import random
 
-from smartbot.utils import admin_cmd
+from userbot.utils import admin_cmd
 
 
 @borg.on(admin_cmd(pattern="bbl", outgoing=True))
@@ -598,7 +598,7 @@ async def _(event):
         )
 
 
-from smartbot.cmdhelp import CmdHelp
+from userbot.cmdhelp import CmdHelp
 
 CmdHelp("bibical").add_command(
    'bbl', None, 'Say Something From Holy Bible'

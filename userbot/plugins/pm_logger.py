@@ -9,10 +9,10 @@ from asyncio import sleep
 
 from telethon import events
 
-from smartbot import BOTLOG, BOTLOG_CHATID, bot
-from smartbot.Config import Config
+from userbot import BOTLOG, BOTLOG_CHATID, bot
+from userbot.Config import Config
 from TGXBOT.utils import admin_cmd, register
-from smartbot.cmdhelp import CmdHelp
+from userbot.cmdhelp import CmdHelp
 
 logging.basicConfig(
     format="%(asctime)s - %(name)s - %(levelname)s - %(message)s", level=logging.WARN

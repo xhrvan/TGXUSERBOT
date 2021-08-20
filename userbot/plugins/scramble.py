@@ -6,7 +6,7 @@ import random
 import re
 
 from TGXBOT.utils import admin_cmd, sudo_cmd, edit_or_reply
-from smartbot.cmdhelp import CmdHelp
+from userbot.cmdhelp import CmdHelp
 
 
 @borg.on(admin_cmd(pattern="scramble(\s+[\S\s]+|$)"))

@@ -1,5 +1,5 @@
-from smartbot.utils import admin_cmd
-from smartbot.cmdhelp import CmdHelp
+from userbot.utils import admin_cmd
+from userbot.cmdhelp import CmdHelp
 CmdHelp("ftext").add_command(
     "ftext", None, "Ftext Word"
 ).add()

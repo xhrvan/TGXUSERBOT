@@ -1,5 +1,5 @@
 import asyncio
-from smartbot.cmdhelp import CmdHelp
+from userbot.cmdhelp import CmdHelp
 
 from . import *
 @bot.on(admin_cmd(pattern="gm"))

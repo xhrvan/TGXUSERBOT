@@ -7,9 +7,9 @@ from telethon import events
 from telethon.errors.rpcerrorlist import YouBlockedUserError
 from telethon.tl.types import DocumentAttributeFilename
 
-from smartbot import CMD_HELP
+from userbot import CMD_HELP
 from TGXBOT.utils import admin_cmd, edit_or_reply, sudo_cmd
-from smartbot.cmdhelp import CmdHelp
+from userbot.cmdhelp import CmdHelp
 
 
 @bot.on(admin_cmd(pattern="frybot$"))

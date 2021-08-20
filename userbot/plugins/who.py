@@ -2,7 +2,7 @@ import html
 
 from telethon import events, utils
 from telethon.tl import types
-from smartbot.cmdhelp import CmdHelp
+from userbot.cmdhelp import CmdHelp
 from TGXBOT.utils import admin_cmd, sudo_cmd, edit_or_reply
 
 def get_who_string(who):

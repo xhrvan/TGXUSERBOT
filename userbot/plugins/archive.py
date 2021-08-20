@@ -15,10 +15,10 @@ from hachoir.metadata import extractMetadata
 from hachoir.parser import createParser
 from telethon.tl.types import DocumentAttributeVideo
 from telethon import events
-from smartbot import CMD_HELP
-from smartbot.Config import Config
+from userbot import CMD_HELP
+from userbot.Config import Config
 from TGXBOT.utils import admin_cmd, progress
-from smartbot.cmdhelp import CmdHelp
+from userbot.cmdhelp import CmdHelp
 
 thumb_image_path = Config.TMP_DOWNLOAD_DIRECTORY + "/thumb_image.jpg"
 extracted = Config.TMP_DOWNLOAD_DIRECTORY + "extracted/"

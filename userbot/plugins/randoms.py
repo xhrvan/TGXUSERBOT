@@ -6,9 +6,9 @@
 import random
 from asyncio import sleep
 import asyncio
-from smartbot import CMD_HELP, ALIVE_NAME
+from userbot import CMD_HELP, ALIVE_NAME
 from TGXBOT.utils import admin_cmd, edit_or_reply, sudo_cmd
-from smartbot.cmdhelp import CmdHelp
+from userbot.cmdhelp import CmdHelp
 
 DEFAULTUSER = str(ALIVE_NAME) if ALIVE_NAME else "LEGEND User"
 

@@ -5,8 +5,8 @@ from random import randint, uniform
 from PIL import Image, ImageEnhance, ImageOps
 from telethon.tl.types import DocumentAttributeFilename
 
-from smartbot.utils import admin_cmd
-from smartbot.cmdhelp import CmdHelp
+from userbot.utils import admin_cmd
+from userbot.cmdhelp import CmdHelp
 CmdHelp("deepfryer").add_command(
    'deepfry', None, 'Reply to image'
 ).add()

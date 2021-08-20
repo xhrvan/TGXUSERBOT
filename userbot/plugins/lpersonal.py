@@ -1,9 +1,9 @@
 import asyncio
 import random
-from smartbot.cmdhelp import CmdHelp
+from userbot.cmdhelp import CmdHelp
 from . import *
 
-from smartbot.utils import admin_cmd, sudo_cmd, edit_or_reply
+from userbot.utils import admin_cmd, sudo_cmd, edit_or_reply
 NUMBER = ["0", "1"]
 
 OS = [

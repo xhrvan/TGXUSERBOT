@@ -8,10 +8,10 @@ import os
 from telethon import events
 from telethon.errors.rpcerrorlist import YouBlockedUserError
 
-from smartbot import CmdHelp, bot
+from userbot import CmdHelp, bot
 from . import *
-# from smartbot.utils import admin_cmd
-from smartbot.events import register
+# from userbot.utils import admin_cmd
+from userbot.events import register
 
 try:
     pass
@@ -109,7 +109,7 @@ async def DeezLoader(Deezlod):
         await Deezlod.delete()
 
 
-from smartbot.cmdhelp import CmdHelp
+from userbot.cmdhelp import CmdHelp
 CmdHelp("gaana").add_command(
     "spd", None, "for searching songs from spotify"
 ).add_command(

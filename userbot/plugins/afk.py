@@ -6,10 +6,10 @@ from datetime import datetime
 
 from telethon import events
 from telethon.tl import functions, types
-from smartbot import CMD_HELP
-from smartbot import ALIVE_NAME, LEGENDversion
+from userbot import CMD_HELP
+from userbot import ALIVE_NAME, LEGENDversion
 from TGXBOT.utils import admin_cmd, edit_or_reply
-from smartbot.cmdhelp import CmdHelp
+from userbot.cmdhelp import CmdHelp
 
 DEFAULTUSER = str(ALIVE_NAME) if ALIVE_NAME else "ℓєgєи∂"
 
@@ -89,7 +89,7 @@ async def on_afk(event):
         total_afk_time = str((afk_end - afk_start))
     current_message_text = event.message.message.lower()
     if "afk" in current_message_text:
-        # smartbot's should not reply to other smartbot's
+        # userbot's should not reply to other userbot's
         # https://core.telegram.org/bots/faq#why-doesn-39t-my-bot-see-messages-from-other-bots
         return False
     if USER_AFK and not (await event.get_sender()).bot:

@@ -3,8 +3,8 @@ import asyncio
 import random
 from telethon import events
 from TGXBOT.utils import admin_cmd
-from smartbot.cmdhelp import CmdHelp
-from smartbot import ALIVE_NAME
+from userbot.cmdhelp import CmdHelp
+from userbot import ALIVE_NAME
 from telethon.tl.types import ChannelParticipantsAdmins
 # 🤔🤔🤔🤔🤔🤔🤔🤔🤔🤔🤔🤔🤔🤔🤔🤔🤔🤔🤔🤔🤔🤔🤔🤔🤔🤔🤔🤔🤔
 DEFAULTUSER = str(ALIVE_NAME) if ALIVE_NAME else "LEGEND"

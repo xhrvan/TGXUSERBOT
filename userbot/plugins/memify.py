@@ -8,7 +8,7 @@ import textwrap
 from PIL import Image, ImageDraw, ImageFont
 
 from TGXBOT.utils import admin_cmd, sudo_cmd, edit_or_reply
-from smartbot.cmdhelp import CmdHelp
+from userbot.cmdhelp import CmdHelp
 from var import Var
 
 # how a lazy guy ports.

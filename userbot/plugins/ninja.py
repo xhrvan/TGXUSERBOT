@@ -8,8 +8,8 @@ import telethon.utils
 from telethon.errors import rpcbaseerrors
 
 from TGXBOT.utils import admin_cmd, sudo_cmd, errors_handler
-from smartbot import bot as TGXBOT
-from smartbot import BOTLOG, BOTLOG_CHATID
+from userbot import bot as TGXBOT
+from userbot import BOTLOG, BOTLOG_CHATID
 
 
 @TGXBOT.on(admin_cmd(outgoing=True, pattern="del$"))

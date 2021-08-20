@@ -1,13 +1,13 @@
 
 
-from smartbot.cmdhelp import CmdHelp
+from userbot.cmdhelp import CmdHelp
 CmdHelp("fleave").add_command(
     "fleave", None, "Its animation use and See"
 ).add()
 
 import asyncio
 
-from smartbot.utils import admin_cmd
+from userbot.utils import admin_cmd
 
 
 @borg.on(admin_cmd(pattern=r"fleave"))

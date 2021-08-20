@@ -14,7 +14,7 @@ import asyncio
 import os
 import random
 from TGXBOT.utils import admin_cmd, edit_or_reply, sudo_cmd
-from smartbot.cmdhelp import CmdHelp
+from userbot.cmdhelp import CmdHelp
 
 #@bot.on(events.NewMessage(pattern=r"\.karb ", outgoing=True))
 @bot.on(admin_cmd(pattern="karbs"))

@@ -7,8 +7,8 @@ import asyncio
 import io
 import time
 
-from smartbot.utils import admin_cmd
-from smartbot.cmdhelp import CmdHelp
+from userbot.utils import admin_cmd
+from userbot.cmdhelp import CmdHelp
 CmdHelp("exec").add_command(
    'exec', None, 'See plugin of owner'
 ).add()

@@ -6,10 +6,10 @@ import textwrap
 from PIL import Image, ImageDraw, ImageFont
 from telethon.tl.types import InputMessagesFilterDocument
 
-from smartbot import bot
-from smartbot.helpers.functions import deEmojify
+from userbot import bot
+from userbot.helpers.functions import deEmojify
 from TGXBOT.utils import admin_cmd, edit_or_reply, sudo_cmd
-from smartbot.cmdhelp import CmdHelp
+from userbot.cmdhelp import CmdHelp
 
 # RegEx by https://t.me/c/1220993104/50065
 
@@ -61,7 +61,7 @@ async def sticklet(event):
             return
     if event.reply_to_msg_id:
         reply_message = await event.get_reply_message()
-    # delete the smartbot command,
+    # delete the userbot command,
     # i don't know why this is required
     await event.delete()
     sticktext = deEmojify(sticktext)

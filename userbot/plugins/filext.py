@@ -2,10 +2,10 @@
 import requests
 from bs4 import BeautifulSoup
 
-from smartbot.utils import admin_cmd
+from userbot.utils import admin_cmd
 
 
-from smartbot.cmdhelp import CmdHelp
+from userbot.cmdhelp import CmdHelp
 CmdHelp("filext").add_command(
     "filext", None, "Get info about a File Extension"
 ).add()

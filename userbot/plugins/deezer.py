@@ -1,8 +1,8 @@
 import re
 
-from smartbot import bot
-from smartbot.utils import admin_cmd
-from smartbot.cmdhelp import CmdHelp
+from userbot import bot
+from userbot.utils import admin_cmd
+from userbot.cmdhelp import CmdHelp
 CmdHelp("deezer").add_command(
    'deezer', None, 'Give me query to search'
 ).add()

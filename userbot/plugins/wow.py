@@ -7,9 +7,9 @@
 
 from telethon import events
 import asyncio
-from smartbot.utils import admin_cmd
-from smartbot.cmdhelp import CmdHelp
-from smartbot import CMD_HELP
+from userbot.utils import admin_cmd
+from userbot.cmdhelp import CmdHelp
+from userbot import CMD_HELP
 @borg.on(admin_cmd(pattern=r"wows"))
 async def hapy(event):
      a="░█──░█ ░█▀▀▀█ ░█──░█ \n░█░█░█ ░█──░█ ░█░█░█ \n░█▄▀▄█ ░█▄▄▄█ ░█▄▀▄█"

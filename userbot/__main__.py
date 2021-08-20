@@ -1,4 +1,4 @@
-from smartbot import bot
+from userbot import bot
 from sys import argv
 import sys
 from telethon.errors.rpcerrorlist import PhoneNumberInvalidError
@@ -6,9 +6,9 @@ import os
 from . import *
 from telethon import TelegramClient
 from var import Var
-from smartbot.Config import Config
-from smartbot.utils import load_module, start_assistant
-from smartbot import LOAD_PLUG, LOGS, LEGENDversion
+from userbot.Config import Config
+from userbot.utils import load_module, start_assistant
+from userbot import LOAD_PLUG, LOGS, LEGENDversion
 from pathlib import Path
 import asyncio
 import telethon.utils
@@ -50,7 +50,7 @@ else:
 
 
 import glob
-path = 'smartbot/plugins/*.py'
+path = 'userbot/plugins/*.py'
 files = glob.glob(path)
 for name in files:
     with open(name) as f:
@@ -59,7 +59,7 @@ for name in files:
         load_module(shortname.replace(".py", ""))
 
 if LOAD_ASSISTANT == True:
-    path = "smartbot/plugins/assistant/*.py"
+    path = "userbot/plugins/assistant/*.py"
     files = glob.glob(path)
     for name in files:
         with open(name) as f:

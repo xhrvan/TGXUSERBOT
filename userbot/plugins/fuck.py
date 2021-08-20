@@ -12,8 +12,8 @@ from telethon import events
 
 import asyncio
 
-from smartbot.utils import admin_cmd
-from smartbot.cmdhelp import CmdHelp
+from userbot.utils import admin_cmd
+from userbot.cmdhelp import CmdHelp
 CmdHelp("fuck").add_command(
     "fuck", None, "Sexy animation"
 ).add_command(

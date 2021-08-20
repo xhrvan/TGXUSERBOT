@@ -4,7 +4,7 @@ import PIL.ImageOps
 from PIL import Image, ImageDraw, ImageFont
 
 from TGXBOT import CmdHelp
-from smartbot.Config import Config
+from userbot.Config import Config
 from TGXBOT.utils import admin_cmd, sudo_cmd, edit_or_reply
 
 TEMP_DIR = os.environ.get("TEMP_DIR", "./temp/")

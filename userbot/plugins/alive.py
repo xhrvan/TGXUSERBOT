@@ -1,9 +1,9 @@
 import time
 
 from telethon import version
-from smartbot import ALIVE_NAME, StartTime, LEGENDversion
+from userbot import ALIVE_NAME, StartTime, LEGENDversion
 from TGXBOT.utils import admin_cmd, edit_or_reply, sudo_cmd
-from smartbot.cmdhelp import CmdHelp
+from userbot.cmdhelp import CmdHelp
 
 async def reply_id(event):
     reply_to_id = None

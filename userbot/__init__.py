@@ -6,8 +6,8 @@ import sys
 import time
 from telethon.sessions import StringSession
 from telethon import TelegramClient
-from smartbot.helpers import functions as simpdef
-from smartbot.Config import Config
+from userbot.helpers import functions as simpdef
+from userbot.Config import Config
 from var import Var
 
 StartTime = time.time()
@@ -214,6 +214,6 @@ AFKREASON = None
 SUDO_LIST = {}
 
 
-from smartbot.helpers import *
-from smartbot.helpers import functions as LEGENDdef
-from smartbot.cmdhelp import CmdHelp
+from userbot.helpers import *
+from userbot.helpers import functions as LEGENDdef
+from userbot.cmdhelp import CmdHelp

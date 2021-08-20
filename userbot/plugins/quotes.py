@@ -2,7 +2,7 @@ import random
 from random import choice
 import requests
 from TGXBOT.utils import admin_cmd, sudo_cmd, edit_or_reply
-from smartbot.cmdhelp import CmdHelp
+from userbot.cmdhelp import CmdHelp
 
 LOVESTR = [
     "The best and most beautiful things in this world cannot be seen or even heard, but must be felt with the heart.",

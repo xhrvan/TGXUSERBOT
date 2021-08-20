@@ -6,7 +6,7 @@ from sqlalchemy.orm import scoped_session, sessionmaker
 
 # the secret configuration specific things
 from var import Var
-from smartbot.Config import Config
+from userbot.Config import Config
 
 
 def start() -> scoped_session:

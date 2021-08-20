@@ -1,8 +1,8 @@
 
 from telethon.tl.types import ChannelParticipantAdmin, ChannelParticipantsBots
 
-from smartbot.utils import admin_cmd
-from smartbot.cmdhelp import CmdHelp
+from userbot.utils import admin_cmd
+from userbot.cmdhelp import CmdHelp
 CmdHelp("get_bot").add_command(
     "get_bot", None, "Get info about a File Extension"
 ).add()

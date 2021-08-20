@@ -13,7 +13,7 @@ import aiohttp
 import magic
 import requests
 from TGXBOT.utils import admin_cmd, progress, sudo_cmd, edit_or_reply
-from smartbot.cmdhelp import CmdHelp
+from userbot.cmdhelp import CmdHelp
 
 
 @bot.on(admin_cmd(pattern="verystream ?(.*)", outgoing=True))

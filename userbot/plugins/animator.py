@@ -5,9 +5,9 @@ from . import *
 
 import asyncio
 
-from smartbot import ALIVE_NAME, CMD_HELP
+from userbot import ALIVE_NAME, CMD_HELP
 from TGXBOT.utils import admin_cmd, edit_or_reply, sudo_cmd
-from smartbot.cmdhelp import CmdHelp
+from userbot.cmdhelp import CmdHelp
 
 
 

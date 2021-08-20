@@ -10,7 +10,7 @@ from telethon.tl.tlobject import TLObject
 from telethon.tl.types import MessageEntityPre
 from telethon.utils import add_surrogate
 from TGXBOT.utils import admin_cmd, sudo_cmd, edit_or_reply
-from smartbot.cmdhelp import CmdHelp
+from userbot.cmdhelp import CmdHelp
 
 
 PRINTABLE_SET = set(bytes(string.printable, "ascii"))

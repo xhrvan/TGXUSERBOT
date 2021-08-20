@@ -1,10 +1,10 @@
 from telethon.tl.functions.messages import EditChatDefaultBannedRightsRequest
 from telethon.tl.types import ChatBannedRights
 
-from smartbot import ALIVE_NAME, CMD_HELP
-from smartbot.events import errors_handler, register
+from userbot import ALIVE_NAME, CMD_HELP
+from userbot.events import errors_handler, register
 from TGXBOT.utils import admin_cmd, sudo_cmd, edit_or_reply
-from smartbot.cmdhelp import CmdHelp
+from userbot.cmdhelp import CmdHelp
 
 
 DEFAULTUSER = (

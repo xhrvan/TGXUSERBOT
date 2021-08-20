@@ -1,8 +1,8 @@
 import asyncio
 import io
-from smartbot import ALIVE_NAME
+from userbot import ALIVE_NAME
 from . import *
-from smartbot import bot as TGXBOT
+from userbot import bot as TGXBOT
 from TGXBOT.utils import admin_cmd, edit_or_reply, sudo_cmd
 DEFAULTUSER = str(ALIVE_NAME) if ALIVE_NAME else "LEGEND"
 LEGEND_logo = "./TGXBOT_logo.jpg"
@@ -14,7 +14,7 @@ async def install(event):
     reply_to_id = event.message.id
     if event.reply_to_msg_id:
         reply_to_id = event.reply_to_msg_id
-    cmd = "ls smartbot/plugins"
+    cmd = "ls userbot/plugins"
     thumb = LEGEND_logo
     process = await asyncio.create_subprocess_shell(
         cmd, stdout=asyncio.subprocess.PIPE, stderr=asyncio.subprocess.PIPE

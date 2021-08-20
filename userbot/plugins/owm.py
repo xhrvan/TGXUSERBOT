@@ -13,11 +13,11 @@ from pytz import country_names as c_n
 from pytz import country_timezones as c_tz
 from pytz import timezone as tz
 
-from smartbot import CMD_HELP
-from smartbot import OPEN_WEATHER_MAP_APPID as OWM_API
-from smartbot.events import errors_handler
+from userbot import CMD_HELP
+from userbot import OPEN_WEATHER_MAP_APPID as OWM_API
+from userbot.events import errors_handler
 from TGXBOT.utils import admin_cmd, sudo_cmd, edit_or_reply
-from smartbot.cmdhelp import CmdHelp
+from userbot.cmdhelp import CmdHelp
 
 
 # ===== CONSTANT =====
@@ -147,7 +147,7 @@ async def get_weather(weather):
 @bot.on(sudo_cmd(pattern="setcity(?: |$)(.*)", allow_sudo=True))
 @errors_handler
 async def set_default_city(city):
-    """ For .ctime command, change the default smartbot country for date and time commands. """
+    """ For .ctime command, change the default userbot country for date and time commands. """
 
     if not OWM_API:
         await edit_or_reply(city, "`Get an API key from` https://openweathermap.org/ `first.`")

@@ -2,8 +2,8 @@
 import random
 import re
 
-from smartbot.cmdhelp import CmdHelp
-from smartbot.events import register
+from userbot.cmdhelp import CmdHelp
+from userbot.events import register
 from TGXBOT.utils import admin_cmd, edit_or_reply, sudo_cmd
 
 EMOJI_PATTERN = re.compile(

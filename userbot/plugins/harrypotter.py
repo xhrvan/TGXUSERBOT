@@ -93,7 +93,7 @@ async def _(event):
     if (x==39):
       await event.edit("**Wingardium Leviosa**")
 
-from smartbot.cmdhelp import CmdHelp
+from userbot.cmdhelp import CmdHelp
 
 CmdHelp("hry ptr").add_command(
        'hp', None, 'its animation of harrypotter'

@@ -1,7 +1,7 @@
 from telethon import events
 
 from . import *
-from smartbot import ALIVE_NAME
+from userbot import ALIVE_NAME
 # if incoming
 
 

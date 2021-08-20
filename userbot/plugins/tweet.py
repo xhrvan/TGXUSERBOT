@@ -7,8 +7,8 @@
 # no offence. Made for fun purpose only
 # Now in TGXBOT
 
-from smartbot import CMD_HELP
-from smartbot.helpers.functions import (
+from userbot import CMD_HELP
+from userbot.helpers.functions import (
     changemymind,
     deEmojify,
     kannagen,
@@ -22,7 +22,7 @@ from smartbot.helpers.functions import (
     dani,
 )
 from TGXBOT.utils import admin_cmd, sudo_cmd, edit_or_reply
-from smartbot.cmdhelp import CmdHelp
+from userbot.cmdhelp import CmdHelp
 
 
 @bot.on(admin_cmd(pattern=r"tweet(?: |$)(.*)"))

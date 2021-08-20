@@ -1,9 +1,9 @@
 from telethon import events
 from telethon.errors.rpcerrorlist import YouBlockedUserError
 
-from smartbot.utils import admin_cmd
+from userbot.utils import admin_cmd
 
-from smartbot.cmdhelp import CmdHelp
+from userbot.cmdhelp import CmdHelp
 
 
 CmdHelp("chhadi").add_command(

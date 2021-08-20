@@ -4,9 +4,9 @@ from subprocess import run as runapp
 import base64
 
 
-from smartbot import *
+from userbot import *
 from TGXBOT.utils import admin_cmd, edit_or_reply, sudo_cmd
-from smartbot.cmdhelp import CmdHelp
+from userbot.cmdhelp import CmdHelp
 
 @bot.on(admin_cmd(pattern="hash (.*)", outgoing=True))
 @bot.on(sudo_cmd(pattern="hash (.*)", allow_sudo=True))

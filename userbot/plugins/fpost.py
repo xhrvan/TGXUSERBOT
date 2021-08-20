@@ -3,13 +3,13 @@
 # file, You can obtain one at http://mozilla.org/MPL/2.0/.
 
 
-from smartbot.cmdhelp import CmdHelp
+from userbot.cmdhelp import CmdHelp
 CmdHelp("fpost").add_command(
     "fpost <word>", None, "Use and See"
 ).add()
 import string
 
-from smartbot.utils import admin_cmd
+from userbot.utils import admin_cmd
 
 msg_cache = {}
 

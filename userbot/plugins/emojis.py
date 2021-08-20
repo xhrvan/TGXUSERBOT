@@ -7,7 +7,7 @@ Available Commands:
 import asyncio
 
 from TGXBOT.utils import admin_cmd
-from smartbot.cmdhelp import CmdHelp
+from userbot.cmdhelp import CmdHelp
 
 @bot.on(admin_cmd(pattern="emoji (.*)"))
 async def _(event):

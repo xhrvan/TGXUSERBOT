@@ -1,6 +1,6 @@
 """Syntax: .whatscrapp as reply to a message copied from @WhatsCRApp"""
 from TGXBOT.utils import *
-from smartbot.cmdhelp import *
+from userbot.cmdhelp import *
 # when you are tight on schedule...
 # and also lazy af!!
 

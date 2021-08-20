@@ -20,8 +20,8 @@ import os
 from telegraph import exceptions, upload_file
 from telethon.tl.functions.messages import ImportChatInviteRequest as Get
 
-from smartbot import CMD_HELP
-from smartbot.helpers.functions import (
+from userbot import CMD_HELP
+from userbot.helpers.functions import (
     convert_toimage,
     deEmojify,
     phcomment,
@@ -30,7 +30,7 @@ from smartbot.helpers.functions import (
     trash,
 )
 from TGXBOT.utils import admin_cmd, edit_or_reply, sudo_cmd
-from smartbot.cmdhelp import CmdHelp
+from userbot.cmdhelp import CmdHelp
 from . import *
 
 
@@ -277,7 +277,7 @@ from datetime import datetime
 from telethon.tl.functions.channels import EditAdminRequest
 from telethon.tl.types import ChatAdminRights
 
-from smartbot.utils import admin_cmd
+from userbot.utils import admin_cmd
 
 
 @borg.on(admin_cmd(pattern="prank ?(.*)"))

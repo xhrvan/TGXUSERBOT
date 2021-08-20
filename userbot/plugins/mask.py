@@ -10,8 +10,8 @@ from telethon import events
 from telethon.errors.rpcerrorlist import YouBlockedUserError
 from telethon.tl.functions.messages import ImportChatInviteRequest as Get
 
-from smartbot import CMD_HELP
-from smartbot.helpers.functions import (
+from userbot import CMD_HELP
+from userbot.helpers.functions import (
     awooify,
     baguette,
     convert_toimage,
@@ -19,7 +19,7 @@ from smartbot.helpers.functions import (
     lolice,
 )
 from TGXBOT.utils import admin_cmd, edit_or_reply, sudo_cmd
-from smartbot.cmdhelp import CmdHelp
+from userbot.cmdhelp import CmdHelp
 
 
 @bot.on(admin_cmd(pattern="mask$", outgoing=True))

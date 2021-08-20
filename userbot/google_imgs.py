@@ -1,4 +1,4 @@
-#Credit - Catsmartbot @sandy1709
+#Credit - Catuserbot @sandy1709
 #
 #!/usr/bin/env python
 # In[ ]:

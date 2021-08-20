@@ -11,7 +11,7 @@ import re
 import bs4
 import requests
 from TGXBOT.utils import admin_cmd, sudo_cmd, edit_or_reply
-from smartbot.cmdhelp import CmdHelp
+from userbot.cmdhelp import CmdHelp
 
 langi = "en"
 

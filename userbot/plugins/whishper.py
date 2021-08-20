@@ -1,7 +1,7 @@
 # Made by @David99q for @LEGEND_Userbot
 
 from TGXBOT.utils import *
-from smartbot.cmdhelp import CmdHelp
+from userbot.cmdhelp import CmdHelp
 
 
 @bot.on(admin_cmd(pattern="wspr ?(.*)"))

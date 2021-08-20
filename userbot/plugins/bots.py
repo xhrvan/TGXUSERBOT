@@ -3,8 +3,8 @@ from telegraph import Telegraph
 from telethon import events
 from telethon.errors.rpcerrorlist import YouBlockedUserError
 
-from smartbot.cmdhelp import CmdHelp
-from smartbot.utils import admin_cmd
+from userbot.cmdhelp import CmdHelp
+from userbot.utils import admin_cmd
 
 telegraph = Telegraph()
 mee = telegraph.create_account(short_name="yohohehe")

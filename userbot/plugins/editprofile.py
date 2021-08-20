@@ -9,9 +9,9 @@ import urllib
 import requests
 from telethon.tl import functions
 
-from smartbot import CMD_HELP
+from userbot import CMD_HELP
 from TGXBOT.utils import admin_cmd
-from smartbot.cmdhelp import CmdHelp
+from userbot.cmdhelp import CmdHelp
 
   
 @borg.on(admin_cmd(pattern="pbio"))   # pylint:disable=E0602

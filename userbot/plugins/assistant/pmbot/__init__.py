@@ -1,5 +1,5 @@
 from . import *
-from smartbot import ALIVE_NAME
-from smartbot import *
+from userbot import ALIVE_NAME
+from userbot import *
 OWNER_NAME = ALIVE_NAME
 OWNER_ID = bot.uid

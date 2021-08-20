@@ -5,12 +5,12 @@ import time
 from PIL import Image, ImageDraw, ImageFont
 from telethon.tl.types import InputMessagesFilterPhotos, InputMessagesFilterDocument
 
-from smartbot import *
+from userbot import *
 from TGXBOT.utils import admin_cmd, sudo_cmd, edit_or_reply
 from telethon import events
 from telethon.errors.rpcerrorlist import YouBlockedUserError
-from smartbot import CMD_HELP
-from smartbot import ALIVE_NAME
+from userbot import CMD_HELP
+from userbot import ALIVE_NAME
 
 PICS_STR = []
 

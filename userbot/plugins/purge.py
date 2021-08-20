@@ -9,9 +9,9 @@ from asyncio import sleep
 
 from telethon.errors import rpcbaseerrors
 
-from smartbot import BOTLOG, BOTLOG_CHATID, CMD_HELP
+from userbot import BOTLOG, BOTLOG_CHATID, CMD_HELP
 from TGXBOT.utils import admin_cmd, errors_handler, sudo_cmd, edit_or_reply
-from smartbot.cmdhelp import CmdHelp
+from userbot.cmdhelp import CmdHelp
 
 
 

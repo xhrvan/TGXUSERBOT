@@ -5,9 +5,9 @@ from telethon.errors import FloodWaitError
 from telethon.tl import functions
 from telethon.tl.functions.channels import GetAdminedPublicChannelsRequest
 
-from smartbot import ALIVE_NAME, BIO_MSG, CMD_HELP
+from userbot import ALIVE_NAME, BIO_MSG, CMD_HELP
 from TGXBOT.utils import admin_cmd, edit_or_reply, sudo_cmd
-from smartbot.cmdhelp import CmdHelp
+from userbot.cmdhelp import CmdHelp
 
 DEFAULTUSERBIO = str(BIO_MSG) if BIO_MSG else "Legendary TGXBOT"
 DEL_TIME_OUT = 60

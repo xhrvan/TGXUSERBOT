@@ -2,8 +2,8 @@
 Syntax: .wikimedia Query"""
 import requests
 
-from smartbot.util import admin_cmd
-from smartbot.cmdhelp import CmdHelp
+from userbot.util import admin_cmd
+from userbot.cmdhelp import CmdHelp
 
 @borg.on(admin_cmd(pattern="wikimedia (.*)"))
 async def _(event):

@@ -1,5 +1,5 @@
 
-from smartbot.cmdhelp import CmdHelp
+from userbot.cmdhelp import CmdHelp
 
 CmdHelp("fuck").add_command(
    'kk', None, 'Fuck OFF'

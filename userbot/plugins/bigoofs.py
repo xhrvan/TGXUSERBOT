@@ -10,7 +10,7 @@ Credits to @Legend_Mr_Hacker
 from telethon import events
 
 import asyncio
-from smartbot import CmdHelp
+from userbot import CmdHelp
 from TGXBOT.utils import admin_cmd, edit_or_reply, sudo_cmd
 
 @bot.on(admin_cmd("bigoofs"))

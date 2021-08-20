@@ -3,7 +3,7 @@
 import asyncio
 import random
 
-from smartbot.util import admin_cmd
+from userbot.util import admin_cmd
 
 
 @borg.on(admin_cmd(pattern=r"bels"))
@@ -572,7 +572,7 @@ async def _(event):
         await event.edit(
             '`"If we put solar panels above parking lots, then our cars wouldn\'t get hot and we would have a lot of clean energy."`'
         )
-from smartbot.cmdhelp import CmdHelp
+from userbot.cmdhelp import CmdHelp
 
 CmdHelp("facts").add_command(
    'bels', None, 'Randopm Facts Generator'

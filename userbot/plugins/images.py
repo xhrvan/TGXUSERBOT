@@ -5,9 +5,9 @@
 import os
 import shutil
 
-from smartbot.google_imgs import googleimagesdownload
+from userbot.google_imgs import googleimagesdownload
 from TGXBOT.utils import admin_cmd, edit_or_reply, sudo_cmd
-from smartbot.Config import Config
+from userbot.Config import Config
 
 async def reply_id(event):
     reply_to_id = None

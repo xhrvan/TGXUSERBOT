@@ -9,9 +9,9 @@ from datetime import datetime
 
 from pySmartDL import SmartDL
 
-from smartbot import ALIVE_NAME, CMD_HELP
+from userbot import ALIVE_NAME, CMD_HELP
 from TGXBOT.utils import admin_cmd, humanbytes, progress, sudo_cmd
-from smartbot.cmdhelp import CmdHelp
+from userbot.cmdhelp import CmdHelp
 
 DEFAULTUSER = str(ALIVE_NAME) if ALIVE_NAME else "LEGEND User"
 

@@ -1,5 +1,5 @@
 import requests
-from smartbot import CmdHelp
+from userbot import CmdHelp
 from TGXBOT.utils import edit_or_reply, admin_cmd, sudo_cmd
 import os
 
@@ -21,4 +21,4 @@ async def _(event):
     fole = "TGXBOT.jpg"
     await borg.send_file(event.chat_id, fole, caption=captin)
     await event.delete()
-    os.system("rm /root/smartbot/TGXBOT.jpg ")
+    os.system("rm /root/userbot/TGXBOT.jpg ")

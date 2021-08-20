@@ -1,8 +1,8 @@
 
 import asyncio
 
-from smartbot.utils import admin_cmd
-from smartbot.cmdhelp import CmdHelp
+from userbot.utils import admin_cmd
+from userbot.cmdhelp import CmdHelp
 CmdHelp("єg∂миg").add_command(
    'egm', None, 'Use in Gm Time'
 ).add()

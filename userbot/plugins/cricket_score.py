@@ -16,7 +16,7 @@ import urllib.request
 
 from bs4 import BeautifulSoup
 
-from smartbot.cmdhelp import CmdHelp
+from userbot.cmdhelp import CmdHelp
 from TGXBOT.utils import admin_cmd, edit_or_reply, sudo_cmd
 
 

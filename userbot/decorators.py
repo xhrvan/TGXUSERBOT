@@ -16,10 +16,10 @@ from telethon import events
 from telethon.tl.functions.channels import GetParticipantRequest
 from telethon.tl.types import ChannelParticipantAdmin, ChannelParticipantCreator
 
-from smartbot import *
-from smartbot.helpers import *
-from smartbot.config import Config
-from smartbot.sql import sudo_sql as s_ql
+from userbot import *
+from userbot.helpers import *
+from userbot.config import Config
+from userbot.sql import sudo_sql as s_ql
 
 # admin cmd or normal user cmd
 def admin_cmd(pattern=None, command=None, **args):

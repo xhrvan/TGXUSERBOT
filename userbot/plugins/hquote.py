@@ -1,6 +1,6 @@
 import requests,random
 from bs4 import BeautifulSoup as bs
-from smartbot.cmdhelp import CmdHelp
+from userbot.cmdhelp import CmdHelp
 from . import *
 
 @bot.on(admin_cmd(pattern="hquote"))

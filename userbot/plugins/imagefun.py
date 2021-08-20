@@ -1,15 +1,15 @@
 
 import os
 
-from smartbot.cmdhelp import CmdHelp
+from userbot.cmdhelp import CmdHelp
 import numpy as np
 import requests, re
 from PIL import Image
 from telegraph import upload_file
 from telethon.tl.types import MessageMediaPhoto
-from smartbot import bot
+from userbot import bot
 from TGXBOT.utils import admin_cmd, edit_or_reply, sudo_cmd
-pathdc = "./smartbot/"
+pathdc = "./userbot/"
 if not os.path.isdir(pathdc):
     os.makedirs(pathdc)
 

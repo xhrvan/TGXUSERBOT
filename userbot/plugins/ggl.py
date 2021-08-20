@@ -19,7 +19,7 @@ async def _(event):
         await event.edit("something is wrong. please try again later.")
 
 
-from smartbot.cmdhelp import CmdHelp
+from userbot.cmdhelp import CmdHelp
 CmdHelp("google").add_command(
        'ggl', None, '.ggl search query'
 ).add()

@@ -5,7 +5,7 @@ By :- Jaskaran ^_^
 Telegram :- @Zero_cool7870
 
 """
-from smartbot.cmdhelp import CmdHelp
+from userbot.cmdhelp import CmdHelp
 CmdHelp("check").add_command(
    'check', None, 'Use And See'
 ).add_command(

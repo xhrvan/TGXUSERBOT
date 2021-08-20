@@ -8,8 +8,8 @@ import asyncio
 
 from telethon import functions
 
-from smartbot.plugins.sql_helper import pmpermit_sql as pmpermit_sql
-from smartbot import ALIVE_NAME
+from userbot.plugins.sql_helper import pmpermit_sql as pmpermit_sql
+from userbot import ALIVE_NAME
 
 DEFAULTUSER = str(ALIVE_NAME) if ALIVE_NAME else "LEGEND"
 PREV_REPLY_MESSAGE = {}

@@ -12,7 +12,7 @@ import time
 from datetime import datetime
 
 from TGXBOT.utils import admin_cmd, edit_or_reply, sudo_cmd, sudo_cmd , edit_or_reply
-from smartbot.cmdhelp import CmdHelp
+from userbot.cmdhelp import CmdHelp
 from . import *
 @bot.on(admin_cmd(pattern=r"open", outgoing=True))
 async def _(event):

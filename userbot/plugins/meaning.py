@@ -3,7 +3,7 @@ Syntax: .meaning <word>"""
 
 import requests
 from TGXBOT.utils import admin_cmd, sudo_cmd, edit_or_reply
-from smartbot.cmdhelp import CmdHelp
+from userbot.cmdhelp import CmdHelp
 
 
 @bot.on(admin_cmd(pattern="meaning (.*)", outgoing=True))

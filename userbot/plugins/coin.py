@@ -1,7 +1,7 @@
 
 from telethon import events
 import random, re
-from smartbot.utils import admin_cmd
+from userbot.utils import admin_cmd
 from . import *
 
 @bot.on(admin_cmd(pattern="coin ?(.*)"))

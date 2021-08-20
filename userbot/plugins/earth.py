@@ -1,11 +1,11 @@
-# (c) @smartbot
-# Original written by @smartbot edit by @I_m_Rock
+# (c) @userbot
+# Original written by @userbot edit by @I_m_Rock
 
 import asyncio
 from collections import deque
 
-from smartbot.utils import admin_cmd
-from smartbot.cmdhelp import CmdHelp
+from userbot.utils import admin_cmd
+from userbot.cmdhelp import CmdHelp
 CmdHelp("earth").add_command(
    'earth', None, 'animation'
 ).add()

@@ -4,11 +4,11 @@ Syntax: .fwd as reply to any message"""
 from telethon import events
 from telethon import sync
 from telethon.tl import types, functions
-from smartbot.utils import admin_cmd
+from userbot.utils import admin_cmd
 
 
 
-from smartbot.cmdhelp import CmdHelp
+from userbot.cmdhelp import CmdHelp
 CmdHelp("fwd").add_command(
     "fwd", None, "reply to any message"
 ).add()

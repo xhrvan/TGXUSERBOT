@@ -1,4 +1,4 @@
-from smartbot.cmdhelp import CmdHelp
+from userbot.cmdhelp import CmdHelp
 CmdHelp("englishflirt").add_command(
     'rflirt', None, 'Use and See'
 ).add()

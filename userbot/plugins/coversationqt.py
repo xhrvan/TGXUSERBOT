@@ -1,4 +1,4 @@
-from smartbot.cmdhelp import CmdHelp
+from userbot.cmdhelp import CmdHelp
 
 
 import asyncio

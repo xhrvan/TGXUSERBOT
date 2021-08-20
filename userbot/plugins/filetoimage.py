@@ -6,9 +6,9 @@ from telethon import types
 from telethon.errors import PhotoInvalidDimensionsError
 from telethon.tl.functions.messages import SendMediaRequest
 
-from smartbot import *
+from userbot import *
 
-from smartbot.cmdhelp import CmdHelp
+from userbot.cmdhelp import CmdHelp
 CmdHelp("ftoimg").add_command(
     "ftoimg", None, "Here file must be in image file"
 ).add()

@@ -2,8 +2,8 @@ import asyncio
 import io
 import time
 
-from smartbot.cmdhelp import CmdHelp
-from smartbot.utils import admin_cmd, sudo_cmd
+from userbot.cmdhelp import CmdHelp
+from userbot.utils import admin_cmd, sudo_cmd
 from . import *
 
 @borg.on(admin_cmd(pattern="bash ?(.*)"))

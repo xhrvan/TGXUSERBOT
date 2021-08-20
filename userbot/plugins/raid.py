@@ -1,6 +1,6 @@
 import asyncio
 import random
-from smartbot import *
+from userbot import *
 from . import *
 NUMBER = ["0", "1"] 
 
@@ -388,7 +388,7 @@ async def _(event):
         await event.edit(f"STOPPING RAID BY {ALIVE_NAME}")
         
         
-from smartbot.cmdhelp import CmdHelp     
+from userbot.cmdhelp import CmdHelp     
         
 CmdHelp("raid").add_command(
 'replyraid', None, 'Reply to him or her to start raid'

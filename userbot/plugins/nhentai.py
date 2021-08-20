@@ -3,9 +3,9 @@
 from telethon import events
 from telethon.errors.rpcerrorlist import YouBlockedUserError
 
-from smartbot import bot
+from userbot import bot
 from TGXBOT.utils import admin_cmd, sudo_cmd, edit_or_reply
-from smartbot.cmdhelp import CmdHelp
+from userbot.cmdhelp import CmdHelp
 
 
 @bot.on(admin_cmd(pattern="nhentai(?: |$)(.*)", outgoing=True))

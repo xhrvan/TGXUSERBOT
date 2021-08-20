@@ -8,9 +8,9 @@ import urllib
 
 import requests
 
-from smartbot import *
+from userbot import *
 from TGXBOT.utils import *
-from smartbot.cmdhelp import CmdHelp
+from userbot.cmdhelp import CmdHelp
 
 @bot.on(admin_cmd("boobs$"))
 @bot.on(sudo_cmd(pattern="boobs$", allow_sudo=True))

@@ -3,7 +3,7 @@ Syntax: .get_id"""
 from telethon import events
 from telethon.utils import pack_bot_file_id
 from TGXBOT.utils import admin_cmd, edit_or_reply, sudo_cmd
-from smartbot.cmdhelp import CmdHelp
+from userbot.cmdhelp import CmdHelp
 CmdHelp("get_id").add_command(
     "get_id", None, "Get id of any group / channel / any user"
 ).add()

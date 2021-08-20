@@ -1,5 +1,5 @@
-from smartbot.util import admin_cmd
-from smartbot import CmdHelp
+from userbot.util import admin_cmd
+from userbot import CmdHelp
 
 
 @borg.on(admin_cmd(pattern="cop"))

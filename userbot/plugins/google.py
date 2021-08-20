@@ -7,7 +7,7 @@ from bs4 import BeautifulSoup
 from google_images_download import google_images_download
 
 from TGXBOT.utils import admin_cmd, sudo_cmd, edit_or_reply
-from smartbot.cmdhelp import CmdHelp
+from userbot.cmdhelp import CmdHelp
 
 
 def progress(current, total):

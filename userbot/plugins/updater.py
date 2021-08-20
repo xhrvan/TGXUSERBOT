@@ -4,7 +4,7 @@ import sys
 
 import git
 
-from smartbot.Config import Config
+from userbot.Config import Config
 from TGXBOT.utils import admin_cmd
 
 # -- Constants -- #

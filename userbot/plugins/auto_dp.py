@@ -19,7 +19,7 @@ import requests
 from telethon.tl import functions
 
 from TGXBOT.utils import admin_cmd
-from smartbot.cmdhelp import CmdHelp
+from userbot.cmdhelp import CmdHelp
 
 COLLECTION_STRING1 = [
     "awesome-batman-wallpapers",
