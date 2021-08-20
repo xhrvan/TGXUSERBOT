@@ -3,7 +3,7 @@
 #keep credits = cool coder😎
 #usage :-.wow
 #plz dont kang it take a lot of time to made😭
-#, plz keep credits of Legend_mr_Hacker ⚡⚡
+#, plz keep credits of xhrvan ⚡⚡
 
 from telethon import events
 import asyncio
