@@ -26,8 +26,8 @@ logs_id = Config.FBAN_LOGGER_GROUP
 bot = "@MissRose_bot"
 LEGEND_logo = "./LEGEND_logo.jpg"
 # Keep all credits pls
-# madewith great effort by @Legend_Mr_Hacker
-# modified by @Legend_Mr_Hacker for fbans
+# madewith great effort by @xhrvan
+# modified by @xhrvan for fbans
 
 
 @TGXBOT.on(admin_cmd(pattern="fban ?(.*)"))
@@ -58,7 +58,7 @@ async def _(event):
             or previous_message.game
             or previous_message.geo
             or previous_message.invoice
-        ):  # Written by @HeisenbergTheDanger
+        ):  # Written by @tgxbotz
             await mssg.edit("**ERROR !** \nOnly Text Message is supported for fban.")
             return
         if not previous_message.web_preview and previous_message.photo:
