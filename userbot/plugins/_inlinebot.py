@@ -120,7 +120,7 @@ if Var.TG_BOT_USER_NAME_BF_HER is not None and tgbot is not None:
             for y in x:
                 apn.append(y)
         await event.edit(
-            f"🔰[{ALIVE_NAME}](https://t.me/Legend_Mr_Hacker) ωσɾҡเɳɠ...\n\n📁τοταℓ ρℓµɠเɳร ιиѕταℓℓє∂⭆ `{len(CMD_HELP)}`\n🗂τοταℓ ϲοммαи∂ѕ⭆ `{len(apn)}` \n📙թαցҽ⭆ {page + 1}/{veriler[0]}",
+            f"🔰[{ALIVE_NAME}](https://t.me/itz_xhrvan) ωσɾҡเɳɠ...\n\n📁τοταℓ ρℓµɠเɳร ιиѕταℓℓє∂⭆ `{len(CMD_HELP)}`\n🗂τοταℓ ϲοммαи∂ѕ⭆ `{len(apn)}` \n📙թαցҽ⭆ {page + 1}/{veriler[0]}",
             buttons=veriler[1],
             link_preview=False,
         )
