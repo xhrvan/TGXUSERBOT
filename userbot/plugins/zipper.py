@@ -1,5 +1,5 @@
 """ command: .unzip
-coded by @Legend_Mr_Hacker
+coded by @xhrvan
 code rewritten my SnapDragon7410
 """
 import asyncio
