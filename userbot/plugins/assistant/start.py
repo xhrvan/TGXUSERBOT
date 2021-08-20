@@ -63,7 +63,7 @@ async def start(event):
             caption=starttext,
             link_preview=False,
             buttons=[
-                [custom.Button.url("Dᴇᴘʟᴏʏ Yᴏᴜʀ Oᴡɴ TGXBOT", "http://GitHub.com/LEGEND-OS/TGXBOT")],
+                [custom.Button.url("Dᴇᴘʟᴏʏ Yᴏᴜʀ Oᴡɴ TGXBOT", "http://GitHub.com/XHRVAN/TGXBOT")],
                 [Button.url("Sᴜᴘᴘᴏʀᴛ", "t.me/Tgxbotz_chat")],
             ],
         )
