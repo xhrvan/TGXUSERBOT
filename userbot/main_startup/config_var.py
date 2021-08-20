@@ -56,10 +56,10 @@ if ENV:
     HEROKU_API_KEY = os.environ.get("HEROKU_API_KEY", None)
     FBAN_GROUP = int(os.environ.get("FBAN_GROUP", False))
     UPSTREAM_REPO = os.environ.get(
-        "UPSTREAM_REPO", "https://github.com/LEGEND-OS/TGXBOT"
+        "UPSTREAM_REPO", "https://github.com/xhrvan/TGXBOT"
     )
     ALIVE_IMG = os.environ.get(
-        "ALIVE_IMG", "https://telegra.ph/file/baf1bde222c614d6040e9.jpg"
+        "ALIVE_IMG", "https://telegra.ph/file/b59e00c649f75fffbcd5d.jpg"
     )
     U_BRANCH = "master"
     HEROKU_URL = fetch_heroku_git_url(HEROKU_API_KEY, HEROKU_APP_NAME)
