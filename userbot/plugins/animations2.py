@@ -43,7 +43,7 @@ async def _(event):
     animation_ttl = range(0, 12)
     event = await edit_or_reply(event, "`Deploying...`")
     animation_chars = [
-        "**Heroku Connecting To Latest [Github Build](LEGEND-OS/TGXBOT)**",
+        "**Heroku Connecting To Latest [Github Build](xhrvan/TGXBOT)**",
         f"**Build started by user** {DEFAULT}",
         f"**Deploy** `535a74f0` **by user** **{DEFAULT}**",
         "**Restarting Heroku Server...**",
