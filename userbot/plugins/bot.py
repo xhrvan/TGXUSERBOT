@@ -23,19 +23,18 @@ mention = f"[{DEFAULTUSER}](tg://user?id={aura})"
 
 
 PM_IMG = "https://telegra.ph/file/baf1bde222c614d6040e9.jpg"
-pm_caption ="**ℓєgєи∂ϐοτ Is οиℓιиє**\n\n"
+pm_caption ="**τgxϐοτ Is οиℓιиє**\n\n"
 
 pm_caption += f"**┏━━━━━━━━━━━━━┓**\n"
-pm_caption += f"        𖤍ℓєgєи∂ϐοτ𖤍\n"
-pm_caption += f"**┣🇮🇳 мαѕτєя    : {mention}**\n"
-pm_caption += f"**┣🇮🇳 τєℓєτнοи  : `{version.__version__}`**\n"
-pm_caption += f"**┣🇮🇳 ℓєgєи∂ϐοτ : {LEGENDversion}**\n"
-pm_caption += f"**┣🇮🇳 𝖘𝖚𝖉𝖔      : `{sudou}`**\n"
-pm_caption += f"**┣🇮🇳 𝕺𝖜𝖓𝖊𝖗     : [ℓεɠεɳ∂](https://t.me/Legend_Mr_Hacker)**\n"
-pm_caption += f"**┣🇮🇳 𝕲𝖗𝖔𝖚𝖕     : [𝕲𝖗𝖔𝖚𝖕](https://t.me/Tgxbotz_chat)**\n"
+pm_caption += f"**┣ мαѕτєя - {mention}**\n"
+pm_caption += f"**┣ τєℓєτнοи - `{version.__version__}`**\n"
+pm_caption += f"**┣ τgxϐοτ - {LEGENDversion}**\n"
+pm_caption += f"**┣ ѕυ∂ο - `{sudou}`**\n"
+pm_caption += f"**┣ ργτнοи - 3.9.5**\n"
+pm_caption += f"**┣ gяουρ - [нєяє](https://t.me/Tgxbotz_chat)**\n"
 pm_caption += f"**┗━━━━━━━━━━━━━┛**\n"
 
-pm_caption += "    [✨яєρο✨](https://github.com/LEGEND-OS/TGXBOT) 🔹 [📜ℓιϲєиѕє📜](https://github.com/LEGEND-OS/TGXBOT/blob/master/LICENSE)"
+pm_caption += "    [✨яєρο✨](https://github.com/xhrvan/TGXBOT) 🔹 [📜ℓιϲєиѕє📜](https://github.com/xhrvan/TGXBOT/blob/master/LICENSE)"
 
 
 @bot.on(admin_cmd(outgoing=True, pattern="bot$"))
