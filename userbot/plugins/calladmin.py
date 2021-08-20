@@ -1,4 +1,4 @@
-""".admin Plugin for @Legend_Mr_Hacker"""
+""".admin Plugin for @xhrvan"""
 import asyncio
 from telethon import events
 from telethon.tl.types import ChannelParticipantsAdmins
