@@ -10,7 +10,7 @@ import urllib
 import requests
 from telethon.tl import functions
 from TGXBOT.utils import admin_cmd, sudo_cmd, edit_or_reply
-from userbot.cmdhelp import CmdHelp
+from smartbot.cmdhelp import CmdHelp
 
 
 AUTOPFP_PACK = os.environ.get("AUTOPFP_PACK", None)

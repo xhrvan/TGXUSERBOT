@@ -9,7 +9,7 @@ import subprocess
 from datetime import datetime
 
 from gtts import gTTS
-from userbot.cmdhelp import CmdHelp
+from smartbot.cmdhelp import CmdHelp
 from TGXBOT.utils import admin_cmd, edit_or_reply, sudo_cmd
 
 

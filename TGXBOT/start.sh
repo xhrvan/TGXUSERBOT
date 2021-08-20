@@ -21,4 +21,4 @@ Legendary TGXBOT!!
 @TGXBOTZ_CHAT
 """
 
-python3 -m userbot
+python3 -m smartbot

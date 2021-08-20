@@ -1,7 +1,7 @@
-from userbot.utils import admin_cmd
-from userbot import CmdHelp
-from userbot import bot
-from userbot.cmdhelp import CmdHelp
+from smartbot.utils import admin_cmd
+from smartbot import CmdHelp
+from smartbot import bot
+from smartbot.cmdhelp import CmdHelp
 
 @borg.on(admin_cmd(pattern=r"hhi ?(.*)")) #initially made by @NOOB_GUY_OP
 async def hhi(event):

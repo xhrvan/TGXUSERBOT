@@ -10,8 +10,8 @@ import sys
 
 import random
 
-from userbot.utils import admin_cmd
-from userbot.cmdhelp import CmdHelp
+from smartbot.utils import admin_cmd
+from smartbot.cmdhelp import CmdHelp
 
 
 

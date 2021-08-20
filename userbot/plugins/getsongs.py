@@ -5,8 +5,8 @@
 import glob
 import subprocess
 
-from userbot.utils import admin_cmd
-from userbot.cmdhelp import CmdHelp
+from smartbot.utils import admin_cmd
+from smartbot.cmdhelp import CmdHelp
 CmdHelp("getsongs").add_command(
     "getsong <songname>", None, "Geting ur music"
 ).add()
@@ -36,7 +36,7 @@ async def _(event):
         force_document=False,
         allow_cache=False,
         supports_streaming=True,
-        caption="Uploaded successfully by Black Lightning   userbot..!",
+        caption="Uploaded successfully by Black Lightning   smartbot..!",
         reply_to=reply_to_id,
     )
     subprocess.run("rm -rf *.mp3", shell=True)

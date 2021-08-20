@@ -1,5 +1,5 @@
 from telethon import events
-from userbot.utils import admin_cmd
+from smartbot.utils import admin_cmd
 import asyncio
 
 

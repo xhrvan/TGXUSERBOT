@@ -2,9 +2,9 @@ import os
 
 import requests
 
-from userbot.utils import admin_cmd
+from smartbot.utils import admin_cmd
 
-from userbot.cmdhelp import CmdHelp
+from smartbot.cmdhelp import CmdHelp
 CmdHelp("colors").add_command(
    'colp', None, 'Check Fake Limitiation'
 ).add()

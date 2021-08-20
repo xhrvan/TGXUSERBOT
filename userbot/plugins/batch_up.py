@@ -1,5 +1,5 @@
 """
-Files Batch Uploader Plugin for userbot.
+Files Batch Uploader Plugin for smartbot.
 usage:- .upb 
 Note:- set TEMP_DIR in Your ENV Vars First.
 By:-@Zero_cool7870	
@@ -7,7 +7,7 @@ By:-@Zero_cool7870
 """
 import os
 from . import *
-from userbot.utils import admin_cmd
+from smartbot.utils import admin_cmd
 
 
 @borg.on(admin_cmd(pattern=r"upb"))
@@ -28,7 +28,7 @@ async def batch_upload(event):
         return
     await event.edit("Successfull.")
 
-from userbot import CmdHelp
+from smartbot import CmdHelp
 
 
 CmdHelp("batch").add_command(

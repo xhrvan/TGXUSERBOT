@@ -3,8 +3,8 @@ import asyncio
 import os
 import sys
 import random
-from userbot.utils import admin_cmd
-from userbot.cmdhelp import CmdHelp
+from smartbot.utils import admin_cmd
+from smartbot.cmdhelp import CmdHelp
 
 
 @borg.on(admin_cmd(pattern=r"indslogan$", outgoing=True))

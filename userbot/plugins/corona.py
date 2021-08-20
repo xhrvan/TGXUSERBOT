@@ -1,6 +1,6 @@
 from covid import Covid
 
-from userbot.utils import admin_cmd
+from smartbot.utils import admin_cmd
 
 
 @borg.on(admin_cmd(pattern="coronas (.*)"))
@@ -36,7 +36,7 @@ def get_country_data(country, world):
     return {"Status": "No information yet about this country!"}
 
 
-from userbot.cmdhelp import CmdHelp
+from smartbot.cmdhelp import CmdHelp
 
 CmdHelp("coronas").add_command(
    'coronas', None, '.corona <country name>'

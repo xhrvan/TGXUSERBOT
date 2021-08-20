@@ -29,10 +29,10 @@ from telethon.tl.types import (
     MessageMediaPhoto,
 )
 
-from userbot import *
-from userbot.plugins.sql_helper.mute_sql import is_muted, mute, unmute
+from smartbot import *
+from smartbot.plugins.sql_helper.mute_sql import is_muted, mute, unmute
 from TGXBOT.utils import *
-from userbot.cmdhelp import CmdHelp
+from smartbot.cmdhelp import CmdHelp
 
 # =================== CONSTANT ===================
 

@@ -7,8 +7,8 @@ from PIL import Image, ImageDraw, ImageFont
 import PIL.ImageOps
 
 from TGXBOT.utils import admin_cmd, sudo_cmd
-from userbot import CmdHelp, CMD_HELP, LOGS, bot as TGXBOT
-from userbot.helpers.functions import (
+from smartbot import CmdHelp, CMD_HELP, LOGS, bot as TGXBOT
+from smartbot.helpers.functions import (
     convert_toimage,
     convert_tosticker,
     flip_image,

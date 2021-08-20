@@ -4,9 +4,9 @@ import random
 
 from telethon.tl.types import ChannelParticipantsAdmins
 
-from userbot import LOGS
+from smartbot import LOGS
 from TGXBOT.utils import admin_cmd, sudo_cmd, edit_or_reply
-from userbot.cmdhelp import CmdHelp
+from smartbot.cmdhelp import CmdHelp
 
 @bot.on(admin_cmd(pattern="join$", outgoing=True))
 @bot.on(sudo_cmd(pattern="join$", allow_sudo=True))

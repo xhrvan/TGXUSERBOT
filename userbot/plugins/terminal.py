@@ -6,8 +6,8 @@ from subprocess import PIPE
 from subprocess import run as runapp
 import pybase64
 from sys import executable
-from userbot.cmdhelp import CmdHelp
-from userbot import ALIVE_NAME, BOTLOG, BOTLOG_CHATID, bot
+from smartbot.cmdhelp import CmdHelp
+from smartbot import ALIVE_NAME, BOTLOG, BOTLOG_CHATID, bot
 from TGXBOT.utils import admin_cmd, edit_or_reply, sudo_cmd 
 LEGEND = str(ALIVE_NAME) if ALIVE_NAME else "Du"
 
@@ -26,7 +26,7 @@ async def dc(event):
     if not cmd:
         await event.edit(" Give a command or use .help terminal.")
         return
-    if cmd in ("userbot.session", "env", "printenv"):
+    if cmd in ("smartbot.session", "env", "printenv"):
         return await event.edit(f"{LEGEND}: Privacy Error, This command not permitted")
     process = await asyncio.create_subprocess_shell(
         cmd, stdout=asyncio.subprocess.PIPE, stderr=asyncio.subprocess.PIPE)
@@ -52,7 +52,7 @@ async def dc(event):
 
 
 
-from userbot.cmdhelp import CmdHelp
+from smartbot.cmdhelp import CmdHelp
 CmdHelp("τєямιиαℓ").add_command(
   'term', None, 'Reply to python file'
 ).add()

@@ -2,9 +2,9 @@
 import os
 import asyncio
 
-from userbot import CmdHelp
+from smartbot import CmdHelp
 from TGXBOT.utils import admin_cmd, sudo_cmd, edit_or_reply
-from userbot import bot as TGXBOT
+from smartbot import bot as TGXBOT
 
 
 @TGXBOT.on(admin_cmd(pattern=r"unpack", outgoing=True))

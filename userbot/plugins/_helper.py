@@ -1,10 +1,10 @@
-from userbot.Config import Config
+from smartbot.Config import Config
 import asyncio
 
 import requests
 from telethon import functions
 
-from userbot import ALIVE_NAME, CMD_LIST, SUDO_LIST
+from smartbot import ALIVE_NAME, CMD_LIST, SUDO_LIST
 from TGXBOT.utils import admin_cmd, edit_or_reply, sudo_cmd
 
 

@@ -1,9 +1,9 @@
 import asyncio
 from telethon import events
 from telethon.tl.types import ChannelParticipantsAdmins
-from userbot.utils import admin_cmd
+from smartbot.utils import admin_cmd
 from . import *
-from userbot.cmdhelp import CmdHelp
+from smartbot.cmdhelp import CmdHelp
 @bot.on(admin_cmd("chup"))
 async def _(event):
     if event.fwd_from:

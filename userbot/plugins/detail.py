@@ -1,8 +1,8 @@
-from userbot import CmdHelp, bot
-from userbot.utils import admin_cmd, sudo_cmd
+from smartbot import CmdHelp, bot
+from smartbot.utils import admin_cmd, sudo_cmd
 import asyncio
 from . import *
-from userbot.cmdhelp import CmdHelp
+from smartbot.cmdhelp import CmdHelp
 CmdHelp("detail").add_command(
    'detailed', None, 'help to get detail of plugin'
 ).add()

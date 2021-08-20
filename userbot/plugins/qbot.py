@@ -2,9 +2,9 @@ import asyncio
 from telethon import events
 from telethon.errors.rpcerrorlist import YouBlockedUserError
 
-from userbot import bot
+from smartbot import bot
 from TGXBOT.utils import admin_cmd, sudo_cmd, edit_or_reply
-from userbot.cmdhelp import CmdHelp
+from smartbot.cmdhelp import CmdHelp
 
 
 @bot.on(admin_cmd(pattern=r"ss(?: |$)(.*)", outgoing=True))

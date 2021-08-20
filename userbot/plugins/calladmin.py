@@ -2,8 +2,8 @@
 import asyncio
 from telethon import events
 from telethon.tl.types import ChannelParticipantsAdmins
-from userbot.utils import admin_cmd
-from userbot.cmdhelp import CmdHelp
+from smartbot.utils import admin_cmd
+from smartbot.cmdhelp import CmdHelp
 
 @bot.on(admin_cmd(pattern="admins"))
 async def _(event):

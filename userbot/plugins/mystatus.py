@@ -3,7 +3,7 @@ import urllib
 
 from telethon.tl import functions
 from TGXBOT.utils import admin_cmd, sudo_cmd, edit_or_reply
-from userbot.cmdhelp import CmdHelp
+from smartbot.cmdhelp import CmdHelp
 
 
 OFFLINE_TAG = "[•OFFLINE•]"

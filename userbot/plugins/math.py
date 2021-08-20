@@ -7,8 +7,8 @@ import math
 
 from TGXBOT.utils import admin_cmd, sudo_cmd, edit_or_reply
 
-from userbot import CmdHelp
-from userbot import bot as TGXBOT
+from smartbot import CmdHelp
+from smartbot import bot as TGXBOT
 
 
 @TGXBOT.on(admin_cmd(pattern="sin ?(.*)"))

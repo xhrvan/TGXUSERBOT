@@ -10,9 +10,9 @@ import re
 
 from bs4 import BeautifulSoup
 from requests import get
-from userbot.cmdhelp import CmdHelp
+from smartbot.cmdhelp import CmdHelp
 
-from userbot import *
+from smartbot import *
 from TGXBOT.utils import *
 
 GITHUB = "https://github.com"

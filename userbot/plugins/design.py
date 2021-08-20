@@ -1,8 +1,8 @@
-""".admin Plugin for @userbot"""
+""".admin Plugin for @smartbot"""
 from telethon.tl.types import ChannelParticipantsAdmins
 
-from userbot.utils import admin_cmd
-from userbot.cmdhelp import CmdHelp
+from smartbot.utils import admin_cmd
+from smartbot.cmdhelp import CmdHelp
 
 
 CmdHelp("design").add_command(

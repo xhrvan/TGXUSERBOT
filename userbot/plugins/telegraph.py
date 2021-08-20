@@ -4,9 +4,9 @@ from datetime import datetime
 from PIL import Image
 from telegraph import Telegraph, exceptions, upload_file
 
-from userbot import ALIVE_NAME
+from smartbot import ALIVE_NAME
 from TGXBOT.utils import admin_cmd, sudo_cmd, edit_or_reply
-from userbot.cmdhelp import CmdHelp
+from smartbot.cmdhelp import CmdHelp
 
 LEGEND_NAME = str(ALIVE_NAME) if ALIVE_NAME else "LEGEND User"
 

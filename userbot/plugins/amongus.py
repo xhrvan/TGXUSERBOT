@@ -2,9 +2,9 @@
 
 
 import asyncio
-from userbot.cmdhelp import CmdHelp
+from smartbot.cmdhelp import CmdHelp
 
-from userbot import *
+from smartbot import *
 from TGXBOT.utils import *
 
 DEFAULTUSER = str(ALIVE_NAME) if ALIVE_NAME else "LEGEND User"

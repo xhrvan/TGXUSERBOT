@@ -7,7 +7,7 @@
 
 import re
 import random
-from userbot import bot, CMD_HELP
+from smartbot import bot, CMD_HELP
 import asyncio
 import os
 import json

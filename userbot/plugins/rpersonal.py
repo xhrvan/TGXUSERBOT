@@ -1,10 +1,10 @@
  
 import asyncio
 import random
-from userbot.cmdhelp import CmdHelp
+from smartbot.cmdhelp import CmdHelp
 from . import *
 
-from userbot.utils import admin_cmd, sudo_cmd, edit_or_reply
+from smartbot.utils import admin_cmd, sudo_cmd, edit_or_reply
 NUMBER = ["0", "1"]
 
 OSP = [

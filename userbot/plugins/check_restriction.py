@@ -1,5 +1,5 @@
 
-from userbot.cmdhelp import CmdHelp
+from smartbot.cmdhelp import CmdHelp
 
 
 CmdHelp("check").add_command(
@@ -7,7 +7,7 @@ CmdHelp("check").add_command(
 ).add() 
 from telethon.tl.types import Channel, Chat, User
 
-from userbot.utils import admin_cmd
+from smartbot.utils import admin_cmd
 
 
 @borg.on(admin_cmd(pattern="cr (.*)"))

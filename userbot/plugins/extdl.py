@@ -24,21 +24,21 @@ Since a long time...
 
 """
 
-from userbot import bot
+from smartbot import bot
 from telethon import events
 from telethon import functions, types
 from telethon.tl.types import InputMessagesFilterDocument
-from userbot.utils import command, remove_plugin, load_module
+from smartbot.utils import command, remove_plugin, load_module
 from var import Var
 from pathlib import Path
-from userbot import LOAD_PLUG
+from smartbot import LOAD_PLUG
 import sys
 import asyncio
 import traceback
 import os
-import userbot.utils
+import smartbot.utils
 from . import *
-from userbot.cmdhelp import CmdHelp
+from smartbot.cmdhelp import CmdHelp
 CmdHelp("extdl").add_command(
    'extdl', None, 'To instal  plugin'
 ).add()
@@ -54,7 +54,7 @@ async def install(event):
     await event.delete()
     for ixo in total_doxx:
         mxo = documentss[ixo].id
-        downloaded_file_name = await event.client.download_media(await borg.get_messages(chat, ids=mxo), "userbot/plugins/")
+        downloaded_file_name = await event.client.download_media(await borg.get_messages(chat, ids=mxo), "smartbot/plugins/")
         if "(" not in downloaded_file_name:
             path1 = Path(downloaded_file_name)
             shortname = path1.stem

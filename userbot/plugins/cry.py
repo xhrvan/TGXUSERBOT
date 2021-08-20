@@ -2,8 +2,8 @@
 
 import asyncio
 
-from userbot.utils import admin_cmd
-from userbot.cmdhelp import CmdHelp
+from smartbot.utils import admin_cmd
+from smartbot.cmdhelp import CmdHelp
 CmdHelp("lcry").add_command(
    'lcry', None, 'Check Fake Limitiation'
 ).add()

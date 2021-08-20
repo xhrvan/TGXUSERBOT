@@ -4,10 +4,10 @@ import asyncio
 
 from telethon import events
 
-from userbot.utils import admin_cmd
+from smartbot.utils import admin_cmd
 
 
-from userbot.cmdhelp import CmdHelp
+from smartbot.cmdhelp import CmdHelp
 CmdHelp("fdance").add_command(
    'fdance', None, 'animation'
 ).add_command(

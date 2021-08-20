@@ -6,11 +6,11 @@ import time
 
 from telethon.tl.types import DocumentAttributeFilename
 
-from userbot.cmdhelp import CmdHelp
+from smartbot.cmdhelp import CmdHelp
 
-from userbot import events
+from smartbot import events
 
-from userbot.utils import admin_cmd, sudo_cmd
+from smartbot.utils import admin_cmd, sudo_cmd
 
 from . import *
 

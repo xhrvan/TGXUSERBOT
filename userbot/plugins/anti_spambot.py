@@ -6,14 +6,14 @@ from requests import get
 from telethon.events import ChatAction
 from telethon.tl.types import ChannelParticipantsAdmins, Message
 
-from userbot import (
+from smartbot import (
     ANTI_SPAMBOT,
     ANTI_SPAMBOT_SHOUT,
     BOTLOG,
     BOTLOG_CHATID,
     bot,
 )
-from userbot.utils import errors_handler
+from smartbot.utils import errors_handler
 
 @borg.on(ChatAction)
 @errors_handler

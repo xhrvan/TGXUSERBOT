@@ -1,7 +1,7 @@
 """TGXBOT Help Command"""
 
-from userbot import *
-from userbot import CMD_HELP
+from smartbot import *
+from smartbot import CMD_HELP
 from TGXBOT.utils import *
 
 

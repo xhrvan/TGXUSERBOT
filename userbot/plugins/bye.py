@@ -1,6 +1,6 @@
 import asyncio
-from userbot.utils import admin_cmd
-from userbot.cmdhelp import CmdHelp
+from smartbot.utils import admin_cmd
+from smartbot.cmdhelp import CmdHelp
 from . import *
 @bot.on(admin_cmd(pattern="byeall"))
 async def _(event):

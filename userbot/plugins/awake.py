@@ -1,13 +1,13 @@
 
-"""Check if userbot awake or not . 
+"""Check if smartbot awake or not . 
 
 """
 import os
 import asyncio
 from telethon import events
-from userbot import ALIVE_NAME, CMD_HELP
+from smartbot import ALIVE_NAME, CMD_HELP
 from TGXBOT.utils import *
-from userbot.cmdhelp import CmdHelp
+from smartbot.cmdhelp import CmdHelp
 from telethon import version, events
 from math import ceil
 from telethon.events import NewMessage

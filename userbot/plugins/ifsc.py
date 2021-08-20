@@ -2,9 +2,9 @@
 from telethon import events
 import requests
 import json
-from userbot.utils import admin_cmd
+from smartbot.utils import admin_cmd
 
-from userbot.cmdhelp import CmdHelp
+from smartbot.cmdhelp import CmdHelp
 CmdHelp("ifsc").add_command(
        'ifsc', None, 'search ifsc code of bank'
 ).add()

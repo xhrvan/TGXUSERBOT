@@ -4,7 +4,7 @@
 #usage .gim
 from telethon import events
 import asyncio
-from userbot.utils import admin_cmd
+from smartbot.utils import admin_cmd
 
 @borg.on(admin_cmd(pattern=r"gim", outgoing=True))
 async def hapy(event):
@@ -16,7 +16,7 @@ async def hapy(event):
 
 
 
-from userbot.cmdhelp import CmdHelp
+from smartbot.cmdhelp import CmdHelp
 CmdHelp("gim").add_command(
     "gim", None, "Get info about a File Extension"
 ).add()

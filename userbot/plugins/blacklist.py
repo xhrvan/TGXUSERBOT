@@ -11,10 +11,10 @@ import re
 
 from telethon import events
 
-from userbot.plugins.sql_helper import blacklist_sql as sql
-from userbot import CMD_HELP
+from smartbot.plugins.sql_helper import blacklist_sql as sql
+from smartbot import CMD_HELP
 from TGXBOT.utils import admin_cmd, edit_or_reply, sudo_cmd
-from userbot.cmdhelp import CmdHelp
+from smartbot.cmdhelp import CmdHelp
 
 
 @bot.on(events.NewMessage(incoming=True))

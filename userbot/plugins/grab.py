@@ -39,7 +39,7 @@ async def _(event):
 
 
 
-from userbot.cmdhelp import CmdHelp
+from smartbot.cmdhelp import CmdHelp
 
 CmdHelp("grab").add_command(
  'grab', None, 'Reply To any message'

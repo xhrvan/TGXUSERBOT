@@ -25,7 +25,7 @@ async def _(event):
         
         
         
-from userbot.cmdhelp import CmdHelp
+from smartbot.cmdhelp import CmdHelp
 
 
 CmdHelp("τнαиοѕ").add_command(

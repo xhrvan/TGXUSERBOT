@@ -5,8 +5,8 @@ import asyncio
 from datetime import datetime
 import requests
 import json
-from userbot.utils import admin_cmd
-from userbot import CmdHelp
+from smartbot.utils import admin_cmd
+from smartbot import CmdHelp
 from . import *
 
 @borg.on(admin_cmd(pattern="calendar (.*)"))

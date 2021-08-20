@@ -15,7 +15,7 @@ from telethon import events
 import asyncio
 from TGXBOT.utils import admin_cmd, edit_or_reply, sudo_cmd
 
-from userbot.cmdhelp import CmdHelp
+from smartbot.cmdhelp import CmdHelp
 
 
 @bot.on(admin_cmd(pattern=r"callgf"))

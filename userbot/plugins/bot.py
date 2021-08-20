@@ -1,6 +1,6 @@
-from userbot import *
+from smartbot import *
 from TGXBOT.utils import *
-from userbot.cmdhelp import CmdHelp
+from smartbot.cmdhelp import CmdHelp
 from telethon import events, version
 from telethon.events import NewMessage
 from telethon.tl.custom import Dialog

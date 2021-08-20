@@ -7,7 +7,7 @@ Hmmmm U need to config DOWNLOAD_PFP_URL_CLOCK var in Heroku with any telegraph i
 USING THIS PLUGIN CAN RESULT IN ACCOUNT BAN. WE DONT CARE ABOUT BAN, SO WE ARR USING THIS.
 """
 
-from userbot.cmdhelp import CmdHelp
+from smartbot.cmdhelp import CmdHelp
 
 CmdHelp("bloom").add_command(
    'bloom', None, 'Use And See'
@@ -22,7 +22,7 @@ from PIL import Image, ImageDraw, ImageFont
 from pySmartDL import SmartDL
 from telethon.tl import functions
 
-from userbot.utils import admin_cmd
+from smartbot.utils import admin_cmd
 
 FONT_FILE_TO_USE = "/usr/share/fonts/truetype/dejavu/DejaVuSans.ttf"
 
@@ -30,12 +30,12 @@ FONT_FILE_TO_USE = "/usr/share/fonts/truetype/dejavu/DejaVuSans.ttf"
 @borg.on(admin_cmd(pattern="bloom ?(.*)"))
 async def autopic(event):
     await event.edit("Bloom colour profile pic have been enabled by my master")
-    downloaded_file_name = "userbot/original_pic.png"
+    downloaded_file_name = "smartbot/original_pic.png"
     downloader = SmartDL(
         Var.DOWNLOAD_PFP_URL_CLOCK, downloaded_file_name, progress_bar=True
     )
     downloader.start(blocking=False)
-    photo = "userbot/photo_pfp.png"
+    photo = "smartbot/photo_pfp.png"
     while not downloader.isFinished():
         pass
 

@@ -1,5 +1,5 @@
-from userbot.cmdhelp import CmdHelp
-from userbot.utils import admin_cmd
+from smartbot.cmdhelp import CmdHelp
+from smartbot.utils import admin_cmd
 
 M = (
     "┈┈╱▔▔▔▔▔▔▔▔▔▔▔▏\n"

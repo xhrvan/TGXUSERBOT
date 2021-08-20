@@ -2,7 +2,7 @@
 from telethon.tl.types import ChannelParticipantsAdmins
 
 from TGXBOT.utils import admin_cmd, sudo_cmd, edit_or_reply
-from userbot.cmdhelp import CmdHelp
+from smartbot.cmdhelp import CmdHelp
 
 
 @bot.on(admin_cmd(pattern=r"warn1", outgoing=True))

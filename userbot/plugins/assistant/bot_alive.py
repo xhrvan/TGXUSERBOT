@@ -1,7 +1,7 @@
 from telethon import events
 from . import *
-from userbot import ALIVE_NAME
-from userbot import bot
+from smartbot import ALIVE_NAME
+from smartbot import bot
 DEFAULTUSER = str(ALIVE_NAME) if ALIVE_NAME else "LEGEND"
 PM_IMG = "https://telegra.ph/file/2c9be46a59b1497553f06.jpg"
 pm_caption = "➥ αssísԵαղԵ ís օղlíղҽ \n\n"

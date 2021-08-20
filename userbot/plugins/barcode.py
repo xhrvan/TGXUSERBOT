@@ -10,8 +10,8 @@ from datetime import datetime
 import barcode
 from barcode.writer import ImageWriter
 
-from userbot.utils import admin_cmd
-from userbot.cmdhelp import CmdHelp
+from smartbot.utils import admin_cmd
+from smartbot.cmdhelp import CmdHelp
 
 @bot.on(admin_cmd(pattern="barcodes ?(.*)"))
 async def _(event):

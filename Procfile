@@ -1,1 +1,1 @@
-userbot: python -m userbot
+smartbot: python -m smartbot

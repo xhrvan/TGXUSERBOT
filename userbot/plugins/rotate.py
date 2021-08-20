@@ -1,13 +1,13 @@
 import os
 #MADE BY Legend DONT KANG
 
-from userbot.cmdhelp import CmdHelp
+from smartbot.cmdhelp import CmdHelp
 #MADE BY Legend DONT KANG
 #MADE BY Legend DONT KANG
 from telethon.tl.types import MessageMediaPhoto
 from TGXBOT.utils import admin_cmd, edit_or_reply, sudo_cmd
-from userbot import bot 
-from userbot import bot as bot
+from smartbot import bot 
+from smartbot import bot as bot
 import os , shutil
 
 from PIL import Image

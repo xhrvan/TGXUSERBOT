@@ -1,5 +1,5 @@
 
-from userbot.cmdhelp import CmdHelp
+from smartbot.cmdhelp import CmdHelp
 
 import asyncio
 import random

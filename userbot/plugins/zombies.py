@@ -30,11 +30,11 @@ from telethon.tl.types import (
 )
 from telethon.utils import get_input_location
 
-from userbot import BOTLOG, BOTLOG_CHATID
+from smartbot import BOTLOG, BOTLOG_CHATID
 
 from TGXBOT.utils import admin_cmd, sudo_cmd, edit_or_reply
-from userbot.cmdhelp import CmdHelp
-from userbot.Config import Config
+from smartbot.cmdhelp import CmdHelp
+from smartbot.Config import Config
 
 # =================== CONSTANT ===================
 

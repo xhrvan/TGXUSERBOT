@@ -1,4 +1,4 @@
-from userbot.database import db_x
+from smartbot.database import db_x
 
 broadcast_db = db_x["BROADCAST_DB"]
 

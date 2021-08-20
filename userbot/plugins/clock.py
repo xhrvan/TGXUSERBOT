@@ -1,10 +1,10 @@
-# (c) @userbot
-# Original written by @userbot edit by @INF1N17Y
+# (c) @smartbot
+# Original written by @smartbot edit by @INF1N17Y
 
 import asyncio
 from collections import deque
 
-from userbot.utils import admin_cmd
+from smartbot.utils import admin_cmd
 from . import *
 CmdHelp("clock").add_command(
    'clock', None, 'Check Fake Limitiation'

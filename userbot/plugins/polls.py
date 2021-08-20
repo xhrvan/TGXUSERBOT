@@ -1,7 +1,7 @@
 """Get Poll Info on non supported clients
 Syntax: .get_poll"""
 from TGXBOT.utils import admin_cmd, sudo_cmd, edit_or_reply
-from userbot.cmdhelp import CmdHelp
+from smartbot.cmdhelp import CmdHelp
 
 
 @bot.on(admin_cmd(pattern="get_poll$", outgoing=True))

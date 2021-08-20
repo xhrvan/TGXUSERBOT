@@ -6,10 +6,10 @@
 
 import re
 
-from userbot import bot
+from smartbot import bot
 from TGXBOT.utils import admin_cmd, sudo_cmd, edit_or_reply
-from userbot.cmdhelp import CmdHelp
-from userbot.helpers.functions import deEmojify
+from smartbot.cmdhelp import CmdHelp
+from smartbot.helpers.functions import deEmojify
 
 
 @bot.on(admin_cmd(pattern="mev(?: |$)(.*)", outgoing=True))

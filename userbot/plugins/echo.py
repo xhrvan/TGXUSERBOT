@@ -9,15 +9,15 @@ import requests
 from telethon import events
 from telethon.tl.functions.messages import ImportChatInviteRequest as Get
 
-from userbot import CMD_HELP
-from userbot.plugins.sql_helper.echo_sql import (
+from smartbot import CMD_HELP
+from smartbot.plugins.sql_helper.echo_sql import (
     addecho,
     get_all_echos,
     is_echo,
     remove_echo,
 )
 from TGXBOT.utils import admin_cmd, edit_or_reply, sudo_cmd
-from userbot.cmdhelp import CmdHelp
+from smartbot.cmdhelp import CmdHelp
 
 
 @bot.on(admin_cmd(pattern="echo$"))
