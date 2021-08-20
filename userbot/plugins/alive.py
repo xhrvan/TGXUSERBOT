@@ -14,9 +14,9 @@ async def reply_id(event):
     return reply_to_id
 
 
-DEFAULTUSER = ALIVE_NAME or "ℓєgєи∂ϐοτ"
+DEFAULTUSER = ALIVE_NAME or "TGXBOT"
 LEGEND_IMG = Config.ALIVE_PIC
-CUSTOM_ALIVE_TEXT = Config.ALIVE_MSG or "ℓєgєи∂ Choice ℓєgєи∂ϐοτ"
+CUSTOM_ALIVE_TEXT = Config.ALIVE_MSG or "LEGEND CHOICE LEGENDBOT"
 
 USERID = bot.uid
 
