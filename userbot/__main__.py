@@ -70,14 +70,14 @@ if LOAD_ASSISTANT == True:
             except Exception as er:
                 print(er)
 
-print(f"""『🔱🇱 🇪 🇬 🇪 🇳 🇩 B O T 🔱』➙𖤍࿐ IS ON!!! LEGEND VERSION :- {LEGENDversion}
-TYPE :- " .gpromote @Legend_Mr_Hacker " OR .legend OR .ping CHECK IF I'M ON!
+print(f"""『τgxυѕєяϐοτ』➙𖤍࿐ ιѕ οи!!! τgxϐοτνєяѕιοи :- {LEGENDversion}
+TYPE :- " .gpromote @xhrvan " OR .help OR .ping CHECK IF I'M ON!
 ╔════❰TGXBOT❱═❍⊱❁۪۪
-║┣⪼ OWNER - LEGEND
+║┣⪼ OWNER - Itz_xhrvan
 ║┣⪼{LEGEND_PIC}
-║┣⪼ CREATOR -@Legend_Mr_Hacker
+║┣⪼ CREATOR -@Tgxbotz
 ║┣⪼ TELETHON - 1.2.0
-║┣⪼ ✨ 『🔱🇱 🇪 🇬 🇪 🇳 🇩 🔱』𝐔𝐬𝐞𝐫𝐛𝐨𝐭✨
+║┣⪼ ✨τgxυѕєяϐοτ✨
 ║╰━━━━━━━━━━━━━━━➣
 ╚══════════════════❍⊱""")
 
