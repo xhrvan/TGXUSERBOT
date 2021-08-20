@@ -1,5 +1,5 @@
 # credits to userge
-# ported to TGXBOT by @Legend_Mr_Hacker
+# ported to TGXBOT by @xhrvan
 # will be adding more soon
 
 import asyncio
