@@ -18,9 +18,9 @@ jobs:
 
         with:
 
-          find: "1289422521"
+          find: "userbot"
 
-          replace: "1856561912"
+          replace: "smartbot"
 
       - name: Create Pull Request
 
