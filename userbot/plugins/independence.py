@@ -26,7 +26,7 @@ async def _(event):
         "[ƒοя υ](https://telegra.ph/file/66205f168d8c2a0bbaa43.jpg)",
         "[нαρργ ιи∂ρєи∂єиϲє ∂αγ](https://t.me/Tgxbotz_chat)",
     ]
-    for i in animation_ttl:  # By @Legend_Mr_Hacker LegendBot
+    for i in animation_ttl:  # By @xhrvan TgxBot
 
         await asyncio.sleep(animation_interval)
         await event.edit(
