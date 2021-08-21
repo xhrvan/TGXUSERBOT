@@ -141,7 +141,7 @@ if Var.TG_BOT_USER_NAME_BF_HER is not None and tgbot is not None:
     async def Information(event):
         if not event.query.user_id == bot.uid:
             return await event.answer(
-                "κγα υиgℓι καя янє нο мєяє ϐοτ ραя αgαя ϲнαнιγє τοн κнυ∂ κα ϐαиα ℓο иα αα נατє нο υиgℓι καяиє мєяє ϐοτ ρє.   ©ℓεɠεɳ∂ɓσƭ(https://t.me/Tgxbotz_chat)",
+                "κγα υиgℓι καя янє нο мєяє ϐοτ ραя αgαя ϲнαнιγє τοн κнυ∂ κα ϐαиα ℓο иα αα נατє нο υиgℓι καяиє мєяє ϐοτ ρє.   [Tgxbotz](https://t.me/Tgxbotz)",
                 cache_time=0,
                 alert=True,
             )
@@ -198,15 +198,15 @@ if Var.TG_BOT_USER_NAME_BF_HER is not None and tgbot is not None:
 
         command = CMD_HELP_BOT[cmd]["commands"][commands]
         if command["params"] is None:
-            result += f"🛠 𝕮οммαи∂ѕ: `{COMMAND_HAND_LER[:1]}{command['command']}`\n"
+            result += f"🛠 ϲοммαи∂ѕ: `{COMMAND_HAND_LER[:1]}{command['command']}`\n"
         else:
-            result += f"🛠 𝕮οммαи∂ѕ: `{COMMAND_HAND_LER[:1]}{command['command']} {command['params']}`\n"
+            result += f"🛠 ϲοммαи∂ѕ: `{COMMAND_HAND_LER[:1]}{command['command']} {command['params']}`\n"
 
         if command["example"] is None:
-            result += f"💬 𝔈ϰρℓαиατιοи: `{command['usage']}`\n\n"
+            result += f"💬 ϲϰρℓαиατιοи: `{command['usage']}`\n\n"
         else:
-            result += f"💬 𝔈ϰρℓαиατιοи: `{command['usage']}`\n"
-            result += f"⌨️ ℱℴ𝓇 ℰ𝓍𝒶𝓂𝓅𝓁ℯ: `{COMMAND_HAND_LER[:1]}{command['example']}`\n\n"
+            result += f"💬 ϲϰρℓαиατιοи : `{command['usage']}`\n"
+            result += f"⌨️ ƒοя єϰαмρℓє: `{COMMAND_HAND_LER[:1]}{command['example']}`\n\n"
 
         await event.edit(
             result,
