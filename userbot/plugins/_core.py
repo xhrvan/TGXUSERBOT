@@ -70,7 +70,7 @@ async def install(event):
                             a = "__Installing...__"
                             b = 1
                         await event.edit(a)
-                    return await event.edit(f"✅ **Installed module** :- `{shortname}` \n✨ BY :- {LEGEND}\n\n{string}\n\n        ⚡ **[Legendary TGXBOT](t.me/LEGEND_Userbot)** ⚡", link_preview=False)
+                    return await event.edit(f"✅ **Installed module** :- `{shortname}` \n✨ BY :- {LEGEND}\n\n{string}\n\n        ⚡ **[TGXBOT](t.me/Tgxbotz)** ⚡", link_preview=False)
                 return await event.edit(f"Installed module `{os.path.basename(downloaded_file_name)}`")
             else:
                 os.remove(downloaded_file_name)
