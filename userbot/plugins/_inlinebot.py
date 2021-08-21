@@ -87,11 +87,11 @@ if Var.TG_BOT_USER_NAME_BF_HER is not None and tgbot is not None:
             )
         else:
             result = builder.article(
-                "@LEGEND_Userbot",
+                "@tgxbotz_chat",
                 text="""**Hey! This is [Tgxbot.](https://t.me/Tgxbotz_chat) \nyou can know more about me👇**""",
                 buttons=[
                     [
-                        custom.Button.url("🔥 Gяουρ 🔥", "https://t.me/Tgxbotz_chat"),
+                        custom.Button.url("🔥 Group 🔥", "https://t.me/Tgxbotz_chat"),
                         custom.Button.url(
                             "⚡ Owner ⚡", "https://t.me/itz_xhrvan"
                         ),
