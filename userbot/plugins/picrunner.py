@@ -1,5 +1,4 @@
-# Made By @Sur_vivor Keep Credits If You Are Goanna Kang This Lol
-# And Thanks To The Creator Of Autopic This Script Was Made from Snippets From That Script
+# Made By @xhrvan
 
 import asyncio
 import os
@@ -69,8 +68,8 @@ async def animepp():
 @bot.on(admin_cmd(pattern="ppr ?(.*)", outgoing=True))
 async def main(event):
     await event.edit(
-        "**Starting Profile Pic Runner by @LEGEND_Userbot ..**"
-    )  # Owner @David99q
+        "**Starting Profile Pic Runner by @Tgxbotz_Chat ..**"
+    )  # Owner @xhrvan
     while True:
         try:
             await animepp()
