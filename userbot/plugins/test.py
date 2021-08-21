@@ -33,7 +33,7 @@ async def _(event):
         await edit_or_reply(event, "**SAVING OUTPUT TO TGXBOT LOCAL DATABASE**")
         await asyncio.sleep(3.5)
         await edit_or_reply(event, 
-            "Your [TGXBOT](https:/t.me/LEGEND_Userbot) is working Fine...\n       Join @LEGEND_Support For Any Help......"
+            "Your [TGXBOT](https:/t.me/tgxbotz_chat is working Fine...\n       Join @LEGEND_Support For Any Help......"
         )
 
 CmdHelp("test").add_command(
