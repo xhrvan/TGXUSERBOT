@@ -1,4 +1,4 @@
-# Made by @David99q for @LEGEND_Userbot
+# Made by @xhrvan for @tgxbotz_chat
 
 from TGXBOT.utils import *
 from userbot.cmdhelp import CmdHelp
