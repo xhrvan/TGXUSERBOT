@@ -1,4 +1,4 @@
-#ℓєgєи∂
+#@Tgxbotz
 import time
 
 from telethon.events import NewMessage
@@ -81,7 +81,7 @@ async def stats(
     response += f"🔰 υияєα∂ мємτιοиѕ: {unread_mentions} \n\n"
     response += f"🔰       __ιτ τοοκ:__ {stop_time:.02f}s \n"
     response += (
-        f"ƒɾσɱ ƭɦε ∂αƭαɓαรε σƒ:-[🇮🇳𝔏𝔢𝔤𝔢𝔫𝔡𝔅𝔬𝔱🇮🇳](https://t.me/LEGEND_Userbot)"
+        f"ƒɾσɱ ƭɦε ∂αƭαɓαรε σƒ:-[@Tgxbotz](https://t.me/Tgxbotz)"
     )
     await LEGEND.edit(response)
 
