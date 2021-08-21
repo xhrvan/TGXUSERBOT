@@ -22,7 +22,7 @@ async def send(event):
     message_id = event.message.id
     thumb = LEGEND_logo
     input_str = event.pattern_match.group(1)
-    omk = f"**⍟ Plugin name ≈** `{input_str}`\n**⍟ Uploaded by ≈** {LEGEND}\n\n⚡ **[Legendary TGXBOT](t.me/LEGEND_Userbot)** ⚡"
+    omk = f"**⍟ Plugin name ≈** `{input_str}`\n**⍟ Uploaded by ≈** {LEGEND}\n\n⚡ **[TGXBOT](t.me/tgxbotz_chat)** ⚡"
     the_plugin_file = "./userbot/plugins/{}.py".format(input_str)
     if os.path.exists(the_plugin_file):
         lauda = await event.client.send_file(
