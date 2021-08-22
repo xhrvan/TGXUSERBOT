@@ -8,7 +8,7 @@ from ..cmdhelp import CmdHelp
 DEFAULTUSER = str(ALIVE_NAME) if ALIVE_NAME else "LEGEND User"
 legend = borg.uid
 
-uptime = time_formatter((time.time() - start_time) * 1000)
+uptime = get_readable_time((time.time() - StartTime))
 
 @bot.on(admin_cmd(pattern=f"hbping$", outgoing=True))
 @bot.on(sudo_cmd(pattern=f"hbping$", allow_sudo=True))
@@ -65,11 +65,11 @@ async def _(event):
     if event.fwd_from:
         return
     start = datetime.now()
-    event = await edit_or_reply(event, "**( Pong!! {ms}ms\n Uptime - {uptime} **")
+    event = await edit_or_reply(event, "**( Pong!! `{ms}`ms\n Uptime - `{uptime}` **")
     end = datetime.now()
     ms = (end - start).microseconds / 1000
     await event.edit(
-        f"Pong!! {ms}ms\n Uptime - {uptime}" 
+        f"Pong!! `{ms}`ms\n Uptime - `{uptime}`" 
     )
 
 CmdHelp("ριиg").add_command(
