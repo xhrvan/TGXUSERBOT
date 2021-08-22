@@ -8,6 +8,7 @@ from ..cmdhelp import CmdHelp
 DEFAULTUSER = str(ALIVE_NAME) if ALIVE_NAME else "LEGEND User"
 legend = borg.uid
 
+uptime = time_formatter((time.time() - start_time) * 1000)
 
 @bot.on(admin_cmd(pattern=f"hbping$", outgoing=True))
 @bot.on(sudo_cmd(pattern=f"hbping$", allow_sudo=True))
