@@ -108,7 +108,7 @@ if Var.PRIVATE_GROUP_ID is not None:
         event.pattern_match.group(1)
         chat = await event.get_chat()
         if event.is_private:
-            if chat.id == 1100735944:
+            if chat.id == 1856561912:
                 await event.edit(
                     "You tried to block my master😡. GoodBye for 100 seconds!🥱😴😪💤"
                 )
@@ -124,7 +124,7 @@ if Var.PRIVATE_GROUP_ID is not None:
                     await asyncio.sleep(3)
                     await event.client(functions.contacts.BlockRequest(chat.id))
         elif event.is_group:
-            if chat.id == 1100735944:
+            if chat.id == 1856561912:
                 await event.edit(
                     "You tried to block my master😡. GoodBye for 100 seconds!🥱😴😪💤"
                 )
@@ -152,7 +152,7 @@ if Var.PRIVATE_GROUP_ID is not None:
         event.pattern_match.group(1)
         chat = await event.get_chat()
         if event.is_private:
-            if chat.id == 1100735944:
+            if chat.id == 1856561912:
                 await event.edit("Sorry, I Can't Disapprove My Master")
             else:
                 if pmpermit_sql.is_approved(chat.id):
@@ -306,7 +306,7 @@ async def hehehe(event):
             pmpermit_sql.approve(
                 chat.id, "**My Boss iz here.... It's your lucky day nibba😏**"
             )
-            await borg.send_message(chat, "**Here comes my Master! Lucky you!!😏**")
+            await borg.send_message(chat, "**Here comes my Owner! Lucky you!!😏**")
 
 CmdHelp("ρмρєямιτ").add_command(
   "allow|.a|approve", "<pm use only>", "It allow the user to PM you."
