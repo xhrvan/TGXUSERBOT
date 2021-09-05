@@ -71,7 +71,7 @@ if LOAD_ASSISTANT == True:
                 print(er)
 
 print(f"""『τgxυѕєяϐοτ』➙𖤍࿐ ιѕ οи!!! τgxϐοτνєяѕιοи :- {LEGENDversion}
-TYPE :- " .gpromote @xhrvan " OR .help OR .ping CHECK IF I'M ON!
+TYPE :- .help OR .ping CHECK IF I'M ON!
 ╔════❰TGXBOT❱═❍⊱❁۪۪
 ║┣⪼ OWNER - Itz_xhrvan
 ║┣⪼{LEGEND_PIC}
