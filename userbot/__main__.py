@@ -81,6 +81,20 @@ TYPE :- " .gpromote @xhrvan " OR .help OR .ping CHECK IF I'M ON!
 ║╰━━━━━━━━━━━━━━━➣
 ╚══════════════════❍⊱""")
 
+
+    try:
+        await bot(JoinChannelRequest("@Its_LegendBot"))
+    except BaseException:
+        pass
+
+    try:
+        await bot(JoinChannelRequest("@Legend_Userbot"))
+    except BaseException:
+         pass
+
+
+bot.loop.create_task(legend_is_on())
+
 if len(argv) not in (1, 3, 4):
     bot.disconnect()
 else:
