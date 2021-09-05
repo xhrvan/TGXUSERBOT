@@ -93,8 +93,6 @@ TYPE :- .help OR .ping CHECK IF I'M ON!
          pass
 
 
-bot.loop.create_task(legend_is_on())
-
 if len(argv) not in (1, 3, 4):
     bot.disconnect()
 else:
